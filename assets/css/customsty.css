@@ -13,6 +13,8 @@ dark grey:  #555555
 
 #nav_head img
 {
+  margin: 0px;
+  padding-right:15px;
   border: none;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -37,13 +39,12 @@ dark grey:  #555555
   float: left;
   font-variant:small-caps;
   font-weight:bold;
-  font-size:20px;
+  text-transform: lowercase; 
+  font-size: 15px
 }
 
 .nav li a {
-  padding: 12px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding: 10px;
   display: block;
   color: black;
   text-align: center;
@@ -82,7 +83,7 @@ body {
   background-color:#FFFFFF
 }
 
-.inner {max-width:720px}
+.inner {max-width:850px}
 
 #footer_wrap p {
   margin:0px;
