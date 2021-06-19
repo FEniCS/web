@@ -194,3 +194,10 @@ img.smaller
   margin-left: auto;
   margin-right: auto;
 }
+
+.highlighter-rouge
+{
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
