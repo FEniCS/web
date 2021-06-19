@@ -1,3 +1,17 @@
 # Site navigation links
 - title: Home
   page: index
+- title: FEniCS 2021
+  page: index
+- title: Download
+  page: index
+- title: Documentation
+  page: index
+- title: Community
+  page: index
+- title: Governance
+  page: index
+- title: Citing
+  page: index
+- title: Donate
+  page: index

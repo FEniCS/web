@@ -1,6 +1,6 @@
 /*
 COLOURS
-orange:     #FF7A1A
+blue:       #2E93CD
 light grey: #AAAAAA
 dark grey:  #555555
 */
@@ -21,7 +21,10 @@ dark grey:  #555555
   -ms-box-shadow: none;
 }
 
-
+.top-navigation
+{
+  display: inline-block
+}
 
 .nav ul {
   list-style-type: none;
@@ -37,27 +40,22 @@ dark grey:  #555555
   font-size:20px;
 }
 
-.nav li:first-of-type a {
-  border-radius: 15px 0px 0px 0px;
-}
-.nav li:last-of-type a {
-  border-radius: 0px 15px 0px 0px;
-}
-
 .nav li a {
   padding: 12px;
   padding-right: 16px;
   padding-left: 16px;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   text-decoration: none;
-  background-color: #555555
 }
 
 .nav li a:hover {
-  background-color: #FF7A1A;
+  color: #2E93CD;
 }
+
+
+
 
 
 #header_wrap .inner {
@@ -98,16 +96,16 @@ h2 {
 .paper {
   margin-left:10px;margin-right:10px;
   padding-left:30px;padding-right:30px;
-  border-left: #FF7A1A 5px solid;
-  border-right: #FF7A1A 5px solid;
+  border-left: #2E93CD 5px solid;
+  border-right: #2E93CD 5px solid;
   padding-bottom:0;
   margin-bottom:20px
 }
 
 .paper:target {
   padding-left:10px;padding-right:10px;
-  border-left: #FF7A1A 25px solid;
-  border-right: #FF7A1A 25px solid;
+  border-left: #2E93CD 25px solid;
+  border-right: #2E93CD 25px solid;
 }
 
 a.colorlink {
@@ -122,7 +120,7 @@ a.colorlink {
   color: white;
   text-align: center;
   text-decoration: none;
-  background-color: #FF7A1A;
+  background-color: #2E93CD;
 }
 
 a.colorlink:hover {
@@ -171,7 +169,7 @@ a.colorlink:hover {
 }
 
 .socialicons a:hover {
-  color:#FF7A1A;
+  color:#2E93CD;
 }
 
 .sociallist {
