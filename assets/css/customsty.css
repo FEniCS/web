@@ -76,12 +76,19 @@ h1, h2, h3, h4, h5, h6
   text-align:center
 }
 
-
+# project_subtitle
+{
+  margin-top:0px;
+  margin-bottom:0px
+}
 
 #header_wrap .inner {
-  padding-bottom:0px ! important;
+  padding:20px ! important;
   background-color: #FFFFFFCC;
 }
+
+
+
 
 #project_tagline {margin-top:0px}
 
