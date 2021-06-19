@@ -11,8 +11,10 @@ dark grey:  #555555
   background-color: white
 }
 
-#nav_head img
+#nav_head img.logo
 {
+  grid-row: 1;
+  grid-column: 1;
   margin: 0px;
   padding-right:15px;
   border: none;
@@ -23,9 +25,16 @@ dark grey:  #555555
   -ms-box-shadow: none;
 }
 
+#nav_head_inner
+{
+  display: grid;
+  align-items: center;
+}
+
 .top-navigation
 {
-  display: inline-block
+  grid-row: 1;
+  grid-column: 2
 }
 
 .nav ul {
