@@ -15,12 +15,11 @@
 {% if page.subtitle %}
   {% if page.subtitle == "fenicsxversion" %}
     <h2 id="project_subtitle">{{ site.fenicsxversion }}</h2>
+  {% elsif page.subtitle == "fenicsversion" %}
+    <h2 id="project_subtitle">{{ site.fenicsversion }}</h2>
   {% else %}
     <h2 id="project_subtitle">{{ page.subtitle }}</h2>
   {% endif %}
 {% endif %}
-  <div class='socialicons'>
-    <a href="https://github.com/fenics"><i class="fa fa-github" aria-hidden="true"></i></a><a href="https://twitter.com/fenicsproject"><i class="fa fa-twitter" aria-hidden="true"></i></a>  
-  </div>
   </header>
 </div>

@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6
   text-align:center
 }
 
-# project_subtitle
+#project_subtitle
 {
   margin-top:0px;
   margin-bottom:0px
@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6
 #project_tagline {margin-top:0px}
 
 #footer_wrap {background-color:#FFFFFF}
+
 body {
   background-color:#FFFFFF;
   color: #000000
@@ -167,79 +168,6 @@ a.colorlink:hover {
   margin-left:30px
 }
 
-.socialicons {
-  position:absolute;
-  top:5px;
-  right:5px;
-  font-size:30px
-}
-
-.socialicons a,
-.socialicons a:link,
-.socialicons a:active,
-.socialicons a:visited,
-.socialicons a:hover {
-  padding-left:10px;
-}
-.socialicons a,
-.socialicons a:link,
-.socialicons a:active,
-.socialicons a:visited
- {
-  color:white;
-}
-
-.socialicons a:hover {
-  color:#2E93CD;
-}
-
-.sociallist {
-  list-style:none;
-  margin-top:10px
-}
-
-.sociallist i.fa {
-  width:20px;
-}
-
-.person .imgwrap {
-  padding-right:20px;
-  float:left
-}
-
-.person .imgwrap img {
-  width:150px;
-}
-
-.person .imgwrap, .person .innertext {
-  display:inline-block
-}
-
-.person .innertext {
-  width:530px;
-}
-
-.handbooknav i {
-  padding-left:5px;
-  padding-right:5px;
-}
-
-h2 {
-  background:none;
-}
-
-h2, .handbooknav {
-  border-bottom: 1px dotted #CCC;
-  padding-bottom:2px;
-  margin-bottom:20px;
-}
-
-.handbookprevnext {
-  border-top: 1px dotted #CCC;
-  padding-top:2px;
-  margin-top:20px;
-}
-
 table.invisible,
 table.invisible td,
 table.invisible tr
@@ -255,12 +183,4 @@ img.smaller
   display:block;
   margin-left: auto;
   margin-right: auto;
-}
-
-li.bigsection
-{
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-  font-size:18px;
-  margin-top:20px;
-  font-weight:bold
 }
