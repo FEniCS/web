@@ -204,3 +204,9 @@ img.smaller
   font-size: 11px;
   color: #777777
 }
+
+footer a
+{
+  color: #0F79D0;
+  text-decoration:none
+}
