@@ -5,10 +5,12 @@ light grey: #AAAAAA
 dark grey:  #555555
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 #nav_head
 {
-  background-color: white
+  background-color: white;
+  font-family: 'Lato', sans-serif;
 }
 
 #nav_head img#logo
