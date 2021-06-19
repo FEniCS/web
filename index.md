@@ -54,7 +54,7 @@ using continuous piecewise quadratic vector-valued functions for the velocity an
 piecewise linear functions for the pressure (Taylor-Hood). The computational domain and mesh 
 are also easily created with FEniCS, here defined by three spheres immersed in a 3D channel.
 
-![Stokes example]({{ site.webroot }}assets/img/stokesexample.png)
+![Stokes example]({{ site.webroot }}assets/img/stokesexample.png){: .image-center }
 
 ```python
 # Define domain
