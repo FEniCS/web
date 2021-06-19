@@ -79,12 +79,6 @@ h1, h2, h3, h4, h5, h6
   background-color: #555555CC;
 }
 
-#header_wrap {
-  background-image:url(/assets/background-wrap.png);
-  background-size:contain;
-  background-repeat: repeat-x;
-}
-
 #project_tagline {margin-top:0px}
 
 #footer_wrap {background-color:#555555}
