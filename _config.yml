@@ -1,1 +1,15 @@
 theme: jekyll-theme-slate
+site_favicon: favicon.ico
+title: FEniCS
+description: ""
+fenicsversion: 2019.1.0
+fenicsxversion: 0.1.0
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+
