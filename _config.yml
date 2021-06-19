@@ -1,7 +1,7 @@
 theme: jekyll-theme-slate
 site_favicon: favicon.ico
 title: FEniCS
-description: ""
+description: The FEniCS Project
 fenicsversion: 2019.1.0
 fenicsxversion: 0.1.0
 
