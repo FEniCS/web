@@ -1,7 +1,7 @@
 theme: jekyll-theme-slate
 site_favicon: favicon.ico
-title: FEniCS
-description: The FEniCS Project
+title: FEniCS Project
+description: Open-source finite element library
 fenicsversion: 2019.1.0
 fenicsxversion: 0.1.0
 webroot: /web/

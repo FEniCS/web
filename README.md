@@ -37,3 +37,10 @@ Navigation bar
 The links included in the navigation bar are defined in [`_data/navbar.yml`](https://github.com/FEniCS/web/blob/main/_data/navbar.yml).
 Each link is given a `name`, which will be displayed in the navigation bar; and a `page` which is
 the name of a `.md` file (without the `.md` file) relative to the root folder of the repository.
+
+Latest versions
+---------------
+The latest released version of FEniCS and FEniCSx can be set in [`_config.yml`](https://github.com/FEniCS/web/blob/main/_config.yml).
+If you want to display the latest version on the website, you can write `{{ site.fenicsversion }}`
+or `{{ site.fenicsxversion }}` so that the values are automatically updated. (If you don't want a
+version number to update, do no use these and write the version number.)
