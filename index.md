@@ -103,4 +103,4 @@ FEniCS is a [NumFOCUS](https://www.numfocus.org/) fiscally supported project. If
 mission to produce the best possible platform for open-source computing, consider making a 
 donation to our project.
 
-[![NumFOCUS]({{ site.webroot }}assets/img/numfocus.png)](https://www.numfocus.org/)](https://www.numfocus.org/){: .image-center }
+[![NumFOCUS]({{ site.webroot }}assets/img/numfocus.png)](https://www.numfocus.org/){: .image-center }
