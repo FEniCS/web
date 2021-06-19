@@ -1,6 +1,6 @@
 ---
 title: FEniCSx
-subtitle: {{ site.fenicsxversion }}
+subtitle: site.fenicsxversion
 image: assets/img/headers/design.jpg
 ---
 
