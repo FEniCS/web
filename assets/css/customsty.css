@@ -11,7 +11,7 @@ dark grey:  #555555
   background-color: white
 }
 
-#nav_head img.logo
+#nav_head img#logo
 {
   grid-row: 1;
   grid-column: 1;
