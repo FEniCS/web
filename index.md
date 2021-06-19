@@ -81,7 +81,7 @@ computers.
 
 The figure shows the von Mises stresses computed from a nonlinear thermomechanical FEniCS 
 simulation of a turbocharger. The finite element system of linear equations comprises more 
-than $3.3 \times 10^9$ degrees of freedom. The solver was initially developed on a desktop computer 
+than \\(3.3 \times 10^9\\) degrees of freedom. The solver was initially developed on a desktop computer 
 for a small scale problem, and the same code was then deployed on a supercomputer using over 
 24000 parallel processes.
 
