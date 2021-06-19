@@ -48,7 +48,7 @@ dark grey:  #555555
   float: left;
   font-variant:small-caps;
   font-weight:bold;
-  text-transform: lowercase; 
+  text-transform: uppercase; 
   font-size: 15px
 }
 
