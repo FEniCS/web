@@ -6,13 +6,15 @@
   </header>
 </div>
 {% if page.image %}
-  <div id="header_wrap" class="outer" style="background-image:url({{ site.webroot }}{{ page.image }});background-size:cover">
+  <div id="header_wrap" class="outer" style="background-image:url({{ site.webroot }}{{ page.image }});background-size:cover;background-position-y:center">
 {% else %}
-  <div id="header_wrap" class="outer" style="background-image:url({{ site.webroot }}assets/img/default-bg.png);background-repeat: repeat">
+  <div id="header_wrap" class="outer" style="background-image:url({{ site.webroot }}assets/img/default-bg.png);background-repeat:repeat">
 {% endif %}
   <header class="inner">
   <h1 id="project_title">{{ page.title | default: site.title }}</h1>
-  <h1 id="project_subtitle">{{ page.subtitle | default: "" }}</h1>
+{% if page.subtitle %}
+  <h1 id="project_subtitle">{{ page.subtitle }}</h1>
+{% endif %}
   <div class='socialicons'>
     <a href="https://github.com/fenics"><i class="fa fa-github" aria-hidden="true"></i></a><a href="https://twitter.com/fenicsproject"><i class="fa fa-twitter" aria-hidden="true"></i></a>  
   </div>

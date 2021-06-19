@@ -1,8 +1,6 @@
 /*
 COLOURS
 blue:       #2E93CD
-light grey: #AAAAAA
-dark grey:  #555555
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
@@ -76,14 +74,14 @@ h1, h2, h3, h4, h5, h6
 
 #header_wrap .inner {
   padding-bottom:0px ! important;
-  background-color: #555555CC;
+  background-color: #FFFFFFCC;
 }
 
 #project_tagline {margin-top:0px}
 
-#footer_wrap {background-color:#555555}
+#footer_wrap {background-color:#FFFFFF}
 body {
-  background-color:#555555;
+  background-color:#FFFFFF;
   color: #000000
 }
 
