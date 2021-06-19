@@ -2,6 +2,7 @@
 title: FEniCSx
 subtitle: fenicsxversion
 image: assets/img/headers/design.jpg
+layout: with_twitter_sidebar
 ---
 
 ## The FEniCS computing platform
