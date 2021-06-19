@@ -80,7 +80,6 @@ h1, h2, h3, h4, h5, h6
 {
   margin-top:0px;
   margin-bottom:0px;
-  background:none
 }
 
 #header_wrap .inner {
@@ -100,6 +99,10 @@ body {
   color: #000000
 }
 
+#main_content {
+  margin-top: 0px !important
+}
+
 #main_content_wrap {
   border:none;
   background-color:#FFFFFF
@@ -114,6 +117,7 @@ body {
 
 h2 {
   margin-top:50px;
+  background:none
 }
 
 .paper {
