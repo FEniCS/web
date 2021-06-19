@@ -94,9 +94,6 @@ h1, h2, h3, h4, h5, h6
   #twitter { display:block }
 }
 
-
-#project_tagline {margin-top:0px}
-
 #footer_wrap {background-color:#FFFFFF}
 
 body {
@@ -200,4 +197,10 @@ img.smaller
   width:80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#footer_wrap .inner
+{
+  font-size: 11px;
+  color: #777777
 }
