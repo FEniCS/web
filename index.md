@@ -1,6 +1,7 @@
 ---
 title: FEniCSx
 subtitle: {{ site.fenicsxversion }}
+image: assets/img/headers/design.jpg
 ---
 
 ## The FEniCS computing platform
