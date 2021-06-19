@@ -5,6 +5,24 @@ light grey: #AAAAAA
 dark grey:  #555555
 */
 
+
+#nav_head
+{
+  background-color: white
+}
+
+#nav_head img
+{
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+}
+
+
+
 .nav ul {
   list-style-type: none;
   margin: 0;
