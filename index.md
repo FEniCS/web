@@ -1,7 +1,7 @@
---
+---
 title: FEniCSx
 subtitle: {{ site.fenicsxversion }}
---
+---
 
 ## The FEniCS computing platform
 
