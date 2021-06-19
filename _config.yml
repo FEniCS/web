@@ -4,6 +4,7 @@ title: FEniCS
 description: The FEniCS Project
 fenicsversion: 2019.1.0
 fenicsxversion: 0.1.0
+webroot: /web/
 
 defaults:
   -
