@@ -156,14 +156,19 @@ a.colorlink:hover {
   background-color: #0F79D0
 }
 
+img.image-center, a.image-center img {
+  max-width: 70%;
+}
 .image-center {
   max-width: 70%;
   display:block;
   margin-left:auto;
   margin-right:auto;
 }
-.image-right,
-.image-left {
+img.image-right,
+img.image-left,
+a.image-right img,
+a.image-left img {
   max-width:300px;
 }
 .image-left {
