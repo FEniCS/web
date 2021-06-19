@@ -3,14 +3,16 @@
 {% include _header.html %}
 
 <!-- MAIN CONTENT -->
-<div id="main_content_wrap" class="outer" style="display:grid">
-  <section id="main_content" class="inner" style="grid-row:1;grid-column:1">
-    {{ title }}
-    {{ content }}
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner" style="display:grid">
+    <div style="grid-row:1;grid-column:1">
+      {{ title }}
+      {{ content }}
+    </div>
+    <div id="twitter" class="inner" style="grid-row:1;grid-column:2">
+      <a class="twitter-timeline" data-width="220" href="https://twitter.com/fenicsproject?ref_src=twsrc%5Etfw">Tweets by fenicsproject</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
   </section>
-  <div id="twitter" class="inner" style="grid-row:1;grid-column:2">
-    <a class="twitter-timeline" data-width="220" href="https://twitter.com/fenicsproject?ref_src=twsrc%5Etfw">Tweets by fenicsproject</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
 </div>
 
 {% include _footer.html %}
