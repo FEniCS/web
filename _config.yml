@@ -3,7 +3,9 @@ site_favicon: favicon.ico
 title: FEniCS Project
 description: Open-source finite element library
 fenicsversion: 2019.1.0
+fenicsversiondate: April 2019
 fenicsxversion: 0.1.0
+fenicsxversiondate: May 2021
 webroot: /web/
 
 defaults:
@@ -12,5 +14,6 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+      title: "FEniCS Project"
 
 

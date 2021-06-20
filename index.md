@@ -88,7 +88,7 @@ for a small scale problem, and the same code was then deployed on a supercomput
 ## Installation and documentation
 
 FEniCS is available for a range of platforms (Linux, Mac, Windows). Choose between Docker 
-containers, binary packages and source code. Visit our [installation page]({{ site.webroot }}download) to get the latest 
+containers, binary packages and source code. Visit our [installation page]({{ site.webroot }}download.html) to get the latest 
 version of FEniCS. FEniCS comes with [extensive documentation]({{ site.webroot }}documentation) and numerous examples. A good 
 starting point is the [FEniCS Tutorial]({{ site.webroot }}tutorial).
 

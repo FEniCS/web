@@ -3,10 +3,12 @@
   page: index
 - title: FEniCS 2021
   page: conference/2021
+- title: Roadmap 2021-
+  page: roadmap
 - title: Download
-  page: index
+  page: download
 - title: Documentation
-  page: index
+  page: documentation/index
 - title: Community
   page: index
 - title: Governance
