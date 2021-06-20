@@ -39,7 +39,8 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 If you feel that your report has not been followed up satisfactorily, then you may contact our parent organisation NumFOCUS at info@numfocus.org for further redress.
 
 ## Attribution
-This Code of Conduct is adapted from the Contributor Covenant, version 1.4, available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html.
+This Code of Conduct is adapted from the Contributor Covenant, version 1.4, available at
+[contributor-covenant.org/version/1/4/code-of-conduct.html](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html).
 
 Adaptations:
 
@@ -48,3 +49,4 @@ Adaptations:
 
 For answers to common questions about this code of conduct, see
 [contributor-covenant.org/faq](https://www.contributor-covenant.org/faq)
+-
