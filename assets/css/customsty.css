@@ -15,8 +15,12 @@ blue:       #2E93CD
 {
   grid-row: 1;
   grid-column: 1;
-  margin: 0px;
   padding-right:15px;
+}
+
+#nav_head a#logo img
+{
+  margin: 0px;
   border: none;
   box-shadow: none;
   -webkit-box-shadow: none;
