@@ -140,7 +140,7 @@ component**.
 
 ### UFC
 {% include _paper.html
-  id="alnaesEtal2009
+  id="alnaesEtal2009"
   title="Unified Framework for Finite Element Assembly"
   author="M. S. Alnaes, A. Logg, K.-A. Mardal, O. Skavhaug and H. P. Langtangen"
   journal="International Journal of Computational Science and Engineering"
