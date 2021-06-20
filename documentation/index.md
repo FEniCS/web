@@ -47,7 +47,6 @@ to the demos:
 
 # The FEniCS book
 ![The FEniCS book]({{ site.webroot }}assets/img/docs/book.png){: .image-right }
-
 The book [Automated Solution of Differential Equations by the Finite Element Method]({{ site.webroot }}documentation/book.md)
 explains the theoretical background and design of FEniCS. It describes the FEniCS software
 components in detail and showcases a number of applications of FEniCS to problems in fluid
