@@ -93,7 +93,6 @@ version of FEniCS. FEniCS comes with [extensive documentation]({{ site.webroot 
 starting point is the [FEniCS Tutorial]({{ site.webroot }}tutorial).
 
 ## About
-
 The FEniCS Project is developed and maintained as a freely available, open-source project by a 
 global community of scientists and software developers. The project is developed by the FEniCS 
 Community, is [governed]({{ site.webroot }}governance) by the [FEniCS Steering Council]({{ site.webroot }}steering-council) and is overseen by the
