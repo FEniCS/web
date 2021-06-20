@@ -1,14 +1,14 @@
 # Site navigation links
-- title: FEniCS 2021
-  page: conference/2021
 - title: Roadmap 2021-
   page: roadmap
+- title: FEniCS 2021
+  page: conference/2021
 - title: Download
   page: download
 - title: Documentation
   page: documentation/index
 - title: Community
-  page: index
+  page: community
 - title: Governance
   page: index
 - title: Citing
