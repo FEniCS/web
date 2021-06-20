@@ -40,7 +40,8 @@ the name of a `.md` file (without the `.md` file) relative to the root folder of
 
 Latest versions
 ---------------
-The latest released version of FEniCS and FEniCSx can be set in [`_config.yml`](https://github.com/FEniCS/web/blob/main/_config.yml).
+The latest released version of FEniCS and FEniCSx (and their release dates) can be set in
+[`_config.yml`](https://github.com/FEniCS/web/blob/main/_config.yml).
 If you want to display the latest version on the website, you can write `{{ site.fenicsversion }}`
 or `{{ site.fenicsxversion }}` so that the values are automatically updated. (If you don't want a
 version number to update, do no use these and write the version number.)
