@@ -1,6 +1,5 @@
 ---
-title: community
-image: assets/img/fenics2021/small-photo.png
+title: Community
 ---
 
 Get in touch with the FEniCS community, discuss your issues and share your knowledge with 
