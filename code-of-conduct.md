@@ -49,4 +49,3 @@ Adaptations:
 
 For answers to common questions about this code of conduct, see
 [contributor-covenant.org/faq](https://www.contributor-covenant.org/faq)
--
