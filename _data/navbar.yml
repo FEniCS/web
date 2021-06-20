@@ -1,6 +1,4 @@
 # Site navigation links
-- title: Home
-  page: index
 - title: FEniCS 2021
   page: conference/2021
 - title: Roadmap 2021-

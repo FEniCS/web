@@ -11,7 +11,7 @@ blue:       #2E93CD
   font-family: 'Lato', sans-serif;
 }
 
-#nav_head img#logo
+#nav_head a#logo
 {
   grid-row: 1;
   grid-column: 1;
