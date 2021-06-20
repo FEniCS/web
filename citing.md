@@ -21,57 +21,144 @@ component**.
 {% include _paper.html
   id="LoggEtal2012"
   title="Automated Solution of Differential Equations by the Finite Element Method"
-  author="A. Logg, K.-A. Mardal, G. N. Wells et al."
+  author="A. Logg, K.-A. Mardal, G. N. Wells et al"
   bookpublisher="Springer"
   year="2012"
   doi="10.1007/978-3-642-23099-8"
 %}
 
-DOLFIN
+### DOLFIN
+{% include _paper.html
+  id="LoggWells2010"
+  title="DOLFIN: Automated Finite Element Computing"
+  author="A. Logg and G. N. Wells"
+  journal="ACM Transactions on Mathematical Software"
+  volume="37"
+  year="2010"
+  doi="10.1145/1731022.1731030"
+  arxiv="1103.6248"
+%}
 
-    DOLFIN: Automated Finite Element Computing
-    A. Logg and G. N. Wells
-    ACM Transactions on Mathematical Software, vol. 37, 2010, [DOI], [arXiv]
-    DOLFIN: a C++/Python Finite Element Library
-    A. Logg, G. N. Wells and J. Hake
-    in Automated Solution of Differential Equations by the Finite Element Method, Volume 84 of Lecture Notes in Computational Science and Engineering, Edited by A. Logg, K.-A. Mardal and G. N. Wells, Springer, chapter 10, 2012
+{% include _paper.html
+  id="LoggEtal_10_2012"
+  title="DOLFIN: a C++/Python Finite Element Library"
+  author="A. Logg, G. N. Wells and J. Hake"
+  book="Automated Solution of Differential Equations by the Finite Element Method"
+  bookvolume="84"
+  bookseries="Lecture Notes in Computational Science and Engineering"
+  bookeditor="A. Logg, K.-A. Mardal and G. N. Wells"
+  bookpublisher="Springer"
+  bookchapter="10"
+  year="2012"
+%}
 
-FFC
+### FFC
+{% include _paper.html
+  id="KirbyLogg2006"
+  title="A Compiler for Variational Forms"
+  author="R. C. Kirby and A. Logg"
+  journal="ACM Transactions on Mathematical Software"
+  volume="32"
+  year="2006"
+  doi="10.1145/1163641.1163644"
+  arxiv="1112.0402"
+%}
 
-    A Compiler for Variational Forms
-    R. C. Kirby and A. Logg
-    ACM Transactions on Mathematical Software, vol. 32, 2006, [DOI], [arXiv]
-    FFC: the FEniCS Form Compiler
-    A. Logg, K. B. Ølgaard, M. E. Rognes and G. N. Wells
-    in Automated Solution of Differential Equations by the Finite Element Method, Volume 84 of Lecture Notes in Computational Science and Engineering, Edited by A. Logg, K.-A. Mardal and G. N. Wells, Springer, chapter 11, 2012
-    Optimisations for Quadrature Representations of Finite Element Tensors Through Automated Code Generation
-    K. B. Ølgaard and G. N. Wells
-    ACM Transactions on Mathematical Software, vol. 37, 2010, [DOI], [arXiv]
+{% include _paper.html
+  id="LoggEtal_11_2012"
+  title="FFC: the FEniCS Form Compiler"
+  author="A. Logg, K. B. Ølgaard, M. E. Rognes and G. N. Wells"
+  book="Automated Solution of Differential Equations by the Finite Element Method"
+  bookvolume="84"
+  bookseries="Lecture Notes in Computational Science and Engineering"
+  bookeditor="A. Logg, K.-A. Mardal and G. N. Wells"
+  bookpublisher="Springer"
+  bookchapter="11"
+  year="2012"
+%}
 
-UFL
+{% include _paper.html
+  id="OlgaardWells2010"
+  title="Optimisations for Quadrature Representations of Finite Element Tensors Through Automated Code Generation"
+  author="K. B. Ølgaard and G. N. Wells"
+  journal="ACM Transactions on Mathematical Software"
+  volume="37"
+  year="2010"
+  doi="10.1145/1644001.1644009"
+  arxiv="1104.0199"
+%}
 
-    Unified Form Language: A domain-specific language for weak formulations of partial differential equations
-    M. S. Alnaes, A. Logg, K. B. Ølgaard, M. E. Rognes and G. N. Wells
-    ACM Transactions on Mathematical Software, vol. 40, 2014, [DOI], [arXiv]
-    UFL: a Finite Element Form Language
-    M. S. Alnaes
-    in Automated Solution of Differential Equations by the Finite Element Method, Volume 84 of Lecture Notes in Computational Science and Engineering, Edited by A. Logg, K.-A. Mardal and G. N. Wells, Springer, chapter 17, 2012
+### UFL
+{% include _paper.html
+  id="AlnaesEtal2014"
+  title="Unified Form Language: A domain-specific language for weak formulations of partial differential equations"
+  author="M. S. Alnaes, A. Logg, K. B. Ølgaard, M. E. Rognes and G. N. Wells"
+  journal="ACM Transactions on Mathematical Software"
+  volume="40"
+  year="2014"
+  doi="10.1145/2566630"
+  arxiv="1211.4047"
+%}
 
-FIAT
+{% include _paper.html
+  id="alnaes2010"
+  title="UFL: a Finite Element Form Language"
+  author="M. S. Alnaes"
+  book="Automated Solution of Differential Equations by the Finite Element Method"
+  bookvolume="84"
+  bookseries="Lecture Notes in Computational Science and Engineering"
+  bookeditor="A. Logg, K.-A. Mardal and G. N. Wells"
+  bookpublisher="Springer"
+  bookchapter="17"
+  year="2012"
+%}
 
-    Algorithm 839: FIAT, a New Paradigm for Computing Finite Element Basis Functions
-    R. C. Kirby
-    ACM Transactions on Mathematical Software, vol. 30, pp. 502—516, 2004, [DOI]
-    FIAT: Numerical Construction of Finite Element Basis Functions,
-    R. C. Kirby
-    in Automated Solution of Differential Equations by the Finite Element Method, Volume 84 of Lecture Notes in Computational Science and Engineering, Edited by A. Logg, K.-A. Mardal and G. N. Wells, Springer, chapter 13, 2012
+### FIAT
+{% include _paper.html
+  id="Kirby2004"
+  title="Algorithm 839: FIAT, a New Paradigm for Computing Finite Element Basis Functions"
+  author="R. C. Kirby"
+  journal="ACM Transactions on Mathematical Software"
+  volume="30"
+  pagestart="502" pageend="516"
+  year="2004"
+  doi="10.1145/1039813.1039820"
+%}
 
-UFC
+{% include _paper.html
+  id="kirby2010"
+  title="FIAT: Numerical Construction of Finite Element Basis Functions"
+  author="R. C. Kirby"
+  book="Automated Solution of Differential Equations by the Finite Element Method"
+  bookvolume="84"
+  bookseries="Lecture Notes in Computational Science and Engineering"
+  bookeditor="A. Logg, K.-A. Mardal and G. N. Wells"
+  bookpublisher="Springer"
+  bookchapter="13"
+  year="2012"
+%}
 
-    Unified Framework for Finite Element Assembly
-    M. S. Alnaes, A. Logg, K.-A. Mardal, O. Skavhaug and H. P. Langtangen
-    International Journal of Computational Science and Engineering, vol. 4, pp. 231—244, 2009, [DOI]
-    UFC: a Finite Element Code Generation Interface
-    M. S. Alnaes, A. Logg and K.-A. Mardal
-    in Automated Solution of Differential Equations by the Finite Element Method, Volume 84 of Lecture Notes in Computational Science and Engineering, Edited by A. Logg, K.-A. Mardal and G. N. Wells, Springer, chapter 16, 2012
+### UFC
+{% include _paper.html
+  id="alnaesEtal2009
+  title="Unified Framework for Finite Element Assembly"
+  author="M. S. Alnaes, A. Logg, K.-A. Mardal, O. Skavhaug and H. P. Langtangen"
+  journal="International Journal of Computational Science and Engineering"
+  volume="4"
+  pagestart="231" pageend="244"
+  year="2009"
+  doi="10.1504/IJCSE.2009.029160"
+%}
 
+{% include _paper.html
+  id="AlnaesEtAl2012"
+  title="UFC: a Finite Element Code Generation Interface"
+  author="M. S. Alnaes, A. Logg and K.-A. Mardal"
+  book="Automated Solution of Differential Equations by the Finite Element Method"
+  bookvolume="84"
+  bookseries="Lecture Notes in Computational Science and Engineering"
+  bookeditor="A. Logg, K.-A. Mardal and G. N. Wells"
+  bookpublisher="Springer"
+  bookchapter="16"
+  year="2012"
+%}
