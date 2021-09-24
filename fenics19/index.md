@@ -37,21 +37,6 @@ areas, and dedicated time for discussions and coding.
 - Conference: *12-14 June 2019*.
 - Conference Dinner: *13 June 2019, 7:30pm -- 10:30pm*.
 
-<!--
-
-
-## Registration
-
-
-All participants must register for the conference. The conference registration fee of $225 includes lunches, coffee breaks and the conference dinner. Please <a href="https://eventbrite/fenics19">register for the conference</a>. Additional tickets for the conference dinner are available for accompanying partners. *Registration closes on 16 March 2019.*
-
-
-## Schedule
-
-
-The <a href="http://easychair.org/smart-program/FEniCS19/">schedule is available on EasyChair</a>. Abstract submission is now open.
--->
-
 ## Features
 
 - Single track session for talks.
@@ -95,16 +80,6 @@ The conference dinner will be held on *Thursday 13th June 7:30pm to 10:30pm* at
 425 7th Street NW Washington D.C. 20004.
 
 <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.237447864582!2d-77.0239541846497!3d38.89568507957094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b78fe1723c7f%3A0xe0f2245d49ea746e!2sCarmine's+Italian+Restaurant!5e0!3m2!1sen!2sus!4v1559141657968!5m2!1sen!2sus" allowfullscreen="allowfullscreen" width="600" height="450" frameborder="0"></iframe></p>
-<p><!--
-<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">The DTM was formed in 1904 by Louis Bauer. Selected by the board of trustees of the Carnegie Institution of Washington, he sought to map the Earth's geomagnetic field.</span>
-
-<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">The conference dinner will be held at... ??????</span>
-
-<iframe loading="lazy" width="100%" height="450" style="border: 0;" frameborder="0" src="//www.google.com/maps/embed/v1/place?q=Washington-DC&amp;zoom=14&amp;key=AIzaSyC-acu8l9xcDppefWI9_yvfO4Xk7H0Ohhw" allowfullscreen="allowfullscreen" data-mce-fragment="1"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span>
-</iframe>
-
-<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">About the dinner venue...</span>
--->
 
 ## Getting to Washington
 The main options for travelling to Washington DC are:
