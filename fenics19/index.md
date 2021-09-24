@@ -64,7 +64,7 @@ provided on Easychair.
 
 The conference will be held in the Greenwalt Building at 5241 Broach Branch Road North West, Washington, DC, 20015, USA.
 
-<iframe loading="lazy" style="border: 0;" data-mce-fragment="1" allowfullscreen="allowfullscreen" src="//www.google.com/maps/embed/v1/place?q=Department-of-Terrestrial-Magnetism&amp;zoom=14&amp;key=AIzaSyC-acu8l9xcDppefWI9_yvfO4Xk7H0Ohhw" width="100%" height="450" frameborder="0"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><br />
+<iframe loading="lazy" style="border: 0;" data-mce-fragment="1" allowfullscreen="allowfullscreen" src="https://www.google.com/maps/embed/v1/place?q=Department-of-Terrestrial-Magnetism&amp;zoom=14&amp;key=AIzaSyC-acu8l9xcDppefWI9_yvfO4Xk7H0Ohhw" width="100%" height="450" frameborder="0"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><br />
 </iframe>
 
 The Greenwalt building is directly opposite the distinctive Atomic Physics Observatory with the white dome.
@@ -136,7 +136,7 @@ committee. The cut-off date for applications is March 15 2019.
 ## Sponsors
 FEniCS'19 is supported by the Carnegie Institution for Science Department of Terrestrial Magnetism and NumFOCUS.
 
-<a href="https://dtm.carnegiescience.edu/"><img loading="lazy" class="alignnone" src="https://i0.wp.com/dtm.carnegiescience.edu/sites/all/themes/DTM/images/CS_dtm_logo_horz.png?resize=418%2C79&amp;ssl=1" alt="" data-recalc-dims="1" width="418" height="79"></a>
+[![Campus map]({{ site.webroot }}assets/img/fenics19/CS.png){: .image-center }](https://dtm.carnegiescience.edu/)
 
-<a href="http://www.numfocus.org"><img data-attachment-id="121" data-permalink="https://fenicsproject.org/fenics-project/numfocus_2c_cmyk/" data-orig-file="https://fenicsproject.org/wp-content/uploads/2016/10/NumFocus_2C_CMYK.svg" data-orig-size="" data-comments-opened="1" data-image-meta="[]" data-image-title="NumFOCUS" data-image-description="" data-medium-file="https://fenicsproject.org/wp-content/uploads/2016/10/NumFocus_2C_CMYK.svg" data-large-file="https://fenicsproject.org/wp-content/uploads/2016/10/NumFocus_2C_CMYK.svg" loading="lazy" class="alignnone wp-image-121" src="https://fenicsproject.org/wp-content/uploads/2016/10/NumFocus_2C_CMYK.svg" alt="NumFOCUS" width="354" height="111"></a>
+[![NumFOCUS]({{ site.webroot }}assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
 
