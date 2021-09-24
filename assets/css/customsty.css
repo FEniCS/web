@@ -86,6 +86,10 @@ h1, h2, h3, h4, h5, h6
   margin-bottom:0px;
 }
 
+.inner {max-width:850px}
+
+#nav_head_inner {max-width: 1050px !important;}
+
 #header_wrap .inner {
   padding:20px ! important;
   background-color: #FFFFFFCC;
@@ -113,8 +117,6 @@ body {
   border:none;
   background-color:#FFFFFF
 }
-
-.inner {max-width:850px}
 
 #footer_wrap p {
   margin:0px;
