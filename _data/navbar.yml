@@ -1,4 +1,6 @@
 # Site navigation links
+- title: People of FEniCS
+  page: people-of-fenics/index
 - title: Roadmap 2021-
   page: roadmap
 - title: FEniCS 2021
