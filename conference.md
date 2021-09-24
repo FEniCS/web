@@ -11,7 +11,7 @@ The FEniCS conference is held in a difference location each year.
 - FEniCS '16 (Oslo)
 - FEniCS '15 (London)
 - FEniCS '14 (Paris)
-- FEniCS '13 (?)
+- FEniCS '13 (Cambridge)
 - FEniCS '12 (Oslo)
 - FEniCS '11 (Lubbock)
 - FEniCS '10 (?)
