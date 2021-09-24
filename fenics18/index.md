@@ -12,11 +12,11 @@ The FEniCS'18 conference will emphasise an open and inclusive atmosphere, contri
 
 ## Important dates
 
-- Abstract submission: *24 August 2017-14 February 2018*. Update: extended to *21 February 2018*.
-- Application for travel support: *by 21 December 2017*.
-- Booking discounted accommodation in Oriel college: *by 6 March 2018*.
-- Registration: *by 16 March*.
-- Conference: *21-23 March 2018*.
+- Abstract submission: **24 August 2017-14 February 2018**. Update: extended to **21 February 2018**.
+- Application for travel support: **by 21 December 2017**.
+- Booking discounted accommodation in Oriel college: **by 6 March 2018**.
+- Registration: **by 16 March**.
+- Conference: **21-23 March 2018**.
 
 ## Schedule
 The <a href="http://easychair.org/smart-program/FEniCS18/">schedule is available on easychair</a>. Abstract submission is now closed.

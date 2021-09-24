@@ -10,14 +10,14 @@ The 2019 FEniCS Conference took place at the&nbsp;Carnegie Institution for Scien
 Washington DC, on 12-14 June 2019.
 
 ## Updates
-- *3rd June 2019:* Details of the location of the Greenwalt building added.
-- *29th May 2019:* [Conference programme](https://easychair.org/smart-program/FEniCS19/) announced.
-- *29th May 2019:* Conference dinner [location](https://www.carminesnyc.com/locations/washington-dc) announced.
-- *28th March 2019*: Early bird registration deadline extended to 5th May 2019.
-- *1st March 2019*: Accommodation information updated.
-- *5th December 2018*: [Abstract submission](https://easychair.org/conferences/?conf=fenics19) for talks and posters opened.
-- *4th December 2018*: [Registration opened](https://www.eventbrite.com/e/fenics19-tickets-53258791479).
-- *29th November 2018*: Conference announced.
+- **3rd June 2019:** Details of the location of the Greenwalt building added.
+- **29th May 2019:** [Conference programme](https://easychair.org/smart-program/FEniCS19/) announced.
+- **29th May 2019:** Conference dinner [location](https://www.carminesnyc.com/locations/washington-dc) announced.
+- **28th March 2019**: Early bird registration deadline extended to 5th May 2019.
+- **1st March 2019**: Accommodation information updated.
+- **5th December 2018**: [Abstract submission](https://easychair.org/conferences/?conf=fenics19) for talks and posters opened.
+- **4th December 2018**: [Registration opened](https://www.eventbrite.com/e/fenics19-tickets-53258791479).
+- **29th November 2018**: Conference announced.
 
 ## Description
 The FEniCS'19 conference is an opportunity for all those interested in the FEniCS Project and related projects to exchange 
@@ -28,15 +28,15 @@ specialists interested in numerical methods, their implementation and applicatio
 The FEniCS'19 conference will emphasise an open and inclusive atmosphere, contributed talks from a diverse range of scientific 
 areas, and dedicated time for discussions and coding.
 
-*To register for the FEniCS'19 conference click [here](https://www.eventbrite.com/e/fenics19-tickets-53258791479).*
+**To register for the FEniCS'19 conference click [here](https://www.eventbrite.com/e/fenics19-tickets-53258791479).**
 
 ## Important dates
 
-- Abstract submission: *by 14 April 2019*.
-- Application for travel support: *by 15 March 2019*.
-- Early bird registration: *by 5 May 2019*.
-- Conference: *12-14 June 2019*.
-- Conference Dinner: *13 June 2019, 7:30pm -- 10:30pm*.
+- Abstract submission: **by 14 April 2019**.
+- Application for travel support: **by 15 March 2019**.
+- Early bird registration: **by 5 May 2019**.
+- Conference: **12-14 June 2019**.
+- Conference Dinner: **13 June 2019, 7:30pm -- 10:30pm**.
 
 ## Features
 
@@ -54,7 +54,7 @@ All participants must register for the conference.&nbsp;Participants may registe
 The conference registration fee is $300 (US), and includes payment for lunches, coffee breaks and the conference dinner.
 
 ## Abstract submission
-*Abstract submission is now closed.*
+**Abstract submission is now closed.**
 
 The call for papers for FEniCS'19 can be found [here](https://easychair.org/cfp/fenics-19). Talk and poster abstract 
 submission opened on 5th December 2018 via [Easychair](https://easychair.org/conferences/?conf=fenics19). Each participant can 
@@ -76,7 +76,7 @@ The Greenwalt building is directly opposite the distinctive Atomic Physics Obser
 
 
 ## Conference Dinner
-The conference dinner will be held on *Thursday 13th June 7:30pm to 10:30pm* at
+The conference dinner will be held on **Thursday 13th June 7:30pm to 10:30pm** at
 [Carmine's Restaurant](https://www.carminesnyc.com/locations/washington-dc),
 425 7th Street NW Washington D.C. 20004.
 

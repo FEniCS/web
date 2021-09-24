@@ -26,16 +26,16 @@ Thanks to everyone for making the FEniCS Conference 2017 yet another enjoyable a
 - Google Summer of Code students: Ivan Yaschuk and Michal Habera.
 
 ## Updates
-- *29 May 2017*: Our travel award winners are supported by a <a href="https://numfocus.org" target="_blank">NumFOCUS</a> small grant award. Thanks NumFOCUS!<br>
-- *16 May 2017*: The programme is <a href="http://easychair.org/smart-program/FEniCS'17/" target="_blank">now available online</a>.<br>
-- *10 May 2017*: Registration is now closed.<br>
-- *4 May 2017*: Speakers should prepare talks that last around 12 minutes.<br>
-- *3 May 2017*: Registration and payment deadline extended until *9 May 2017*.<br>
-- *27 April 2017*: Travel award decisions sent.<br>
-- *26 April 2017*: Abstract and travel award submission are now closed.<br>
-- *13 April 2017*: Deadline for abstract and travel award submission and has been extended until *24th April 2017*.<br>
-- *29 March 2017*: We have funds available for travel awards to the conference. Please see <a href="#travelawards">Travel awards</a> for more details.<br>
-- *11 January 2017*: <a href="https://goo.gl/forms/clalYUTLh5GW94TD3" target="_blank">Registration</a> and <a href="https://easychair.org/conferences/?conf=fenics17" target="_blank">abstract submission</a> are now open.</p>
+- **29 May 2017**: Our travel award winners are supported by a <a href="https://numfocus.org" target="_blank">NumFOCUS</a> small grant award. Thanks NumFOCUS!<br>
+- **16 May 2017**: The programme is <a href="http://easychair.org/smart-program/FEniCS'17/" target="_blank">now available online</a>.<br>
+- **10 May 2017**: Registration is now closed.<br>
+- **4 May 2017**: Speakers should prepare talks that last around 12 minutes.<br>
+- **3 May 2017**: Registration and payment deadline extended until **9 May 2017**.<br>
+- **27 April 2017**: Travel award decisions sent.<br>
+- **26 April 2017**: Abstract and travel award submission are now closed.<br>
+- **13 April 2017**: Deadline for abstract and travel award submission and has been extended until **24th April 2017**.<br>
+- **29 March 2017**: We have funds available for travel awards to the conference. Please see <a href="#travelawards">Travel awards</a> for more details.<br>
+- **11 January 2017**: <a href="https://goo.gl/forms/clalYUTLh5GW94TD3" target="_blank">Registration</a> and <a href="https://easychair.org/conferences/?conf=fenics17" target="_blank">abstract submission</a> are now open.</p>
 
 ## Description
 
@@ -45,7 +45,7 @@ The FEniCS'17 conference will emphasise an open and inclusive atmosphere, contri
 
 ## Important dates
 
-- Conference *12-14 June 2017*.
+- Conference **12-14 June 2017**.
 
 ## Registration
 All participants must register for the conference. Registration and payment opened on 11 January 2017 and closed on <strike>2 May 2017</strike> 9 May 2017. The conference registration fee is €200, and includes payment for lunches, coffee breaks and the conference dinner. Participants will be sent payment instructions for invoice or bank transfer once they have <a href="https://goo.gl/forms/clalYUTLh5GW94TD3">registered</a>.
