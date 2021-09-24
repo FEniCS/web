@@ -18,11 +18,6 @@ The FEniCS'18 conference will emphasise an open and inclusive atmosphere, contri
 - Registration: *by 16 March*.
 - Conference: *21-23 March 2018*.
 
-<!--
-
-## Registration
-All participants must register for the conference. The conference registration fee of £175 includes lunches, coffee breaks and the conference dinner on Wednesday 21 March. Please <a href="https://www.oxforduniversitystores.co.uk/conferences-and-events/mathematical-institute/mathematical-institute-events/fenics18">register for the conference on the Oxford university store</a>. Additional tickets for the conference dinner are available for accompanying partners. *Registration closes on 16 March 2018.*-->
-
 ## Schedule
 The <a href="http://easychair.org/smart-program/FEniCS18/">schedule is available on easychair</a>. Abstract submission is now closed.
 
@@ -57,16 +52,6 @@ Here are the main options.
 - Fly to London Heathrow airport (LHR), and <a href="https://airline.oxfordbus.co.uk/">take a coach</a> to Oxford. The coach takes approximately 1.5 hours and leaves every 20-30 minutes.
 - Fly to London Gatwick airport (LGW), and <a href="https://airline.oxfordbus.co.uk/">take a coach</a> to Oxford. The coach takes approximately 2-2.5 hours and leaves every 30-60 minutes.
 - Take the Eurostar to St. Pancras, take the London underground to Paddington (20 minutes), and take a train from Paddington to Oxford (1 hour).
-
-<!--
-
-
-## Accommodation
-
-Participants will book their own accommodation. We politely suggest you book accommodation at least a few months in advance of the conference date.
-
-We have arranged a discounted rate for rooms in Oriel College for the nights of 20-22 March. To use the discount rate, apply the discount code MATHS18 on <a href="http://www.oriel.ox.ac.uk/conferences/bed-and-breakfast">the Oriel bed-and-breakfast website</a>. (Note that the dates will not be available until you put in the discount code: put in the discount code, press 'Check Availability', then put in the dates.) With the discount, a single en-suite room costs £89/night and a twin en-suite room costs £139/night.
--->
 
 ## If you have more time
 Oxford is a beautiful city, and is well worth seeing for a few days before or after the conference. If you have more time, you could visit the following nearby attractions:
