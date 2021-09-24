@@ -76,10 +76,7 @@ To apply for a travel award, send an email explaining the situation to <a href="
 ## Sponsors
 FEniCS'18 is supported by the University of Oxford, the Engineering and Physical Sciences Research Council, NumFOCUS and NAG Ltd.
 
-[![University of Oxford]({{ site.webroot }}assets/img/fenics19/oxford.png){: .image-center }](https://www.ox.ac.uk/)
-
-[![EPRSC]({{ site.webroot }}assets/img/fenics19/epsrc.png){: .image-center }](https://www.epsrc.ac.uk/)
-
-[![NAG]({{ site.webroot }}assets/img/fenic19/nag.png){: .image-center }](https://www.nag.co.uk/)
-
+[![University of Oxford]({{ site.webroot }}assets/img/fenics18/oxford.png){: .image-center }](https://www.ox.ac.uk/)
+[![EPRSC]({{ site.webroot }}assets/img/fenics18/epsrc.png){: .image-center }](https://www.epsrc.ac.uk/)
+[![NAG]({{ site.webroot }}assets/img/fenic18/nag.png){: .image-center }](https://www.nag.co.uk/)
 [![NumFOCUS]({{ site.webroot }}assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
