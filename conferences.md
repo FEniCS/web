@@ -3,7 +3,7 @@ title: The FEniCS Conference
 ---
 The FEniCS conference is held in a difference location each year.
 
-- [FEniCS 2021 (online)](2021.md)
+- [FEniCS 2021 (online)](fenics21)
 - FEniCS '19 (Washington DC)
 - FEniCS '18 (Oxford)
 - FEniCS '17 (Luxembourg)

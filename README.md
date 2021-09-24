@@ -35,8 +35,8 @@ be included in this folder.
 Navigation bar
 --------------
 The links included in the navigation bar are defined in [`_data/navbar.yml`](https://github.com/FEniCS/web/blob/main/_data/navbar.yml).
-Each link is given a `name`, which will be displayed in the navigation bar; and a `page` which is
-the name of a `.md` file (without the `.md`) relative to the root folder of the repository.
+Each link is given a `name`, which will be displayed in the navigation bar; and a `page` which will be linked to.
+When linking to a `.md` file from the navigation bar, the `.md` should be changed to `.html`.
 
 Latest versions
 ---------------

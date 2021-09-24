@@ -1,19 +1,19 @@
 # Site navigation links
 - title: People of FEniCS
-  page: people-of-fenics/index
+  page: people-of-fenics
 - title: Roadmap 2021-
   page: roadmap
 - title: FEniCS 2021
-  page: conference/2021
+  page: fenics-2021
 - title: Download
   page: download
 - title: Documentation
-  page: documentation/index
+  page: documentation
 - title: Community
   page: community
 - title: Governance
-  page: governance/index
+  page: governance
 - title: Citing
   page: citing
 - title: Donate
-  page: donate
+  page: donate.html
