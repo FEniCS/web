@@ -1,1 +1,1 @@
-<h2>{{ include.name }}</h2>
+<h2>{{ include.name }}{% if {{ include.country }} %} {% include _country.html country="{{ include.country }}" %}{% endif %}</h2>
