@@ -152,7 +152,7 @@ I build tracks that are reproducible, back-compatible and modular.
    institution="University of Oslo & Simula Research Laboratory"
    website="http://keiyamamo.github.io" img="/web/assets/img/people/k-yamamoto.jpg"
    quote="One beauty of FEniCS is that it is up to the users how deep one needs to go to use it."
-   ingfloat="right" %}
+   imgfloat="right" %}
 
 I grew up in Tokyo, Japan, and now study fluid mechanics at the University of Oslo in Norway. Fortunately, I have been able to 
 follow what seems fun and interesting to me. At first, it was a Physics lecture in high school that made me want to study 
