@@ -3,6 +3,7 @@ title: FEniCS'19
 subtitle: Carnegie Institution for Science Department of Terrestrial Magnetism, Washington DC, June 2019
 image: assets/img/headers/fenics19.jpg
 ---
+<small>Photo by Nicolas Raymond [freestock.ca](http://freestock.ca/americas_g98-washington_dc_capitol__hdr_p996.html), [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/deed.en_US)</small>
 
 The 2019 FEniCS Conference took place at the&nbsp;Carnegie Institution for Science
 [Department of Terrestrial Magnetism (DTM)](https://dtm.carnegiescience.edu/),
