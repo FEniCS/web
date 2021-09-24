@@ -112,4 +112,5 @@ Talk and poster abstract submission opened on 11 January 2017 and closed on 24 A
 FEniCS'17 is supported by the University of Luxembourg and NumFOCUS.
 
 [![University of Luxembourg](https://upload.wikimedia.org/wikipedia/commons/1/1e/University_of_Luxembourg_logo_%28fr%29.svg){: .image-center }](https://wwwen.uni.lu/)
+
 [![NumFOCUS]({{ site.webroot }}assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
