@@ -31,7 +31,7 @@ The FEniCS 2021 conference is sponsored by:
 
 [![Rafinex]({{ site.webroot }}assets/img/fenics2021/rafinex.jpg)](https://www.rafinex.com/){: .image-center }
 
-Features:
+## Features
 
 - 10 minute talks, with time for follow up questions, using Zoom Webinar.
 - Time for informal discussions and coding.
