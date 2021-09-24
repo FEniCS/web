@@ -17,7 +17,7 @@ innovation in the FEniCS Project. Drawing from this inspiration, here we meet so
 members of the eclectic FEniCS community.
 
 {% include _person.html name="Kristin L. Schaefer, P.E." country="USA" job="Mechanical Engineering PhD Student"
-   institution="University of Houston" twitter="mskschaefer" img="/assets/img/people/k-schaefer.jpg"
+   institution="University of Houston" twitter="mskschaefer" img="/web/assets/img/people/k-schaefer.jpg"
    quote="... FEniCS allows a math-based \"front-end\" for problem set-up, and it just takes care of the rest of the solution, so that you can move your project ahead with the results"
    imgfloat="left" %}
 
@@ -42,7 +42,7 @@ transforms what could have been another boring acronym into a phonetic spelling 
 a bonus for pun-loving geeks like me!).
 
 {% include _person.html name="Tim D. Jones" country="Australia" job="Cecil and Ida Green Postdoctoral Scholar at the Institute for Geophysics and Planetary Physics"
-   institution="UC San Diego" website="timdeejones.com" img="/assets/img/people/t-jones.jpg"
+   institution="UC San Diego" website="timdeejones.com" img="/web/assets/img/people/t-jones.jpg"
    quote="I always feel like I'm staring down hurdles that I'm not quite tall enough to clear. FEniCS immediately removed some of them for me."
    imgfloat="right" %}
 
@@ -67,7 +67,7 @@ I hope to make it to more FEniCS conferences in the future. The community is fan
 science and unusually open to collaboration with outsiders.
 
 {% include _person.html name="Róisín Hill" country="Ireland" job="PhD student" institution="National University of Ireland Galway"
-   twitter="roisin_hill" linkedin="roisin-hill" img="/assets/img/people/r-hill.jpg"
+   twitter="roisin_hill" linkedin="roisin-hill" img="/web/assets/img/people/r-hill.jpg"
    quote="I will forever be grateful to everyone who made me feel so included"
    imgfloat="left" %}
 
@@ -92,7 +92,7 @@ Simula group who "adopted" me for the duration.
 
 {% include _person.html name="Hernán Mella" country="Chile" job="PhD(c) at the Biomedical Imaging Center"
    institution="Pontificia Universidad Católica de Chile"
-   github="hmella" researchgate="Hernan-Mella-2" img="/assets/img/people/h-mella.jpg"
+   github="hmella" researchgate="Hernan-Mella-2" img="/web/assets/img/people/h-mella.jpg"
    quote="As a FEniCS user, I'm very excited by the path taken by the library and still surprised by the kind community."
    imgfloat="right" %}
 
@@ -121,7 +121,7 @@ to learn everything about the next releases.
 
 {% include _person.html name="Shi Joyce Sim" country="Malaysia" job="Research Scientist at the School of Earth and Atmospheric Science"
    institution="Georgia Institute of Technology"
-   website="http://joycesim.github.io" img="/assets/img/people/s-j-sim.jpg"
+   website="http://joycesim.github.io" img="/web/assets/img/people/s-j-sim.jpg"
    quote="Now, here I am, ..., applying fluid dynamics to understand Earth's long term evolution."
    imgfloat="left" %}
 
@@ -150,7 +150,7 @@ I build tracks that are reproducible, back-compatible and modular.
 
 {% include _person.html name="Kei Yamamoto" country="Japan" job="MSc Student"
    institution="University of Oslo & Simula Research Laboratory"
-   website="http://keiyamamo.github.io" img="/assets/img/people/k-yamamoto.jpg"
+   website="http://keiyamamo.github.io" img="/web/assets/img/people/k-yamamoto.jpg"
    quote="One beauty of FEniCS is that it is up to the users how deep one needs to go to use it."
    ingfloat="right" %}
 

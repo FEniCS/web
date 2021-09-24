@@ -6,7 +6,6 @@ fenicsversion: 2019.1.0
 fenicsversiondate: April 2019
 fenicsxversion: 0.1.0
 fenicsxversiondate: May 2021
-webroot: / # web/
 
 defaults:
   -
