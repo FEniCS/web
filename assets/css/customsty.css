@@ -226,3 +226,11 @@ footer a
   color: #0F79D0;
   text-decoration:none
 }
+
+.person-social
+{
+   padding-left: 40px;
+   padding-right: 40px;
+   padding-top: 5px;
+   font-weight: bold
+}

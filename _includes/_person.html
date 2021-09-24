@@ -1,1 +1,11 @@
-<h2>{{ include.name }}{% if {{ include.country }} %} {% include _country.html country="{{ include.country }}" %}{% endif %}</h2>
+<h2 style='margin-top:80px;text-align:center'>{{ include.name }}{% if {{include.country}} %} {% include _country.html country=include.country %}{% endif %}</h2>
+<div class='person-social'>{{ include.job }}{{% if include.institution %}}, {{ include.institution }}{{% endif %}}</div>
+{% if include.website %}<div class='person-social'><a href="{{include.website}}"><i class="fa fa-internet-explorer" aria-hidden="true"></i> {{ include.website | split:"//" | last}}</a></div>
+{% endif %}{% if include.github %}<div class='person-social'><a href="https://github.com/{{include.github}}"><i class="fa fa-github" aria-hidden="true"></i> {{include.github}}</a></div>
+{% endif %}{% if include.twitter %}<div class='person-social'><a href="https://twitter.com/{{include.twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i> @{{include.twitter}}</a></div>
+{% endif %}{% if include.linkedin %}<div class='person-social'><a href="https://linkedin.com/in/{{include.linkedin}}"><i class="fa fa-linkedin" aria-hidden="true"></i> @{{include.linkedin}}</a></div>
+{% endif %}{{% if include.img %}}
+<img src="{{ include.img }}" style="float:{{ include.imgfloat | right}};width:40%;padding:15px">
+{{% endif %}}{{% if include.quote %}}
+{% include _quote.html quote=include.quote %}
+{{% endif %}}
