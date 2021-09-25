@@ -3,16 +3,16 @@ title: FEniCS'17
 subtitle: University of Luxembourg, 12-14 June 2017
 image: assets/img/headers/oriel.jpg
 ---
-<small>Photo by Tristan Schmurr <a href="https://www.flickr.com/photos/kewl/28998138111" target="blank_">flickr.com</a> <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a></small>
+<small>Photo by Tristan Schmurr [flickr.com](https://www.flickr.com/photos/kewl/28998138111/?target=_blank) [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/target=_blank)</small>
 
-The 2017 FEniCS Conference was hosted at the <a href="http://www.uni.lu" target="_blank">University of Luxembourg</a> on 12-14 June 2017.
+The 2017 FEniCS Conference was hosted at the [University of Luxembourg](http://www.uni.lu/?target=_blank) on 12-14 June 2017.
 
 ## Post-conference 
-Jack Hale’s summary of the conference is available on the <a href="https://www.numfocus.org/blog/fenics-conference-2017-in-review/" target="_blank">NumFOCUS blog</a>.
+Jack Hale’s summary of the conference is available on the [NumFOCUS blog](https://www.numfocus.org/blog/fenics-conference-2017-in-review/?target=_blank).
 
-Conference proceedings are now available at <a href="https://doi.org/10.6084/m9.figshare.5086369.v2" target="_blank">doi:10.6084/m9.figshare.5086369.v2</a>.
+Conference proceedings are now available at [doi:10.6084/m9.figshare.5086369.v2](https://doi.org/10.6084/m9.figshare.5086369.v2/?target=_blank).
 
-Pictures of the conference are available for download <a href="http://fenicsproject.org/pub/workshops/fenics17">here</a>.
+Pictures of the conference are available for download [here](http://fenicsproject.org/pub/workshops/fenics17/?target=_blank).
 
 Thanks to everyone for making the FEniCS Conference 2017 yet another enjoyable and productive meeting! See you next year.
 
@@ -26,16 +26,16 @@ Thanks to everyone for making the FEniCS Conference 2017 yet another enjoyable a
 - Google Summer of Code students: Ivan Yaschuk and Michal Habera.
 
 ## Updates
-- **29 May 2017**: Our travel award winners are supported by a <a href="https://numfocus.org" target="_blank">NumFOCUS</a> small grant award. Thanks NumFOCUS!<br>
-- **16 May 2017**: The programme is <a href="http://easychair.org/smart-program/FEniCS'17/" target="_blank">now available online</a>.<br>
+- **29 May 2017**: Our travel award winners are supported by a [NumFOCUS](https://numfocus.org/?target=_blank) small grant award. Thanks NumFOCUS!<br>
+- **16 May 2017**: The programme is [now available online](http://easychair.org/smart-program/FEniCS'17/?target=_blank).<br>
 - **10 May 2017**: Registration is now closed.<br>
 - **4 May 2017**: Speakers should prepare talks that last around 12 minutes.<br>
 - **3 May 2017**: Registration and payment deadline extended until **9 May 2017**.<br>
 - **27 April 2017**: Travel award decisions sent.<br>
 - **26 April 2017**: Abstract and travel award submission are now closed.<br>
 - **13 April 2017**: Deadline for abstract and travel award submission and has been extended until **24th April 2017**.<br>
-- **29 March 2017**: We have funds available for travel awards to the conference. Please see <a href="#travelawards">Travel awards</a> for more details.<br>
-- **11 January 2017**: <a href="https://goo.gl/forms/clalYUTLh5GW94TD3" target="_blank">Registration</a> and <a href="https://easychair.org/conferences/?conf=fenics17" target="_blank">abstract submission</a> are now open.</p>
+- **29 March 2017**: We have funds available for travel awards to the conference. Please see [Travel awards]("#travelawards")for more details.<br>
+- **11 January 2017**: [Registration](https://goo.gl/forms/clalYUTLh5GW94TD3/?target=_blank) and [abstract submission](https://easychair.org/conferences/?conf=fenics17/?target=_blank) are now open.</p>
 
 ## Description
 
@@ -48,7 +48,7 @@ The FEniCS'17 conference will emphasise an open and inclusive atmosphere, contri
 - Conference **12-14 June 2017**.
 
 ## Registration
-All participants must register for the conference. Registration and payment opened on 11 January 2017 and closed on <strike>2 May 2017</strike> 9 May 2017. The conference registration fee is €200, and includes payment for lunches, coffee breaks and the conference dinner. Participants will be sent payment instructions for invoice or bank transfer once they have <a href="https://goo.gl/forms/clalYUTLh5GW94TD3">registered</a>.
+All participants must register for the conference. Registration and payment opened on 11 January 2017 and closed on <strike>2 May 2017</strike> 9 May 2017. The conference registration fee is €200, and includes payment for lunches, coffee breaks and the conference dinner. Participants will be sent payment instructions for invoice or bank transfer once they have [registered](https://goo.gl/forms/clalYUTLh5GW94TD3).
 
 ## Schedule
 The conference will start on 12 June at 12:00 with an informal lunch. Talks will begin on 12 June at 13:00. The conference dinner will take place on the evening of the 13 June. The conference will end on 14 June at 13:00. On request, private meeting rooms can be booked 12 and 14 June.
@@ -84,24 +84,24 @@ From Luxembourg airport you can travel to the centre of Luxembourg on Bus 16 in 
 You can also take a taxi from Luxembourg airport to the centre in around 10 minutes. Typical prices are ~€30 on weekdays, rising to ~€60 on Sundays.
 
 ## Accommodation
-Please book your own accommodation. Once you have <a href="https://goo.gl/forms/clalYUTLh5GW94TD3">registered</a> we will send you a list of hotels and discount codes we have arranged for the conference. Luxembourg is a relatively compact city but its geography is quite complex and hilly! Check Google’s walking/transit instructions before booking. We politely advise you book accommodation at least a few months in advance of the conference date. For guests on a budget, we highly recommend the <a href="http://youthhostels.lu/en/youth-hostels/youth-hostel-luxembourg" target="blank_">Luxembourg Youth Hostel</a> that offers single private rooms from around €40 per night.
+Please book your own accommodation. Once you have [registered](https://goo.gl/forms/clalYUTLh5GW94TD3) we will send you a list of hotels and discount codes we have arranged for the conference. Luxembourg is a relatively compact city but its geography is quite complex and hilly! Check Google’s walking/transit instructions before booking. We politely advise you book accommodation at least a few months in advance of the conference date. For guests on a budget, we highly recommend the [Luxembourg Youth Hostel](http://youthhostels.lu/en/youth-hostels/youth-hostel-luxembourg/?target=_blank) that offers single private rooms from around €40 per night.
 
 ## If you have more time...
-You might enjoy a <a href="http://www.lcto.lu/en/place/tours/wenzel-circular-walk-regular-tours" target="_blank">guided walking tour</a> through the <a href="http://whc.unesco.org/en/list/699" target="_blank">UNESCO-recognised old quarters and fortifications</a> of Luxembourg City on the afternoon of 14 June. If there is sufficient demand, we can also organise a <a href="http://www.lcto.lu/en/place/tours/wenzel-circular-walk-tours-for-groups" target="_blank">private walking tour</a> on the morning of 12 June. Please email <a href="mailto:mail+fenics@jackhale.co.uk" target="_blank">mail+fenics@jackhale.co.uk</a> before the 2 May 2017 if you are interested.
+You might enjoy a [guided walking tour](http://www.lcto.lu/en/place/tours/wenzel-circular-walk-regular-tours/?target=_blank) through the [UNESCO-recognised old quarters and fortifications](http://whc.unesco.org/en/list/699/?target=_blank) of Luxembourg City on the afternoon of 14 June. If there is sufficient demand, we can also organise a [private walking tour](http://www.lcto.lu/en/place/tours/wenzel-circular-walk-tours-for-groups/?target=_blank) on the morning of 12 June. Please email [mail+fenics@jackhale.co.uk](mailto:mail+fenics@jackhale.co.uk/?target=_blank) before the 2 May 2017 if you are interested.
 
-Other highlights of Luxembourg include <a href="https://en.wikipedia.org/wiki/Vianden_Castle" target="_blank">Vianden Castle</a> and the UNESCO-recognised photograph exhibition <a href="https://en.wikipedia.org/wiki/The_Family_of_Man">The Family of Man</a> at Clervaux Castle in northern Luxembourg. For further tourist information, please see <a href="http://www.visitluxembourg.com/en" target="_blank">Visit Luxembourg</a>.
+Other highlights of Luxembourg include [Vianden Castle](https://en.wikipedia.org/wiki/Vianden_Castle/?target=_blank) and the UNESCO-recognised photograph exhibition [The Family of Man](https://en.wikipedia.org/wiki/The_Family_of_Man") at Clervaux Castle in northern Luxembourg. For further tourist information, please see [Visit Luxembourg](http://www.visitluxembourg.com/en/?target=_blank).
 
 ## Travel awards (closed)
 The travel awards are designed to encourage current users of FEniCS to become regular contributors or core developers. At the conference we will organise a special session to allow attendees to meet the core developers and ask any questions about the code base. Applications are welcome from all, but priority will be given to those who would otherwise struggle to come to the conference for financial reasons, e.g. junior students and researchers or those working in countries with a less developed research infrastructure. Applicants are strongly encouraged to submit a poster or talk abstract to the conference as well.
 
-Applications for travel awards are to be sent to <a href="mailto:fenics-steering-council@googlegroups.com">fenics-steering-council@googlegroups.com</a>. Please send: a short CV as a PDF attachment, and an itemised estimate of costs to attend the conference. We require a half page description of the specific activities that you will contribute to the FEniCS Project. We interpret contributions very broadly; activities could include <a href="https://fenicsproject/qa">answering Q&amp;A threads</a>, squashing a few bugs on the <a href="https://bitbucket.org/fenics-project/dolfin/issues?status=new&amp;status=open">bugtracker</a>, implementing a small new feature, or enhancing <a href="https://fenics.readthedocs.org">documentation</a> and the documented <a href="https://fenics.readthedocs.io/projects/dolfin/en/latest/demos.html">FEniCS demos</a>. Other ideas are most welcome. Please be ambitious but also realistic with your ideas!
+Applications for travel awards are to be sent to [fenics-steering-council@googlegroups.com](mailto:fenics-steering-council@googlegroups.com). Please send: a short CV as a PDF attachment, and an itemised estimate of costs to attend the conference. We require a half page description of the specific activities that you will contribute to the FEniCS Project. We interpret contributions very broadly; activities could include [answering Q&amp;A threads](https://fenicsproject/qa), squashing a few bugs on the [bugtracker](https://bitbucket.org/fenics-project/dolfin/issues?status=new&amp;status=open), implementing a small new feature, or enhancing [documentation](https://fenics.readthedocs.org) and the documented [FEniCS demos](https://fenics.readthedocs.io/projects/dolfin/en/latest/demos.html). Other ideas are most welcome. Please be ambitious but also realistic with your ideas!
 
 ## Abstract submission (closed)
 Talk and poster abstract submission opened on 11 January 2017 and closed on 24 April 2017 via <a href="https://easychair.org/conferences/?conf=fenics17">Easychair</a>. Each participant can submit one talk and/or one poster abstract for review. A PDF version of the abstract must be submitted using the instructions provided on Easychair.
 
 ## Local organising committee
 
-- Jack S. Hale (<a href="mail+fenics@jackhale.co.uk">mail+fenics@jackhale.co.uk</a>).
+- Jack S. Hale [mail+fenics@jackhale.co.uk](mail+fenics@jackhale.co.uk).
 - Odile Marois.
 - Marie Leblanc.
 - Paul Hauseux.
