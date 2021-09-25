@@ -1,0 +1,22 @@
+name: Test website build
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-build:
+    name: Test website build
+    runs-on: ubuntu-latest
+    steps:
+      - run: sudo apt-get install -y ruby-bundler
+        name: Install prerequisites
+      - uses: actions/checkout@v2
+      - run: bundle install
+        name: Install bundle
+      - run: bundle exec jekyll build
+        name: Build website
