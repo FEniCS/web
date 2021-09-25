@@ -1,7 +1,5 @@
 .*.swp
 
 # Ignore local build
-Gemfile
 Gemfile.lock
-Makefile
 _site/
