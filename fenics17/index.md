@@ -34,7 +34,7 @@ Thanks to everyone for making the FEniCS Conference 2017 yet another enjoyable a
 - **27 April 2017**: Travel award decisions sent.<br>
 - **26 April 2017**: Abstract and travel award submission are now closed.<br>
 - **13 April 2017**: Deadline for abstract and travel award submission and has been extended until **24th April 2017**.<br>
-- **29 March 2017**: We have funds available for travel awards to the conference. Please see [Travel awards]("#travelawards")for more details.<br>
+- **29 March 2017**: We have funds available for travel awards to the conference. Please see the travel awards section below for more details.
 - **11 January 2017**: [Registration](https://goo.gl/forms/clalYUTLh5GW94TD3/?target=_blank) and [abstract submission](https://easychair.org/conferences/?conf=fenics17/?target=_blank) are now open.</p>
 
 ## Description
