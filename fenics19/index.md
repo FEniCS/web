@@ -137,7 +137,7 @@ committee. The cut-off date for applications is March 15 2019.
 ## Sponsors
 FEniCS'19 is supported by the Carnegie Institution for Science Department of Terrestrial Magnetism and NumFOCUS.
 
-[![Campus map]({{ site.webroot }}assets/img/fenics19/CS.png){: .image-center }](https://dtm.carnegiescience.edu/)
+[![Carnegie Science]({{ site.webroot }}assets/img/fenics19/CS.png){: .image-center }](https://dtm.carnegiescience.edu/)
 
 [![NumFOCUS]({{ site.webroot }}assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
 
