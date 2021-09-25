@@ -97,7 +97,7 @@ The travel awards are designed to encourage current users of FEniCS to become re
 Applications for travel awards are to be sent to [fenics-steering-council@googlegroups.com](mailto:fenics-steering-council@googlegroups.com). Please send: a short CV as a PDF attachment, and an itemised estimate of costs to attend the conference. We require a half page description of the specific activities that you will contribute to the FEniCS Project. We interpret contributions very broadly; activities could include [answering Q&amp;A threads](https://fenicsproject/qa), squashing a few bugs on the [bugtracker](https://bitbucket.org/fenics-project/dolfin/issues?status=new&amp;status=open), implementing a small new feature, or enhancing [documentation](https://fenics.readthedocs.org) and the documented [FEniCS demos](https://fenics.readthedocs.io/projects/dolfin/en/latest/demos.html). Other ideas are most welcome. Please be ambitious but also realistic with your ideas!
 
 ## Abstract submission (closed)
-Talk and poster abstract submission opened on 11 January 2017 and closed on 24 April 2017 via <a href="https://easychair.org/conferences/?conf=fenics17">Easychair</a>. Each participant can submit one talk and/or one poster abstract for review. A PDF version of the abstract must be submitted using the instructions provided on Easychair.
+Talk and poster abstract submission opened on 11 January 2017 and closed on 24 April 2017 via [EasyChair](https://easychair.org/conferences/?conf=fenics17). Each participant can submit one talk and/or one poster abstract for review. A PDF version of the abstract must be submitted using the instructions provided on Easychair.
 
 ## Local organising committee
 
