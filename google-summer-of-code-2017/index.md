@@ -2,14 +2,15 @@
 title: Google Summer of Code 2017
 image: assets/img/headers/GSoC-icon.png
 ---
-**Update 6th September 2017:** The FEniCS Project's Google Summer of Code projects are now successfully completed! The results will be available in the 2017.2 release of the FEniCS Project. You can find out more in <a href="http://nbviewer.jupyter.org/gist/IvanYashchuk/48bff62b155e31f85de975b24b23e4cb" target="_blank">Ivan Yaschuk's</a> and <a href="https://github.com/michalhabera/gsoc-summary/blob/master/README.md" target="_blank">Michal Habera's</a> final reports.
+**Update 6th September 2017:** The FEniCS Project's Google Summer of Code projects are now successfully completed! The results will be available in the 2017.2 release of the FEniCS Project. You can find out more in [Ivan Yaschuk's](http://nbviewer.jupyter.org/gist/IvanYashchuk/48bff62b155e31f85de975b24b23e4cb/?target=_blank) and [Michal Habera's](https://github.com/michalhabera/gsoc-summary/blob/master/README.md/?target=_blank) final reports.
 
-The FEniCS Project is participating in the <a href="https://developers.google.com/open-source/gsoc/" target="_blank">Google Summer of Code (GSoC) 2017</a> through our fiscal sponsorship agreement with <a href="https://www.numfocus.org/programs/google-summer-of-code/" target="_blank">NumFOCUS</a>.
+The FEniCS Project is participating in the [Google Summer of Code (GSoC) 2017](https://developers.google.com/open-source/gsoc/?target=_blank) through our fiscal sponsorship agreement with [NumFOCUS](https://www.numfocus.org/programs/google-summer-of-code/?target=_blank).
 
-Our two GSoC students are <a href="https://ivanyashchuk.github.io/" target="_blank">Ivan Yashchuk</a>, who will work on adding <a href="https://summerofcode.withgoogle.com/dashboard/project/5847002177863680/overview/" target="_blank">complete quadrilateral and hexahedral support</a>, and <a href="http://karlin.mff.cuni.cz/~habera/?p=gsoc17" target="_blank">Michal Habera</a>, who will work on improvements to <a href="https://summerofcode.withgoogle.com/dashboard/project/5552949523644416/overview/" target="_blank">XDMF output for visualisation and checkpointing.</a>
+Our two GSoC students are [Ivan Yashchuk](https://ivanyashchuk.github.io/?target=_blank), who will work on adding [complete quadrilateral and hexahedral support](https://summerofcode.withgoogle.com/dashboard/project/5847002177863680/overview/?target=_blank), and [Michal Habera](http://karlin.mff.cuni.cz/~habera/?p=gsoc17/?target=_blank), who will work on improvements to [XDMF output for visualisation and checkpointing.](https://summerofcode.withgoogle.com/dashboard/project/5552949523644416/overview/?target=_blank)
 
-You can follow the progress of <a href="https://ivanyashchuk.github.io/" target="_blank">Ivan Yashchuk</a> and <a href="http://karlin.mff.cuni.cz/~habera/?p=gsoc17" target="_blank">Michal Habera</a> through the summer on their blog pages, and through our Slack channels
-<a href="https://fenicsproject.slackarchive.io/quadhexmesh/page-1" target="_blank">#quadhexmesh</a> and <a href="https://fenicsproject.slackarchive.io/xdmf/page-1" target="_blank">#xdmf</a>.
+You can follow the progress of [Ivan Yashchuk](https://ivanyashchuk.github.io/?target=_blank) and [Michal Habera](http://karlin.mff.cuni.cz/~habera/?p=gsoc17/?target=_blank)
+through the summer on their blog pages, and through our Slack channels
+[#quadhexmesh](https://fenicsproject.slackarchive.io/quadhexmesh/page-1/?target=_blank) and [#xdmf](https://fenicsproject.slackarchive.io/xdmf/page-1/?target=_blank).
 
 [![GSoC]({{ site.webroot }}assets/img/gsoc/GSoC-logo.png){: .image-center }](https://developers.google.com/open-source/gsoc/)
 
