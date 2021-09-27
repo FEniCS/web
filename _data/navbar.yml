@@ -1,19 +1,19 @@
 # Site navigation links
 - title: People of FEniCS
-  page: people-of-fenics
+  page: /people-of-fenics
 - title: Roadmap 2021-
-  page: roadmap
+  page: /roadmap
 - title: FEniCS 2021
-  page: fenics-2021
+  page: /fenics-2021
 - title: Download
-  page: download
+  page: /download
 - title: Documentation
-  page: documentation
+  page: /documentation
 - title: Community
-  page: community
+  page: /community
 - title: Governance
-  page: governance
+  page: /governance
 - title: Citing
-  page: citing
+  page: /citing
 - title: Donate
   page: https://numfocus.salsalabs.org/donate-to-fenics/index.html
