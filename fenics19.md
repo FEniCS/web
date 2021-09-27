@@ -70,9 +70,9 @@ The conference will be held in the Greenwalt Building at 5241 Broach Branch Road
 
 The Greenwalt building is directly opposite the distinctive Atomic Physics Observatory with the white dome.
 
-[![Campus map]({{ site.webroot }}assets/img/fenics19/campusmapnew-1.jpg){: .image-center }]({{ site.webroot }}assets/img/fenics19/campusmapnew-1.jpg)
+[![Campus map](/assets/img/fenics19/campusmapnew-1.jpg){: .image-center }](/assets/img/fenics19/campusmapnew-1.jpg)
 
-[![Greenwalt Building]({{ site.webroot }}assets/img/fenics19/maybe.jpg){: .image-center }]({{ site.webroot }}assets/img/fenics19/maybe.jpg)
+[![Greenwalt Building](/assets/img/fenics19/maybe.jpg){: .image-center }](/assets/img/fenics19/maybe.jpg)
 
 
 ## Conference Dinner
@@ -137,7 +137,7 @@ committee. The cut-off date for applications is March 15 2019.
 ## Sponsors
 FEniCS'19 is supported by the Carnegie Institution for Science Department of Terrestrial Magnetism and NumFOCUS.
 
-[![Carnegie Science]({{ site.webroot }}assets/img/fenics19/CS.png){: .image-center }](https://dtm.carnegiescience.edu/)
+[![Carnegie Science](/assets/img/fenics19/CS.png){: .image-center }](https://dtm.carnegiescience.edu/)
 
-[![NumFOCUS]({{ site.webroot }}assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
+[![NumFOCUS](/assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
 

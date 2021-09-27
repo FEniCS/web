@@ -54,7 +54,7 @@ using continuous piecewise quadratic vector-valued functions for the velocity an
 piecewise linear functions for the pressure (Taylor-Hood). The computational domain and mesh 
 are also easily created with FEniCS, here defined by three spheres immersed in a 3D channel.
 
-![Stokes example]({{ site.webroot }}assets/img/stokesexample.png){: .image-center }
+![Stokes example](/assets/img/stokesexample.png){: .image-center }
 
 ```python
 # Define domain
@@ -72,7 +72,7 @@ mesh = generate_mesh(domain, 32)
 
 ## High-performance computing
 
-![An example image]({{ site.webroot }}assets/img/tc_vm.png){: .image-left }
+![An example image](/assets/img/tc_vm.png){: .image-left }
 Each component of the FEniCS platform has been fundamentally designed for parallel processing. 
 Executing a FEniCS script in parallel is as simple as calling `mpirun -np 64 python script.py`. 
 This framework allows for rapid prototyping of finite element formulations and solvers on 
@@ -88,9 +88,9 @@ for a small scale problem, and the same code was then deployed on a supercomput
 ## Installation and documentation
 
 FEniCS is available for a range of platforms (Linux, Mac, Windows). Choose between Docker 
-containers, binary packages and source code. Visit our [installation page]({{ site.webroot }}download.html) to get the latest 
-version of FEniCS. FEniCS comes with [extensive documentation]({{ site.webroot }}documentation) and numerous examples. A good 
-starting point is the [FEniCS Tutorial]({{ site.webroot }}tutorial).
+containers, binary packages and source code. Visit our [installation page](/download.html) to get the latest 
+version of FEniCS. FEniCS comes with [extensive documentation](/documentation) and numerous examples. A good 
+starting point is the [FEniCS Tutorial](/tutorial).
 
 ## About
 The FEniCS Project is developed and maintained as a freely available, open-source project by a 
@@ -102,4 +102,4 @@ FEniCS is a [NumFOCUS](https://www.numfocus.org/) fiscally supported project. If
 mission to produce the best possible platform for open-source computing, consider making a 
 donation to our project.
 
-[![NumFOCUS]({{ site.webroot }}assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
+[![NumFOCUS](/assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)

@@ -12,7 +12,7 @@ You can follow the progress of [Ivan Yashchuk](https://ivanyashchuk.github.io/?t
 through the summer on their blog pages, and through our Slack channels
 [#quadhexmesh](https://fenicsproject.slackarchive.io/quadhexmesh/page-1/?target=_blank) and [#xdmf](https://fenicsproject.slackarchive.io/xdmf/page-1/?target=_blank).
 
-[![GSoC]({{ site.webroot }}assets/img/gsoc/GSoC-logo.png){: .image-center }](https://developers.google.com/open-source/gsoc/)
+[![GSoC](/assets/img/gsoc/GSoC-logo.png){: .image-center }](https://developers.google.com/open-source/gsoc/)
 
-[![NumFOCUS]({{ site.webroot }}assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
+[![NumFOCUS](/assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
 
