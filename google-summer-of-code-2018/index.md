@@ -1,5 +1,5 @@
 ---
-title: Google Summer of Code 2017
+title: Google Summer of Code 2018
 image: assets/img/headers/GSoC-icon.png
 ---
 The FEniCS Project participated in the [Google Summer of Code (GSoC) 2018](https://summerofcode.withgoogle.com/?target=_blank) through our fiscal sponsorship agreement with [NumFOCUS](https://www.numfocus.org/programs/google-summer-of-code/?target=_blank).

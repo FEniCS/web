@@ -2,7 +2,7 @@
   <nav role="navigation" id="site-nav" class="nav">
     <ul>
       {% for link in site.data.navbar %}
-        <li><a href="/{{ link.page }}">{{ link.title }}</a></li>
+        <li><a href="{{ link.page }}">{{ link.title }}</a></li>
       {% endfor %}
     </ul>
   </nav>
