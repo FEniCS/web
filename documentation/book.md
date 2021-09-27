@@ -2,7 +2,7 @@
 title: The FEniCS Book
 ---
 
-![The FEniCS book]({{ site.webroot }}assets/img/docs/book.png){: .image-right }
+![The FEniCS book](/assets/img/docs/book.png){: .image-right }
 The FEniCS Book is written by researchers and developers behind the FEniCS Project and 
 explores an advanced, expressive approach to the development of mathematical software. The 
 presentation spans mathematical background, software design, and the use of FEniCS in 

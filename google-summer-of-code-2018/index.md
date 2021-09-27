@@ -8,7 +8,7 @@ You can read the final reports of [Fabian Löschner](https://gist.github.com/w1t
 
 You can see how [Igor](https://igorbaratta.github.io/gsoc_blog/?target=_blank) and [Fabian](https://w1th0utnam3.github.io/gsoc18/?target=_blank) got on through the summer on their blog pages, and on our [Slack channels](https://fenicsproject-slack-invite.herokuapp.com) #complex and #simd.
 
-[![GSoC]({{ site.webroot }}assets/img/gsoc/GSoC-logo.png){: .image-center }](https://developers.google.com/open-source/gsoc/)
+[![GSoC](/assets/img/gsoc/GSoC-logo.png){: .image-center }](https://developers.google.com/open-source/gsoc/)
 
-[![NumFOCUS]({{ site.webroot }}assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
+[![NumFOCUS](/assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
 
