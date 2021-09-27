@@ -2,7 +2,7 @@
 title: The FEniCS Tutorial
 ---
 
-![The FEniCS tutorial]({{ site.webroot }}assets/img/docs/tutorial.png){: .image-right }
+![The FEniCS tutorial](/assets/img/docs/tutorial.png){: .image-right }
 The FEniCS Tutorial is the perfect guide for new users. The tutorial explains the fundamental 
 concepts of the finite element method, FEniCS programming, and demonstrates how to quickly 
 solve a range of PDEs. The tutorial assumes no prior knowledge of the finite element method. 

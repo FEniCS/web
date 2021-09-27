@@ -4,7 +4,7 @@ subtitle: Afternoons (GMT), 22-26 March 2021
 image: assets/img/headers/fenics2021.png
 ---
 
-Links to previous FEniCS conferences can be found [here]({{ site.webroot }}conference.html)
+Links to previous FEniCS conferences can be found [here](/conference.html)
 
 ## Key Dates
 
@@ -31,7 +31,7 @@ The talk schedule and abstracts can be viewed at [fenics2021.com](http://mscrogg
 
 The FEniCS 2021 conference is sponsored by:
 
-[![Rafinex]({{ site.webroot }}assets/img/fenics2021/rafinex.jpg)](https://www.rafinex.com/){: .image-center }
+[![Rafinex](/assets/img/fenics2021/rafinex.jpg)](https://www.rafinex.com/){: .image-center }
 
 ## Features
 

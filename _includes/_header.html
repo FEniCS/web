@@ -1,14 +1,14 @@
 <!-- HEADER -->
 <div id="nav_head">
   <header class="inner" id="nav_head_inner">
-    <a id="logo" href="{{ site.webroot }}"><img src="{{ site.webroot }}assets/img/fenics-logo-small.png"></a>
+    <a id="logo" href="/"><img src="/assets/img/fenics-logo-small.png"></a>
     {% include _nav.html %}
   </header>
 </div>
 {% if page.image %}
-  <div id="header_wrap" class="outer" style="background-image:url({{ site.webroot }}{{ page.image }});background-size:cover;background-position-y:center">
+  <div id="header_wrap" class="outer" style="background-image:url(/{{ page.image }});background-size:cover;background-position-y:center">
 {% else %}
-  <div id="header_wrap" class="outer" style="background-image:url({{ site.webroot }}assets/img/default-bg.png);background-repeat:repeat">
+  <div id="header_wrap" class="outer" style="background-image:url(/assets/img/default-bg.png);background-repeat:repeat">
 {% endif %}
   <header class="inner">
   <h1 id="project_title">{{ page.title | default: site.title }}</h1>
