@@ -40,7 +40,7 @@ considered legacy.
 ## Releases
 
 We have published an "alpha" release of FEniCSx (DOLFINx, FFCx, Basix, UFL) as
-{{ site.fenicsxversion }} in {{ site.fenicsversiondate }}. The legacy FEniCS Project
+{{ site.fenicsxversion }} in {{ site.fenicsxversiondate }}. The legacy FEniCS Project
 (DOLFIN, FFC, FIAT, UFL), is still available with release number {{ site.fenicsversion }}.
 
 # Future of previous FEniCS packages
