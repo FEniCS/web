@@ -4,7 +4,7 @@ subtitle: Afternoons (GMT), 22-26 March 2021
 image: assets/img/headers/fenics2021.png
 ---
 
-Links to previous FEniCS conferences can be found [here](/conference.html)
+Links to previous FEniCS conferences can be found [here](/conference)
 
 ## Key Dates
 

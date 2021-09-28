@@ -1,4 +1,5 @@
 .*.swp
+*.pyc
 
 # Ignore local build
 Gemfile.lock

@@ -1,7 +1,7 @@
 ---
 title: FEniCS'17
 subtitle: University of Luxembourg, 12-14 June 2017
-image: assets/img/headers/oriel.jpg
+image: assets/img/headers/luxembourg.jpg
 ---
 <small>Photo by Tristan Schmurr [flickr.com](https://www.flickr.com/photos/kewl/28998138111/?target=_blank) [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/target=_blank)</small>
 
