@@ -1,0 +1,28 @@
+name: Run tests
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "0 7 * * 1"
+
+jobs:
+  run-tests:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - run: pip install pytest
+        name: Install pytest
+      - run: pip install PyGitHub
+        name: Install test dependencies
+      - uses: actions/checkout@v2
+      - run: python3 -m pytest _test/
+        name: Run tests
