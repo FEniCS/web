@@ -5,7 +5,10 @@ import datetime
 
 
 def test_fenicsx_version_number():
-    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../_config.yml")) as f:
+    with open(os.path.join(
+        os.path.dirname(os.path.realpath(__file__)),
+        "../_config.yml"
+    )) as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
 
     git = github.Github()
