@@ -101,7 +101,7 @@ Talk and poster abstract submission opened on 11 January 2017 and closed on 24 A
 
 ## Local organising committee
 
-- Jack S. Hale [mail+fenics@jackhale.co.uk](mail+fenics@jackhale.co.uk).
+- Jack S. Hale [mail+fenics@jackhale.co.uk](mailto:mail+fenics@jackhale.co.uk).
 - Odile Marois.
 - Marie Leblanc.
 - Paul Hauseux.
