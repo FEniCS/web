@@ -9,7 +9,7 @@ def load_page_list(dir):
         if f[0] not in [".", "_"]:
             if os.path.isdir(f):
                 files += load_page_list(os.path.join(dir, f))
-            if f.endswith(".md"):
+            if f.endswith(".md") and f != "README.md":
                 files.append((dir, f))
     return files
 
