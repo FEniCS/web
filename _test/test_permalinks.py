@@ -15,6 +15,7 @@ root_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")
     "google-summer-of-code-2017",
     "google-summer-of-code-2018",
     "people-of-fenics",
+    "olddocs/dolfin/latest/python",
 ])
 def test_permalinks(page):
     """Test that permalink exists."""
