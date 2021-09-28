@@ -20,9 +20,11 @@ jobs:
         with:
           python-version: 3.9
       - uses: actions/checkout@v2
-      - run: pip install pytest
-        name: Install pytest
+      - run: pip install pytest and flake8
+        name: Install pytest flake8
       - run: pip install -r _test/requirements.txt
         name: Install test dependencies
+      - run: flake8 _test/
+        name: Run flake8 on tests
       - run: python3 -m pytest _test/
         name: Run tests
