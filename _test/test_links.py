@@ -2,6 +2,7 @@
 
 import pytest
 import os
+import yaml
 import re
 
 
@@ -57,3 +58,33 @@ def test_links(dir, file):
     for i in assets:
         f = os.path.join(root_dir, i)
         assert os.path.isfile(f)
+
+
+def test_header_links():
+    """Test that links in header point to pages that exist."""
+    with open(os.path.join(root_dir, "_data/navbar.yml")) as f:
+        nav = yaml.load(f, Loader=yaml.FullLoader)
+
+    for i in nav:
+        page = i["page"]
+        print(f"Checking {page}")
+        if page.startswith("http:"):
+            continue
+        if page.startswith("https:"):
+            continue
+        if page.startswith("mailto:"):
+            continue
+
+        assert page[0] == "/"
+        page = page[1:]
+
+        if page.endswith(".html"):
+            page = page[:-5] + ".md"
+
+        if page.endswith(".md"):
+            f = os.path.join(root_dir, page)
+            assert os.path.isfile(f)
+        else:
+            f = os.path.join(root_dir, page + ".ms")
+            f2 = os.path.join(root_dir, os.path.join(page, "index.md"))
+            assert os.path.isfile(f) or os.path.isfile(f2)
