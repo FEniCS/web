@@ -3,6 +3,8 @@ title: FEniCS 2022
 subtitle: UC San Diego, 22 – 24 August 2022
 ---
 
+Links to previous FEniCS conferences can be found [here](/conference)
+
 ## Updates
 
 - 26th March 2021: Conference announced.
