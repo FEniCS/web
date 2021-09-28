@@ -1,9 +1,12 @@
+"""Test links within website."""
+
 import pytest
 import os
 import re
 
 
 def load_page_list(dir):
+    """Load a list of md files."""
     files = []
     for f in os.listdir(dir):
         if f[0] not in [".", "_"]:
@@ -20,6 +23,7 @@ pagelist = load_page_list(root_dir)
 
 @pytest.mark.parametrize("dir, file", pagelist)
 def test_links(dir, file):
+    """Test that links on a page point to pages that exists."""
     with open(os.path.join(dir, file)) as f:
         page = f.read()
     links = re.findall(r"\[[^\]]+\]\(([^\]\n]+)\)", page)

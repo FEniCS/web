@@ -1,3 +1,5 @@
+"""Test permalinks to website."""
+
 import pytest
 import os
 
@@ -15,6 +17,7 @@ root_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")
     "people-of-fenics",
 ])
 def test_permalinks(page):
+    """Test that permalink exists."""
     assert os.path.isfile(os.path.join(
         root_dir,
         os.path.join(page, "index.md")))

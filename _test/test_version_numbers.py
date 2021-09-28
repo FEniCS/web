@@ -1,3 +1,5 @@
+"""Test FEniCS version numbers."""
+
 import os
 import github
 import yaml
@@ -5,6 +7,7 @@ import datetime
 
 
 def test_fenicsx_version_number():
+    """Test that the FEniCSx version number is up to date."""
     with open(os.path.join(
         os.path.dirname(os.path.realpath(__file__)),
         "../_config.yml"
