@@ -21,7 +21,7 @@ jobs:
           python-version: 3.9
       - run: pip install pytest
         name: Install pytest
-      - run: pip install -r _test/requirements.txt
+      - run: cd _test && pip install -r requirements.txt
         name: Install test dependencies
       - uses: actions/checkout@v2
       - run: python3 -m pytest _test/
