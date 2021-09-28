@@ -16,7 +16,7 @@ mechanics, electromagnetics, and geophysics.
 The FEniCS Book was first published in 2012 with Springer. The popular opening tutorial 
 chapter of the FEniCS book has recently been expanded, revised, and updated to cover the 
 latest developments in FEniCS. Visit the
-[FEniCS Tutorial web page](tutorial.md)
+[FEniCS Tutorial web page](/tutorial)
 to access the new tutorial.
 
 ## Accessing the book

@@ -36,7 +36,7 @@ def test_links(dir, file):
         else:
             d = dir
         if i.endswith(".html"):
-            i = i[:-3] + ".html"
+            i = i[:-5] + ".md"
 
         if i.endswith(".md"):
             f = os.path.join(d, i)
