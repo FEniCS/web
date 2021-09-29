@@ -64,7 +64,9 @@ def test_links(dir, file):
         page = f.read()
     links = re.findall(r"\[[^\]]+\]\(([^\]\n]+)\)", page)
 
-    external_links = [i for i in links if i.startswith("http:") or i.startswith("https:")]
+    external_links = [
+        i for i in links
+        if i.startswith("http:") or i.startswith("https:")]
     for i in external_links:
         if "fenicsproject.org" in i:
             assert "/pub/" in i or "/olddocs/" in i
