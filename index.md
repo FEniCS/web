@@ -88,9 +88,9 @@ for a small scale problem, and the same code was then deployed on a supercomput
 ## Installation and documentation
 
 FEniCS is available for a range of platforms (Linux, Mac, Windows). Choose between Docker 
-containers, binary packages and source code. Visit our [installation page](/download/index.md) to get the latest 
-version of FEniCS. FEniCS comes with [extensive documentation](/documentation/index.md) and numerous examples. A good 
-starting point is the [FEniCS Tutorial](/documentation/tutorial.md).
+containers, binary packages and source code. Visit our [installation page](download/index.md) to get the latest 
+version of FEniCS. FEniCS comes with [extensive documentation](documentation/index.md) and numerous examples. A good 
+starting point is the [FEniCS Tutorial](documentation/tutorial.md).
 
 ## About
 The FEniCS Project is developed and maintained as a freely available, open-source project by a 
@@ -103,6 +103,3 @@ mission to produce the best possible platform for open-source computing, conside
 donation to our project.
 
 [![NumFOCUS](/assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
-
-
-[GSoC test link](/gsoc/2018.md)

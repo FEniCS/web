@@ -78,19 +78,14 @@ def test_links(dir, file):
     assets = [i[1:] for i in links if i.startswith("/assets/")]
     links = [i for i in links if not i.startswith("/assets/")]
 
-    # Check that links within the website point to pages that exists
+    # Check that links within the website point to pages that exist
     for i in links:
         print(f"Checking for {i}")
         if i[0] == "/":
-            d = root_dir
-            i = i[1:]
+            assert i[1:] in permalinks
         else:
-            d = dir
-
-        assert i.endswith(".md")
-
-        f = os.path.join(d, i)
-        assert os.path.isfile(f)
+            assert i.endswith(".md")
+            assert os.path.isfile(os.path.join(dir, i))
 
     # Check that assets exist
     for i in assets:
