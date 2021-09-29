@@ -29,7 +29,7 @@ for dir, p in pagelist:
         data = content.split("---\n")[1]
         if "permalink:" in data:
             permalinks.append(
-                data.split("permalink:")[1].split("\n")[0].strip()[1::-1])
+                data.split("permalink:")[1].split("\n")[0].strip()[1:-1])
 
 
 @pytest.mark.parametrize("page", [
