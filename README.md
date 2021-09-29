@@ -36,6 +36,7 @@ title: FEniCSx
 subtitle: fenicsxversion
 image: assets/img/headers/design.jpg
 layout: with_twitter_sidebar
+permalink: /fenics
 ---
 ```
 
@@ -43,7 +44,8 @@ The `title` is displayed at the top of the page, with the `subtitle` (optional) 
 `image` will be used as the background of the header; if no image is given, a default image will
 be used. The `layout` is used to select which layout the page uses: this can be `default` (for a
 default style page) or `with_twitter_sidebar` (for a page with a twitter sidebar). If `layout`
-is not set, then `default` will be used.
+is not set, then `default` will be used. `permalink` sets the url of the page: in this example,
+the page would be available at `https://fenicsproject.org/fenics`.
 
 ### Assets
 Files in the `assets` folder will be included as part of the website. Images and other files can
@@ -52,7 +54,7 @@ be included in this folder.
 ### Navigation bar
 The links included in the navigation bar are defined in [`_data/navbar.yml`](https://github.com/FEniCS/web/blob/main/_data/navbar.yml).
 Each link is given a `title`, which will be displayed in the navigation bar; and a `page` which will be linked to.
-When linking to a `.md` file from the navigation bar, the `.md` should be changed to `.html`.
+`page` should either be an external url (starting `http://` or `https://`) or a permalink of a page (starting `/`).
 
 ### Latest versions
 The latest released version of FEniCS and FEniCSx (and their release dates) can be set in
