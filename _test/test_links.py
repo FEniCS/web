@@ -1,4 +1,4 @@
-"""Test links within website."""
+"""Test links."""
 
 import pytest
 import os
@@ -20,6 +20,15 @@ def load_page_list(dir):
 
 root_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")
 pagelist = load_page_list(root_dir)
+
+permalinks = []
+for dir, p in pagelist:
+    with open(os.path.join(dir, p)) as f:
+        content = f.read()
+    if "---\n" in content:
+        data = content.split("---\n")[1]
+        if "permalink:" in data:
+            permalinks.append(data.split("permalink:")[1].split("\n")[0].strip())
 
 
 @pytest.mark.parametrize("dir, file", pagelist)
@@ -88,3 +97,21 @@ def test_header_links():
             f = os.path.join(root_dir, page + ".ms")
             f2 = os.path.join(root_dir, os.path.join(page, "index.md"))
             assert os.path.isfile(f) or os.path.isfile(f2)
+
+
+@pytest.mark.parametrize("page", [
+    "code-of-conduct",
+    "fenics17",
+    "fenics18",
+    "fenics19",
+    "fenics-2021",
+    "google-summer-of-code-2017",
+    "google-summer-of-code-2018",
+    "people-of-fenics",
+])
+def test_permalinks(page):
+    """Test that permalink exists."""
+    assert os.path.isfile(os.path.join(
+        root_dir,
+        os.path.join(page, "index.md"))
+    ) or page in permalinks
