@@ -78,16 +78,11 @@ def test_links(dir, file):
             i = i[1:]
         else:
             d = dir
-        if i.endswith(".html"):
-            i = i[:-5] + ".md"
 
-        if i.endswith(".md"):
-            f = os.path.join(d, i)
-            assert os.path.isfile(f)
-        else:
-            f = os.path.join(d, i + ".md")
-            f2 = os.path.join(d, os.path.join(i, "index.md"))
-            assert os.path.isfile(f) or os.path.isfile(f2)
+        assert i.endswith(".md")
+
+        f = os.path.join(d, i)
+        assert os.path.isfile(f)
 
     # Check that assets exist
     for i in assets:
@@ -111,16 +106,4 @@ def test_header_links():
             continue
 
         assert page[0] == "/"
-        page = page[1:]
-
-        if page.endswith(".html"):
-            page = page[:-5] + ".md"
-
-        if page not in permalinks:
-            if page.endswith(".md"):
-                f = os.path.join(root_dir, page)
-                assert os.path.isfile(f)
-            else:
-                f = os.path.join(root_dir, page + ".ms")
-                f2 = os.path.join(root_dir, os.path.join(page, "index.md"))
-                assert os.path.isfile(f) or os.path.isfile(f2)
+        assert page[1:] in permalinks

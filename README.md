@@ -54,7 +54,7 @@ be included in this folder.
 ### Navigation bar
 The links included in the navigation bar are defined in [`_data/navbar.yml`](https://github.com/FEniCS/web/blob/main/_data/navbar.yml).
 Each link is given a `title`, which will be displayed in the navigation bar; and a `page` which will be linked to.
-When linking to a `.md` file from the navigation bar, the `.md` should be changed to `.html`.
+`page` should either be an external url (starting `http://` or `https://`) or a permalink of a page (starting `/`).
 
 ### Latest versions
 The latest released version of FEniCS and FEniCSx (and their release dates) can be set in
