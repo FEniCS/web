@@ -1,3 +1,6 @@
 [submodule "olddocs"]
 	path = olddocs
 	url = git@github.com:mscroggs/olddocs.git
+[submodule "qa"]
+	path = qa
+	url = git@github.com:mscroggs/qa.git
