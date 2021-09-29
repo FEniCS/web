@@ -103,6 +103,3 @@ mission to produce the best possible platform for open-source computing, conside
 donation to our project.
 
 [![NumFOCUS](/assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
-
-
-[GSoC test link](/gsoc/2018.md)
