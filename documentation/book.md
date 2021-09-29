@@ -1,6 +1,6 @@
 ---
 title: The FEniCS Book
-permalink: book
+permalink: /book/
 ---
 
 ![The FEniCS book](/assets/img/docs/book.png){: .image-right }
