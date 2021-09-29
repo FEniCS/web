@@ -32,6 +32,31 @@ for dir, p in pagelist:
                 data.split("permalink:")[1].split("\n")[0].strip())
 
 
+@pytest.mark.parametrize("page", [
+    "code-of-conduct",
+    "fenics17",
+    "fenics18",
+    "fenics19",
+    "fenics-2021",
+    "google-summer-of-code-2017",
+    "google-summer-of-code-2018",
+    "people-of-fenics",
+])
+def test_permalinks(page):
+    """Test that permalink exists."""
+    assert page in permalinks
+
+
+@pytest.mark.parametrize("dir, file", pagelist)
+def test_permalink_is_set(dir, file):
+    """Check that page has a permalink defined."""
+    if (dir != root_dir or file != "index.md") and file != "404.md":
+        with open(os.path.join(dir, file)) as f:
+            page = f.read()
+        assert "---\n" in page
+        assert "permalink:" in page.split("---\n")[1]
+
+
 @pytest.mark.parametrize("dir, file", pagelist)
 def test_links(dir, file):
     """Test that links on a page point to pages that exists."""
@@ -99,21 +124,3 @@ def test_header_links():
                 f = os.path.join(root_dir, page + ".ms")
                 f2 = os.path.join(root_dir, os.path.join(page, "index.md"))
                 assert os.path.isfile(f) or os.path.isfile(f2)
-
-
-@pytest.mark.parametrize("page", [
-    "code-of-conduct",
-    "fenics17",
-    "fenics18",
-    "fenics19",
-    "fenics-2021",
-    "google-summer-of-code-2017",
-    "google-summer-of-code-2018",
-    "people-of-fenics",
-])
-def test_permalinks(page):
-    """Test that permalink exists."""
-    assert os.path.isfile(os.path.join(
-        root_dir,
-        os.path.join(page, "index.md"))
-    ) or page in permalinks

@@ -1,5 +1,6 @@
 ---
 title: Community
+permalink: community
 ---
 
 Get in touch with the FEniCS community, discuss your issues and share your knowledge with 
@@ -7,7 +8,7 @@ other users, and hook up with developers to contribute to the future development
 
 ## Code of Conduct
 We strive to make the FEniCS Project an open and respectful community. Our
-[Code of Conduct](/code-of-conduct)
+[Code of Conduct](/community/code-of-conduct.md)
 sets out the expected standards of behaviour for the FEniCS community. It applies to all 
 FEniCS activities including online forums and FEniCS workshops.
 

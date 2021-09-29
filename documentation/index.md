@@ -1,6 +1,7 @@
 ---
 title: FEniCS Documentation
 subtitle: fenicsversion
+permalink: documentation
 ---
 
 The FEniCS documentation includes a set of books, collections of documented demo programs and reference manuals.
