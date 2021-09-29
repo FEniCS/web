@@ -8,7 +8,7 @@ The FEniCS documentation includes a set of books, collections of documented demo
 ## The FEniCS Tutorial
 ![The FEniCS tutorial](/assets/img/docs/tutorial.png){: .image-right }
 If you are new to FEniCS and want to quickly get started with solving PDEs in Python,
-the [FEniCS Tutorial](/tutorial) is a good starting point. The tutorial 
+the [FEniCS Tutorial](/documentation/tutorial.md) is a good starting point. The tutorial 
 explains the fundamental concepts of the finite element method, FEniCS programming, and 
 demonstrates how to quickly solve a range of PDEs. The tutorial assumes no prior knowledge of 
 the finite element method. The FEniCS Tutorial is published as part of the series
@@ -17,7 +17,7 @@ The book is open access and the eBook can be downloaded for free
 from Springer.
 
 Note that some of the FEniCS Tutorial example code may be obsolete, see the
-[FEniCS Tutorial page](/tutorial) for how to report comments and corrections.
+[FEniCS Tutorial page](/documentation/tutorial.md) for how to report comments and corrections.
 
 ## The FEniCS API Documentation
 The FEniCS Project consists of a number of components with DOLFIN and UFL providing the main 
@@ -46,7 +46,7 @@ to the demos:
 
 # The FEniCS book
 ![The FEniCS book](/assets/img/docs/book.png){: .image-right }
-The book [Automated Solution of Differential Equations by the Finite Element Method](/book)
+The book [Automated Solution of Differential Equations by the Finite Element Method](/documentation/book.md)
 explains the theoretical background and design of FEniCS. It describes the FEniCS software
 components in detail and showcases a number of applications of FEniCS to problems in fluid
 mechanics, solid mechanics, electromagnetics, and geophysics. The book was published in 2012,

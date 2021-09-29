@@ -90,7 +90,7 @@ for a small scale problem, and the same code was then deployed on a supercomput
 FEniCS is available for a range of platforms (Linux, Mac, Windows). Choose between Docker 
 containers, binary packages and source code. Visit our [installation page](/download) to get the latest 
 version of FEniCS. FEniCS comes with [extensive documentation](/documentation) and numerous examples. A good 
-starting point is the [FEniCS Tutorial](/tutorial).
+starting point is the [FEniCS Tutorial](/documentation/tutorial.md).
 
 ## About
 The FEniCS Project is developed and maintained as a freely available, open-source project by a 
