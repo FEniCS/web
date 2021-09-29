@@ -1,6 +1,6 @@
 ---
 title: Roadmap 2021-
-permalink: roadmap
+permalink: /roadmap/
 ---
 
 ## Introduction

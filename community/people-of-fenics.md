@@ -1,7 +1,7 @@
 ---
 title: People of FEniCS
 image: assets/img/headers/jigsaw.png
-permalink: people-of-fenics
+permalink: /people-of-fenics/
 ---
 
 The FEniCS Project has always adopted the philosophy of open source development. It is 

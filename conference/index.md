@@ -1,6 +1,6 @@
 ---
 title: The FEniCS Conference
-permalink: conference
+permalink: /conference/
 ---
 The FEniCS conference is held in a difference location each year.
 

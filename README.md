@@ -36,7 +36,7 @@ title: FEniCSx
 subtitle: fenicsxversion
 image: assets/img/headers/design.jpg
 layout: with_twitter_sidebar
-permalink: /fenics
+permalink: /fenics/
 ---
 ```
 
@@ -45,7 +45,7 @@ The `title` is displayed at the top of the page, with the `subtitle` (optional) 
 be used. The `layout` is used to select which layout the page uses: this can be `default` (for a
 default style page) or `with_twitter_sidebar` (for a page with a twitter sidebar). If `layout`
 is not set, then `default` will be used. `permalink` sets the url of the page: in this example,
-the page would be available at `https://fenicsproject.org/fenics`.
+the page would be available at `https://fenicsproject.org/fenics/`.
 
 ### Assets
 Files in the `assets` folder will be included as part of the website. Images and other files can
