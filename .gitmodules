@@ -1,3 +1,3 @@
 [submodule "olddocs"]
 	path = olddocs
-	url = git@github.com:fenics/olddocs.git
+	url = git@github.com:mscroggs/olddocs.git
