@@ -1,6 +1,6 @@
 ---
 title: Governance
-permalink: governance
+permalink: /governance/
 ---
 
 The FEniCS Project is developed and maintained as a freely available, open-source project by a 
