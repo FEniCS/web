@@ -1,5 +1,6 @@
 ---
 title: The FEniCS Tutorial
+permalink: tutorial
 ---
 
 ![The FEniCS tutorial](/assets/img/docs/tutorial.png){: .image-right }
@@ -7,7 +8,7 @@ The FEniCS Tutorial is the perfect guide for new users. The tutorial explains th
 concepts of the finite element method, FEniCS programming, and demonstrates how to quickly 
 solve a range of PDEs. The tutorial assumes no prior knowledge of the finite element method. 
 The tutorial is an updated and expanded version of the popular first chapter of the
-[FEniCS Book](/book).
+[FEniCS Book](book.md).
 
 The FEniCS Tutorial was first published in 2017 with Springer.
 
