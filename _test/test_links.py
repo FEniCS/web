@@ -28,7 +28,8 @@ for dir, p in pagelist:
     if "---\n" in content:
         data = content.split("---\n")[1]
         if "permalink:" in data:
-            permalinks.append(data.split("permalink:")[1].split("\n")[0].strip())
+            permalinks.append(
+                data.split("permalink:")[1].split("\n")[0].strip())
 
 
 @pytest.mark.parametrize("dir, file", pagelist)
@@ -90,13 +91,14 @@ def test_header_links():
         if page.endswith(".html"):
             page = page[:-5] + ".md"
 
-        if page.endswith(".md"):
-            f = os.path.join(root_dir, page)
-            assert os.path.isfile(f)
-        else:
-            f = os.path.join(root_dir, page + ".ms")
-            f2 = os.path.join(root_dir, os.path.join(page, "index.md"))
-            assert os.path.isfile(f) or os.path.isfile(f2)
+        if page not in permalinks:
+            if page.endswith(".md"):
+                f = os.path.join(root_dir, page)
+                assert os.path.isfile(f)
+            else:
+                f = os.path.join(root_dir, page + ".ms")
+                f2 = os.path.join(root_dir, os.path.join(page, "index.md"))
+                assert os.path.isfile(f) or os.path.isfile(f2)
 
 
 @pytest.mark.parametrize("page", [
