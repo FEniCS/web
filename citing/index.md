@@ -1,6 +1,6 @@
 ---
 title: Citing FEniCS
-permalink: citing
+permalink: /citing/
 ---
 If you use FEniCS in your research, the developers would be grateful if you would cite the 
 relevant publications. FEniCS is organized as a collection of components, so to give proper 

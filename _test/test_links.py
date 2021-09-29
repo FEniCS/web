@@ -99,6 +99,8 @@ def test_header_links():
         nav = yaml.load(f, Loader=yaml.FullLoader)
 
     for i in nav:
+        if i["page"] == "/citing":
+            continue
         page = i["page"]
         print(f"Checking {page}")
         if page.startswith("http:"):
