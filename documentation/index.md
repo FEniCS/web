@@ -6,11 +6,6 @@ permalink: /documentation/
 
 The FEniCS documentation includes a set of books, collections of documented demo programs and reference manuals.
 
-**The FEniCS docs and archive of the old Q&A forum are currently down. You can view archives of these
-at [mscroggs.github.io/olddocs](https://mscroggs.github.io/olddocs/index.html)
-at [mscroggs.github.io/qa](https://mscroggs.github.io/qa/index.html): you can find a page
-using an old link by changing "fenicsproject.org" to "mscroggs.github.io".**
-
 ## The FEniCS Tutorial
 ![The FEniCS tutorial](/assets/img/docs/tutorial.png){: .image-right }
 If you are new to FEniCS and want to quickly get started with solving PDEs in Python,
