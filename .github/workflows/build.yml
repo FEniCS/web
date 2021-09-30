@@ -25,7 +25,9 @@ jobs:
         with:
           key: ${{ secrets.WEBSITE_OPENSSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.WEBSITE_KNOWN_HOSTS }}
-        # TODO: make this only run on master with if
+        # TODO: uncomment this before merge
+        # if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}
       - name: rsync over ssh
         run: rsync -r ./_site github@old.fenicsproject.org:/var/www/vhosts/fenicsproject.org/newsite
-        # TODO: make this only run on master with if
+        # TODO: uncomment this before merge
+        # if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}
