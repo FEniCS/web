@@ -43,7 +43,7 @@ transforms what could have been another boring acronym into a phonetic spelling 
 a bonus for pun-loving geeks like me!).
 
 {% include _person.html name="Tim D. Jones" country="Australia" job="Cecil and Ida Green Postdoctoral Scholar at the Institute for Geophysics and Planetary Physics"
-   institution="UC San Diego" website="timdeejones.com" img="/assets/img/people/t-jones.jpg"
+   institution="UC San Diego" website="https://timdeejones.com" img="/assets/img/people/t-jones.jpg"
    quote="I always feel like I'm staring down hurdles that I'm not quite tall enough to clear. FEniCS immediately removed some of them for me."
    imgfloat="right" %}
 
