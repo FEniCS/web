@@ -1,6 +1,6 @@
 ---
 title: The FEniCS Tutorial
-permalink: tutorial
+permalink: /tutorial/
 ---
 
 ![The FEniCS tutorial](/assets/img/docs/tutorial.png){: .image-right }

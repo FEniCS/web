@@ -36,7 +36,7 @@ title: FEniCSx
 subtitle: fenicsxversion
 image: assets/img/headers/design.jpg
 layout: with_twitter_sidebar
-permalink: /fenics
+permalink: /fenics/
 ---
 ```
 
@@ -45,7 +45,7 @@ The `title` is displayed at the top of the page, with the `subtitle` (optional) 
 be used. The `layout` is used to select which layout the page uses: this can be `default` (for a
 default style page) or `with_twitter_sidebar` (for a page with a twitter sidebar). If `layout`
 is not set, then `default` will be used. `permalink` sets the url of the page: in this example,
-the page would be available at `https://fenicsproject.org/fenics`.
+the page would be available at `https://fenicsproject.org/fenics/`.
 
 ### Assets
 Files in the `assets` folder will be included as part of the website. Images and other files can
@@ -62,3 +62,23 @@ The latest released version of FEniCS and FEniCSx (and their release dates) can 
 If you want to display the latest version on the website, you can write `{{ site.fenicsversion }}`
 or `{{ site.fenicsxversion }}` so that the values are automatically updated. (If you don't want a
 version number to update, do not use these and write the version number.)
+
+## Building the website
+The prerequisites for building the website can be installed by running:
+
+```bash
+sudo apt-get install -y ruby-bundler
+bundle install
+```
+
+The website can then be built by running:
+
+```bash
+bundle exec jekyll build
+```
+
+The website can be served locally (so it can then be opened in a browser) by running:
+
+```bash
+bundle exec jekyll serve
+```

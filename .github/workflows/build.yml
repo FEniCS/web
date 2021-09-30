@@ -1,0 +1,31 @@
+name: Build website
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build website
+    runs-on: ubuntu-latest
+    steps:
+      - run: sudo apt-get install -y ruby-bundler
+        name: Install prerequisites
+      - uses: actions/checkout@v2
+      - run: bundle install
+        name: Install bundle
+      - run: bundle exec jekyll build
+        name: Build website
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.WEBSITE_OPENSSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.WEBSITE_KNOWN_HOSTS }}
+        if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}
+      - name: rsync over ssh
+        run: rsync -r ./_site/* github@fenicsproject.org:/var/www/vhosts/fenicsproject.org/newsite
+        if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}

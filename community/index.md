@@ -1,6 +1,6 @@
 ---
 title: Community
-permalink: community
+permalink: /community/
 ---
 
 Get in touch with the FEniCS community, discuss your issues and share your knowledge with 

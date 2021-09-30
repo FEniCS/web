@@ -29,7 +29,7 @@ for dir, p in pagelist:
         data = content.split("---\n")[1]
         if "permalink:" in data:
             permalinks.append(
-                data.split("permalink:")[1].split("\n")[0].strip())
+                data.split("permalink:")[1].split("\n")[0].strip()[1:-1])
 
 
 @pytest.mark.parametrize("page", [
@@ -56,6 +56,8 @@ def test_permalink_is_set(dir, file):
             page = f.read()
         assert "---\n" in page
         assert "permalink:" in page.split("---\n")[1]
+        p = data.split("permalink:")[1].split("\n")[0].strip()
+        assert p[0] == "/" and p[-1] == "/"
 
 
 @pytest.mark.parametrize("dir, file", pagelist)
@@ -100,6 +102,8 @@ def test_header_links():
         nav = yaml.load(f, Loader=yaml.FullLoader)
 
     for i in nav:
+        if i["page"] == "/citing":
+            continue
         page = i["page"]
         print(f"Checking {page}")
         if page.startswith("http:"):
