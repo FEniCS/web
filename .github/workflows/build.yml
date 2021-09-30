@@ -28,6 +28,6 @@ jobs:
         # TODO: uncomment this before merge
         # if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}
       - name: rsync over ssh
-        run: rsync -r ./_site github@old.fenicsproject.org:/var/www/vhosts/fenicsproject.org/newsite
+        run: rsync -r ./_site/* github@old.fenicsproject.org:/var/www/vhosts/fenicsproject.org/newsite
         # TODO: uncomment this before merge
         # if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}
