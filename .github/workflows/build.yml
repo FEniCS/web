@@ -27,5 +27,5 @@ jobs:
           known_hosts: ${{ secrets.WEBSITE_KNOWN_HOSTS }}
         # TODO: make this only run on master with if
       - name: rsync over ssh
-        run: rsync ./_site github@old.fenicsproject.org:/var/www/vhosts/fenicsproject.org/newsite
+        run: rsync -r ./_site github@old.fenicsproject.org:/var/www/vhosts/fenicsproject.org/newsite
         # TODO: make this only run on master with if
