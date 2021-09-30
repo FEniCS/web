@@ -62,3 +62,23 @@ The latest released version of FEniCS and FEniCSx (and their release dates) can 
 If you want to display the latest version on the website, you can write `{{ site.fenicsversion }}`
 or `{{ site.fenicsxversion }}` so that the values are automatically updated. (If you don't want a
 version number to update, do not use these and write the version number.)
+
+## Building the website
+The prerequisites for building the website can be installed by running:
+
+```bash
+sudo apt-get install -y ruby-bundler
+bundle install
+```
+
+The website can then be built by running:
+
+```bash
+bundle exec jekyll build
+```
+
+The website can be served locally (so it can then be opened in a browser) by running:
+
+```bash
+bundle exec jekyll serve
+```
