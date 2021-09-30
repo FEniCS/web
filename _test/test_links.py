@@ -64,12 +64,13 @@ def test_links(dir, file):
     """Test that links on a page point to pages that exists."""
     with open(os.path.join(dir, file)) as f:
         page = f.read()
-    links = re.findall(r"\[[^\]]+\]\(([^\]\n]+)\)", page)
+    links = re.findall(r"\[[^\]]+\]\(([^\)\n]+)\)", page)
 
     external_links = [
         i for i in links
         if i.startswith("http:") or i.startswith("https:")]
     for i in external_links:
+        print(f"Checking {i}")
         if "fenicsproject.org" in i:
             assert "/pub/" in i or "/olddocs/" in i
 
