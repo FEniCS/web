@@ -243,3 +243,9 @@ img
   -o-box-shadow: none !important;
   -ms-box-shadow: none !important;
 }
+
+mjx-container
+{
+    overflow-x: scroll;
+    overflow-y: clip;
+}
