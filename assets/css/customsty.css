@@ -162,6 +162,21 @@ a.colorlink:hover {
   background-color: #0F79D0
 }
 
+img.image-center-smaller {
+  max-width: 40%;
+}
+
+a.image-center-smaller img {
+  max-width: 100%;
+}
+
+.image-center-smaller {
+  max-width: 40%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 img.image-center {
   max-width: 70%;
 }
