@@ -55,7 +55,7 @@ def test_permalink_is_set(dir, file):
             page = f.read()
         assert "---\n" in page
         assert "permalink:" in page.split("---\n")[1]
-        p = data.split("permalink:")[1].split("\n")[0].strip()
+        p = page.split("permalink:")[1].split("\n")[0].strip()
         assert p[0] == "/" and p[-1] == "/"
 
 
