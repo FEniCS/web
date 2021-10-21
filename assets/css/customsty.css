@@ -51,17 +51,23 @@ blue:       #2E93CD
 .nav li {
   float: left;
   font-variant:small-caps;
-  font-weight:bold;
+  font-weight:bold !important;
   text-transform: uppercase; 
-  font-size: 11px
+  font-size: 11px !important;
+  font-family: 'Lato', sans-serif !important;
 }
+
+a {color: #0F79D0 !important}
 
 .nav li a {
   padding: 10px;
   display: block;
-  color: black;
+  color: black !important;
   text-align: center;
   text-decoration: none;
+  font-weight:bold !important;
+  font-size: 11px !important;
+  font-family: 'Lato', sans-serif !important;
 }
 
 .nav li a:hover {
@@ -70,6 +76,7 @@ blue:       #2E93CD
 
 h1, h2, h3, h4, h5, h6
 {
+  margin: 10px 0 !important;
   font-family: 'Lato', sans-serif;
 }
 
@@ -146,7 +153,7 @@ h2 {
 a.colorlink {
   margin-right:20px;
   font-variant:small-caps;
-  font-weight:bold;
+  font-weight:bold !important;
   font-size:20px;
   padding: 12px;
   padding-right: 16px;
