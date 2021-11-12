@@ -38,6 +38,7 @@ for dir, p in pagelist:
     "fenics18",
     "fenics19",
     "fenics-2021",
+    "fenics-2022",
     "google-summer-of-code-2017",
     "google-summer-of-code-2018",
     "people-of-fenics",

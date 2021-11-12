@@ -4,6 +4,7 @@ permalink: /conference/
 ---
 The FEniCS conference is held in a difference location each year.
 
+- [FEniCS 2022 (San Diego)](2022.md)
 - [FEniCS 2021 (online)](2021.md)
 - FEniCS 2020 was due to be held in Cambridge but was postponed due to the Covid-19 pandemic
 - [FEniCS '19 (Washington DC)](2019.md)
