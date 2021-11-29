@@ -71,4 +71,4 @@ input/output facilities.
 
 ## Building FEniCS from source
 For installation in high performance computing clusters we recommend always building from source.
-For detailed instructions, see the [FEniCS Reference Manual](http://fenics-containers.readthedocs.io/en/latest/index.html).
+For detailed instructions, see the [FEniCS Reference Manual](https://fenics.readthedocs.io/en/latest/installation.html).
