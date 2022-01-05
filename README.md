@@ -1,5 +1,5 @@
 # FEniCS website
-This repository contains the (new, not-yet finished) FEniCS website.
+This repository contains the FEniCS website.
 
 ## Editing this website
 To edit this website:
