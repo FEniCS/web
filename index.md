@@ -61,6 +61,10 @@ channel.
 ![Stokes example](/assets/img/stokesexample.png){: .image-center }
 
 ```python
+model = gmsh.model()
+model.add("Channel")
+model.setCurrent("Channel")
+
 h = 0.25
 r = 0.3*h
 box = model.occ.addBox(0, 0, 0, 1, h, h)
