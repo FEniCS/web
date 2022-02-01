@@ -73,7 +73,7 @@ def test_links(dir, file):
     for i in external_links:
         print(f"Checking {i}")
         if "fenicsproject.org" in i:
-            assert "/pub/" in i or "/olddocs/" in i
+            assert "/pub/" in i or "/olddocs/" in i or "docs.fenicsproject.org" in i
 
     links = [i for i in links if not i.startswith("http:")]
     links = [i for i in links if not i.startswith("https:")]
