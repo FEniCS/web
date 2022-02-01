@@ -11,7 +11,8 @@ on:
 jobs:
   run-tests:
     name: Run tests
-    runs-on: dolfinx/dolfinx
+    runs-on: ubuntu-latest
+    container: dolfinx/dolfinx
     steps:
       - name: Set up Python
         uses: actions/setup-python@v2
