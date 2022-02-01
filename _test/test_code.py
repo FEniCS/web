@@ -22,6 +22,7 @@ imports = [
 
 assert len(codes) == len(imports)
 
+
 @pytest.mark.parametrize("code, preamble", zip(codes, imports))
 def test_index_code(code, preamble, has_fenicsx):
     if not has_fenicsx:
