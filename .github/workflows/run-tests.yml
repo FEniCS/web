@@ -14,14 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     container: dolfinx/dolfinx
     steps:
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
       - uses: actions/checkout@v2
-      - run: pip install pytest and flake8
+      - run: pip3 install pytest and flake8
         name: Install pytest flake8
-      - run: pip install -r _test/requirements.txt
+      - run: pip3 install -r _test/requirements.txt
         name: Install test dependencies
       - run: flake8 _test/
         name: Run flake8 on tests
