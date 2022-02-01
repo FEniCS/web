@@ -15,8 +15,10 @@ imports = [
     "import dolfinx.fem\n"
     "import dolfinx.mesh\n"
     "from mpi4py import MPI\n"
+    "from ufl import inner, grad, dx, div, dot\n"
     "\n"
-    "mesh = dolfinx.mesh.create_unit_cube(MPI.COMM_WORLD, 2, 3, 4)",
+    "mesh = dolfinx.mesh.create_unit_cube(MPI.COMM_WORLD, 2, 3, 4)\n"
+    "f = ufl.SpatialCoordinate(mesh)[1]",
     "import gmsh"
 ]
 
