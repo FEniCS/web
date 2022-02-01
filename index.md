@@ -42,7 +42,7 @@ W = dolfinx.fem.FunctionSpace(mesh, TH)
 (u, p) = ufl.TrialFunctions(W)
 (v, q) = ufl.TestFunctions(W)
 a = inner(grad(u), grad(v)) * dx - p * div(v) * dx + div(u) * q * dx
-L = dot(f, v) * dx
+L = inner(f, v) * dx
 
 # Compute solution
 solver = dolfinx.fem.LinearProblem(
