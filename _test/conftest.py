@@ -4,7 +4,7 @@ import pytest
 
 
 def pytest_addoption(parser):
-    parser.addoption("--has-fenicsx", type="int", default=0)
+    parser.addoption("--has-fenicsx", type=int, default=0)
 
 
 @pytest.fixture

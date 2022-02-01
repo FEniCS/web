@@ -4,23 +4,30 @@ import pytest
 
 root_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")
 
+with open(os.path.join(root_dir, "index.md")) as f:
+    content = f.read()
+codes = [i.split("```")[0]
+         for i in content.split("```python")[1:]]
 
-def test_index_code(has_fenicsx):
+imports = [
+    "import ufl\n"
+    "import dolfinx\n"
+    "import dolfinx.fem\n"
+    "import dolfinx.mesh\n"
+    "from mpi4py import MPI\n"
+    "\n"
+    "mesh = dolfinx.mesh.create_unit_cube(MPI.COMM_WORLD, 2, 3, 4)",
+    "import gmsh"
+]
+
+assert len(codes) == len(imports)
+
+@pytest.mark.parametrize("code, preamble", zip(codes, imports))
+def test_index_code(code, preamble, has_fenicsx):
     if not has_fenicsx:
         try:
             import dolfinx  # noqa: F401
         except ImportError:
             pytest.skip("DOLFINx must be installed to run this test.")
 
-    with open(os.path.join(root_dir, "index.md")) as f:
-        content = f.read()
-    code = (
-        "import ufl\n"
-        "import dolfinx\n"
-        "import dolfinx.fem\n"
-        "\n"
-    )
-    for i in content.split("```python")[1:]:
-        code += i.split("```")[0] + "\n\n"
-
-    exec(code)
+    exec(preamble + "\n\n" + code)
