@@ -1,6 +1,6 @@
 ---
 title: Download
-permalink: /download/archive
+permalink: /download/archive/
 ---
 
 The latest stable release of legacy FEniCS is version {{ site.fenicsversion }}, which was released
