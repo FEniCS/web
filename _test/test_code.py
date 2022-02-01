@@ -8,7 +8,7 @@ root_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")
 def test_index_code(has_fenicsx):
     if not has_fenicsx:
         try:
-            import dolfinx
+            import dolfinx  # noaq: F401
         except ImportError:
             pytest.skip("DOLFINx must be installed to run this test.")
 
