@@ -18,7 +18,7 @@ imports = [
     "from ufl import inner, grad, dx, div, dot\n"
     "\n"
     "mesh = dolfinx.mesh.create_unit_cube(MPI.COMM_WORLD, 2, 3, 4)\n"
-    "f = ufl.SpatialCoordinate(mesh)[1]",
+    "f = [ufl.SpatialCoordinate(mesh)[1], 0, 0]",
     "import gmsh"
 ]
 
