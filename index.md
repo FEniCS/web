@@ -39,10 +39,11 @@ TH = ufl.MixedElement([P2, P1])
 W = dolfinx.fem.FunctionSpace(mesh, TH)
 
 # Define variational problem
+from ufl import inner, grad, dx, div, dot
 (u, p) = ufl.TrialFunctions(W)
 (v, q) = ufl.TestFunctions(W)
-a = inner(grad(u), grad(v))*dx - p*div(v)*dx + div(u)*q*dx
-L = dot(f, v)*dx
+a = inner(grad(u), grad(v)) * dx - p * div(v) * dx + div(u) * q * dx
+L = dot(f, v) * dx
 
 # Compute solution
 solver = dolfinx.fem.LinearProblem(
@@ -61,6 +62,8 @@ channel.
 ![Stokes example](/assets/img/stokesexample.png){: .image-center }
 
 ```python
+import gmsh
+
 model = gmsh.model()
 model.add("Channel")
 model.setCurrent("Channel")
