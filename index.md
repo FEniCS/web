@@ -101,7 +101,7 @@ version of FEniCSx. FEniCSx comes with [extensive documentation](documentation/
 starting point is the [FEniCSx Tutorial](https://jorgensd.github.io/dolfinx-tutorial/).
 
 ## About
-The FEniCSx Project is developed and maintained as a freely available, open-source project by a 
+The FEniCS Project is developed and maintained as a freely available, open-source project by a 
 global community of scientists and software developers. The project is developed by the FEniCS 
 Community, is [governed](governance/index.md) by the [FEniCS Steering Council](governance/steering-council.md) and is overseen by the
 [FEniCS Advisory Board](governance/advisory-board.md).
