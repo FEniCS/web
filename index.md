@@ -41,8 +41,8 @@ W = dolfinx.fem.FunctionSpace(mesh, TH)
 # Define variational problem
 (u, p) = ufl.TrialFunctions(W)
 (v, q) = ufl.TestFunctions(W)
-a = inner(grad(u), grad(v))*dx - p*div(v)*dx + div(u)*q*dx
-L = dot(f, v)*dx
+a = inner(grad(u), grad(v)) * dx - p * div(v) * dx + div(u) * q * dx
+L = inner(f, v) * dx
 
 # Compute solution
 solver = dolfinx.fem.LinearProblem(
@@ -61,16 +61,18 @@ channel.
 ![Stokes example](/assets/img/stokesexample.png){: .image-center }
 
 ```python
+import gmsh
+
 model = gmsh.model()
 model.add("Channel")
 model.setCurrent("Channel")
 
 h = 0.25
-r = 0.3*h
+r = 0.3 * h
 box = model.occ.addBox(0, 0, 0, 1, h, h)
-s0 = model.occ.addSphere(0.3, 0.50*h, 0.50*h, r)
-s1 = model.occ.addSphere(0.5, 0.65*h, 0.65*h, r)
-s2 = model.occ.addSphere(0.7, 0.35*h, 0.35*h, r)
+s0 = model.occ.addSphere(0.3, 0.50 * h, 0.50 * h, r)
+s1 = model.occ.addSphere(0.5, 0.65 * h, 0.65 * h, r)
+s2 = model.occ.addSphere(0.7, 0.35 * h, 0.35 * h, r)
 
 domain = model.occ.cut([(3, box)], [(3, s0), (3, s1), (3, s2)])
 
