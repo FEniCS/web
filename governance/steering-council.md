@@ -14,7 +14,7 @@ and makes decisions about the overall scope, vision and directions of the FEniCS
   github="michalhabera"
   website="https://www2.karlin.mff.cuni.cz/~habera/"
   img="/assets/img/people/m-habera.jpg"
-  about="Michal is a PhD student of Civil Engineering at University of Luxembourg."
+  about="Michal is a postdoctoral researcher at University of Luxembourg."
 %}
 
 {% include _developer.html
