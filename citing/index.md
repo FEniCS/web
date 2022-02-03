@@ -7,6 +7,27 @@ relevant publications. FEniCSx is organized as a collection of components, so to
 credit to the developers of FEniCSx, please cite the indicated references **for each relevant 
 component**.
 
+## FEniCSx
+
+### Basix
+
+{% include _paper.html
+  id="ScroggsEtal2022"
+  title="Construction of arbitrary order finite element degree-of-freedom maps on polygonal and polyhedral cell meshes"
+  author="M. W. Scroggs, J. S. Dokken, C. N. Richardson, and G. N. Wells"
+  submitted="ACM Transactions on Mathematical Software"
+  year="2022"
+  arxiv="2102.11901"
+%}
+
+{% include _paper.html
+  id="BasixJoss"
+  title="Basix: a runtime finite element basis evaluation library"
+  author="M. W. Scroggs, I. A. Baratta, C. N. Richardson, and G. N. Wells"
+  submitted="Journal of Open Source Software"
+  year="2022"
+%}
+
 ## Legacy FEniCS
 
 {% include _paper.html
