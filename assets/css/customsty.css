@@ -271,3 +271,31 @@ mjx-container
     overflow-x: scroll;
     overflow-y: clip;
 }
+
+.developer .imgwrap {
+  padding-right:20px;
+  float:left
+}
+
+.developer .imgwrap img {
+  width:150px;
+}
+
+.developer .imgwrap, .developer .innertext {
+  display:inline-block
+}
+
+.developer .innertext {
+  width:530px;
+}
+
+.developer .inst {
+  color: grey;
+  padding-left: 10px
+}
+.developer .inst:before {
+  content: " ("
+}
+.developer .inst:after {
+  content: ")"
+}
