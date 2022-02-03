@@ -272,17 +272,14 @@ mjx-container
     overflow-y: clip;
 }
 
-.developer .imgwrap {
+.developer img {
   padding-right:20px;
-  float:left
-}
-
-.developer .imgwrap img {
+  float:left;
   width:150px;
 }
 
-.developer .imgwrap, .developer .innertext {
-  display:inline-block
+.developer h3 {
+  padding-top:20px
 }
 
 .developer .inst {
@@ -294,4 +291,8 @@ mjx-container
 }
 .developer .inst:after {
   content: ")"
+}
+
+img {
+  border: none!important
 }
