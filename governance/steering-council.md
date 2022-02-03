@@ -47,6 +47,7 @@ and makes decisions about the overall scope, vision and directions of the FEniCS
   name="Marie E. Rognes"
   institution="Simula Research Laboratory"
   github="meg-simula"
+  twitter="utropstegn"
   img="/assets/img/people/m-rognes.jpg"
   about="Marie is a chief research scientist/research professor at Simula Research Laboratory."
 %}
