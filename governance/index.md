@@ -8,6 +8,9 @@ global community of scientists and software developers. The project is developed
 Community, is governed by the [FEniCS Steering Council](steering-council.md) and is overseen by the
 [FEniCS Advisory Board](advisory-board.md).
 
+Full details of the governance of the FEniCS project can be found in the
+[governance repositort on GitHub](https://github.com/fenics/governance).
+
 ## Institutional Partners
 
 Members of the FEniCS steering council are affiliated with the following institutions:
@@ -21,7 +24,7 @@ Members of the FEniCS steering council are affiliated with the following institu
 [![University of Luxembourg](/assets/img/governance/luxembourg.png)](http://uni.lu/){: .image-center-smaller }
 
 FEniCS is a [NumFOCUS](https://www.numfocus.org/) fiscally supported project. If you like FEniCS and want to support our 
-mission to produce the best possible platform for open-source computing, consider making a 
-donation to our project.
+mission to produce the best possible platform for open-source computing, consider
+[making a donation to our project](https://numfocus.salsalabs.org/donate-to-fenics/index.html).
 
 [![NumFOCUS](/assets/img/numfocus.png)](https://www.numfocus.org/){: .image-center }
