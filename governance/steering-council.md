@@ -24,7 +24,7 @@ and makes decisions about the overall scope, vision and directions of the FEniCS
   twitter="jack_s_hale"
   website="https://jackhale.co.uk"
   img="/assets/img/people/j-hale.jpg"
-  about="Jack is a research scientist in the Research Unit in Engineering Science at the University of Luxembourg."
+  about="Jack is a Research Scientist in the Department of Engineering at the University of Luxembourg."
 %}
 
 {% include _developer.html
