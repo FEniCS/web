@@ -3,6 +3,11 @@ title: FEniCS Steering Council
 permalink: /steering-council/
 ---
 
+The FEniCS steering council oversees the [governance](index.md) of the FEniCS community
+and makes decisions about the overall scope, vision and directions of the FEniCS project.
+
+## Steering council members
+
 {% include _developer.html
   name="Michal Habera"
   institution="University of Luxembourg"
