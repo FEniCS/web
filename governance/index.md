@@ -12,9 +12,7 @@ Community, is governed by the [FEniCS Steering Council](steering-council.md) and
 
 Members of the FEniCS steering council are affiliated with the following institutions:
 
-[![Chalmers University](/assets/img/governance/chalmers.png)](http://chalmers.se/){: .image-center }
-
-[![Charles University](/assets/img/governance/charles.jpg)](http://www.cuni.cz/UKEN-1.html){: .image-center }
+[![Carnegie Institution for Science](/assets/img/governance/carnegie.png)](https://carnegiescience.edu/{: .image-center }
 
 [![Simula Research Laboratory](/assets/img/governance/simula.png)](http://simula.no/){: .image-center }
 
