@@ -19,8 +19,8 @@ def cap_wrap(text):
 
 
 def bibline(name, value, caps=True):
-    assert len(name) < 10
-    return (f"  {(name + ' ' * 10)[:11]} "
+    assert len(name) <= 9
+    return (f"  {(name + ' ' * 9)[:9]} "
             f"= {{{cap_wrap(value) if caps else value}}},\n")
 
 
