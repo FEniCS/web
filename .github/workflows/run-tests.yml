@@ -21,5 +21,7 @@ jobs:
         name: Install test dependencies
       - run: flake8 _test/
         name: Run flake8 on tests
+      - run: flake8 _tools/
+        name: Run flake8 on tools
       - run: python3 -m pytest _test/ --has-fenicsx 1
         name: Run tests
