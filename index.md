@@ -102,7 +102,7 @@ containers, binary packages, Spack packages and source code. Visit our [installa
 version of FEniCSx. FEniCSx comes with [extensive documentation](documentation/index.md) and numerous examples. A good 
 starting point is the [FEniCSx Tutorial](https://jorgensd.github.io/dolfinx-tutorial/).
 
-## FEniCSx vs legacy FEniCSx
+## FEniCSx vs legacy FEniCS
 In 2018, work started on FEniCSx: the new version of the FEniCS library. FEniCSx has a number of major improvements
 over the legacy library, including support for a wide range of cell types and elements, memory parallelisation, and
 complex number support, as well as a large number of improvements to the overall library design.
