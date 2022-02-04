@@ -5,7 +5,10 @@ import re
 
 
 def parse_paper(content):
-    return {i: j for i, j in re.findall(r'([a-zA-Z0-9]+)\s*=\s*"([^\\\"]*)"', content)}
+    return {
+        i: j
+        for i, j in re.findall(r'([a-zA-Z0-9]+)\s*=\s*"([^\\\"]*)"', content)
+    }
 
 
 def cap_wrap(text):
@@ -14,15 +17,17 @@ def cap_wrap(text):
         for i in text.split(" ")
     )
 
+
 def bibline(name, value, caps=True):
     assert len(name) < 10
-    return f"  {(name + ' ' * 10)[:11]} = {{{cap_wrap(value) if caps else value}}},\n"
+    return (f"  {(name + ' ' * 10)[:11]} "
+            f"= {{{cap_wrap(value) if caps else value}}},\n")
 
 
 def generate_bib(paper):
     if paper["bibtype"] == "article" and "submitted" in paper:
         paper["bibtype"] = "unpublished"
-    out = f"@{paper['bibtype']}{{{paper['id']}\n"
+    out = f"@{paper['bibtype']}{{{paper['id']},\n"
     for a in ["title", "author", "journal", "year", "volume", "number"]:
         if a in paper:
             out += bibline(a, paper[a])
@@ -40,16 +45,20 @@ def generate_bib(paper):
         out += bibline("note", f"submitted to {paper['submitted']}")
     if "pagestart" in paper:
         if "pageend" in paper:
-            out += bibline("pages", f"{{{paper['pagestart']}--{paper['pageend']}}}")
+            out += bibline(
+                "pages", f"{{{paper['pagestart']}--{paper['pageend']}}}")
         else:
             out += bibline("pages", f"{{{paper['pagestart']}}}")
     out += "}"
 
     return out
 
+
 if __name__ == "__main__":
-    input_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../citing/index.md")
-    output_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../assets/citations.bib")
+    input_file = os.path.join(
+        os.path.dirname(os.path.realpath(__file__)), "../citing/index.md")
+    output_file = os.path.join(
+        os.path.dirname(os.path.realpath(__file__)), "../assets/citations.bib")
 
     with open(input_file) as f:
         content = f.read()
