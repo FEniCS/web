@@ -14,7 +14,7 @@ and makes decisions about the overall scope, vision and directions of the FEniCS
   github="michalhabera"
   website="https://www2.karlin.mff.cuni.cz/~habera/"
   img="/assets/img/people/m-habera.jpg"
-  about="Michal is a postdoctoral researcher at University of Luxembourg."
+  about="Michal is a Postdoctoral Researcher at University of Luxembourg."
 %}
 
 {% include _developer.html
@@ -40,7 +40,7 @@ and makes decisions about the overall scope, vision and directions of the FEniCS
   institution="Simula Research Laboratory"
   github="johannesring"
   img="/assets/img/people/j-ring.jpg"
-  about="Johannes is a research engineer at Simula Research Laboratory."
+  about="Johannes is a Research Engineer at Simula Research Laboratory."
 %}
 
 {% include _developer.html
@@ -49,7 +49,7 @@ and makes decisions about the overall scope, vision and directions of the FEniCS
   github="meg-simula"
   twitter="utropstegn"
   img="/assets/img/people/m-rognes.jpg"
-  about="Marie is a chief research scientist/research professor at Simula Research Laboratory."
+  about="Marie is a Chief Research Scientist/Research Professor at Simula Research Laboratory."
 %}
 
 {% include _developer.html
