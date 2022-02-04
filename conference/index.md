@@ -2,7 +2,7 @@
 title: The FEniCS Conference
 permalink: /conference/
 ---
-The FEniCS conference is held in a difference location each year.
+The FEniCS conference is held in a different location each year.
 
 - [FEniCS 2022 (San Diego)](2022.md)
 - [FEniCS 2021 (online)](2021.md)

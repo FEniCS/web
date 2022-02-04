@@ -19,26 +19,32 @@ Everyone is invited to read and take part in discussions. You can join our Slack
 [entering your email address here](https://fenicsproject-slack-invite.herokuapp.com/).
 
 ## Asking questions
-If you need help with using FEniCS, ask your question in the
-[FEniCS Discourse site](https://fenicsproject.discourse.group/).
-If you have a specific question related to obtaining, building or installing a FEniCS component,
-please send a message to the [FEniCS support mailing list](https://groups.google.com/forum/#!forum/fenics-support).
-If you would like to discuss FEniCS development or propose a new feature, please send a message
-to the [FEniCS developer mailing list](https://groups.google.com/forum/#!forum/fenics-dev)
-or join us on the [FEniCS Slack channels](https://fenicsproject.slack.com/).
+If you need help with using FEniCS, or are encountering an error, you can ask a question in the
+[FEniCS Discourse site](https://fenicsproject.discourse.group/). In order to make it more likely that you get a useful reply
+to your question, you should:
+
+- make sure that your post title and description make it clear what you are trying to do,
+- post a minimal code that reproduces any errors you are encountering
+- post in full any error messages you are seeing
+- include details of which FEniCS version you are using, and how you installed it (Docker/conda/pip/etc)
+
+You can find more advice about how to post a good question (and examples)
+[here](https://fenicsproject.discourse.group/t/read-before-posting-how-do-i-get-my-question-answered/21/4).
 
 ## Reporting bugs
 If you encounter something you suspect is a bug, please
-[file an issue for the appropriate FEniCS component on Bitbucket](https://bitbucket.org/fenics-project/).
-In particular, for reporting bugs in the FEniCS user interface, 
-visit the [DOLFIN issues page](https://bitbucket.org/fenics-project/dolfin/issues).
+[file an issue for the appropriate FEniCS component on GitHub](https://github.com/FEniCS).
+In particular, for reporting bugs in the FEniCSx user interface, 
+visit the [DOLFINx issues page](https://github.com/FEniCS/dolfinx/issues).
 As above, post complete but minimal code examples.
 
 ## Contributing
-We encourage users to take active part in developing and documenting FEniCS. As an active 
+We encourage users to take active part in developing and documenting FEniCSx. As an active 
 developer, it is easy to influence the direction and focus of the project. To contribute to 
-FEniCS development, engage with other developers on the
-[FEniCS Slack channels](https://fenicsproject.slack.com/).
-The [FEniCS source code](https://bitbucket.org/fenics-project/) is hosted on Bitbucket. Signed copyright consents are needed for non-trivial 
+FEniCSx development, engage with other developers on the
+[FEniCSx Slack channels](https://fenicsproject.slack.com/): in particular, you should join the **#fenicsx** and **#development**
+channels.
+
+The [FEniCSx source code](https://github.com/FEniCS) is hosted on GitHub. Signed copyright consents are needed for non-trivial
 contributions. The copyright policy and the consent submission procedures are described in
-[the governance documents](https://bitbucket.org/fenics-project/governance/src/master/project-license.md).
+[the governance documents](https://github.com/FEniCS/governance/blob/master/project-license.md).

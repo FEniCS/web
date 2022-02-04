@@ -4,46 +4,31 @@ subtitle: fenicsversion
 permalink: /documentation/
 ---
 
-The FEniCS documentation includes a set of books, collections of documented demo programs and reference manuals.
+The FEniCSx documentation includes a set of books, collections of documented demo programs and reference manuals.
 
-## The FEniCS Tutorial
-![The FEniCS tutorial](/assets/img/docs/tutorial.png){: .image-right }
+## The FEniCSx Tutorial
+![The FEniCSx tutorial](/assets/img/docs/tutorial.png){: .image-right }
 If you are new to FEniCS and want to quickly get started with solving PDEs in Python,
-the [FEniCS Tutorial](tutorial.md) is a good starting point. The tutorial 
-explains the fundamental concepts of the finite element method, FEniCS programming, and 
-demonstrates how to quickly solve a range of PDEs. The tutorial assumes no prior knowledge of 
-the finite element method. The FEniCS Tutorial is published as part of the series
+the [FEniCSx tutorial](https://jorgensd.github.io/dolfinx-tutorial/) is a good place to start.
+The tutorial explains the fundamental concepts of the finite element method, FEniCSx programming, and
+demonstrates how to quickly solve a range of PDEs.
+The FEniCSx Tutorial based on the [FEniCS Tutorial](tutorial.md) book which was published as part of the series
 [Simula Springer Briefs on Computing](http://www.springer.com/series/13548).
-The book is open access and the eBook can be downloaded for free 
-from Springer.
 
-Note that some of the FEniCS Tutorial example code may be obsolete, see the
-[FEniCS Tutorial page](tutorial.md) for how to report comments and corrections.
+## API Documentation
+FEniCSx is comprised of four main components:
 
-## The FEniCS API Documentation
-The FEniCS Project consists of a number of components with DOLFIN and UFL providing the main 
-user interface. For detailed documentation of the FEniCS programming interface, use the
+- UFL ([latest docs](https://fenics.readthedocs.io/projects/ufl/en/latest/)) (the Unified Form Language) is a form language
+  that allows the user to write a wide variety of finite element forms in Python.
+- Basix ([latest docs](https://docs.fenicsproject.org/basix/main/)) is a element definition and tabulation library
+  that provides all the information FEniCSx needs about elements on the reference cell.
+- FFCx ([latest docs](https://docs.fenicsproject.org/ffcx/main)) (the FEniCSx Form Compiler) is the Python library that interprets
+  UFL forms and generates C code to assemble these on cells.
+- DOLFINx ([latest C++ docs](https://docs.fenicsproject.org/dolfinx/main/cpp/), [latest Python docs](https://docs.fenicsproject.org/dolfinx/main/python/))
+  is the main user interface of FEniCSx, and handles meshes and linear algebra solvers among other things.
 
-- [DOLFIN (C++) API](https://fenicsproject.org/olddocs/dolfin/latest/cpp/classes.html) Class Index
-- [DOLFIN (Python) API](https://fenicsproject.org/olddocs/dolfin/latest/python/) reference
-
-Not the version you are looking for? See also the list of
-[documentation for other DOLFIN versions](https://fenicsproject.org/olddocs/dolfin/).
-Some advanced user and more developer-oriented information can also be found in the 
-[FEniCS Reference Manual on Read the docs](https://fenics.readthedocs.io/en/latest/).
-
-The [DOLFIN ChangeLog](https://fenics.readthedocs.io/projects/dolfin/en/latest/ChangeLog.html)
-provides an overview of changes in the FEniCS programming interfaces between different versions.
-
-## The FEniCS Demos
-The FEniCS demo programs (demos) are a good starting point for building your own FEniCS 
-applications, and many users find these useful. The demos are included in the
-[FEniCS source repositories](https://bitbucket.org/fenics-project/),
-which are hosted on Bitbucket. For easy reference, we here provide quick links 
-to the demos:
-
-- [DOLFIN C++ demos](https://bitbucket.org/fenics-project/dolfin/src/master/demo/) (development version)
-- [DOLFIN Python demos](https://bitbucket.org/fenics-project/dolfin/src/master/python/demo/) (development version)
+API documentation of the latest version of each component can be found using the links above. Documentation of
+other versions can be found at [docs.fenicsproject.org](https://docs.fenicsproject.org/).
 
 # The FEniCS book
 ![The FEniCS book](/assets/img/docs/book.png){: .image-right }
@@ -51,11 +36,13 @@ The book [Automated Solution of Differential Equations by the Finite Element Met
 explains the theoretical background and design of FEniCS. It describes the FEniCS software
 components in detail and showcases a number of applications of FEniCS to problems in fluid
 mechanics, solid mechanics, electromagnetics, and geophysics. The book was published in 2012,
-which means that some of the examples presented in the book may use old interfaces that are no
-longer supported by FEniCS. However, the book still gives a good description of the design of
-FEniCS.
+and was based on the legacy FEniCS library, so the code examples in the book are out of date.
+However, the book still gives a good description of the many of the design principles that
+FEniCSx is based on.
 
-## The FEniCS Notebooks
-The FEniCS Notebooks are a collection of documented Jupyter/Python notebooks illustrating 
-various features of FEniCS and the application of FEniCS to a range of PDEs. The FEniCS 
-Notebooks are currently in preparation.
+The book is available as a [free ebook](http://launchpad.net/fenics-book/trunk/final/+download/fenics-book-2011-10-27-final.pdf),
+or can be bought from [Springer](http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-23098-1)
+or many other bookshops.
+
+## Legacy FEniCS
+Documnetation for the legacy version of FEniCS (version {{ site.fenicsversion }}) can be found [here](archive.md).
