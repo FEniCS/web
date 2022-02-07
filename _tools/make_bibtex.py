@@ -27,6 +27,9 @@ def bibline(name, value, caps=True):
 def generate_bib(paper):
     if paper["bibtype"] == "article" and "submitted" in paper:
         paper["bibtype"] = "unpublished"
+    if paper["bibtype"] == "article" and "toappear" in paper:
+        paper["bibtype"] = "unpublished"
+
     out = f"@{paper['bibtype']}{{{paper['id']},\n"
     for a in ["title", "author", "journal", "year", "volume", "number"]:
         if a in paper:
@@ -43,6 +46,8 @@ def generate_bib(paper):
             out += bibline(a, paper[b])
     if "submitted" in paper:
         out += bibline("note", f"submitted to {paper['submitted']}")
+    if "toappear" in paper:
+        out += bibline("note", f"to appear in {paper['toappear']}")
     if "pagestart" in paper:
         if "pageend" in paper:
             out += bibline(

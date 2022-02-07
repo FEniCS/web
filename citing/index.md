@@ -18,7 +18,7 @@ You can find this list of papers in BibTeX format [here](/assets/citations.bib).
   id="ScroggsEtal2022"
   title="Construction of arbitrary order finite element degree-of-freedom maps on polygonal and polyhedral cell meshes"
   author="M. W. Scroggs, J. S. Dokken, C. N. Richardson, and G. N. Wells"
-  submitted="ACM Transactions on Mathematical Software"
+  toappear="ACM Transactions on Mathematical Software"
   year="2022"
   arxiv="2102.11901"
 %}
