@@ -45,7 +45,7 @@ a = inner(grad(u), grad(v)) * dx - p * div(v) * dx + div(u) * q * dx
 L = inner(f, v) * dx
 
 # Compute solution
-solver = dolfinx.fem.LinearProblem(
+solver = dolfinx.fem.petsc.LinearProblem(
     a, L, bcs, petsc_options={"ksp_type": "preonly", "pc_type": "lu",
                               "pc_factor_mat_solver_type": "mumps"})
 solver.solve()
