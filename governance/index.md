@@ -9,7 +9,7 @@ Community, is governed by the [FEniCS Steering Council](steering-council.md) and
 [FEniCS Advisory Board](advisory-board.md).
 
 Full details of the governance of the FEniCS project can be found in the
-[governance repositort on GitHub](https://github.com/fenics/governance).
+[governance repository on GitHub](https://github.com/fenics/governance).
 
 ## Institutional Partners
 
