@@ -1,6 +1,5 @@
 <div class='developer'>
-{% if {{include.img}} %}<div class='imgwrap'><img src='{{include.img}}'></div>{% endif %}
-<div class='innertext'>
+{% if {{include.img}} %}<img src='{{include.img}}'>{% endif %}
 <h3>{{include.name}}{% if {{include.institution}} %}<span class='inst'>{{include.institution}}</span>{% endif %}</h3>
 {{include.about}}
 <ul class='sociallist'>
@@ -10,4 +9,4 @@
 {% if {{include.twitter}} %}<li><a href="https://twitter.com/{{include.twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i> @{{include.twitter}}</a></li>{% endif %}
 </ul>
 </div>
-</div>
+{% if {{include.img}} %}<br style='clear:both' />{% endif %}
