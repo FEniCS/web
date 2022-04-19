@@ -17,8 +17,8 @@ jobs:
     container: dolfinx/dolfinx
     steps:
       - uses: actions/checkout@v2
-      - run: pip3 install pytest and flake8
-        name: Install pytest flake8
+      - run: pip3 install pytest flake8
+        name: Install pytest and flake8
       - run: pip3 install -r _test/requirements.txt
         name: Install test dependencies
       - run: flake8 _test/
