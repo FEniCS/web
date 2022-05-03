@@ -4,8 +4,8 @@ title: FEniCS Project
 description: Open-source finite element library
 fenicsversion: 2019.1.0
 fenicsversiondate: April 2019
-fenicsxversion: 0.3.0
-fenicsxversiondate: August 2021
+fenicsxversion: 0.4.0
+fenicsxversiondate: April 2022
 
 defaults:
   -
