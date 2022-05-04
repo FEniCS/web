@@ -10,6 +10,12 @@ The FEniCSx documentation is available at
 [https://docs.fenicsproject.org/](https://docs.fenicsproject.org/).
 
 
+## Development roadmap
+
+The FEniCSx development [raodmap](roadmap.md) summarises planned
+features.
+
+
 ## Contributed tutorials
 
 The FEniCSx [tutorials](https://jorgensd.github.io/dolfinx-tutorial/)
