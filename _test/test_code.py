@@ -18,9 +18,8 @@ imports = [
     "from ufl import inner, grad, dx, div, dot\n"
     "\n"
     "mesh = dolfinx.mesh.create_unit_cube(MPI.COMM_WORLD, 2, 3, 4)\n"
-    "f = ufl.grad(ufl.SpatialCoordinate(mesh)[1])\n"
-    "bcs = []",
-    ""
+    "f = ufl.grad(ufl.SpatialCoordinate(mesh)[1])\n
+    "bcs = []"
 ]
 
 assert len(codes) == len(imports)
