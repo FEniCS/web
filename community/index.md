@@ -49,6 +49,11 @@ channels](https://fenicsproject.slack.com/): in particular, you should
 join the **#fenicsx** and **#development** channels.
 
 
+## People of FEniCS
+
+[Here](people-of-fenics.md) we introduce some the users of FEniCS who
+have found it useful.
+
 ## Code of Conduct
 
 We strive to make the FEniCS Project an open and respectful community.
