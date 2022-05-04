@@ -7,20 +7,20 @@ layout: with_twitter_sidebar
 
 ## The FEniCSx computing platform
 
-FEniCSx is a popular open-source 
-([LGPLv3](https://www.gnu.org/licenses/lgpl-3.0.en.html)) computing 
-platform for solving partial differential equations (PDEs). FEniCSx 
-enables users to quickly translate scientific models into efficient 
-finite element code. With the high-level Python and C++ interfaces to 
-FEniCSx, it is easy to get started, but FEniCSx offers also powerful 
-capabilities for more experienced programmers. FEniCSx runs on a 
-multitude of platforms ranging from laptops to high-performance 
+FEniCSx is a popular open-source
+([LGPLv3](https://www.gnu.org/licenses/lgpl-3.0.en.html)) computing
+platform for solving partial differential equations (PDEs). FEniCSx
+enables users to quickly translate scientific models into efficient
+finite element code. With the high-level Python and C++ interfaces to
+FEniCSx, it is easy to get started, but FEniCSx offers also powerful
+capabilities for more experienced programmers. FEniCSx runs on a
+multitude of platforms ranging from laptops to high-performance
 clusters.
 
 ## Solving a PDE in FEniCSx
 
-As an illustration of how to program a simple PDE model with FEniCSx, consider the Stokes 
-equations in variational form:
+As an illustration of how to program a simple PDE model with FEniCSx,
+consider the Stokes equations in variational form:
 
 $$
 \int_{\Omega} \mathrm{grad} \, u : \mathrm{grad} \, v \,\mathrm{d}x \, -
@@ -29,7 +29,8 @@ $$
 \int_{\Omega} f \cdot v \,\mathrm{d}x.
 $$
 
-The variational problem is easily transcribed into Python using mathematical operators in FEniCSx:
+The variational problem is easily transcribed into Python using
+mathematical operators in FEniCSx:
 
 ```python
 # Define function space
@@ -83,45 +84,53 @@ model.mesh.generate(3)
 ## High-performance computing
 
 ![An example image](/assets/img/tc_vm.png){: .image-left }
-Each component of the FEniCSx platform has been fundamentally designed for parallel processing. 
-Executing a FEniCSx script in parallel is as simple as calling `mpirun -np 64 python script.py`. 
-This framework allows for rapid prototyping of finite element formulations and solvers on 
-laptops and workstations, and the same code may then be deployed on large high-performance 
-computers.
+Each component of the FEniCSx platform has been fundamentally designed
+for parallel processing. Executing a FEniCSx script in parallel is as
+simple as calling `mpirun -np 64 python script.py`. This framework
+allows for rapid prototyping of finite element formulations and solvers
+on laptops and workstations, and the same code may then be deployed on
+large high-performance computers.
 
-The figure shows the von Mises stresses computed from a nonlinear thermomechanical FEniCSx 
-simulation of a turbocharger. The finite element system of linear equations comprises more 
-than \\(3.3 \times 10^9\\) degrees of freedom. The solver was initially developed on a desktop computer 
-for a small scale problem, and the same code was then deployed on a supercomputer using over 
-24,000 parallel processes.
+The figure shows the von Mises stresses computed from a nonlinear
+thermomechanical FEniCSx simulation of a turbocharger. The finite
+element system of linear equations comprises more than \\(3.3 \times
+10^9\\) degrees of freedom. The solver was initially developed on a
+desktop computer for a small scale problem, and the same code was then
+deployed on a supercomputer using over 24,000 parallel processes.
 
 ## Installation and documentation
 
-FEniCSx is available for a range of platforms (Linux, Mac, Windows). Choose between Docker 
-containers, binary packages, Spack packages and source code. Visit our [installation page](download/index.md) to get the latest 
-version of FEniCSx. FEniCSx comes with [extensive documentation](documentation/index.md) and numerous examples. A good 
-starting point is the [FEniCSx Tutorial](https://jorgensd.github.io/dolfinx-tutorial/).
+FEniCSx is available for a range of platforms (Linux, Mac, Windows).
+Choose between Docker containers, binary packages, Spack packages and
+source code. Visit our [installation page](download/index.md) to get the
+latest version of FEniCSx. FEniCSx comes with [extensive
+documentation](documentation/index.md) and numerous examples. A good
+starting point is the [FEniCSx
+Tutorial](https://jorgensd.github.io/dolfinx-tutorial/).
 
 ## FEniCSx vs legacy FEniCS
-In 2018, work started on FEniCSx: the new version of the FEniCS library. FEniCSx has a number of major improvements
-over the legacy library, including support for a wide range of cell types and elements, memory parallelisation, and
-complex number support, as well as a large number of improvements to the overall library design.
-FEniCSx is comprised of the libraries UFL, Basix, FFCx and DOLFINx.
-The latest version of FEniCSx ({{ site.fenicsxversion }}) was released in {{ site.fenicsxversiondate }}.
 
-Now that development is focussed on FEniCSx, updates are made very rarely to the legacy FEniCS library. We
-recommend that users consider using FEniCSx instead of the legacy library.
-Lecacy FEniCS is comprised of the libraries UFL, FIAT, FFC and DOLFIN.
-The latest version of legacy FEniCS ({{ site.fenicsversion }}) was released in {{ site.fenicsversiondate }}.
+In 2018, work started on FEniCSx: the new version of the FEniCS library.
+FEniCSx has a number of major improvements over the legacy library,
+including support for a wide range of cell types and elements, memory
+parallelisation, and complex number support, as well as a large number
+of improvements to the overall library design. FEniCSx is comprised of
+the libraries UFL, Basix, FFCx and DOLFINx. The latest version of
+FEniCSx ({{ site.fenicsxversion }}) was released in {{
+site.fenicsxversiondate }}.
+
+Now that development is focussed on FEniCSx, updates are made very
+rarely to the legacy FEniCS library. We recommend that users consider
+using FEniCSx instead of the legacy library. Lecacy FEniCS is comprised
+of the libraries UFL, FIAT, FFC and DOLFIN. The latest version of legacy
+FEniCS ({{ site.fenicsversion }}) was released in {{
+site.fenicsversiondate }}.
 
 ## About
-The FEniCS Project is developed and maintained as a freely available, open-source project by a 
-global community of scientists and software developers. The project is developed by the FEniCS 
-Community, is [governed](governance/index.md) by the [FEniCS Steering Council](governance/steering-council.md) and is overseen by the
-[FEniCS Advisory Board](governance/advisory-board.md).
 
-FEniCS is a [NumFOCUS](https://www.numfocus.org/) fiscally supported project. If you like FEniCS and want to support our 
-mission to produce the best possible platform for open-source computing, consider making a 
+FEniCS is a [NumFOCUS](https://www.numfocus.org/) fiscally supported
+project. If you like FEniCS and want to support our mission to produce
+the best possible platform for open-source computing, consider making a
 donation to our project.
 
 [![NumFOCUS](/assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
