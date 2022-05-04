@@ -22,14 +22,15 @@ def test_fenicsx_version_number():
     commit = dolfinx.get_commit(latest_tag.commit.sha)
 
     name = latest_tag.name
+    p = name.rfind('.')
+    name = name[:p]
     if name[0] == "v":
-        p = name.rfind('.')
-        name = name[1:p]
+        name = name[1:]
 
     year, month, _ = commit.raw_data["commit"]["author"]["date"].split("-", 2)
     year = int(year)
     month = int(month)
     date = datetime.datetime(year=year, month=month, day=1)
 
-    assert config["fenicsxversion"] == name
+    assert str(config["fenicsxversion"]) == name
     assert config["fenicsxversiondate"] == date.strftime("%B %Y")
