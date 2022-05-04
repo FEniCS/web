@@ -7,15 +7,13 @@ layout: with_twitter_sidebar
 
 ## The FEniCSx computing platform
 
-FEniCSx is a popular open-source
-([LGPLv3](https://www.gnu.org/licenses/lgpl-3.0.en.html)) computing
-platform for solving partial differential equations (PDEs). FEniCSx
-enables users to quickly translate scientific models into efficient
-finite element code. With the high-level Python and C++ interfaces to
-FEniCSx, it is easy to get started, but FEniCSx offers also powerful
-capabilities for more experienced programmers. FEniCSx runs on a
-multitude of platforms ranging from laptops to high-performance
-clusters.
+FEniCSx is a popular open-source computing platform for solving partial
+differential equations (PDEs). FEniCSx enables users to quickly
+translate scientific models into efficient finite element code. With the
+high-level Python and C++ interfaces to FEniCSx, it is easy to get
+started, but FEniCSx offers also powerful capabilities for more
+experienced programmers. FEniCSx runs on a multitude of platforms
+ranging from laptops to high-performance clusters.
 
 ## Solving a PDE in FEniCSx
 
@@ -52,34 +50,15 @@ solver = dolfinx.fem.petsc.LinearProblem(
 solver.solve()
 ```
 
-The above code snippet also shows how to define a suitable finite element
-function space, using continuous piecewise quadratic vector-valued functions
-for the velocity and continuous piecewise linear functions for the pressure
-(Taylor-Hood). The computational domain and mesh are also easily created with
-[gmsh](https://gmsh.info/), here defined by three spheres immersed in a 3D
-channel.
+The above code snippet also shows how to define a suitable finite
+element function space, using continuous piecewise quadratic
+vector-valued functions for the velocity and continuous piecewise linear
+functions for the pressure (Taylor-Hood). The computational domain and
+mesh are also easily created with [gmsh](https://gmsh.info/), here
+defined by three spheres immersed in a 3D channel.
 
 ![Stokes example](/assets/img/stokesexample.png){: .image-center }
 
-```python
-import gmsh
-
-model = gmsh.model()
-model.add("Channel")
-model.setCurrent("Channel")
-
-h = 0.25
-r = 0.3 * h
-box = model.occ.addBox(0, 0, 0, 1, h, h)
-s0 = model.occ.addSphere(0.3, 0.50 * h, 0.50 * h, r)
-s1 = model.occ.addSphere(0.5, 0.65 * h, 0.65 * h, r)
-s2 = model.occ.addSphere(0.7, 0.35 * h, 0.35 * h, r)
-
-domain = model.occ.cut([(3, box)], [(3, s0), (3, s1), (3, s2)])
-
-model.occ.synchronize()
-model.mesh.generate(3)
-```
 
 ## High-performance computing
 
@@ -104,9 +83,7 @@ FEniCSx is available for a range of platforms (Linux, Mac, Windows).
 Choose between Docker containers, binary packages, Spack packages and
 source code. Visit our [installation page](download/index.md) to get the
 latest version of FEniCSx. FEniCSx comes with [extensive
-documentation](documentation/index.md) and numerous examples. A good
-starting point is the [FEniCSx
-Tutorial](https://jorgensd.github.io/dolfinx-tutorial/).
+documentation](documentation/index.md) and numerous examples.
 
 ## FEniCSx vs legacy FEniCS
 

@@ -2,9 +2,9 @@
 title: Citing FEniCSx
 permalink: /citing/
 ---
-If you use FEniCSx in your research, the developers would be grateful if you would cite the 
-relevant publications. FEniCSx is organized as a collection of components, so to give proper 
-credit to the developers of FEniCSx, please cite the indicated references **for each relevant 
+If you use FEniCSx in your research, the developers would be grateful if you would cite the
+relevant publications. FEniCSx is organized as a collection of components, so to give proper
+credit to the developers of FEniCSx, please cite the indicated references **for each relevant
 component**.
 
 You can find this list of papers in BibTeX format [here](/assets/citations.bib).
@@ -31,6 +31,20 @@ You can find this list of papers in BibTeX format [here](/assets/citations.bib).
   submitted="Journal of Open Source Software"
   year="2022"
 %}
+
+### UFL
+{% include _paper.html
+  bibtype="article"
+  id="AlnaesEtal2014"
+  title="Unified Form Language: A domain-specific language for weak formulations of partial differential equations"
+  author="M. S. Alnaes, A. Logg, K. B. Ølgaard, M. E. Rognes and G. N. Wells"
+  journal="ACM Transactions on Mathematical Software"
+  volume="40"
+  year="2014"
+  doi="10.1145/2566630"
+  arxiv="1211.4047"
+%}
+
 
 ## Legacy FEniCS
 
@@ -121,33 +135,6 @@ You can find this list of papers in BibTeX format [here](/assets/citations.bib).
   arxiv="1104.0199"
 %}
 
-### UFL
-{% include _paper.html
-  bibtype="article"
-  id="AlnaesEtal2014"
-  title="Unified Form Language: A domain-specific language for weak formulations of partial differential equations"
-  author="M. S. Alnaes, A. Logg, K. B. Ølgaard, M. E. Rognes and G. N. Wells"
-  journal="ACM Transactions on Mathematical Software"
-  volume="40"
-  year="2014"
-  doi="10.1145/2566630"
-  arxiv="1211.4047"
-%}
-
-{% include _paper.html
-  bibtype="incollection"
-  id="alnaes2010"
-  title="UFL: a Finite Element Form Language"
-  author="M. S. Alnaes"
-  book="Automated Solution of Differential Equations by the Finite Element Method"
-  bookvolume="84"
-  bookseries="Lecture Notes in Computational Science and Engineering"
-  bookeditor="A. Logg, K.-A. Mardal and G. N. Wells"
-  bookpublisher="Springer"
-  bookchapter="17"
-  year="2012"
-%}
-
 ### FIAT
 {% include _paper.html
   bibtype="article"
@@ -172,32 +159,5 @@ You can find this list of papers in BibTeX format [here](/assets/citations.bib).
   bookeditor="A. Logg, K.-A. Mardal and G. N. Wells"
   bookpublisher="Springer"
   bookchapter="13"
-  year="2012"
-%}
-
-### UFC
-{% include _paper.html
-  bibtype="article"
-  id="alnaesEtal2009"
-  title="Unified Framework for Finite Element Assembly"
-  author="M. S. Alnaes, A. Logg, K.-A. Mardal, O. Skavhaug and H. P. Langtangen"
-  journal="International Journal of Computational Science and Engineering"
-  volume="4"
-  pagestart="231" pageend="244"
-  year="2009"
-  doi="10.1504/IJCSE.2009.029160"
-%}
-
-{% include _paper.html
-  bibtype="incollection"
-  id="AlnaesEtAl2012"
-  title="UFC: a Finite Element Code Generation Interface"
-  author="M. S. Alnaes, A. Logg and K.-A. Mardal"
-  book="Automated Solution of Differential Equations by the Finite Element Method"
-  bookvolume="84"
-  bookseries="Lecture Notes in Computational Science and Engineering"
-  bookeditor="A. Logg, K.-A. Mardal and G. N. Wells"
-  bookpublisher="Springer"
-  bookchapter="16"
   year="2012"
 %}
