@@ -10,8 +10,8 @@ The FEniCSx documentation is available at
 
 # Contributed tutorials
 
-[FEniCSx tutorials](https://jorgensd.github.io/dolfinx-tutorial/)
-provides a range of tutorial programs as Jupyter notebooks.
+The FEniCSx [tutorials](https://jorgensd.github.io/dolfinx-tutorial/)
+provide a range of tutorial programs as Jupyter notebooks.
 
 
 # The FEniCS Book
