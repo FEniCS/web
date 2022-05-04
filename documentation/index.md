@@ -8,17 +8,23 @@ The FEniCSx documentation is available at
 [https://docs.fenicsproject.org/](https://docs.fenicsproject.org/).
 
 
-# The FEniCS book
-![The FEniCS book](/assets/img/docs/book.png){: .image-right }
-The book [Automated Solution of Differential Equations by the Finite
-Element Method](book.md) explains the theoretical background and design
-of FEniCS. It describes the FEniCS software components in detail and
+# Contributed tutorials
+
+[FEniCSx tutorials](https://jorgensd.github.io/dolfinx-tutorial/)
+provides a range of tutorial programs as Jupyter notebooks.
+
+
+# The FEniCS Book
+
+![The FEniCS Book](/assets/img/docs/book.png){: .image-right } The book
+[Automated Solution of Differential Equations by the Finite Element
+Method](book.md) explains the theoretical background and design of
+FEniCS. It describes the FEniCS software components in detail and
 showcases a number of applications of FEniCS to problems in fluid
 mechanics, solid mechanics, electromagnetics, and geophysics. The book
 was published in 2012, and was based on the legacy FEniCS library, so
 the code examples in the book are out of date. However, the book still
-gives a good description of the many of the design principles that
-FEniCSx is based on.
+gives a good description of the many of the concepts in FEniCSx.
 
 The book is available as a [free
 ebook](http://launchpad.net/fenics-book/trunk/final/+download/fenics-book-2011-10-27-final.pdf),
@@ -29,5 +35,5 @@ or many other bookshops.
 
 ## Legacy FEniCS documentation
 
-Documnetation for the legacy version of FEniCS (version {{
-site.fenicsversion }}) can be found [here](archive.md).
+Documentation for the legacy version of FEniCS is available at
+[https://fenicsproject.org/olddocs/](https://fenicsproject.org/olddocs/).
