@@ -4,17 +4,19 @@ subtitle: fenicsxversion
 permalink: /documentation/
 ---
 
+# Documentation
+
 The FEniCSx documentation is available at
 [https://docs.fenicsproject.org/](https://docs.fenicsproject.org/).
 
 
-# Contributed tutorials
+## Contributed tutorials
 
 The FEniCSx [tutorials](https://jorgensd.github.io/dolfinx-tutorial/)
 provide a range of tutorial programs as Jupyter notebooks.
 
 
-# The FEniCS Book
+## The FEniCS Book
 
 ![The FEniCS Book](/assets/img/docs/book.png){: .image-right } The book
 *Automated Solution of Differential Equations by the Finite Element
