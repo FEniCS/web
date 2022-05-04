@@ -23,7 +23,8 @@ def test_fenicsx_version_number():
 
     name = latest_tag.name
     if name[0] == "v":
-        name = name[1:]
+        p = name.rfind('.')
+        name = name[1:p]
 
     year, month, _ = commit.raw_data["commit"]["author"]["date"].split("-", 2)
     year = int(year)
