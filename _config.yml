@@ -5,7 +5,7 @@ description: Open-source finite element library
 fenicsversion: 2019.1.0
 fenicsversiondate: April 2019
 fenicsxversion: 0.4
-fenicsxversiondate: April 2022
+fenicsxversiondate: May 2022
 
 defaults:
   -
