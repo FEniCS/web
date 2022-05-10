@@ -12,7 +12,7 @@ The FEniCSx documentation is available at
 
 ## Development roadmap
 
-The FEniCSx development [raodmap](roadmap.md) summarises planned
+The FEniCSx development [roadmap](roadmap.md) summarises planned
 features.
 
 
