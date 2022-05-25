@@ -28,8 +28,12 @@ You can find this list of papers in BibTeX format [here](/assets/citations.bib).
   id="BasixJoss"
   title="Basix: a runtime finite element basis evaluation library"
   author="M. W. Scroggs, I. A. Baratta, C. N. Richardson, and G. N. Wells"
-  submitted="Journal of Open Source Software"
+  journal="Journal of Open Source Software"
   year="2022"
+  doi="10.21105/joss.03982"
+  volume="7"
+  number="73"
+  pagestart="3982"
 %}
 
 ### UFL
