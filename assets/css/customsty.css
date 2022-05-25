@@ -271,3 +271,28 @@ mjx-container
     overflow-x: scroll;
     overflow-y: clip;
 }
+
+.developer img {
+  padding-right:20px;
+  float:left;
+  width:150px;
+}
+
+.developer h3 {
+  padding-top:20px
+}
+
+.developer .inst {
+  color: grey;
+  padding-left: 10px
+}
+.developer .inst:before {
+  content: " ("
+}
+.developer .inst:after {
+  content: ")"
+}
+
+img {
+  border: none!important
+}
