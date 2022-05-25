@@ -34,8 +34,6 @@ You can find this list of papers in BibTeX format [here](/assets/citations.bib).
   volume="7"
   number="73"
   pagestart="3982"
-}
-
 %}
 
 ### UFL
