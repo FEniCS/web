@@ -32,8 +32,8 @@ mathematical operators in FEniCSx:
 
 ```python
 # Define function space
-P2 = ufl.VectorElement("CG", ufl.tetrahedron, 2)
-P1 = ufl.FiniteElement("CG", ufl.tetrahedron, 1)
+P2 = ufl.VectorElement("Lagrange", ufl.tetrahedron, 2)
+P1 = ufl.FiniteElement("Lagrange", ufl.tetrahedron, 1)
 TH = ufl.MixedElement([P2, P1])
 W = dolfinx.fem.FunctionSpace(mesh, TH)
 
