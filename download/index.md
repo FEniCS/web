@@ -12,7 +12,7 @@ The latest stable release of FEniCSx is version {{ site.fenicsxversion
 
 FEniCSx can be [built from source](https://docs.fenicsproject.org/dolfinx/main/python/installation.html#source).
 
-Binary distributions (container images, Anaconda, Ubuntu packages etc.) are also
+Binary distributions (container images, conda, Ubuntu packages etc.) are also
 [available](https://github.com/FEniCS/dolfinx#installation).
 
 ## Legacy FEniCS
