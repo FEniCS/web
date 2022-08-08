@@ -82,8 +82,8 @@ deployed on a supercomputer using over 24,000 parallel processes.
 FEniCSx is available for a range of platforms (Linux, Mac, Windows).
 Choose between Docker containers, binary packages, Spack packages and
 source code. Visit our [installation page](download/index.md) to get the
-latest version of FEniCSx. FEniCSx comes with [extensive
-documentation](documentation/index.md) and numerous examples.
+latest version of FEniCSx. FEniCSx comes with
+[extensive documentation](documentation/index.md) and numerous examples.
 
 ## FEniCSx vs legacy FEniCS
 
@@ -93,15 +93,15 @@ including support for a wide range of cell types and elements, memory
 parallelisation, and complex number support, as well as a large number
 of improvements to the overall library design. FEniCSx is comprised of
 the libraries UFL, Basix, FFCx and DOLFINx. The latest version of
-FEniCSx ({{ site.fenicsxversion }}) was released in {{
-site.fenicsxversiondate }}.
+FEniCSx ({{ site.fenicsxversion }}) was released in
+{{ site.fenicsxversiondate }}.
 
 Now that development is focussed on FEniCSx, updates are made very
 rarely to the legacy FEniCS library. We recommend that users consider
 using FEniCSx instead of the legacy library. Lecacy FEniCS is comprised
 of the libraries UFL, FIAT, FFC and DOLFIN. The latest version of legacy
-FEniCS ({{ site.fenicsversion }}) was released in {{
-site.fenicsversiondate }}.
+FEniCS ({{ site.fenicsversion }}) was released in
+{{ site.fenicsversiondate }}.
 
 ## About
 
