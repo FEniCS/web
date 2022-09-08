@@ -17,7 +17,7 @@ that you get a useful reply to your question, you should:
 - include details of which FEniCS version you are using, and how you
   installed it (Docker, conda, pip, etc).
 
-More advice on how to post a good question is here
+More advice on how to post a good question is
 [here](https://fenicsproject.discourse.group/t/read-before-posting-how-do-i-get-my-question-answered/21/4).
 
 
