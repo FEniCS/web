@@ -27,5 +27,7 @@ jobs:
           known_hosts: ${{ secrets.WEBSITE_KNOWN_HOSTS }}
         if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}
       - name: rsync over ssh
-        run: rsync -r ./_site/* github@fenicsproject.org:/var/www/vhosts/fenicsproject.org/newsite
+        run: |
+            ssh github@fenicsproject.org "rm -r /var/www/vhosts/fenicsproject.org/newsite/*"
+            rsync -r ./_site/* github@fenicsproject.org:/var/www/vhosts/fenicsproject.org/newsite
         if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}
