@@ -28,7 +28,7 @@ def test_fenicsx_version_number():
 
     acceptable_dates = []
     for tag in dolfinx.get_tags():
-        if tag.startswith(name) or tag.startswith("v"+name):
+        if tag.name.startswith(name) or tag.name.startswith("v" + name):
             c = dolfinx.get_commit(tag.commit.sha)
 
             y, m, _ = c.raw_data["commit"]["author"]["date"].split("-", 2)
