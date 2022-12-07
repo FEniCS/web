@@ -27,10 +27,16 @@ def test_fenicsx_version_number():
     if name[0] == "v":
         name = name[1:]
 
-    year, month, _ = commit.raw_data["commit"]["author"]["date"].split("-", 2)
-    year = int(year)
-    month = int(month)
-    date = datetime.datetime(year=year, month=month, day=1)
+    acceptable_dates = []
+    for tag in dolfinx.get_tags():
+        if tag.startswith(name) or tag.startswith("v"+name):
+            commit = dolfinx.get_commit(latest_tag.commit.sha)
+
+            year, month, _ = commit.raw_data["commit"]["author"]["date"].split("-", 2)
+            year = int(year)
+            month = int(month)
+            date = datetime.datetime(year=year, month=month, day=1)
+            acceptable_dates.append(date.strftime("%B %Y"))
 
     assert str(config["fenicsxversion"]) == name
-    assert config["fenicsxversiondate"] == date.strftime("%B %Y")
+    assert config["fenicsxversiondate"] in acceptable_dates
