@@ -19,7 +19,6 @@ def test_fenicsx_version_number():
     dolfinx = git.get_repo("fenics/dolfinx")
 
     latest_tag = dolfinx.get_tags()[0]
-    commit = dolfinx.get_commit(latest_tag.commit.sha)
 
     name = latest_tag.name
     p = name.rfind('.')
@@ -30,12 +29,12 @@ def test_fenicsx_version_number():
     acceptable_dates = []
     for tag in dolfinx.get_tags():
         if tag.startswith(name) or tag.startswith("v"+name):
-            commit = dolfinx.get_commit(latest_tag.commit.sha)
+            c = dolfinx.get_commit(tag.commit.sha)
 
-            year, month, _ = commit.raw_data["commit"]["author"]["date"].split("-", 2)
-            year = int(year)
-            month = int(month)
-            date = datetime.datetime(year=year, month=month, day=1)
+            y, m, _ = c.raw_data["commit"]["author"]["date"].split("-", 2)
+            y = int(y)
+            m = int(m)
+            date = datetime.datetime(year=y, month=m, day=1)
             acceptable_dates.append(date.strftime("%B %Y"))
 
     assert str(config["fenicsxversion"]) == name
