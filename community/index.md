@@ -26,7 +26,7 @@ More advice on how to post a good question is
 Discussions about FEniCS and its development take place on the [FEniCS
 Slack channels](https://fenicsproject.slack.com/). You can join the
 Slack community by
-[entering your email address at this link](https://fenicsproject-slack-invite.herokuapp.com/).
+[entering your email address at this link](https://join.slack.com/t/fenicsproject/shared_invite/zt-1lraknsp1-6_3Js5kueDIyWgF192d3nA).
 
 
 ## Reporting bugs
