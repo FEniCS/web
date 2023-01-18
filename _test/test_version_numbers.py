@@ -15,8 +15,8 @@ def test_fenicsx_version_number():
     )) as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
 
-    if "GIT_TOKEN" in os.enrivon:
-        git = github.Github(os.environ["GIT_TOKEN"])
+    if "GITHUB_TOKEN" in os.enrivon:
+        git = github.Github(os.environ["GITHUB_TOKEN"])
     else:
         git = github.Github()
 
