@@ -18,7 +18,7 @@ def test_fenicsx_version_number():
 
     dolfinx = git.get_repo("fenics/dolfinx")
 
-    latest_tag = dolfinx.get_tags()[0]
+    latest_tag = dolfinx.get_tags()[1]  # FIXME: revert this to [0] once there is not a draft tag
 
     name = latest_tag.name
     p = name.rfind('.')
