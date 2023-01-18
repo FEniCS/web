@@ -6,6 +6,7 @@ import yaml
 import datetime
 
 
+
 def test_fenicsx_version_number():
     """Test that the FEniCSx version number is up to date."""
     with open(os.path.join(
@@ -14,7 +15,10 @@ def test_fenicsx_version_number():
     )) as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
 
-    git = github.Github()
+    if "GIT_TOKEN" in os.enrivon:
+        git = github.Github(os.environ["GIT_TOKEN"])
+    else:
+        git = github.Github()
 
     dolfinx = git.get_repo("fenics/dolfinx")
 
