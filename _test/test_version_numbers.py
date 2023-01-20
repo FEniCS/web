@@ -14,11 +14,15 @@ def test_fenicsx_version_number():
     )) as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
 
-    git = github.Github()
+    if "GITHUB_TOKEN" in os.environ:
+        git = github.Github(os.environ["GITHUB_TOKEN"])
+    else:
+        git = github.Github()
 
     dolfinx = git.get_repo("fenics/dolfinx")
 
-    latest_tag = dolfinx.get_tags()[0]
+    # FIXME: revert this to [0] once there is not a draft tag
+    latest_tag = dolfinx.get_tags()[1]
 
     name = latest_tag.name
     p = name.rfind('.')
