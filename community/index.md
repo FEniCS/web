@@ -54,6 +54,15 @@ join the **#fenicsx** and **#development** channels.
 [Here](people-of-fenics.md) we introduce some the users of FEniCS who
 have found it useful.
 
+
+## The FEniCS Conference
+
+The [FEniCS Conference](../conference/index.md) is held annually and
+is a great way to network with other users, keep up with new
+developments from core developers, hear new applications and results,
+and discuss ways of improving your projects.
+
+
 ## Code of Conduct
 
 We strive to make the FEniCS Project an open and respectful community.
