@@ -82,3 +82,11 @@ The website can be served locally (so it can then be opened in a browser) by run
 ```bash
 bundle exec jekyll serve
 ```
+
+when using Ruby 2.7, or
+
+```bash
+bash -c 'cd _site && python3 -m http.server 3000'
+```
+
+when using Ruby 3.0+.
