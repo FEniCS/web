@@ -22,6 +22,10 @@ You can find this list of papers in BibTeX format [here](/assets/citations.bib).
   year="2022"
   doi="10.1145/3524456"
   arxiv="2102.11901"
+  volume="48"
+  number="2"
+  pagestart="18:1"
+  pageend="18:23"
 %}
 
 {% include _paper.html
