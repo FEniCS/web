@@ -102,13 +102,6 @@ h1, h2, h3, h4, h5, h6
   background-color: #FFFFFFCC;
 }
 
-@media (max-width:1330px){
-  #twitter { display:none }
-}
-@media (min-width:1330px){
-  #twitter { display:block }
-}
-
 #footer_wrap {background-color:#FFFFFF}
 
 body {
