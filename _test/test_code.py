@@ -13,6 +13,7 @@ imports = [
     "import ufl\n"
     "import dolfinx\n"
     "import dolfinx.fem\n"
+    "import dolfinx.fem.petsc\n"
     "import dolfinx.mesh\n"
     "from mpi4py import MPI\n"
     "from ufl import inner, grad, dx, div, dot\n"
