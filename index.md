@@ -1,7 +1,6 @@
 ---
 title: FEniCSx
 image: assets/img/headers/design.jpg
-layout: with_twitter_sidebar
 ---
 
 ## The FEniCSx computing platform
