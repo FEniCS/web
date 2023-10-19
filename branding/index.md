@@ -3,9 +3,7 @@ title: FEniCS Branding
 permalink: /branding/
 ---
 
-# FEniCS branding
-
-## Components of FEniCSx and legacy FEniCS
+# Components of FEniCSx and legacy FEniCS
 The components of FEniCSx are:
 
 * DOLFINx
@@ -22,7 +20,7 @@ The components of legacy FEniCS are:
 
 These should always be written using the capitalisation above.
 
-## FEniCS logo
+# FEniCS logo
 ![FEniCS logo](/assets/logo/fenics_logo.png)
 
 The FEniCS logo was designed by [Mattias Schl&auml;ger](https://www.sch-form.com) and is available
