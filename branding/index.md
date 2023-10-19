@@ -26,7 +26,7 @@ These should always be written using the capitalisation above.
 ![FEniCS logo](/assets/logo/fenics_logo.png)
 
 The FEniCS logo was designed by [Mattias Schl&auml;ger](https://www.sch-form.com) and is available
-under a [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+under a [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).
 It is available in the following formats:
 
 * [SVG](/assets/logo/fenics_logo.svg)
