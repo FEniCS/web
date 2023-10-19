@@ -31,4 +31,4 @@ It is available in the following formats:
 
 * [SVG](/assets/logo/fenics_logo.svg)
 * [low resolution PNG (232&times;320)](/assets/logo/fenics_logo.png)
-* [high resolution PNG (1809times;2500)](/assets/logo/fenics_logo_large.png)
+* [high resolution PNG (1809&times;2500)](/assets/logo/fenics_logo_large.png)
