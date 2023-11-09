@@ -32,7 +32,7 @@ number of applications of FEniCS to problems in fluid mechanics, solid
 mechanics, electromagnetics, and geophysics. The book was published in
 2012, and was based on the legacy FEniCS library, so the code examples
 in the book are out of date. However, the book still gives a good
-description of the many of the concepts in FEniCSx.
+description of many of the concepts in FEniCSx.
 
 The book is available as a [free
 ebook](http://launchpad.net/fenics-book/trunk/final/+download/fenics-book-2011-10-27-final.pdf),
