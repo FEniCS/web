@@ -42,6 +42,7 @@ for dir, p in pagelist:
     "google-summer-of-code-2017",
     "google-summer-of-code-2018",
     "people-of-fenics",
+    "gsoc"
 ])
 def test_permalinks(page):
     """Test that permalink exists."""
