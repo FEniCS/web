@@ -16,7 +16,7 @@ jobs:
     steps:
       - run: sudo apt-get install -y ruby-bundler
         name: Install prerequisites
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: bundle install
         name: Install bundle
       - run: bundle exec jekyll build

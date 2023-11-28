@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     container: dolfinx/dolfinx:stable
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: pip3 install pytest flake8
         name: Install pytest and flake8
       - run: pip3 install -r _test/requirements.txt
