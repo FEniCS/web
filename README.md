@@ -14,6 +14,15 @@ If you think something on the website should be change, but you're not sure how 
 please [open an issue](https://github.com/FEniCS/web/issues) describing the change you
 would like to suggest.
 
+When a pull request is opened, the website will be build and an artifact of this build will be uploaded.
+To see what the website will look look like after the pull request is merged, you can:
+
+1) Download the artifact
+
+2) unzip the artifact
+
+3) Run `python -m http.server` in the unzipped folder
+
 ## Code of conduct
 
 When interacting with others (eg when discussing issues or pull requests), you
