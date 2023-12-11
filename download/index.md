@@ -7,10 +7,13 @@ permalink: /download/
 ## Getting started
 
 The latest stable release of FEniCSx is version {{ site.fenicsxversion }},
-which was released in {{ site.fenicsxversiondate }}. The easiest way to start using FEniCSx is to install it using conda:
+which was released in {{ site.fenicsxversiondate }}. The easiest way to start using FEniCSx
+is to install it using [conda](https://conda.io):
 
-```bash
-conda install fenics-dolfinx
+```shell
+conda create -n fenicsx-env
+conda activate fenicsx-env
+conda install -c conda-forge fenics-dolfinx mpich pyvista
 ```
 
 ## Other installation options
