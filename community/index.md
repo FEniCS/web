@@ -76,3 +76,8 @@ open-source project by a global community of scientists and software
 developers. Full details of the governance of the FEniCS project can be
 found in the [governance repository on
 GitHub](https://github.com/fenics/governance).
+
+## FEniCS logo
+
+If you wish to use the FEniCS logo, you can find high-resolution and vector versions of
+it, plus details of its license on [the branding page](../branding/index.md).
