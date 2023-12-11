@@ -21,7 +21,7 @@ def load_page_list(dir):
 root_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")
 pagelist = load_page_list(root_dir)
 
-permalinks = []
+permalinks = [""]
 for dir, p in pagelist:
     with open(os.path.join(dir, p)) as f:
         content = f.read()
