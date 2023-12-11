@@ -5,6 +5,7 @@ description: Open-source finite element library
 fenicsversion: 2019.1.0
 fenicsversiondate: April 2019
 fenicsxversion: 0.7
+dolfinxversion: 0.7.2 # this is used in the URL of the Python demos
 fenicsxversiondate: October 2023
 
 defaults:
