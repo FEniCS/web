@@ -11,7 +11,7 @@ translate scientific models into efficient finite element code. With the
 high-level Python and C++ interfaces to FEniCS, it is easy to get
 started, but FEniCS offers also powerful capabilities for more
 experienced programmers. FEniCS runs on a multitude of platforms
-ranging from laptops to high-performance clusters.
+ranging from laptops to high-performance computers.
 
 <center>
 {% include _large_icon.html icon="fa-solid fa-download" href="download/" label="Download"

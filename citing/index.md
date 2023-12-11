@@ -10,6 +10,7 @@ component**.
 You can find this list of papers in BibTeX format [here](/assets/citations.bib).
 
 ## FEniCSx
+If your code starts with `import dolfinx`, you should cite these papers.
 
 ### Basix
 
@@ -56,6 +57,7 @@ You can find this list of papers in BibTeX format [here](/assets/citations.bib).
 
 
 ## Legacy FEniCS
+If your code starts with `import dolfin`, you should cite these papers.
 
 {% include _paper.html
   bibtype="article"
