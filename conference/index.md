@@ -1,5 +1,6 @@
 ---
-title: The FEniCS Conference
+title: FEniCS
+subtitle: Conferences
 permalink: /conference/
 ---
 The FEniCS conference is held in a different location each year.

@@ -1,4 +1,6 @@
 # Site navigation links
+- title: Home
+  page: /
 - title: FEniCS 2024
   page: /fenics-2024
 - title: Download

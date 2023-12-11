@@ -1,10 +1,10 @@
 ---
-title: Citing FEniCSx
+title: Citing FEniCS
 permalink: /citing/
 ---
-If you use FEniCSx in your research, the developers would be grateful if you would cite the
-relevant publications. FEniCSx is organized as a collection of components, so to give proper
-credit to the developers of FEniCSx, please cite the indicated references **for each relevant
+If you use FEniCS in your research, the developers would be grateful if you would cite the
+relevant publications. FEniCS is organized as a collection of components, so to give proper
+credit to the developers of FEniCS, please cite the indicated references **for each relevant
 component**.
 
 You can find this list of papers in BibTeX format [here](/assets/citations.bib).

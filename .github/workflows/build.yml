@@ -30,3 +30,11 @@ jobs:
       - name: rsync over ssh
         run: rsync -r ./_site/* github@fenicsproject.org:/var/www/vhosts/fenicsproject.org/newsite
         if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}
+
+      - name: Upload build as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: website
+          path: _site
+          if-no-files-found: error
+        if: ${{ github.repository == 'FEniCS/web' && github.ref != 'refs/heads/main' && github.event_name == 'pull_request' }}
