@@ -11,5 +11,5 @@
   page: /community
 - title: Citing
   page: /citing
-- title: Donate
+- title: <i class="fa-solid fa-arrow-up-right-from-square"></i> Donate
   page: https://numfocus.salsalabs.org/donate-to-fenics/index.html
