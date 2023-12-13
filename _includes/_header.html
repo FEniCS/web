@@ -6,7 +6,7 @@
   </header>
 </div>
 {% if page.image %}
-  <div id="header_wrap" class="outer" style="background-image:url(/{{ page.image }});background-position-y:center;background-position-x:center{% if page.image-zoom %}{% if page.image-zoom == "fill" %}background-size:cover{% else %}background-size:auto 600px{% endif %}{% else %}background-size:auto 600px{% endif %}">
+  <div id="header_wrap" class="outer" style="background-image:url(/{{ page.image }});background-position-y:center;background-position-x:center;{% if page.image-zoom %}{% if page.image-zoom == "fill" %}background-size:cover{% else %}background-size:auto 600px{% endif %}{% else %}background-size:auto 600px{% endif %}">
 {% else %}
   <div id="header_wrap" class="outer" style="background-image:url(/assets/img/headers/fenics_fire.png);background-repeat:repeat">
 {% endif %}
