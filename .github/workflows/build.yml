@@ -31,10 +31,15 @@ jobs:
         run: rsync -r ./_site/* github@fenicsproject.org:/var/www/vhosts/fenicsproject.org/newsite
         if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}
 
+      - name: Make artifact zip
+        run: |
+          sudo apt-get install -y zip
+          zip -q -r _site.zip _site
+        if: ${{ github.repository == 'FEniCS/web' && github.ref != 'refs/heads/main' && github.event_name == 'pull_request' }}
       - name: Upload build as artifact
         uses: actions/upload-artifact@v3
         with:
           name: website
-          path: _site
+          path: _site.zip
           if-no-files-found: error
         if: ${{ github.repository == 'FEniCS/web' && github.ref != 'refs/heads/main' && github.event_name == 'pull_request' }}
