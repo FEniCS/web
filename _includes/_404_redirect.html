@@ -1,0 +1,32 @@
+<script type='text/javascript'>
+var url = document.location.href
+url = "https://fenicsproject.org/pub/graphics/fenics_google_logo.png"
+if(url.startsWith("http://fenicsproject.org/pub/") || url.startsWith("https://fenicsproject.org/pub/") || url.startsWith("http://www.fenicsproject.org/pub/") || url.startsWith("https://www.fenicsproject.org/pub/")){
+    if(url.startsWith("http://fenicsproject.org/pub/")){
+        url = url.substring(29)
+    } else if(url.startsWith("https://fenicsproject.org/pub/")){
+        url = url.substring(30)
+    } else if(url.startsWith("http://www.fenicsproject.org/pub/")){
+        url = url.substring(33)
+    } else if(url.startsWith("https://www.fenicsproject.org/pub/")){
+        url = url.substring(34)
+    } else {
+        url = ""
+    }
+    window.location.assign("https://pub.fenicsproject.org/" + url)
+}
+if(url.startsWith("http://fenicsproject.org/olddocs/") || url.startsWith("https://fenicsproject.org/olddocs/") || url.startsWith("http://www.fenicsproject.org/olddocs/") || url.startsWith("https://www.fenicsproject.org/olddocs/")){
+    if(url.startsWith("http://fenicsproject.org/olddocs/")){
+        url = url.substring(33)
+    } else if(url.startsWith("https://fenicsproject.org/olddocs/")){
+        url = url.substring(34)
+    } else if(url.startsWith("http://www.fenicsproject.org/olddocs/")){
+        url = url.substring(37)
+    } else if(url.startsWith("https://www.fenicsproject.org/olddocs/")){
+        url = url.substring(38)
+    } else {
+        url = ""
+    }
+    window.location.assign("https://pub.fenicsproject.org/" + url)
+}
+</script>
