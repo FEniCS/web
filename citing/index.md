@@ -9,7 +9,7 @@ component**.
 
 You can find this list of papers in BibTeX format [here](/assets/citations.bib).
 
-To see a variety of applications of FEniCS, you can take a look at [this list of recent papers that cite FEniCS](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0,5&cites=2599384670914385341,17770978774251756625,11448541870608622893,543273511654441124,14605055523284224439,12866126847560384055,14201058291201976279,3289611746284990832,3651475191867995052,10591416677298451301,6832515800031607486&scipsc=&q=&scisbd=1.
+To see a variety of applications of FEniCS, you can take a look at [this list of recent papers that cite FEniCS](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0,5&cites=2599384670914385341,17770978774251756625,11448541870608622893,543273511654441124,14605055523284224439,12866126847560384055,14201058291201976279,3289611746284990832,3651475191867995052,10591416677298451301,6832515800031607486&scipsc=&q=&scisbd=1).
 
 ## FEniCSx
 If your code starts with `import dolfinx`, you should cite these papers.
