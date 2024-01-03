@@ -17,7 +17,9 @@ def test_citation_list():
     for file in ["assets/citations.bib"]:
         with open(os.path.join(root_dir, file)) as f:
             content = f.read()
-        for ptype, id in re.findall(r'@([^\{]+)\{\s*([^,\}]+)\s*(?:,|\})', content):
+        for ptype, id in re.findall(
+            r'@([^\{]+)\{\s*([^,\}]+)\s*(?:,|\})', content
+        ):
             if ptype != "comment":
                 papers2.add(id)
 
