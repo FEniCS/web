@@ -14,6 +14,18 @@ To see a variety of applications of FEniCS, you can take a look at [this list of
 ## FEniCSx
 If your code starts with `import dolfinx`, you should cite these papers.
 
+### DOLFINx
+
+{% include _paper.html
+  bibtype="article"
+  id="BarattaEtal2023"
+  title="DOLFINx: The next generation FEniCS problem solving environment"
+  author="I. A. Baratta, J. P. Dean, J. S. Dokken, M. Habera, J. S. Hale, C. N. Richardson, M. E. Rognes, M. W. Scroggs, N. Sime, and G. N. Wells"
+  journal="preprint"
+  year="2023"
+  doi="10.5281/zenodo.10447666"
+%}
+
 ### Basix
 
 {% include _paper.html
