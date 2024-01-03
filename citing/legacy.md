@@ -6,8 +6,9 @@ permalink: /citing/legacy/
 
 ## Legacy citations
 
-This page lists citations for legacy FEniCS. If you are using FEniCSx (the latest version of FEniCS),
-you can find a list of relevant citations on [the main citations page](index.md).
+This page lists citations for legacy FEniCS and should be used if your code starts with `import dolfin`.
+If your code starts with `import dolfinx`, then you can find the list of relevant ciations for FEniCSx on
+[the main citations page](index.md).
 
 If you use FEniCS in your research, the developers would be grateful if you would cite the
 relevant publications. FEniCS is organized as a collection of components, so to give proper
