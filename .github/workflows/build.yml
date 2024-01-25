@@ -37,7 +37,7 @@ jobs:
           zip -q -r _site.zip _site
         if: ${{ github.repository == 'FEniCS/web' && github.ref != 'refs/heads/main' && github.event_name == 'pull_request' }}
       - name: Upload build as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: website
           path: _site.zip
