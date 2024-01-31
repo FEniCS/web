@@ -1,5 +1,6 @@
 ---
 title: Talk and poster submission
+permalink: /fenics-2024/submit/
 ---
 
 You can use the form below propose a talk or poster to be presented at FEniCS 24.
