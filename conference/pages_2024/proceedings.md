@@ -6,7 +6,7 @@ image-zoom: fill
 ## About the Proceedings
 
 The proceedings of the [FEniCS 2024
-Conference]({{ site.baseurl }}{% link test_sub.md %}) (FEniCS 2024) will be
+Conference](../2024.md) (FEniCS 2024) will be
 published as a peer-reviewed edited volume by Springer Verlag in the open
 access book series [Simula SpringerBriefs on
 Computing](https://www.springer.com/series/13548). This series aims to provide
