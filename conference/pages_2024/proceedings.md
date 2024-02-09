@@ -1,6 +1,8 @@
 ---
 title: Proceedings of the FEniCS 2024 Conference
+image: assets/img/fenics2024/oslo.jpg
 image-zoom: fill
+permalink: /fenics-proceedings-2024/
 ---
 
 ## About the Proceedings
