@@ -54,7 +54,7 @@ more of the FEniCS software components.
 
 All submissions will be subject to an initial editorial review, and if
 considered of sufficient quality and within the scope of the volume, sent for
-peer-reviewed by two reviewers (single-blind) who can recommend; acceptance,
+peer-review by two reviewers (single-blind) who can recommend; acceptance,
 revision or rejection. The final decision on acceptance will be made by the
 editors.
 
