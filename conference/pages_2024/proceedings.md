@@ -44,7 +44,7 @@ more of the FEniCS software components.
 
 ## Editors
 
-* Jørgen Dokken, Simula Research Laboratory, Norway
+* Jørgen S. Dokken, Simula Research Laboratory, Norway
 * Henrik N. Finsberg, Simula Research Laboratory, Norway
 * Jack S. Hale, University of Luxembourg, Luxembourg
 * Marie E. Rognes, Simula Research Laboratory, Norway
