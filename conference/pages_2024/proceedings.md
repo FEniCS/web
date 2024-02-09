@@ -60,7 +60,7 @@ editors.
 
 ## Format and requirements
 
-* The submission must be associated with a talk given at the FEniCS Conference
+* The submission must be associated with a talk or poster given at the FEniCS Conference
   2024.
 
 * Please make sure to include a concise abstract for your contribution.
