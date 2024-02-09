@@ -68,10 +68,10 @@ editors.
 * Contributions must use and follow the [SpringerBrief LaTeX
   template](https://www.springer.com/gp/authors-editors/book-authors-editors/your-publication-journey/manuscript-preparation)
   (LaTeX template for contributed works `author/` directory) and be 6-10 pages
-  including references. Use Bibtex for handling references. Initial submissions
-  should be made in PDF format. Authors will be invited to submitted original
-  images and files if accepted in a single `.zip` or `.tar.gz` archive without
-  a directory hierarchy.
+  including references. Use Bibtex for handling references with the included
+  `spmpsci` style. Initial submissions should be made in PDF format. Authors
+  will be invited to submitted original images and files if accepted in a
+  single `.zip` or `.tar.gz` archive without a directory hierarchy.
 
 * All chapters are expected to be accompanied by code released under an [open
   source initiative](https://opensource.org) approved license and uploaded to
