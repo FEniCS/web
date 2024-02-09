@@ -69,7 +69,7 @@ editors.
   template](https://www.springer.com/gp/authors-editors/book-authors-editors/your-publication-journey/manuscript-preparation)
   (following book chapter) and be 6-10 pages including references. Initial
   submissions should be made in PDF format. Authors will be invited to
-  submitted original imafes and files if accepted in a single `.zip` or
+  submitted original images and files if accepted in a single `.zip` or
   `.tar.gz` archive without a directory hierarchy.
 
 * All chapters are expected to be accompanied by code released under an [open
