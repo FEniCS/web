@@ -35,8 +35,7 @@ more of the FEniCS software components.
 
 3. *Early December 2024*: Peer-reviews shared and revised manuscripts invited.
 
-4. *15th January 2025*: Deadline for revised submission, PDF + LaTeX source +
-   images.
+4. *15th January 2025*: Deadline for revised submission.
 
 5. *Early February 2025*: Final editorial review and submission to Simula
    SpringerBrief Editorial team.
@@ -59,8 +58,8 @@ editors.
 
 ## Format and requirements
 
-* The submission must be associated with a contributed talk at the FEniCS
-  Conference 2024.
+* The submission must be associated with a talk given at the FEniCS Conference
+  2024.
 
 * Please make sure to include a concise abstract for your contribution.
 
@@ -68,7 +67,8 @@ editors.
   template](https://www.springer.com/gp/authors-editors/book-authors-editors/your-publication-journey/manuscript-preparation)
   (following book chapter) and be 6-10 pages including references. Initial
   submissions should be made in PDF format. Authors will be invited to
-  submitted original figures and source files if accepted.
+  submitted original imafes and files if accepted in a single `.zip` or
+  `.tar.gz` archive without a directory hierarchy.
 
 * All chapters are expected to be accompanied by code released under an [open
   source initiative](https://opensource.org) approved license and uploaded to
