@@ -74,9 +74,8 @@ editors.
 
 * All chapters are expected to be accompanied by code released under an [open
   source initiative](https://opensource.org) approved license and uploaded to
-  e.g. GitHub or GitLab alongside an upload to archival quality repository with
-  a DOI assigned e.g. [Zenodo](https://zenodo.org) or
-  [figshare](https://figshare.com).
+  e.g. GitHub or GitLab alongside an upload to a repository that issues DOIs
+  e.g. [Zenodo](https://zenodo.org) or [figshare](https://figshare.com).
 
 * The Simula SpringerBriefs on Computing principles apply in terms of open
   access (Creative Commons Attribution 4.0 International License) and author
