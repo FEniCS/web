@@ -1,5 +1,5 @@
 ---
-title: Proceedings of the FEniCS 2024 Conference
+title: Proceedings 2024
 image: assets/img/fenics2024/oslo.jpg
 image-zoom: fill
 permalink: /fenics-proceedings-2024/
@@ -76,9 +76,10 @@ editors.
   source initiative](https://opensource.org) approved license and uploaded to
   e.g. GitHub or GitLab alongside an upload to archival quality repository with
   a DOI assigned e.g. [Zenodo](https://zenodo.org) or
-  [figshare](https://figshare.org).
+  [figshare](https://figshare.com).
 
 * The Simula SpringerBriefs on Computing principles apply in terms of open
   access (Creative Commons Attribution 4.0 International License) and author
   rights (copyright remains with the author(s)). The open access fee is waived.
-  Each accepted chapter will be assigned an individual DOI. 
+
+* Each accepted chapter will be assigned an individual DOI. 
