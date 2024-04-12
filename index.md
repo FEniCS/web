@@ -33,6 +33,6 @@ ranging from laptops to high-performance computers.
 FEniCS is a [NumFOCUS](https://www.numfocus.org/) fiscally supported
 project. If you like FEniCS and want to support our mission to produce
 the best possible platform for open-source computing, consider making [a
-donation]([https://numfocus.salsalabs.org/donate-to-fenics/index.html](https://numfocus.org/donate-to-fenics)) to our project.
+donation](https://numfocus.org/donate-to-fenics) to our project.
 
 [![NumFOCUS](/assets/img/numfocus.png){: .image-center }](https://www.numfocus.org/)
