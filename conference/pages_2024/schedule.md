@@ -2,8 +2,8 @@
 title: Conference Schedule
 image-zoom: fill
 ---
+The conference schedule is available at [https://scientificcomputing.github.io/fenics2024/](https://scientificcomputing.github.io/fenics2024/) and is embedded below.
 
-<object data="../../assets/extra/fenics2024/Tentative_Conference_Schedule.pdf" width="1000" height="1000" type='application/pdf'></object>
+<div><center><iframe src="https://scientificcomputing.github.io/fenics2024" frameborder="0" marginheight="0" marginwidth="0" width="1000" height="1500">Loading…</iframe></center></div>
 
-The schedule is tentative and subject to changes after abstract submission.
-To report any typos or issues with the schedule, please contact Jørgen S. Dokken at <a href="mailto:dokken@simula.no">dokken@simula.no</a>
+To report any typos or issues with the schedule, please make an issue at: [FEniCS 2024 Schedule Issue tracker](https://github.com/scientificcomputing/fenics2024/issues)
