@@ -8,12 +8,21 @@ permalink: /download/
 
 The latest stable release of FEniCSx is version {{ site.fenicsxversion }},
 which was released in {{ site.fenicsxversiondate }}. The easiest way to start using FEniCSx
-is to install it using [conda](https://conda.io):
+on MacOS and other systems is to install it using [conda](https://conda.io):
 
 ```shell
 conda create -n fenicsx-env
 conda activate fenicsx-env
 conda install -c conda-forge fenics-dolfinx mpich pyvista
+```
+
+The easiest way to install FEniCSx on Debian or Ubuntu Linux
+is via apt:
+
+```shell
+sudo add-apt-repository ppa:fenics-packages/fenics
+sudo apt update
+sudo apt install fenicsx
 ```
 
 ## Other installation options
