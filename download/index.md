@@ -56,3 +56,31 @@ FEniCS ({{ site.fenicsversion }}) was released in
 {{ site.fenicsversiondate }}.
 Instructions for installing the legacy FEniCS (version {{
 site.fenicsversion }}) can be found [here](archive.md).
+
+## Complex number support
+
+FEniCSx introduces complex number support.
+
+On Debian/Ubuntu Linux this is provided via the python3-dolfinx-complex package:
+
+```shell
+sudo apt install python3-dolfinx-complex
+```
+
+Debian/Ubuntu packages manage dolfinx builds via the version of PETSc they are built against.
+The Debian/Ubuntu standard installation uses the real number build. To access other
+builds, set the environment variable PETSC_DIR to point at the required PETSc version
+located under /usr/lib/petscdir. Likewise SLEPc support can be managed via SLEPC_DIR
+(see /usr/lib/slepcdir).
+
+So to access complex number support in dolfinx on Debian/Ubuntu, run scripts with:
+
+```shell
+PETSC_DIR=/usr/lib/petscdir/petsc-complex python3 demo_dolfinx.py
+```
+
+or, with SLEPc:
+
+```shell
+PETSC_DIR=/usr/lib/petscdir/petsc-complex SLEPC_DIR=/usr/lib/slepcdir/slepc-complex python3 demo_dolfinx.py
+```
