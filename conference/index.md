@@ -5,6 +5,7 @@ permalink: /conference/
 ---
 The FEniCS conference is held in a different location each year.
 
+- [FEniCS 2025 (Groningen)](2025.md)
 - [FEniCS 2024 (Oslo)](2024.md)
 - [FEniCS 2023 (Pula, Cagliari)](2023.md)
 - [FEniCS 2022 (San Diego)](2022.md)
