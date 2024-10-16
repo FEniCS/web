@@ -89,7 +89,7 @@ def test_links(dir, file):
         if i[0] == "/":
             assert i[1:] in permalinks
         else:
-            assert i.endswith(".md")
+            assert i.endswith(".md") or i.startswith("#")
             assert os.path.isfile(os.path.join(dir, i))
 
     # Check that assets exist
