@@ -4,7 +4,6 @@ subtitle: FEniCSx fenicsxversion
 permalink: /documentation/
 ---
 
-
 ## Getting started
 
 If you're new to FEniCS, we suggest starting with the [DOLFINx Python demos](https://docs.fenicsproject.org/dolfinx/v{{site.dolfinxversion}}/python/demos.html),
@@ -20,9 +19,13 @@ Full documentation of the components of FEniCSx is available at
 [The FEniCSx tutorial](https://jorgensd.github.io/dolfinx-tutorial/)
 provides a range of tutorial programs as Jupyter notebooks.
 
+### Release notes
+
+- [Release notes: v0.9.0](./v0_9_0.md)
+
 ## FEniCSx vs legacy FEniCS
 
-FEniCSx is the latest iteration of FEniCS, and boasts a number of 
+FEniCSx is the latest iteration of FEniCS, and boasts a number of
 major improvements over the legacy library.
 We recommend that new users use the latest release of FEniCSx.
 The FEniCSx [development roadmap](roadmap.md) summarises planned
@@ -34,8 +37,8 @@ Documentation for the legacy version of FEniCS is available at
 ## The FEniCS Book
 
 ![The FEniCS Book](/assets/img/docs/book.png){: .image-right } The book
-*Automated Solution of Differential Equations by the Finite Element
-Method* explains the theoretical background and design of FEniCS. It
+_Automated Solution of Differential Equations by the Finite Element
+Method_ explains the theoretical background and design of FEniCS. It
 describes the FEniCS software components in detail and showcases a
 number of applications of FEniCS to problems in fluid mechanics, solid
 mechanics, electromagnetics, and geophysics. The book was published in
@@ -48,4 +51,3 @@ ebook](http://launchpad.net/fenics-book/trunk/final/+download/fenics-book-2011-1
 or can be bought from
 [Springer](http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-23098-1)
 or many other bookshops.
-
