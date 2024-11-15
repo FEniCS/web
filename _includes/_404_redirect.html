@@ -14,9 +14,15 @@ if(url.startsWith("fenicsproject.org/")){
 }
 
 if(url.startsWith("pub/")){
-    window.location.assign("https://pub.fenicsproject.org/" + url.substring(4))
+    window.location.assign("http://pub.fenicsproject.org/" + url.substring(4))
+}
+if(url == "pub"){
+    window.location.assign("http://pub.fenicsproject.org/")
 }
 if(url.startsWith("olddocs/")){
     window.location.assign("https://olddocs.fenicsproject.org/" + url.substring(8))
+}
+if(url == "olddocs"){
+    window.location.assign("https://olddocs.fenicsproject.org/")
 }
 </script>
