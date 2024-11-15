@@ -21,25 +21,3 @@ jobs:
         name: Install bundle
       - run: bundle exec jekyll build
         name: Build website
-      - name: Install SSH key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.WEBSITE_OPENSSH_PRIVATE_KEY }}
-          known_hosts: ${{ secrets.WEBSITE_KNOWN_HOSTS }}
-        if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}
-      - name: rsync over ssh
-        run: rsync -r ./_site/* github@fenicsproject.org:/var/www/vhosts/fenicsproject.org/newsite
-        if: ${{ github.repository == 'FEniCS/web' && github.ref == 'refs/heads/main' }}
-
-      - name: Make artifact zip
-        run: |
-          sudo apt-get install -y zip
-          zip -q -r _site.zip _site
-        if: ${{ github.repository == 'FEniCS/web' && github.ref != 'refs/heads/main' && github.event_name == 'pull_request' }}
-      - name: Upload build as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: website
-          path: _site.zip
-          if-no-files-found: error
-        if: ${{ github.repository == 'FEniCS/web' && github.ref != 'refs/heads/main' && github.event_name == 'pull_request' }}
