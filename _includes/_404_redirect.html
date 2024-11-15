@@ -36,4 +36,10 @@ if(url.startsWith("olddocs/")){
 if(url == "olddocs"){
     window.location.assign("https://olddocs.fenicsproject.org/")
 }
+if(url.startsWith("qa/")){
+    window.location.assign("https://oldqa.fenicsproject.org/" + url.substring(8))
+}
+if(url == "qa"){
+    window.location.assign("https://oldqa.fenicsproject.org/")
+}
 </script>
