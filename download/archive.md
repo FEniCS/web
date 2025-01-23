@@ -13,23 +13,9 @@ To use our prebuilt, high-performance
 [Docker CE](https://www.docker.com/products/docker-desktop) for your
 platform (Windows, Mac or Linux) and then run the following command:
 
-
 ```bash
 docker run -ti -p 127.0.0.1:8000:8000 -v $(pwd):/root/shared -w /root/shared ghcr.io/scientificcomputing/fenics-gmsh:2024-05-30
 ```
-
-and resume this container with
-
-```bash
-docker container start -i fenics_legacy
-```
-
-at a later instance.
-
-For detailed instructions on how to use docker, see for instance the [FEniCS Reference
-Manual](http://fenics-containers.readthedocs.io/en/latest/index.html).
-
-Note that all reference there to `quay.io`-images should be replaced with the image above.
 
 ## FEniCS on Windows 10
 
