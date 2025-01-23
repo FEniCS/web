@@ -13,11 +13,9 @@ To use our prebuilt, high-performance
 [Docker CE](https://www.docker.com/products/docker-desktop) for your
 platform (Windows, Mac or Linux) and then run the following command:
 
-You can start a container with the following `docker`
-command:
 
 ```bash
-docker run -ti -p 127.0.0.1:8000:8000 -v $(pwd):/root/shared -w /root/shared --name=fenics_legacy ghcr.io/scientificcomputing/fenics-gmsh:2024-05-30
+docker run -ti -p 127.0.0.1:8000:8000 -v $(pwd):/root/shared -w /root/shared ghcr.io/scientificcomputing/fenics-gmsh:2024-05-30
 ```
 
 and resume this container with
