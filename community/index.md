@@ -20,14 +20,12 @@ that you get a useful reply to your question, you should:
 More advice on how to post a good question is
 [here](https://fenicsproject.discourse.group/t/read-before-posting-how-do-i-get-my-question-answered/21/4).
 
-
 ## Slack Channel
 
 Discussions about FEniCS and its development take place on the [FEniCS
 Slack channels](https://fenicsproject.slack.com/). You can join the
 Slack community by
-[entering your email address at this link](https://fenicsproject-slack-invite.herokuapp.com/).
-
+[entering your email address at this link](https://join.slack.com/t/fenicsproject/shared_invite/zt-2wa76d0xw-ecfxcPj25K8pc7q7~1AK8g).
 
 ## Reporting bugs
 
@@ -38,7 +36,6 @@ the FEniCSx user interface, visit the [DOLFINx issues
 page](https://github.com/FEniCS/dolfinx/issues). As above, post complete
 but minimal code examples.
 
-
 ## Contributing
 
 We encourage users to take active part in developing and documenting
@@ -48,11 +45,22 @@ with other developers on the [FEniCSx Slack
 channels](https://fenicsproject.slack.com/): in particular, you should
 join the **#fenicsx** and **#development** channels.
 
-
 ## People of FEniCS
 
 [Here](people-of-fenics.md) we introduce some the users of FEniCS who
 have found it useful.
+
+## The FEniCS Conference
+
+The [FEniCS Conference](../conference/index.md) is held annually and
+is a great way to network with other users, keep up with new
+developments from core developers, hear new applications and results,
+and discuss ways of improving your projects.
+
+## Google Summer of Code
+
+The FEniCS Project has participated in the [Google Summer of Code](https://summerofcode.withgoogle.com) for multiple
+projects relating to the development of FEniCS. See [GSoC overview](../gsoc/gsoc.md) for more information.
 
 ## Code of Conduct
 
@@ -61,11 +69,15 @@ Our [Code of Conduct](code-of-conduct.md) sets out the expected
 standards of behaviour for the FEniCS community. It applies to all
 FEniCS activities including online forums and FEniCS workshops.
 
-
 ## Governance
 
 The FEniCS Project is developed and maintained as a freely available,
 open-source project by a global community of scientists and software
-developers.  Full details of the governance of the FEniCS project can be
+developers. Full details of the governance of the FEniCS project can be
 found in the [governance repository on
 GitHub](https://github.com/fenics/governance).
+
+## FEniCS logo
+
+If you wish to use the FEniCS logo, you can find high-resolution and vector versions of
+it, plus details of its license on [the branding page](../branding/index.md).

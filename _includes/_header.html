@@ -6,14 +6,22 @@
   </header>
 </div>
 {% if page.image %}
-  <div id="header_wrap" class="outer" style="background-image:url(/{{ page.image }});background-size:cover;background-position-y:center">
+  <div id="header_wrap" class="outer" style="background-image:url(/{{ page.image }});background-position-y:center;background-position-x:center;{% if page.image-zoom %}{% if page.image-zoom == "fill" %}background-size:cover{% else %}background-size:auto 600px{% endif %}{% else %}background-size:auto 600px{% endif %}">
 {% else %}
-  <div id="header_wrap" class="outer" style="background-image:url(/assets/img/default-bg.png);background-repeat:repeat">
+  <div id="header_wrap" class="outer" style="background-image:url(/assets/img/headers/fenics_fire.png);background-repeat:repeat">
 {% endif %}
-  <header class="inner">
+  <header class="inner{% if page.subtitle %}{% else %} lesstall{% endif %}">
+{% if page.subtitle %}
+  {% if page.subtitle == "logo" %}
+    <div style='text-align:center'><img src='/assets/logo/fenics_logo.png' style='height:200px;margin-top:40px;margin-bottom:-100px'></div>
+  {% endif %}
+{% endif %}
   <h1 id="project_title">{{ page.title | default: site.title }}</h1>
 {% if page.subtitle %}
-  {% if page.subtitle == "fenicsxversion" %}
+  {% if page.subtitle == "logo" %}
+  {% elsif page.subtitle == "FEniCSx fenicsxversion" %}
+    <h2 id="project_subtitle">FEniCSx {{ site.fenicsxversion }}</h2>
+  {% elsif page.subtitle == "fenicsxversion" %}
     <h2 id="project_subtitle">{{ site.fenicsxversion }}</h2>
   {% elsif page.subtitle == "fenicsversion" %}
     <h2 id="project_subtitle">{{ site.fenicsversion }}</h2>

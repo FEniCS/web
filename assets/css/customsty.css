@@ -42,6 +42,7 @@ blue:       #2E93CD
 }
 
 .nav ul {
+  float:right;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -59,19 +60,19 @@ blue:       #2E93CD
 
 a {color: #0F79D0 !important}
 
+.nav li a:hover {
+  color: #000000 !important;
+  transition: 0.3s;
+}
 .nav li a {
   padding: 10px;
   display: block;
-  color: black !important;
+  color: #777777 !important;
   text-align: center;
   text-decoration: none;
   font-weight:bold !important;
-  font-size: 11px !important;
+  font-size: 14px !important;
   font-family: 'Lato', sans-serif !important;
-}
-
-.nav li a:hover {
-  color: #2E93CD;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -95,19 +96,49 @@ h1, h2, h3, h4, h5, h6
 
 .inner {max-width:850px}
 
-#nav_head_inner {max-width: 1050px !important;}
+#nav_head_inner {max-width: unset !important;}
+
+#header_wrap {
+  padding: 100px 0px !important;
+}
+
+@media(min-width:600px) {
 
 #header_wrap .inner {
-  padding: 80px 20px !important;
-  background-color: #FFFFFFCC;
+  width: 500px;
 }
 
-@media (max-width:1330px){
-  #twitter { display:none }
 }
-@media (min-width:1330px){
-  #twitter { display:block }
+
+@media(max-width:600px) {
+
+#header_wrap .inner {
+  width: 100%;
 }
+
+}
+
+#header_wrap .inner {
+  height: 400px;
+  padding: 0px 0px !important;
+  background-color: #FFFFFFDD;
+}
+
+#header_wrap .inner.lesstall {
+  height: 300px;
+}
+#header_wrap h1
+{
+  margin: 0px !important;
+  padding-top: 100px !important;
+  line-height:100px;
+}
+
+#header_wrap h2 {
+  margin-top:20px !important;
+  background:none
+}
+
 
 #footer_wrap {background-color:#FFFFFF}
 
@@ -167,6 +198,7 @@ a.colorlink {
 
 a.colorlink:hover {
   background-color: #0F79D0
+  transition: 0.3s;
 }
 
 img.image-center-smaller {
@@ -295,4 +327,22 @@ mjx-container
 
 img {
   border: none!important
+}
+
+a.iconlink {
+  display:inline-block;text-align:center;padding:50px;
+  font-family: 'Lato', sans-serif;
+}
+
+a.iconlink,
+a.iconlink:link,
+a.iconlink:active,
+a.iconlink:visited
+{
+  color:black !important
+}
+
+a.iconlink:hover {
+  color:#0F79D0 !important;
+  transition: 0.3s;
 }

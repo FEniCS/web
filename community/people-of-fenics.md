@@ -13,7 +13,7 @@ take part, for example: in the [Discourse
 group](https://fenicsproject.discourse.group/), on our [Slack
 channel](https://fenicsproject.slack.com/), contributing to the [source
 code](https://github.com/FEniCS) or joining us at one of the
-[conferences](../conference/2021.md).
+[conferences](../conference/index.md).
 
 The distinctiveness of all our backgrounds, combined with our individual
 ambitions, drives innovation in the FEniCS Project. Drawing from this

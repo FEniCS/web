@@ -14,7 +14,10 @@ def test_fenicsx_version_number():
     )) as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
 
-    git = github.Github()
+    if "GITHUB_TOKEN" in os.environ:
+        git = github.Github(os.environ["GITHUB_TOKEN"])
+    else:
+        git = github.Github()
 
     dolfinx = git.get_repo("fenics/dolfinx")
 

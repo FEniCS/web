@@ -14,6 +14,15 @@ If you think something on the website should be change, but you're not sure how 
 please [open an issue](https://github.com/FEniCS/web/issues) describing the change you
 would like to suggest.
 
+When a pull request is opened, the website will be build and an artifact of this build will be uploaded.
+To see what the website will look look like after the pull request is merged, you can:
+
+1) Download the artifact
+
+2) unzip the artifact
+
+3) Run `python -m http.server` in the unzipped folder
+
 ## Code of conduct
 
 When interacting with others (eg when discussing issues or pull requests), you
@@ -33,19 +42,16 @@ For example, `index.md` starts with:
 ```
 ---
 title: FEniCSx
-subtitle: fenicsxversion
 image: assets/img/headers/design.jpg
-layout: with_twitter_sidebar
-permalink: /fenics/
 ---
 ```
 
 The `title` is displayed at the top of the page, with the `subtitle` (optional) below it. The
 `image` will be used as the background of the header; if no image is given, a default image will
-be used. The `layout` is used to select which layout the page uses: this can be `default` (for a
-default style page) or `with_twitter_sidebar` (for a page with a twitter sidebar). If `layout`
-is not set, then `default` will be used. `permalink` sets the url of the page: in this example,
-the page would be available at `https://fenicsproject.org/fenics/`.
+be used. The `layout` is used to select which layout the page uses: this can currently only be `default`
+(for a default style page). If `layout`
+is not set, then `default` will be used. `permalink` sets the url of the page: for example, if set to 
+`/fenics/`, the page would be available at `https://fenicsproject.org/fenics/`.
 
 ### Assets
 Files in the `assets` folder will be included as part of the website. Images and other files can
@@ -82,3 +88,11 @@ The website can be served locally (so it can then be opened in a browser) by run
 ```bash
 bundle exec jekyll serve
 ```
+
+when using Ruby 2.7, or
+
+```bash
+bash -c 'cd _site && python3 -m http.server 3000'
+```
+
+when using Ruby 3.0+.

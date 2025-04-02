@@ -21,7 +21,7 @@ def load_page_list(dir):
 root_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")
 pagelist = load_page_list(root_dir)
 
-permalinks = []
+permalinks = [""]
 for dir, p in pagelist:
     with open(os.path.join(dir, p)) as f:
         content = f.read()
@@ -42,6 +42,7 @@ for dir, p in pagelist:
     "google-summer-of-code-2017",
     "google-summer-of-code-2018",
     "people-of-fenics",
+    "gsoc"
 ])
 def test_permalinks(page):
     """Test that permalink exists."""
@@ -87,6 +88,8 @@ def test_links(dir, file):
         print(f"Checking for {i}")
         if i[0] == "/":
             assert i[1:] in permalinks
+        elif i.startswith("#"):
+            assert f"{{{i}}}" in page
         else:
             assert i.endswith(".md")
             assert os.path.isfile(os.path.join(dir, i))
