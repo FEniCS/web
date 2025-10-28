@@ -22,7 +22,7 @@ ranging from laptops to high-performance computers.
 
 <center>
 {% include _large_icon.html icon="fa-brands fa-linkedin" href="https://www.linkedin.com/company/fenics-project" label="LinkedIn"
-%}{% include _large_icon.html icon="fa-brands fa-slack" href="https://join.slack.com/t/fenicsproject/shared_invite/zt-1lraknsp1-6_3Js5kueDIyWgF192d3nA" label="Slack"
+%}{% include _large_icon.html icon="fa-brands fa-slack" href="https://join.slack.com/t/fenicsproject/shared_invite/zt-2wa76d0xw-ecfxcPj25K8pc7q7~1AK8g" label="Slack"
 %}
 </center>
 
