@@ -13,7 +13,7 @@ permalink: /fenics-2026/programme/
 
 | 8:45 - 9:20 | Arrival/Registration of participants |
 | 9:20 - 10:10 | Practice session 1                |
-| 10:10 - 10:40 | Coffee break                              |
+| 10:10 - 10:40 | Coffee break |
 | 10:40 - 11:30 | Practice session 2          |
 | 11:30 - 12:00 | Open QA session      |
 | 12:00 - 13:20  | Free lunch/Arrival/Registration of participants                                |
@@ -22,9 +22,9 @@ permalink: /fenics-2026/programme/
 
 | 13:20 - 13:30 | Opening ceremony |
 | 13:30 - 15:30 | Session 1                |
-| 15:30 - 16:00 | Coffee break                              |
+| 15:30 - 16:00 | Coffee break  |
 | 16:00 - 17:30 | Session 2          |
-| 17:30 - 18:30 | Poster and software demonstrations      |
+| 17:30 - 18:30 | Poster session and software demonstrations   |
 | 18:30   | **Cocktail reception (UChicago Center)**    |
 
 ### Thursday - 18 June
