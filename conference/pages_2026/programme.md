@@ -42,7 +42,7 @@ permalink: /fenics-2026/programme/
 | 15:30 - 16:00 | Coffee break |
 | 16:00 - 17:30 | Session 6  |
 | 17:30 - 20:00 | Free time |
-| 20:00 | **Conference dinner at Train Blue**  |
+| 20:00 | **Conference dinner at [Le Train Blue](https://maps.app.goo.gl/eQ7E7nFbz6DGsnkk9)**  |
 
 ### Friday - 19 June
 
