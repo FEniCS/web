@@ -12,9 +12,9 @@ permalink: /fenics-2026/programme/
 **Advanced Tutorial Session** (optional)
 
 | 8:45 - 9:20 | Arrival/Registration of participants |
-| 9:20 - 10:10 | Practice session 1                |
+| 9:20 - 10:10 | Tutorial session 1:<br>**An exploration of advanced features in DOLFINx through the shifted boundary method**            |
 | 10:10 - 10:40 | Coffee break |
-| 10:40 - 11:30 | Practice session 2          |
+| 10:40 - 11:30 | Tutorial session 2:<br>**A guide to building and running FEniCS on HPC systems**          |
 | 11:30 - 12:00 | Open QA session      |
 | 12:00 - 13:20  | Free lunch/Arrival/Registration of participants                                |
 
@@ -42,7 +42,7 @@ permalink: /fenics-2026/programme/
 | 15:30 - 16:00 | Coffee break |
 | 16:00 - 17:30 | Session 6  |
 | 17:30 - 20:00 | Free time |
-| 20:00 | **Conference dinner at Train Blue**  |
+| 20:00 | **Conference dinner at [Le Train Blue](https://maps.app.goo.gl/eQ7E7nFbz6DGsnkk9)**  |
 
 ### Friday - 19 June
 
