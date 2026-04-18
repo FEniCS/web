@@ -56,4 +56,4 @@ permalink: /fenics-2026/programme/
 <sup>*
 *For your convenience, a list of restaurants located within walking distance of
 the University of Chicago | John W. Boyer Center can be found
-[here](pages_2026/RESTAURANT_LIST_NEAR_CENTER_2026.pdf).*
+[here](RESTAURANT_LIST_NEAR_CENTER_2026.pdf).*
