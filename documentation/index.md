@@ -21,6 +21,7 @@ provides a range of tutorial programs as Jupyter notebooks.
 
 ### Release notes
 
+- [Release notes: v0.10.0](https://docs.fenicsproject.org/dolfinx/v0.10.0.post5/python/release_notes.html)
 - [Release notes: v0.9.0](./v0_9_0.md)
 
 ## FEniCSx vs legacy FEniCS
