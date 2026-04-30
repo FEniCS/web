@@ -16,7 +16,7 @@ permalink: /fenics-2026/programme/
 | 10:10 - 10:40 | Coffee break |
 | 10:40 - 11:30 | Tutorial session 2:<br>**A guide to building and running FEniCS on HPC systems**          |
 | 11:30 - 12:00 | Open QA session      |
-| 12:00 - 13:20  | Free lunch<sup>*</sup>/Arrival/Registration of participants                                |
+| 12:00 - 13:20  | Lunch outside centre<sup>*</sup>/Arrival/Registration of participants                                |
 
 **Afternoon** (official start at 13:20)
 
@@ -34,7 +34,7 @@ permalink: /fenics-2026/programme/
 | 9:00 - 10:30 | Session 3 |
 | 10:30 - 11:00 | Coffee break |
 | 11:00 - 12:15 | Session 4  |
-| 12:15 - 14:00 | Free lunch<sup>*</sup>      |
+| 12:15 - 14:00 | Lunch outside centre<sup>*</sup>      |
 
 **Afternoon**
 
@@ -56,4 +56,4 @@ permalink: /fenics-2026/programme/
 <sup>*
 *For your convenience, a list of restaurants located within walking distance of
 the University of Chicago | John W. Boyer Center can be found
-[here](pages_2026/RESTAURANT_LIST_NEAR_CENTER_2026.pdf).*
+[here](RESTAURANT_LIST_NEAR_CENTER_2026.pdf).*
