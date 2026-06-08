@@ -9,16 +9,16 @@ permalink: /fenics-2026/programme/
 
 ### Wednesday - 17 June
 
-**Optional - Advanced Tutorial Session**
+**Morning - Advanced tutorial sessions** (optional)
 
 | 8:45 - 9:20 | Arrival/Registration of tutorial session participants |
-| 9:20 - 10:10 | Tutorial session 1 with Jørgen S. Dokken:<br/>**An exploration of advanced features in DOLFINx through the shifted boundary method**            |
+| 9:20 - 10:10 | Tutorial session 1 with Jørgen S. Dokken:<br/>An exploration of advanced features in DOLFINx through the shifted boundary method            |
 | 10:10 - 10:40 | Coffee break |
-| 10:40 - 11:30 | Tutorial session 2 with Jack S. Hale:<br/>**A guide to building and running FEniCSx on HPC systems**          |
+| 10:40 - 11:30 | Tutorial session 2 with Jack S. Hale:<br/>A guide to building and running FEniCSx on HPC systems          |
 | 11:30 - 12:00 | Open Q&A session      |
-| 12:00 - 13:20  | Lunch outside centre<sup>*</sup>/Arrival/Registration of participants                                |
+| 12:00 - 13:20  | Lunch outside centre/Arrival/Registration of participants                                |
 
-**Afternoon** (main conference starts)
+**Afternoon - Conference ** (main conference starts)
 
 | 12:00 - 13:20 | Arrival/Registration of conference participants |
 | 13:20 - 13:30 | Opening ceremony |
@@ -28,7 +28,7 @@ permalink: /fenics-2026/programme/
 | 17:30 - 18:30 | Poster session and software demonstrations   |
 | 18:30   | **Cocktail reception (UChicago Center)** |
 
-**Session 1: Software packages with later demonstrations **
+**Session 1: Software packages with later demonstrations**
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
@@ -86,7 +86,7 @@ Software demonstrations:
 | 9:00 - 10:30 | Session 3: Multiphysics |
 | 10:30 - 11:00 | Coffee break |
 | 11:00 - 12:30 | Session 4: Biomedical modelling and applications |
-| 12:30 - 14:00 | Lunch outside centre<sup>*</sup>      |
+| 12:30 - 14:00 | Lunch outside centre |
 
 **Afternoon**
 
@@ -168,9 +168,3 @@ Software demonstrations:
 | 11:30 - 11:45 | Daria Mesbah | femOHL: A FEniCSx-based Framework for Structural Integrity and Resilience Assessment of Overhead Power Transmission Infrastructure |
 | 11:45 - 12:00 | Arshad Fasiludeen | Multiphysics Eddy-Current Simulation for Efficient Hybrid-Electric Aircraft Propulsion |
 | 12:00 - 12:15 | José Ángel Bejarano Vázquez | L-PBF Processes via FEniCS: A Finite Element Framework for Heat Modelling and Accelerated Predictive Workflows |
-
-<sup>*
-*For your convenience, a list of restaurants located within walking distance of
-the University of Chicago | John W. Boyer Center can be found
-[here](RESTAURANT_LIST_NEAR_CENTER_2026.pdf).*
-</sup>
