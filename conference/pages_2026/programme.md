@@ -18,7 +18,7 @@ permalink: /fenics-2026/programme/
 | 11:30 - 12:00 | Open Q&A session      |
 | 12:00 - 13:20  | Lunch outside centre/Arrival/Registration of participants                                |
 
-**Afternoon - Conference ** (main conference starts)
+**Afternoon - Conference starts**
 
 | 12:00 - 13:20 | Arrival/Registration of conference participants |
 | 13:20 - 13:30 | Opening ceremony |
