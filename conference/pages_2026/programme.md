@@ -9,19 +9,20 @@ permalink: /fenics-2026/programme/
 
 ### Wednesday - 17 June
 
-**Advanced Tutorial Session** (optional)
+**Optional - Advanced Tutorial Session**
 
-| 8:45 - 9:20 | Arrival/Registration of participants |
-| 9:20 - 10:10 | Tutorial session 1 with Jørgen S. Dokken:<br>**An exploration of advanced features in DOLFINx through the shifted boundary method**            |
+| 8:45 - 9:20 | Arrival/Registration of tutorial session participants |
+| 9:20 - 10:10 | Tutorial session 1 with Jørgen S. Dokken:<br/>**An exploration of advanced features in DOLFINx through the shifted boundary method**            |
 | 10:10 - 10:40 | Coffee break |
-| 10:40 - 11:30 | Tutorial session 2 with Jack S. Hale:<br>**A guide to building and running FEniCSx on HPC systems**          |
+| 10:40 - 11:30 | Tutorial session 2 with Jack S. Hale:<br/>**A guide to building and running FEniCSx on HPC systems**          |
 | 11:30 - 12:00 | Open Q&A session      |
 | 12:00 - 13:20  | Lunch outside centre<sup>*</sup>/Arrival/Registration of participants                                |
 
-**Afternoon** (official start at 13:20)
+**Afternoon** (main conference starts)
 
+| 12:00 - 13:20 | Arrival/Registration of conference participants |
 | 13:20 - 13:30 | Opening ceremony |
-| 13:30 - 15:30 | Session 1 |
+| 13:30 - 15:30 | Session 1: Software packages with later demonstrations |
 | 15:30 - 16:00 | Coffee break  |
 | 16:00 - 17:30 | Session 2: Kernels, HPC deployment, and the wider FEniCS ecosystem |
 | 17:30 - 18:30 | Poster session and software demonstrations   |
@@ -38,7 +39,7 @@ permalink: /fenics-2026/programme/
 | 14:30 - 14:45 | Joaquin Cornejo | Automated generation of MITC shell elements in code\_aster via FEniCSx symbolic engines |
 | 14:45 - 15:00 | Anton Evdokimov | FEniCSx in Metal Additive Manufacturing |
 | 15:00 - 15:15 | Luis Gerardo Gutierrez Ibarra | Numerical investigation of urban heat island within variable porous urban domain |
-| 15:15 - 15:30 | Michel Duprez | PhiFEM : a immersed boundary finite element method for geometries defined by a level-set |
+| 15:15 - 15:30 | Michel Duprez | PhiFEM : an immersed boundary finite element method for geometries defined by a level-set |
 
 **Session 2: Kernels, HPC deployment, and the wider FEniCS ecosystem**
 
@@ -51,7 +52,7 @@ permalink: /fenics-2026/programme/
 | 17:00 - 17:15 | Henrik Finsberg | Building a FEniCSx Ecosystem for Biomedical Research |
 | 17:15 - 17:30 | Poster and software-only presenters | One-minute blitz session |
 
-Poster and software-only one-minute blitz presenters (12 total: 11 posters + 1 software-only demonstration):
+Poster and software demonstration one-minute blitz presenters (12 total: 11 posters + 1 software-only demonstration):
 
 - Luke J Barratt, Developing numerical tools to improve the diagnosis of peripheral artery disease
 - Raphaël Bulle, Shape optimization using PhiFEM
@@ -172,3 +173,4 @@ Software demonstrations:
 *For your convenience, a list of restaurants located within walking distance of
 the University of Chicago | John W. Boyer Center can be found
 [here](RESTAURANT_LIST_NEAR_CENTER_2026.pdf).*
+</sup>
