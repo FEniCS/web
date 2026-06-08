@@ -113,7 +113,7 @@ Software demonstrations:
 | 11:00 - 11:15 | Henrik Palme | Nonlinear Inversion Framework - Magnetic Resonance Elastography (MRE) |
 | 11:15 - 11:30 | Cécile Daversin Catty | In-silico drug delivery in the human brain |
 | 11:30 - 11:45 | Andreas Solheim | Data-integrated simulations of solute transport in the rodent brain using Fenicsx |
-| 11:45 - 12:00 | Thomas Lavigne | POROMECHANICS TO INVESTIGATE THE IMPACT OF MECHANICAL LOADING ON HUMAN SKIN MICRO-CIRCULATION |
+| 11:45 - 12:00 | Thomas Lavigne | Poromechanics to investigate the impact of mechanical loading on human skin micro-circulation |
 | 12:00 - 12:15 | Pierre Bichon | Contact modeling using the Third Medium Contact (TMC) method: toward the application of a femoral stem insertion inside a bone cavity |
 | 12:15 - 12:30 | Marius Causemann | Inferring Human Intracranial CSF Absorption Sites via Inverse Modelling of Protein Transport |
 
