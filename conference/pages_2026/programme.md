@@ -15,7 +15,7 @@ permalink: /fenics-2026/programme/
 | 9:20 - 10:10 | Tutorial session 1:<br>**An exploration of advanced features in DOLFINx through the shifted boundary method**            |
 | 10:10 - 10:40 | Coffee break |
 | 10:40 - 11:30 | Tutorial session 2:<br>**A guide to building and running FEniCS on HPC systems**          |
-| 11:30 - 12:00 | Open QA session      |
+| 11:30 - 12:00 | Open Q&A session      |
 | 12:00 - 13:20  | Lunch outside centre<sup>*</sup>/Arrival/Registration of participants                                |
 
 **Afternoon** (official start at 13:20)
@@ -23,9 +23,9 @@ permalink: /fenics-2026/programme/
 | 13:20 - 13:30 | Opening ceremony |
 | 13:30 - 15:30 | Session 1 |
 | 15:30 - 16:00 | Coffee break  |
-| 16:00 - 17:30 | Session 2: Kernels, HPC deployment, and FEniCS ecosystem |
+| 16:00 - 17:30 | Session 2: Kernels, HPC deployment, and the wider FEniCS ecosystem |
 | 17:30 - 18:30 | Poster session and software demonstrations   |
-| 18:30   | **Cocktail reception (UChicago Center)**    |
+| 18:30   | **Cocktail reception (UChicago Center)** |
 
 **Session 1**
 
@@ -40,7 +40,7 @@ permalink: /fenics-2026/programme/
 | 15:00 - 15:15 | Luis Gerardo Gutierrez Ibarra | Numerical investigation of urban heat island within variable porous urban domain |
 | 15:15 - 15:30 | Michel Duprez | PhiFEM : a immersed boundary finite element method for geometries defined by a level-set |
 
-**Session 2: Kernels, HPC deployment, and FEniCS ecosystem**
+**Session 2: Kernels, HPC deployment, and the wider FEniCS ecosystem**
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
@@ -112,7 +112,7 @@ Software demonstrations:
 | --- | --- | --- |
 | 11:00 - 11:15 | Henrik Palme | Nonlinear Inversion Framework - Magnetic Resonance Elastography (MRE) |
 | 11:15 - 11:30 | Cécile Daversin Catty | In-silico drug delivery in the human brain |
-| 11:30 - 11:45 | Andreas Solheim | Data-integrated simulations of solute transport in the rodent brain using Fenicsx |
+| 11:30 - 11:45 | Andreas Solheim | Data-integrated simulations of solute transport in the rodent brain using FEniCSx |
 | 11:45 - 12:00 | Thomas Lavigne | Poromechanics to investigate the impact of mechanical loading on human skin micro-circulation |
 | 12:00 - 12:15 | Pierre Bichon | Contact modeling using the Third Medium Contact (TMC) method: toward the application of a femoral stem insertion inside a bone cavity |
 | 12:15 - 12:30 | Marius Causemann | Inferring Human Intracranial CSF Absorption Sites via Inverse Modelling of Protein Transport |
