@@ -143,30 +143,30 @@ Software demonstrations:
 
 **Morning**
 
-| 9:00 - 10:15 | Session 7: Inverse problems, waves, and flow/transport |
-| 10:15 - 10:45 | Coffee break |
-| 10:45 - 12:00 | Session 8: Engineering applications in structures, propulsion, and manufacturing |
-| 12:00 | **Closing ceremony and awards**  |
+| 9:15 - 10:30 | Session 7: Inverse problems, waves, and flow/transport |
+| 10:30 - 11:00 | Coffee break |
+| 11:00 - 12:15 | Session 8: Engineering applications in structures, propulsion, and manufacturing |
+| 12:15 | **Closing ceremony and awards**  |
 
 **Session 7: Inverse problems, waves, and flow/transport**
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
-| 9:00 - 9:15 | Xavier Cartoixà | Generalized Stokes problem with pressure Dirichlet boundary conditions for heat transport |
-| 9:15 - 9:30 | G. William Slade | Electromagnetic Waveguide Input/Output Boundary Condition using SciFEM and FEniCSx |
-| 9:30 - 9:45 | Ofir Mirkin | Towards fully programmable inflatable panels |
-| 9:45 - 10:00 | Dimitrios Gourzoulidis | A Finite-Element Method for Fluctuating Navier--Stokes Equations |
-| 10:00 - 10:15 | Nathan Langlet | Flow distortion generation using topology optimization |
+| 9:15 - 9:30 | Xavier Cartoixà | Generalized Stokes problem with pressure Dirichlet boundary conditions for heat transport |
+| 9:30 - 9:45 | G. William Slade | Electromagnetic Waveguide Input/Output Boundary Condition using SciFEM and FEniCSx |
+| 9:45 - 10:00 | Ofir Mirkin | Towards fully programmable inflatable panels |
+| 10:00 - 10:15 | Dimitrios Gourzoulidis | A Finite-Element Method for Fluctuating Navier--Stokes Equations |
+| 10:15 - 10:30 | Nathan Langlet | Flow distortion generation using topology optimization |
 
 **Session 8: Engineering applications in structures, propulsion, and manufacturing**
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
-| 10:45 - 11:00 | Johannes Neumann | Finite-Element Modeling of Complex Inelasticity Using FEniCSx: Paper and Thermoplastics |
-| 11:00 - 11:15 | Shubham Saurabh | Large scale random vibration analysis using FEniCS |
-| 11:15 - 11:30 | Daria Mesbah | femOHL: A FEniCSx-based Framework for Structural Integrity and Resilience Assessment of Overhead Power Transmission Infrastructure |
-| 11:30 - 11:45 | Arshad Fasiludeen | Multiphysics Eddy-Current Simulation for Efficient Hybrid-Electric Aircraft Propulsion |
-| 11:45 - 12:00 | José Ángel Bejarano Vázquez | L-PBF Processes via FEniCS: A Finite Element Framework for Heat Modelling and Accelerated Predictive Workflows |
+| 11:00 - 11:15 | Johannes Neumann | Finite-Element Modeling of Complex Inelasticity Using FEniCSx: Paper and Thermoplastics |
+| 11:15 - 11:30 | Shubham Saurabh | Large scale random vibration analysis using FEniCS |
+| 11:30 - 11:45 | Daria Mesbah | femOHL: A FEniCSx-based Framework for Structural Integrity and Resilience Assessment of Overhead Power Transmission Infrastructure |
+| 11:45 - 12:00 | Arshad Fasiludeen | Multiphysics Eddy-Current Simulation for Efficient Hybrid-Electric Aircraft Propulsion |
+| 12:00 - 12:15 | José Ángel Bejarano Vázquez | L-PBF Processes via FEniCS: A Finite Element Framework for Heat Modelling and Accelerated Predictive Workflows |
 
 <sup>*
 *For your convenience, a list of restaurants located within walking distance of
