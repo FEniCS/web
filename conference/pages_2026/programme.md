@@ -104,7 +104,7 @@ Software demonstrations:
 
 **Session 3: Multiphysics**
 
-Chair: Ridgway Scott
+Chair: Johan Jansson
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
@@ -165,7 +165,7 @@ Chair: Rémi Delaporte-Mathurin
 
 **Session 7: Inverse problems, waves, and flow/transport**
 
-Chair: Johan Jansson
+Chair: Ridgway Scott
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
