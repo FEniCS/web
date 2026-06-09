@@ -110,8 +110,8 @@ Chair: Ridgway Scott
 | --- | --- | --- |
 | 9:00 - 9:15 | Marina Matthaiou | FELiCS: A Versatile Linearized Flow Solver for Multi-Physics Applications |
 | 9:15 - 9:30 | Théo Bermond | Finite Element Modeling of Electrochemical Impedance Spectroscopy in All-Solid-State Batteries using FEniCSx |
-| 9:30 - 9:45 | James Dark | Multi-physics Modelling of Nuclear Fusion Reactor Components using FESTIM |
-| 9:45 - 10:00 | Remi Delaporte-Mathurin | FESTIM v2.0: Upgraded framework for multi-species hydrogen transport |
+| 9:30 - 9:45 | Remi Delaporte-Mathurin | FESTIM v2.0: Upgraded framework for multi-species hydrogen transport |
+| 9:45 - 10:00 | James Dark | Multi-physics Modelling of Nuclear Fusion Reactor Components using FESTIM |
 | 10:00 - 10:15 | Aaron Gobeyn | Numerical quality factor statistics of multilayered superconducting radio-frequency cavity |
 | 10:15 - 10:30 | Marc Hirschvogel | A fully monolithic formulation for multiphase fluid-structure interaction |
 
