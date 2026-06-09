@@ -5,11 +5,13 @@ image-zoom: fill
 permalink: /fenics-2026/programme/
 ---
 
-# FEniCS 2026 - Programme v1 (8/6/2026)
+# FEniCS 2026 - Programme v2 (9/6/2026)
 
 ### Wednesday - 17 June
 
 **Morning - Advanced tutorial sessions** (optional)
+
+Chair: Andrey Latyshev
 
 | 8:45 - 9:20 | Arrival/Registration of tutorial session participants |
 | 9:20 - 10:10 | Tutorial session 1 with Jørgen S. Dokken:<br/>An exploration of advanced features in DOLFINx through the shifted boundary method            |
@@ -30,6 +32,8 @@ permalink: /fenics-2026/programme/
 
 **Session 1: Software packages with later demonstrations**
 
+Chair: Jack S. Hale
+
 | Time | Presenter | Contribution |
 | --- | --- | --- |
 | 13:30 - 13:45 | Susanne Claus | CutFEMx: A Cut Finite Element Library for FEniCSx |
@@ -42,6 +46,8 @@ permalink: /fenics-2026/programme/
 | 15:15 - 15:30 | Michel Duprez | PhiFEM : an immersed boundary finite element method for geometries defined by a level-set |
 
 **Session 2: Kernels, HPC deployment, and the wider FEniCS ecosystem**
+
+Chair: Chris Richardson
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
@@ -98,6 +104,8 @@ Software demonstrations:
 
 **Session 3: Multiphysics**
 
+Chair: Ridgway Scott
+
 | Time | Presenter | Contribution |
 | --- | --- | --- |
 | 9:00 - 9:15 | Marina Matthaiou | FELiCS: A Versatile Linearized Flow Solver for Multi-Physics Applications |
@@ -108,6 +116,8 @@ Software demonstrations:
 | 10:15 - 10:30 | Marc Hirschvogel | A fully monolithic formulation for multiphase fluid-structure interaction |
 
 **Session 4: Biomedical modelling and applications**
+
+Chair: Jørgen S. Dokken
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
@@ -120,6 +130,8 @@ Software demonstrations:
 
 **Session 5: Solid mechanics, contact, and material response**
 
+Chair: Jeremy Bleyer
+
 | Time | Presenter | Contribution |
 | --- | --- | --- |
 | 14:00 - 14:15 | Saeid Ghouli | Material model discovery with FEMU in FEniCSx |
@@ -130,6 +142,8 @@ Software demonstrations:
 | 15:15 - 15:30 | Donald Boyce | Convergence Study on Polycrystalline Materials |
 
 **Session 6: Solver workflows, inverse modelling, and FEniCS ecosystem**
+
+Chair: Rémi Delaporte-Mathurin
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
@@ -151,6 +165,8 @@ Software demonstrations:
 
 **Session 7: Inverse problems, waves, and flow/transport**
 
+Chair: Johan Jansson
+
 | Time | Presenter | Contribution |
 | --- | --- | --- |
 | 9:15 - 9:30 | Xavier Cartoixà | Generalized Stokes problem with pressure Dirichlet boundary conditions for heat transport |
@@ -160,6 +176,8 @@ Software demonstrations:
 | 10:15 - 10:30 | Nathan Langlet | Flow distortion generation using topology optimization |
 
 **Session 8: Engineering applications in structures, propulsion, and manufacturing**
+
+Chair: Corrado Maurini
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
