@@ -130,7 +130,7 @@ Chair: Jørgen S. Dokken
 
 **Session 5: Solid mechanics, contact, and material response**
 
-Chair: Jeremy Bleyer
+Chair: Jérémy Bleyer
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
