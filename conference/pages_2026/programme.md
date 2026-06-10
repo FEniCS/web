@@ -100,7 +100,7 @@ Software demonstrations:
 | 15:30 - 16:00 | Coffee break |
 | 16:00 - 17:30 | Session 6: Solver workflows, inverse modelling, and FEniCS ecosystem |
 | 17:30 - 20:00 | Free time |
-| 20:00 | **Conference dinner at [Le Train Blue](https://maps.app.goo.gl/eQ7E7nFbz6DGsnkk9)**  |
+| 20:00 | **Conference dinner at [Bofinger](https://maps.app.goo.gl/hrFa7TY8JzN3whfD6)**  |
 
 **Session 3: Multiphysics**
 
