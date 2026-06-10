@@ -32,7 +32,7 @@ Chair: Andrey Latyshev
 
 **Session 1: Software packages with later demonstrations**
 
-Chair: Jack S. Hale
+Chair: Cécile Daversin Catty
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
