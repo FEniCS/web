@@ -4,9 +4,9 @@ title: FEniCS Project
 description: Open-source finite element library
 fenicsversion: 2019.1.0
 fenicsversiondate: April 2019
-fenicsxversion: "0.10"
-dolfinxversion: 0.10.0.post1 # this is used in the URL of the Python demos
-fenicsxversiondate: October 2025
+fenicsxversion: "0.11"
+dolfinxversion: 0.11.0.post0 # this is used in the URL of the Python demos
+fenicsxversiondate: June 2026
 
 defaults:
   - scope:
