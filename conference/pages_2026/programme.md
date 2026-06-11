@@ -5,11 +5,13 @@ image-zoom: fill
 permalink: /fenics-2026/programme/
 ---
 
-# FEniCS 2026 - Programme v2 (9/6/2026)
+# FEniCS 2026 - Conference programme v2 (11/06/2026)
 
 ### Wednesday - 17 June
 
-**Morning - Advanced tutorial sessions** (optional)
+**Morning - Advanced Tutorial Session** (optional)
+
+_Attendess of this session are advised to install [v0.11.0](https://github.com/FEniCS/dolfinx/releases/tag/v0.11.0) on their laptops in advance._
 
 Chair: Andrey Latyshev
 
