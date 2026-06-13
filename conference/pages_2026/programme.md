@@ -1,5 +1,5 @@
 ---
-title: FEniCS 2026<br/>Programme
+title: FEniCS 2026 <br/>Programme
 image: assets/img/fenics2026/universityofchicagoparis.jpg
 image-zoom: fill
 permalink: /fenics-2026/programme/
