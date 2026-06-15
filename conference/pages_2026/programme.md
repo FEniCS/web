@@ -11,7 +11,7 @@ permalink: /fenics-2026/programme/
 
 **Morning - Advanced Tutorial Session** (optional)
 
-_Attendess of this session are advised to install [v0.11.0](https://github.com/FEniCS/dolfinx/releases/tag/v0.11.0) on their laptops in advance._
+_Attendees of this session are invited to follow the instructions on the website: [FEniCS 2026 – Advanced Tutorial Session](https://a-latyshev.github.io/fenics26-tutorials/#how-to-use) to preinstall the latest version of DOLFINx (v0.11.0) together with the required dependencies._
 
 Chair: Andrey Latyshev
 
