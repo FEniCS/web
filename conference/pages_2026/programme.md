@@ -149,12 +149,11 @@ Chair: Rémi Delaporte-Mathurin
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
-| 16:00 - 16:15 | Andrés A León Baldelli | Variational Solvers for Irreversible Evolutionary Systems: Orchestration |
-| 16:15 - 16:30 | Johnny Vogels | Implementation of the TiNiest Tensor de Rham subcomplex on 3D Hybrid Meshes |
-| 16:30 - 16:45 | Alexis Salzman | An implementation of the distributed two scales method for linear elasticity problems based on FEniCSx and PETSc |
-| 16:45 - 17:00 | Javier Lorente-Macías | Adjoint-accelerated inverse modelling of acoustic cross-talk in piezoelectric inkjet printheads |
-| 17:00 - 17:15 | Louis Gombert | FEniCS Post-processing with ParaView |
-| 17:15 - 17:30 | Johan Jansson | The Digital Math framework as a robust and general scientific basis for society - advancements in the Adaptive Euler breakthrough for aerodynamics and DigiMat educational program |
+| 16:00 - 16:15 | Johnny Vogels | Implementation of the TiNiest Tensor de Rham subcomplex on 3D Hybrid Meshes |
+| 16:15 - 16:30 | Alexis Salzman | An implementation of the distributed two scales method for linear elasticity problems based on FEniCSx and PETSc |
+| 16:30 - 16:45 | Javier Lorente-Macías | Adjoint-accelerated inverse modelling of acoustic cross-talk in piezoelectric inkjet printheads |
+| 16:45 - 17:00 | Louis Gombert | FEniCS Post-processing with ParaView |
+| 17:00 - 17:15 | Johan Jansson | The Digital Math framework as a robust and general scientific basis for society - advancements in the Adaptive Euler breakthrough for aerodynamics and DigiMat educational program |
 
 ### Friday - 19 June
 
