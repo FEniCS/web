@@ -149,12 +149,11 @@ Chair: Rémi Delaporte-Mathurin
 
 | Time | Presenter | Contribution |
 | --- | --- | --- |
-| 16:00 - 16:15 | Andrés A León Baldelli | Variational Solvers for Irreversible Evolutionary Systems: Orchestration |
-| 16:15 - 16:30 | Johnny Vogels | Implementation of the TiNiest Tensor de Rham subcomplex on 3D Hybrid Meshes |
-| 16:30 - 16:45 | Alexis Salzman | An implementation of the distributed two scales method for linear elasticity problems based on FEniCSx and PETSc |
-| 16:45 - 17:00 | Javier Lorente-Macías | Adjoint-accelerated inverse modelling of acoustic cross-talk in piezoelectric inkjet printheads |
-| 17:00 - 17:15 | Louis Gombert | FEniCS Post-processing with ParaView |
-| 17:15 - 17:30 | Johan Jansson | The Digital Math framework as a robust and general scientific basis for society - advancements in the Adaptive Euler breakthrough for aerodynamics and DigiMat educational program |
+| 16:00 - 16:15 | Johnny Vogels | Implementation of the TiNiest Tensor de Rham subcomplex on 3D Hybrid Meshes |
+| 16:15 - 16:30 | Alexis Salzman | An implementation of the distributed two scales method for linear elasticity problems based on FEniCSx and PETSc |
+| 16:30 - 16:45 | Javier Lorente-Macías | Adjoint-accelerated inverse modelling of acoustic cross-talk in piezoelectric inkjet printheads |
+| 16:45 - 17:00 | Louis Gombert | FEniCS Post-processing with ParaView |
+| 17:00 - 17:15 | Johan Jansson | The Digital Math framework as a robust and general scientific basis for society - advancements in the Adaptive Euler breakthrough for aerodynamics and DigiMat educational program |
 
 ### Friday - 19 June
 
@@ -184,7 +183,6 @@ Chair: Corrado Maurini
 | Time | Presenter | Contribution |
 | --- | --- | --- |
 | 11:00 - 11:15 | Johannes Neumann | Finite-Element Modeling of Complex Inelasticity Using FEniCSx: Paper and Thermoplastics |
-| 11:15 - 11:30 | Shubham Saurabh | Large scale random vibration analysis using FEniCS |
-| 11:30 - 11:45 | Daria Mesbah | femOHL: A FEniCSx-based Framework for Structural Integrity and Resilience Assessment of Overhead Power Transmission Infrastructure |
-| 11:45 - 12:00 | Arshad Fasiludeen | Multiphysics Eddy-Current Simulation for Efficient Hybrid-Electric Aircraft Propulsion |
-| 12:00 - 12:15 | José Ángel Bejarano Vázquez | L-PBF Processes via FEniCS: A Finite Element Framework for Heat Modelling and Accelerated Predictive Workflows |
+| 11:15 - 11:30 | Daria Mesbah | femOHL: A FEniCSx-based Framework for Structural Integrity and Resilience Assessment of Overhead Power Transmission Infrastructure |
+| 11:30 - 11:45 | Arshad Fasiludeen | Multiphysics Eddy-Current Simulation for Efficient Hybrid-Electric Aircraft Propulsion |
+| 11:45 - 12:00 | José Ángel Bejarano Vázquez | L-PBF Processes via FEniCS: A Finite Element Framework for Heat Modelling and Accelerated Predictive Workflows |
