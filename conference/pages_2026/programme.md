@@ -100,8 +100,8 @@ Software demonstrations:
 
 | 14:00 - 15:30 | Session 5: Solid mechanics, contact, and material response |
 | 15:30 - 16:00 | Coffee break |
-| 16:00 - 17:30 | Session 6: Solver workflows, inverse modelling, and FEniCS ecosystem |
-| 17:30 - 20:00 | Free time |
+| 16:00 - 17:15 | Session 6: Solver workflows, inverse modelling, and FEniCS ecosystem |
+| 17:15 - 20:00 | Free time |
 | 20:00 | **Conference dinner at [Bofinger](https://maps.app.goo.gl/hrFa7TY8JzN3whfD6)**  |
 
 **Session 3: Multiphysics**
@@ -161,7 +161,8 @@ Chair: Rémi Delaporte-Mathurin
 
 | 9:15 - 10:30 | Session 7: Inverse problems, waves, and flow/transport |
 | 10:30 - 11:00 | Coffee break |
-| 11:00 - 12:15 | Session 8: Engineering applications in structures, propulsion, and manufacturing |
+| 11:00 - 12:00 | Session 8: Engineering applications in structures, propulsion, and manufacturing |
+| 12:00 - 12:15 | Prize jury deliberation |
 | 12:15 | **Closing ceremony and awards**  |
 
 **Session 7: Inverse problems, waves, and flow/transport**
@@ -186,3 +187,9 @@ Chair: Corrado Maurini
 | 11:15 - 11:30 | Daria Mesbah | femOHL: A FEniCSx-based Framework for Structural Integrity and Resilience Assessment of Overhead Power Transmission Infrastructure |
 | 11:30 - 11:45 | Arshad Fasiludeen | Multiphysics Eddy-Current Simulation for Efficient Hybrid-Electric Aircraft Propulsion |
 | 11:45 - 12:00 | José Ángel Bejarano Vázquez | L-PBF Processes via FEniCS: A Finite Element Framework for Heat Modelling and Accelerated Predictive Workflows |
+
+**Closing session and prize awards**
+
+| Time | Presenter | Contribution |
+| --- | --- | --- |
+| 12:15 - 12:30 | Organising Committee | Closing session and prize awards |
