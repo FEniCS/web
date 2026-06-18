@@ -5,7 +5,7 @@ image-zoom: fill
 permalink: /fenics-2026/programme/
 ---
 
-# FEniCS 2026 - Conference programme v2 (11/06/2026)
+# FEniCS 2026 - Conference programme v3 (18/06/2026)
 
 ### Wednesday - 17 June
 
