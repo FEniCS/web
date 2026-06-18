@@ -183,7 +183,6 @@ Chair: Corrado Maurini
 | Time | Presenter | Contribution |
 | --- | --- | --- |
 | 11:00 - 11:15 | Johannes Neumann | Finite-Element Modeling of Complex Inelasticity Using FEniCSx: Paper and Thermoplastics |
-| 11:15 - 11:30 | Shubham Saurabh | Large scale random vibration analysis using FEniCS |
-| 11:30 - 11:45 | Daria Mesbah | femOHL: A FEniCSx-based Framework for Structural Integrity and Resilience Assessment of Overhead Power Transmission Infrastructure |
-| 11:45 - 12:00 | Arshad Fasiludeen | Multiphysics Eddy-Current Simulation for Efficient Hybrid-Electric Aircraft Propulsion |
-| 12:00 - 12:15 | José Ángel Bejarano Vázquez | L-PBF Processes via FEniCS: A Finite Element Framework for Heat Modelling and Accelerated Predictive Workflows |
+| 11:15 - 11:30 | Daria Mesbah | femOHL: A FEniCSx-based Framework for Structural Integrity and Resilience Assessment of Overhead Power Transmission Infrastructure |
+| 11:30 - 11:45 | Arshad Fasiludeen | Multiphysics Eddy-Current Simulation for Efficient Hybrid-Electric Aircraft Propulsion |
+| 11:45 - 12:00 | José Ángel Bejarano Vázquez | L-PBF Processes via FEniCS: A Finite Element Framework for Heat Modelling and Accelerated Predictive Workflows |
