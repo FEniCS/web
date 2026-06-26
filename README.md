@@ -73,7 +73,8 @@ version number to update, do not use these and write the version number.)
 The prerequisites for building the website can be installed by running:
 
 ```bash
-sudo apt-get install -y ruby-bundler
+apt-get update
+apt-get install -y build-essential ruby-dev
 bundle install
 ```
 
