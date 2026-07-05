@@ -76,9 +76,9 @@ def update_markdown_file(filepath):
         print(f"No images found for {gallery_url}")
         return
 
-    # Write images to the JSON file specified in gallery_data
-    relative_dir = os.path.dirname(filepath)
-    output_file = os.path.join(relative_dir, gallery_data)
+    # Write images to the JSON file specified in gallery_data relative to repo root
+    clean_data_path = gallery_data.lstrip('/')
+    output_file = os.path.join('.', clean_data_path)
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
     with open(output_file, 'w', encoding='utf-8') as f:
