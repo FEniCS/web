@@ -370,38 +370,42 @@ a.iconlink:hover {
   display: none; /* Safari and Chrome */
 }
 
-.image-gallery {
-  display: grid;
-  grid-template-rows: repeat(2, 180px);
-  grid-auto-flow: column;
-  grid-auto-columns: 180px;
+.image-gallery-container {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   width: max-content;
   margin: 0;
 }
 
-.image-gallery a {
+.image-gallery-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: max-content;
+}
+
+.image-gallery-row a {
   position: relative;
   display: block;
-  width: 180px;
   height: 180px;
+  width: auto;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   background-color: #f0f0f0;
-  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.image-gallery a:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+.image-gallery-row a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.image-gallery a img {
-  width: 100%;
+.image-gallery-row a img {
   height: 100%;
-  object-fit: cover;
+  width: auto;
   display: block;
   margin: 0;
   transition: filter 0.3s ease;

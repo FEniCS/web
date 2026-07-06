@@ -8,40 +8,69 @@ from html.parser import HTMLParser
 class SwiftLinkParser(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.links = []
+        self.images = []
+        self.subdirs = []
 
     def handle_starttag(self, tag, attrs):
         if tag == 'a':
             for name, value in attrs:
                 if name == 'href':
-                    # Filter for image links and exclude thumbnails
-                    is_img = value.lower().endswith(
+                    # Exclude parent or absolute links
+                    if (
+                        value == '../'
+                        or value.startswith('/')
+                        or value.startswith('http')
+                    ):
+                        continue
+                    if value.endswith('/'):
+                        self.subdirs.append(value)
+                    elif value.lower().endswith(
                         ('.jpg', '.jpeg', '.png', '.gif')
-                    )
-                    is_thumb = 'thumbnails' in value.lower()
-                    if is_img and not is_thumb:
-                        self.links.append(value)
+                    ):
+                        if 'thumbnails' not in value.lower():
+                            self.images.append(value)
 
 
 def fetch_images_from_url(url):
+    all_images = []
+
+    def crawl(current_url):
+        try:
+            headers = {'User-Agent': 'Mozilla/5.0'}
+            req = urllib.request.Request(current_url, headers=headers)
+            with urllib.request.urlopen(req) as response:
+                html = response.read().decode('utf-8')
+            parser = SwiftLinkParser()
+            parser.feed(html)
+
+            # Add images found in current dir
+            for img in parser.images:
+                all_images.append(current_url + img)
+
+            # Recurse into subdirs
+            for subdir in parser.subdirs:
+                if current_url.endswith('/'):
+                    subdir_url = current_url + subdir
+                else:
+                    subdir_url = current_url + '/' + subdir
+                crawl(subdir_url)
+        except Exception as e:
+            print(f"Error crawling {current_url}: {e}")
+
+    crawl(url)
+
+    # Explicitly check for 'jpeg/' subfolder if virtual directories are hidden
+    jpeg_url = url + 'jpeg/' if url.endswith('/') else url + '/jpeg/'
     try:
         headers = {'User-Agent': 'Mozilla/5.0'}
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req) as response:
-            html = response.read().decode('utf-8')
-        parser = SwiftLinkParser()
-        parser.feed(html)
-        # Construct absolute URLs
-        image_urls = []
-        for link in parser.links:
-            if not link.startswith('http'):
-                image_urls.append(url + link)
-            else:
-                image_urls.append(link)
-        return sorted(list(set(image_urls)))
-    except Exception as e:
-        print(f"Error fetching {url}: {e}")
-        return []
+        req = urllib.request.Request(jpeg_url, headers=headers)
+        with urllib.request.urlopen(req):
+            print(f"Crawling explicit subfolder: {jpeg_url}")
+            crawl(jpeg_url)
+    except Exception:
+        pass
+
+    return sorted(list(set(all_images)))
 
 
 def update_markdown_file(filepath):
@@ -67,35 +96,57 @@ def update_markdown_file(filepath):
         return
 
     # Check if markers exist in body
-    start_marker = "<!-- GALLERY_IMAGES_START -->"
-    end_marker = "<!-- GALLERY_IMAGES_END -->"
-    if start_marker not in body_content or end_marker not in body_content:
+    row1_start = "<!-- GALLERY_ROW1_START -->"
+    row1_end = "<!-- GALLERY_ROW1_END -->"
+    row2_start = "<!-- GALLERY_ROW2_START -->"
+    row2_end = "<!-- GALLERY_ROW2_END -->"
+
+    if (
+        row1_start not in body_content
+        or row1_end not in body_content
+        or row2_start not in body_content
+        or row2_end not in body_content
+    ):
         return
 
-    print(f"Updating gallery in-place for {filepath}")
+    print(f"Updating gallery rows in-place for {filepath}")
     images = fetch_images_from_url(gallery_url)
     if not images:
         print(f"No images found for {gallery_url}")
         return
 
-    # Generate image list HTML
-    image_lines = []
-    for idx, img_url in enumerate(images):
-        line = (
-            f'      <a href="{img_url}" target="_blank" '
-            f'rel="noopener noreferrer">'
-            f'<img src="{img_url}" loading="lazy" '
-            f'alt="Photo {idx + 1}" /></a>'
-        )
-        image_lines.append(line)
+    # Divide images into two rows
+    mid = (len(images) + 1) // 2
+    row1_images = images[:mid]
+    row2_images = images[mid:]
 
-    gallery_html = "\n".join(image_lines)
+    def build_row_html(images_list, start_idx):
+        lines_list = []
+        for idx, img_url in enumerate(images_list):
+            line = (
+                f'        <a href="{img_url}" target="_blank" '
+                f'rel="noopener noreferrer">'
+                f'<img src="{img_url}" loading="lazy" '
+                f'alt="Photo {start_idx + idx + 1}" /></a>'
+            )
+            lines_list.append(line)
+        return "\n".join(lines_list)
 
-    # Replace content between markers
-    pattern = re.escape(start_marker) + r"(.*?)" + re.escape(end_marker)
-    replacement = f"{start_marker}\n{gallery_html}\n      {end_marker}"
+    row1_html = build_row_html(row1_images, 0)
+    row2_html = build_row_html(row2_images, mid)
+
+    # Replace row 1
+    pattern1 = re.escape(row1_start) + r"(.*?)" + re.escape(row1_end)
+    replacement1 = f"{row1_start}\n{row1_html}\n        {row1_end}"
     new_body_content = re.sub(
-        pattern, replacement, body_content, flags=re.DOTALL
+        pattern1, replacement1, body_content, flags=re.DOTALL
+    )
+
+    # Replace row 2
+    pattern2 = re.escape(row2_start) + r"(.*?)" + re.escape(row2_end)
+    replacement2 = f"{row2_start}\n{row2_html}\n        {row2_end}"
+    new_body_content = re.sub(
+        pattern2, replacement2, new_body_content, flags=re.DOTALL
     )
 
     # Remove gallery_data and gallery_images from frontmatter if present
@@ -114,7 +165,10 @@ def update_markdown_file(filepath):
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(new_content)
 
-    msg = f"Successfully updated {filepath} with {len(images)} static links."
+    msg = (
+        f"Successfully updated {filepath} with {len(images)} static links "
+        f"across 2 rows."
+    )
     print(msg)
 
 
