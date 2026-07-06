@@ -3,7 +3,16 @@ import os
 import urllib.request
 import re
 import json
+import io
 from html.parser import HTMLParser
+
+try:
+    from PIL import Image
+    from pillow_heif import register_heif_opener
+    register_heif_opener()
+    HAS_HEIF = True
+except ImportError:
+    HAS_HEIF = False
 
 
 class SwiftLinkParser(HTMLParser):
@@ -17,7 +26,7 @@ class SwiftLinkParser(HTMLParser):
                 if name == 'href':
                     # Filter for image links and exclude thumbnails
                     is_img = value.lower().endswith(
-                        ('.jpg', '.jpeg', '.png', '.gif')
+                        ('.jpg', '.jpeg', '.png', '.gif', '.heic')
                     )
                     is_thumb = 'thumbnails' in value.lower()
                     if is_img and not is_thumb:
@@ -43,6 +52,25 @@ def fetch_images_from_url(url):
     except Exception as e:
         print(f"Error fetching {url}: {e}")
         return []
+
+
+def convert_heic_to_jpg(url, output_path):
+    if not HAS_HEIF:
+        print(f"Warning: pillow-heif not installed. Skip HEIC: {url}")
+        return False
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req) as response:
+            data = response.read()
+
+        # Open image from bytes in memory
+        image = Image.open(io.BytesIO(data))
+        image.save(output_path, "JPEG", quality=85)
+        return True
+    except Exception as e:
+        print(f"Error converting HEIC image {url}: {e}")
+        return False
 
 
 def update_markdown_file(filepath):
@@ -76,13 +104,46 @@ def update_markdown_file(filepath):
         print(f"No images found for {gallery_url}")
         return
 
-    # Write images to the JSON file specified in gallery_data relative to repo root
+    # Write images to the JSON file specified in gallery_data
+    # relative to repo root
     clean_data_path = gallery_data.lstrip('/')
-    output_file = os.path.join('.', clean_data_path)
-    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    output_dir = os.path.dirname(clean_data_path)
+    os.makedirs(output_dir, exist_ok=True)
 
+    processed_images = []
+    for img_url in images:
+        if img_url.lower().endswith('.heic'):
+            # Convert to local JPEG
+            filename = os.path.basename(img_url)
+            jpg_filename = os.path.splitext(filename)[0] + ".jpg"
+            local_jpg_path = os.path.join(output_dir, jpg_filename)
+
+            # Convert if not already present
+            success = True
+            if not os.path.exists(local_jpg_path):
+                print(f"Converting HEIC: {img_url} -> {local_jpg_path}")
+                success = convert_heic_to_jpg(img_url, local_jpg_path)
+
+            if success:
+                display_url = "/" + os.path.join(output_dir, jpg_filename)
+                processed_images.append({
+                    "src": display_url,
+                    "link": img_url
+                })
+            else:
+                processed_images.append({
+                    "src": img_url,
+                    "link": img_url
+                })
+        else:
+            processed_images.append({
+                "src": img_url,
+                "link": img_url
+            })
+
+    output_file = os.path.join('.', clean_data_path)
     with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(images, f, indent=2)
+        json.dump(processed_images, f, indent=2)
 
     # Reconstruct frontmatter without existing gallery_images
     new_lines = []
@@ -108,7 +169,7 @@ def update_markdown_file(filepath):
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(new_content)
 
-    msg = f"Wrote {len(images)} image URLs to {output_file}"
+    msg = f"Wrote {len(processed_images)} image URLs to {output_file}"
     print(msg)
 
 

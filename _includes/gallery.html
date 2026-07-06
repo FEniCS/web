@@ -8,20 +8,7 @@
   <button class="slider-btn next-btn" onclick="scrollGallery(1)">&#10095;</button>
 </div>
 
-<!-- Lightbox Modal -->
-<div id="gallery-lightbox" class="lightbox-modal">
-  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-  <a class="lightbox-prev" onclick="changeImage(-1)">&#10094;</a>
-  <a class="lightbox-next" onclick="changeImage(1)">&#10095;</a>
-  <div class="lightbox-content">
-    <img id="lightbox-img" src="" alt="" />
-  </div>
-</div>
-
 <script>
-  let galleryImages = [];
-  let currentImageIndex = 0;
-
   // Initialize the gallery items dynamically on page load by fetching JSON data
   document.addEventListener("DOMContentLoaded", () => {
     fetch("{{ include.data_url | relative_url }}")
@@ -32,66 +19,31 @@
         return response.json();
       })
       .then(images => {
-        galleryImages = images;
         const galleryContainer = document.getElementById("dynamic-image-gallery");
         if (galleryContainer) {
           galleryContainer.innerHTML = ''; // Clear fallback or placeholders
-          galleryImages.forEach((imgUrl, index) => {
+          images.forEach((itemData, index) => {
             const item = document.createElement("div");
             item.className = "gallery-item";
-            item.setAttribute("onclick", `openLightbox(${index})`);
+
+            const link = document.createElement("a");
+            link.href = itemData.link;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
 
             const img = document.createElement("img");
-            img.src = imgUrl;
+            img.src = itemData.src;
             img.loading = "lazy";
             img.alt = `Gallery Photo ${index + 1}`;
 
-            item.appendChild(img);
+            link.appendChild(img);
+            item.appendChild(link);
             galleryContainer.appendChild(item);
           });
         }
       })
       .catch(err => console.error("Error loading gallery data:", err));
   });
-
-  function openLightbox(index) {
-    currentImageIndex = index;
-    const modal = document.getElementById("gallery-lightbox");
-    const img = document.getElementById("lightbox-img");
-    if (modal && img) {
-      img.src = galleryImages[currentImageIndex];
-      modal.style.display = "flex";
-      setTimeout(() => {
-        modal.classList.add("show");
-      }, 10);
-      document.body.style.overflow = "hidden";
-    }
-  }
-
-  function closeLightbox() {
-    const modal = document.getElementById("gallery-lightbox");
-    if (modal) {
-      modal.classList.remove("show");
-      setTimeout(() => {
-        modal.style.display = "none";
-      }, 300);
-      document.body.style.overflow = "auto";
-    }
-  }
-
-  function changeImage(direction) {
-    const img = document.getElementById("lightbox-img");
-    if (img && galleryImages.length > 0) {
-      img.style.opacity = 0;
-      setTimeout(() => {
-        currentImageIndex = (currentImageIndex + direction + galleryImages.length) % galleryImages.length;
-        img.src = galleryImages[currentImageIndex];
-        img.onload = function() {
-          img.style.opacity = 1;
-        };
-      }, 150);
-    }
-  }
 
   function scrollGallery(direction) {
     const container = document.getElementById("gallery-scroll-wrapper");
@@ -103,29 +55,4 @@
       });
     }
   }
-
-  // Document-level event listeners for closing and keyboard arrows
-  document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("gallery-lightbox");
-    if (modal) {
-      modal.addEventListener("click", function(e) {
-        if (e.target === this) {
-          closeLightbox();
-        }
-      });
-    }
-
-    document.addEventListener("keydown", function(e) {
-      const modal = document.getElementById("gallery-lightbox");
-      if (modal && modal.classList.contains("show")) {
-        if (e.key === "ArrowLeft") {
-          changeImage(-1);
-        } else if (e.key === "ArrowRight") {
-          changeImage(1);
-        } else if (e.key === "Escape") {
-          closeLightbox();
-        }
-      }
-    });
-  });
 </script>
