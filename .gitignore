@@ -4,5 +4,3 @@
 # Ignore local build
 Gemfile.lock
 _site/
-*.json
-*.jpg
