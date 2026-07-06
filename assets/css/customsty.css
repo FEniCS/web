@@ -380,9 +380,11 @@ a.iconlink:hover {
   margin: 0;
 }
 
-.gallery-item {
+.image-gallery a {
   position: relative;
-  aspect-ratio: 1 / 1;
+  display: block;
+  width: 180px;
+  height: 180px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -391,12 +393,12 @@ a.iconlink:hover {
   transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s ease;
 }
 
-.gallery-item:hover {
+.image-gallery a:hover {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
-.gallery-item img {
+.image-gallery a img {
   width: 100%;
   height: 100%;
   object-fit: cover;

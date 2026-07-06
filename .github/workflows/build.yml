@@ -19,8 +19,6 @@ jobs:
       - uses: actions/checkout@v4
       - run: sudo bundle install
         name: Install bundle
-      - run: pip3 install pillow pillow-heif
-        name: Install Python dependencies for HEIC conversion
       - run: python3 _tools/update_galleries.py
         name: Update photo galleries
       - run: bundle exec jekyll build
