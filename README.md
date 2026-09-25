@@ -73,8 +73,9 @@ version number to update, do not use these and write the version number.)
 The prerequisites for building the website can be installed by running:
 
 ```bash
-apt-get update
-apt-get install -y build-essential ruby-dev
+sudo apt-get update
+sudo apt-get install -y build-essential ruby-dev
+bundle config set --local path .bundle/gems
 bundle install
 ```
 
@@ -89,11 +90,3 @@ The website can be served locally (so it can then be opened in a browser) by run
 ```bash
 bundle exec jekyll serve
 ```
-
-when using Ruby 2.7, or
-
-```bash
-bash -c 'cd _site && python3 -m http.server 3000'
-```
-
-when using Ruby 3.0+.
