@@ -4,3 +4,4 @@
 # Ignore local build
 Gemfile.lock
 _site/
+.bundle/
