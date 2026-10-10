@@ -1,6 +1,9 @@
 ---
 title: Download
 url: /download/
+aliases:
+  # The legacy FEniCS install instructions used to live here.
+  - /download/archive/
 description: How to install FEniCSx with conda or apt, build it from source, and where to find the source code for UFL, Basix, FFCx and DOLFINx.
 ---
 ## Getting started
