@@ -12,12 +12,12 @@ To edit this website:
 
 3) Open a pull request.
 
-If you think something on the website should be change, but you're not sure how to do it,
+If you think something on the website should be changed, but you're not sure how to do it,
 please [open an issue](https://github.com/FEniCS/web/issues) describing the change you
 would like to suggest.
 
-When a pull request is opened, the website will be build and an artifact of this build will be uploaded.
-To see what the website will look look like after the pull request is merged, you can:
+When a pull request is opened, the website will be built and an artifact of this build will be uploaded.
+To see what the website will look like after the pull request is merged, you can:
 
 1) Download the artifact
 
@@ -33,12 +33,16 @@ are expected to follow the FEniCS project [code of conduct](https://fenicsprojec
 ## Structure of this repo
 
 ### Website pages
-The website is generated from the `.md` files in the `content` folder.
+The website is generated from the `.md` files in the `content` folder. The
+folders inside `content` are there to keep related pages together: they do not
+affect the address of a page, which is set by `url` (see below). The page that
+introduces a folder is called `_index.md`; the rest are named after their
+contents, for example `content/conference/2027.md`.
+
 Markdown and HTML can be included in these files. LaTeX-style maths can be
-included between `\\(` and `\\)` for inline maths; or `$$` and `$$` for a
-block of maths. A page that contains maths must set `math: true` in its page
-settings. (A lone `$` is not a maths delimiter, so dollar amounts such as
-`$500` can be written as they are.)
+included between `\(` and `\)` for inline maths; or between `$$` and `$$` (or
+`\[` and `\]`) for a block of maths. A lone `$` is not a maths delimiter, so
+dollar amounts such as `$500` can be written as they are.
 
 At the start of each `.md` file, page settings can be given between two lines containing only `---`.
 For example, `content/conference/2027.md` starts with:
@@ -53,14 +57,27 @@ url: /fenics-2027/
 ---
 ```
 
-The `title` is displayed at the top of the page, with the `subtitle` (optional) below it. The
-`image` will be used as the background of the header; if no image is given, a default image will
-be used. `imageFit` controls how that image is sized: `cover` fills the header
-and crops the image (use this for photographs), while the default scales the
-image to the height of the header (use this for logos and maps). `url` sets the
-address of the page: for example, if set to `/fenics/`, the page would be
-available at `https://fenicsproject.org/fenics/`. Every page must set a `url`,
-except the front page (`content/_index.md`).
+The `title` is displayed at the top of the page, with the `subtitle` (optional)
+below it. The `subtitle` may contain HTML, so `<br>` can be used to break it
+over several lines.
+
+The `image` will be used as the background of the header; if no image is given,
+a default image will be used. `imageFit` controls how that image is sized:
+
+- `cover` fills the header and crops the image: use this for photographs;
+- `auto` (the default when an `image` is given) scales the image to the height
+  of the header: use this for logos and maps;
+- `tile` repeats the image at its own size.
+
+`url` sets the address of the page: for example, if set to `/fenics/`, the page
+would be available at `https://fenicsproject.org/fenics/`. Every page must set
+a `url`, except the front page (`content/_index.md`). If a page is moved to a
+new address, list the old one under `aliases` so that the old address
+redirects to the new one.
+
+Two further settings are occasionally useful: `headerLogo: true` puts the
+FEniCS logo above the title (used on the front page), and `hideHeader: true`
+leaves the header off altogether.
 
 Links from one page to another are written as the full address of the target
 page, for example `[the download page](/download/)`.
@@ -82,6 +99,9 @@ takes. The [Hextra
 shortcodes](https://imfing.github.io/hextra/docs/guide/shortcodes/) are also
 available, including `gallery`, `callout`, `cards` and `details`.
 
+The `person` shortcode shows a flag next to the person's name. The country
+names it understands are listed in `data/flags.yaml`.
+
 Icons are referred to by name, for example `{{< icon "github" >}}`. The
 [available icons](https://imfing.github.io/hextra/docs/guide/shortcodes/icon/)
 come from the theme.
@@ -98,8 +118,9 @@ is where the website's stylesheet (`assets/css/custom.css`) lives.
 ### Navigation bar
 The links included in the navigation bar are defined under `menu.main` in
 [`hugo.yaml`](https://github.com/FEniCS/web/blob/main/hugo.yaml).
-Each link is given a `name`, which will be displayed in the navigation bar; and either a
-`url` (for an external link) or a `pageRef` (the `url` of a page of this website).
+Each link is given a `name`, which will be displayed in the navigation bar; a
+`weight`, which sets the order the links appear in; and either a `url` (for an
+external link) or a `pageRef` (the `url` of a page of this website).
 
 ### Latest versions
 The latest released version of FEniCS and FEniCSx (and their release dates) can be set in
@@ -132,6 +153,31 @@ locally (so it can then be opened in a browser) by running:
 ```bash
 hugo server
 ```
+
+The version of the Hextra theme that the website is built with is recorded in
+`go.mod` and `go.sum`. To move to a newer version of the theme, run:
+
+```bash
+hugo mod get -u github.com/imfing/hextra
+```
+
+and commit the changes to those two files.
+
+## Tests
+The tests in `_test` check that every page sets a `url`, that no two pages
+share one, that links point at pages and files that exist, and that the version
+numbers in `hugo.yaml` match the latest DOLFINx release. They are run by the
+[test workflow](https://github.com/FEniCS/web/blob/main/.github/workflows/run-tests.yml),
+and can be run locally with:
+
+```bash
+pip install pytest -r _test/requirements.txt
+python -m pytest _test/
+```
+
+If you add a page, the link test will fail until the page sets a `url`. Links
+inside HTML comments are not checked, so a draft that is commented out may
+contain placeholder addresses.
 
 ## Deployment
 The website is deployed to GitHub Pages by the
