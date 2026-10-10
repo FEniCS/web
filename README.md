@@ -23,7 +23,8 @@ To see what the website will look like after the pull request is merged, you can
 
 2) unzip the artifact
 
-3) Run `python -m http.server` in the unzipped folder
+3) Run `python3 -m http.server` in the unzipped folder, and open
+   <http://localhost:8000> in a browser
 
 ## Code of conduct
 
@@ -132,28 +133,57 @@ page's `subtitle`, write `{fenicsversion}` or `{fenicsxversion}` instead.
 
 ## Building the website
 The prerequisites for building the website are
-[Hugo](https://gohugo.io/installation/) (the *extended* edition) and
-[Go](https://go.dev/doc/install), which Hugo uses to download the theme. On
-Ubuntu these can be installed by running:
+[Hugo](https://gohugo.io/installation/) and [Go](https://go.dev/doc/install),
+which Hugo uses to download the theme. Hugo must be the *extended* edition:
+the packages below are all extended, as is any download whose name contains
+`extended`. Running `hugo version` will tell you which edition you have.
+
+On macOS, using [Homebrew](https://brew.sh):
+
+```bash
+brew install hugo go
+```
+
+On Ubuntu:
 
 ```bash
 sudo snap install hugo
 sudo apt-get install -y golang-go
 ```
 
-The website can then be built by running:
-
-```bash
-hugo
-```
-
-which writes the website to the `public` folder. The website can be served
-locally (so it can then be opened in a browser) by running:
+### Viewing the website locally
+To build the website and serve it on your own machine, run:
 
 ```bash
 hugo server
 ```
 
+from the folder you cloned this repository into, then open
+<http://localhost:1313> in a browser. The pages in the browser update as you
+edit and save files, so you can leave this running while you work. Press
+Ctrl+C to stop it.
+
+The first run downloads the theme, so it needs a network connection and takes
+a little longer than later ones.
+
+### Building the website to a folder
+To write the website to the `public` folder instead of serving it, run:
+
+```bash
+hugo
+```
+
+Opening the files in `public` directly will not work, because the pages link
+to each other by absolute address. To look at them, serve the folder:
+
+```bash
+python3 -m http.server --directory public
+```
+
+and open <http://localhost:8000>. This is also how to view the artifact that
+is built for a pull request.
+
+### Updating the theme
 The version of the Hextra theme that the website is built with is recorded in
 `go.mod` and `go.sum`. To move to a newer version of the theme, run:
 
@@ -171,8 +201,8 @@ numbers in `hugo.yaml` match the latest DOLFINx release. They are run by the
 and can be run locally with:
 
 ```bash
-pip install pytest -r _test/requirements.txt
-python -m pytest _test/
+python3 -m pip install pytest -r _test/requirements.txt
+python3 -m pytest _test/
 ```
 
 If you add a page, the link test will fail until the page sets a `url`. Links
