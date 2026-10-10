@@ -84,4 +84,4 @@ project. If you like FEniCS and want to support our mission to produce
 the best possible platform for open-source computing, consider making [a
 donation](https://numfocus.org/donate-to-fenics) to our project.
 
-{{< image src="/assets/img/numfocus.png" alt="NumFOCUS" link="https://www.numfocus.org/" >}}
+{{< image src="/assets/img/numfocus.png" alt="NumFOCUS" link="https://www.numfocus.org/" width="260px" >}}
