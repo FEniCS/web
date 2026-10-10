@@ -2,6 +2,7 @@
 title: Documentation
 subtitle: "FEniCSx {fenicsxversion}"
 url: /documentation/
+description: Demos, tutorials, API documentation and release notes for FEniCSx, plus the FEniCS book.
 ---
 ## Getting started
 

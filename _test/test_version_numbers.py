@@ -42,3 +42,29 @@ def test_fenicsx_version_number():
 
     assert str(config["fenicsxversion"]) == name
     assert config["fenicsxversiondate"] in acceptable_dates
+
+
+def test_dolfinx_version_number():
+    """Test that the DOLFINx version used in doc links is up to date."""
+    with open(os.path.join(
+        os.path.dirname(os.path.realpath(__file__)),
+        "../hugo.yaml"
+    )) as f:
+        config = yaml.load(f, Loader=yaml.FullLoader)["params"]
+
+    if "GITHUB_TOKEN" in os.environ:
+        git = github.Github(os.environ["GITHUB_TOKEN"])
+    else:
+        git = github.Github()
+
+    # dolfinxversion appears in the URL of the DOLFINx documentation, so it
+    # has to be a version that was actually released. It carries a .postN
+    # suffix that the tags do not, as the docs are built from the Python
+    # package version.
+    version = str(config["dolfinxversion"]).split(".post")[0]
+    tags = [t.name.lstrip("v")
+            for t in git.get_repo("fenics/dolfinx").get_tags()]
+    assert version in tags, f"v{version} is not a DOLFINx tag"
+
+    # It must also be the release that fenicsxversion names.
+    assert version.startswith(str(config["fenicsxversion"]))

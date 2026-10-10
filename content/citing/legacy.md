@@ -2,6 +2,7 @@
 title: Citing FEniCS
 subtitle: Legacy FEniCS
 url: /citing/legacy/
+description: Which papers to cite when you use the legacy FEniCS library in your research.
 ---
 ## Legacy citations
 

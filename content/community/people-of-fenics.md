@@ -2,6 +2,7 @@
 title: People of FEniCS
 image: /assets/img/headers/jigsaw.png
 url: /people-of-fenics/
+description: Some of the academics, scientists, engineers and students who make up the FEniCS community, in their own words.
 ---
 The FEniCS Project has always adopted the philosophy of open source
 development. It is important to us that anyone may access and

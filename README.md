@@ -46,6 +46,11 @@ included between `\(` and `\)` for inline maths; or between `$$` and `$$` (or
 `\[` and `\]`) for a block of maths. A lone `$` is not a maths delimiter, so
 dollar amounts such as `$500` can be written as they are.
 
+A block of maths may run over several lines, but no line of it may begin with
+a character that starts a Markdown block, such as `+` or `-`: Markdown claims
+the line before the maths is recognised, and the equation comes out as a
+bullet list. Put such operators at the end of the previous line instead.
+
 At the start of each `.md` file, page settings can be given between two lines
 containing only `---`. For example, `content/conference/2027.md` starts with:
 

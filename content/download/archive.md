@@ -1,6 +1,7 @@
 ---
 title: Download
 url: /download/archive/
+description: How to install the legacy FEniCS library with Docker, apt, Anaconda or from source.
 ---
 The latest stable release of legacy FEniCS is version {{< param fenicsversion >}}, which was released
 in {{< param fenicsversiondate >}}.

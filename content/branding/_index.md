@@ -1,6 +1,7 @@
 ---
 title: FEniCS Branding
 url: /branding/
+description: The FEniCS logo in vector and raster formats, its licence, and how the components of FEniCS should be capitalised.
 ---
 ## Components of FEniCSx and legacy FEniCS
 The components of FEniCSx are:

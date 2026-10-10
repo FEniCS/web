@@ -1,6 +1,7 @@
 ---
 title: Citing FEniCS
 url: /citing/
+description: Which papers to cite when you use FEniCSx in your research, for each component of the platform, with BibTeX.
 ---
 ## Main FEniCSx citations
 If you use FEniCS in your research, the developers would be grateful if you would cite the

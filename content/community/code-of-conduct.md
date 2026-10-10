@@ -1,6 +1,7 @@
 ---
 title: Code of Conduct
 url: /code-of-conduct/
+description: The standards of behaviour expected across all FEniCS activities, including the forums and the conference.
 ---
 ## Our Pledge
 In the interest of fostering an open and welcoming environment, we as

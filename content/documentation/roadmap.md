@@ -1,6 +1,7 @@
 ---
 title: Roadmap 2021-
 url: /roadmap/
+description: The planned direction of FEniCSx development, and what becomes of the previous FEniCS packages.
 ---
 ## Introduction
 

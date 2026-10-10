@@ -2,6 +2,7 @@
 title: FEniCS
 headerLogo: true
 toc: false
+description: FEniCS is an open-source computing platform for solving partial differential equations with the finite element method, from laptops to high-performance computers.
 ---
 ## The FEniCS computing platform
 
@@ -18,6 +19,64 @@ ranging from laptops to high-performance computers.
   {{< button icon="book-open" label="Documentation" href="/documentation/" >}}
   {{< button icon="github" label="Source code" href="https://github.com/FEniCS" >}}
 {{< /buttons >}}
+
+## Solving a PDE in FEniCS
+
+A finite element problem is written in FEniCS much as it is written on
+paper. Take the Stokes equations, which describe slow viscous flow, in
+variational form: find a velocity \(u\) and a pressure \(p\) such that
+
+$$
+\int_{\Omega} \nabla u : \nabla v \,\mathrm{d}x +
+\int_{\Omega} p \, (\nabla \cdot v) \,\mathrm{d}x +
+\int_{\Omega} (\nabla \cdot u) \, q \,\mathrm{d}x =
+\int_{\Omega} f \cdot v \,\mathrm{d}x
+$$
+
+for all test functions \(v\) and \(q\). The heart of the
+[Stokes demo](https://docs.fenicsproject.org/dolfinx/v{{< param dolfinxversion >}}/python/demos/demo_stokes.html)
+transcribes that almost line for line:
+
+```python
+# A Taylor-Hood element: quadratic velocity, linear pressure
+P2 = element("Lagrange", msh.basix_cell(), degree=2, shape=(msh.geometry.dim,))
+P1 = element("Lagrange", msh.basix_cell(), degree=1)
+W = functionspace(msh, mixed_element([P2, P1]))
+
+# The variational problem
+(u, p) = ufl.TrialFunctions(W)
+(v, q) = ufl.TestFunctions(W)
+a = (ufl.inner(ufl.grad(u), ufl.grad(v))
+     + ufl.inner(p, ufl.div(v))
+     + ufl.inner(ufl.div(u), q)) * ufl.dx
+L = ufl.inner(f, v) * ufl.dx
+
+# Solve it
+problem = LinearProblem(a, L, bcs=bcs, petsc_options_prefix="stokes_")
+wh = problem.solve()
+```
+
+You choose the elements, and FEniCS generates and compiles the finite
+element code for them. The figure below shows the flow computed for
+spheres held in a channel.
+
+{{< image src="/assets/img/stokesexample.png" alt="Streamlines of Stokes flow past two spheres held in a rectangular channel" >}}
+
+## Running in parallel
+
+{{< image src="/assets/img/tc_vm.png" alt="Von Mises stresses in a turbocharger, computed with FEniCS" align="right" >}}
+Every component of FEniCS is designed for parallel computing. Running a
+FEniCS script across 64 processes is no more than
+`mpirun -np 64 python script.py`, so a formulation worked out on a
+laptop can be taken to a cluster without rewriting it.
+
+The figure shows von Mises stresses from a nonlinear thermomechanical
+simulation of a turbocharger, a system of more than
+\(3.3 \times 10^{9}\) degrees of freedom. The solver was developed on a
+desktop at small scale and then run on a supercomputer across more than
+24000 processes.
+
+## Support FEniCS
 
 FEniCS is a [NumFOCUS](https://www.numfocus.org/) fiscally supported
 project. If you like FEniCS and want to support our mission to produce

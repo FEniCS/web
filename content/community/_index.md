@@ -1,6 +1,7 @@
 ---
 title: Community
 url: /community/
+description: Where to ask questions about FEniCS, report bugs, contribute to its development, and how the project is governed.
 ---
 ## Asking questions
 

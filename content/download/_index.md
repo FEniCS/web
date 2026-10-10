@@ -2,6 +2,7 @@
 title: Download
 subtitle: "FEniCSx {fenicsxversion}"
 url: /download/
+description: How to install FEniCSx with conda or apt, build it from source, and where to find the source code for UFL, Basix, FFCx and DOLFINx.
 ---
 ## Getting started
 

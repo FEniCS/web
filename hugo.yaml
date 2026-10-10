@@ -27,6 +27,11 @@ params:
 
   description: Open-source finite element library
 
+  # Shown when a link to the website is shared. A page can override this by
+  # setting its own `images` in the front matter.
+  images:
+    - /assets/img/share-card.jpg
+
   navbar:
     displayTitle: true
     displayLogo: true
