@@ -1,0 +1,85 @@
+{{- /*
+  Introduces a member of the FEniCS community, as used on the "People of
+  FEniCS" page: a heading with their name, their role and links, and
+  optionally a photograph and a pull quote.
+
+  @param {string} name        Their name. Required.
+  @param {string} country     Country name, shown as a flag. Must be a key of
+                              data/flags.yaml.
+  @param {string} job         Their role.
+  @param {string} institution Their institution.
+  @param {string} website     Link to their website.
+  @param {string} github      Their GitHub username.
+  @param {string} twitter     Their Twitter username.
+  @param {string} linkedin    Their LinkedIn username.
+  @param {string} img         Photograph of them.
+  @param {string} imgfloat    Which side the photograph sits on: left | right.
+  @param {string} quote       A pull quote.
+
+  @example {{< person name="Tim D. Jones" country="Australia" job="Postdoc"
+                      img="/assets/img/people/t-jones.jpg" imgfloat="right" >}}
+*/ -}}
+
+{{- $name := .Get "name" -}}
+{{- if not $name -}}
+  {{- errorf "person: %q is missing the required 'name' parameter" .Position -}}
+{{- end -}}
+
+{{- $flag := "" -}}
+{{- with .Get "country" -}}
+  {{- $flag = index (partial "utils/hugo-compat/site-data.html" .).flags . -}}
+  {{- if not $flag -}}
+    {{- warnf "person: %q has no flag for country %q; add it to data/flags.yaml" $.Position . -}}
+    {{- $flag = . -}}
+  {{- end -}}
+{{- end -}}
+
+<h2 class="fenics-person-name" id="{{ $name | urlize }}">{{ $name }}{{ with $flag }} {{ . }}{{ end }}</h2>
+
+{{- with .Get "job" }}
+  <div class="fenics-person-detail">{{ . }}{{ with $.Get "institution" }}, {{ . }}{{ end }}</div>
+{{- end }}
+
+{{- with .Get "website" }}
+  <div class="fenics-person-detail">
+    <a href="{{ . }}" target="_blank" rel="noopener">
+      {{- partial "utils/icon.html" (dict "name" "globe-alt" "attributes" `height="1em" aria-hidden="true"`) -}}
+      {{ . | replaceRE `^https?://` "" }}
+    </a>
+  </div>
+{{- end }}
+
+{{- with .Get "github" }}
+  <div class="fenics-person-detail">
+    <a href="https://github.com/{{ . }}" target="_blank" rel="noopener">
+      {{- partial "utils/icon.html" (dict "name" "github" "attributes" `height="1em" aria-hidden="true"`) -}}
+      {{ . }}
+    </a>
+  </div>
+{{- end }}
+
+{{- with .Get "twitter" }}
+  <div class="fenics-person-detail">
+    <a href="https://twitter.com/{{ . }}" target="_blank" rel="noopener">
+      {{- partial "utils/icon.html" (dict "name" "twitter" "attributes" `height="1em" aria-hidden="true"`) -}}
+      @{{ . }}
+    </a>
+  </div>
+{{- end }}
+
+{{- with .Get "linkedin" }}
+  <div class="fenics-person-detail">
+    <a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener">
+      {{- partial "utils/icon.html" (dict "name" "linkedin" "attributes" `height="1em" aria-hidden="true"`) -}}
+      @{{ . }}
+    </a>
+  </div>
+{{- end }}
+
+{{- with .Get "img" }}
+  <img class="fenics-image fenics-image--{{ $.Get "imgfloat" | default "right" }}" src="{{ . | relURL }}" alt="{{ $name }}" loading="lazy" />
+{{- end }}
+
+{{- with .Get "quote" }}
+  {{- partial "fenics-quote.html" . }}
+{{- end }}

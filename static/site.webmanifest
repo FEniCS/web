@@ -1,0 +1,10 @@
+{
+  "name": "FEniCS Project",
+  "short_name": "FEniCS",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" }
+  ],
+  "theme_color": "#2e93cd",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

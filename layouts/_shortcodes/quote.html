@@ -1,0 +1,16 @@
+{{- /*
+  A pull quote.
+
+  @param {string} quote The text of the quote (quotation marks are added).
+
+  or
+
+  @param {string} 0 The text of the quote.
+
+  @example {{< quote "FEniCS immediately removed some hurdles for me." >}}
+*/ -}}
+{{- $quote := .Get "quote" | default (.Get 0) -}}
+{{- if not $quote -}}
+  {{- errorf "quote: %q is missing the quote text" .Position -}}
+{{- end -}}
+{{- partial "fenics-quote.html" $quote -}}

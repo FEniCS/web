@@ -10,9 +10,9 @@ def test_fenicsx_version_number():
     """Test that the FEniCSx version number is up to date."""
     with open(os.path.join(
         os.path.dirname(os.path.realpath(__file__)),
-        "../_config.yml"
+        "../hugo.yaml"
     )) as f:
-        config = yaml.load(f, Loader=yaml.FullLoader)
+        config = yaml.load(f, Loader=yaml.FullLoader)["params"]
 
     if "GITHUB_TOKEN" in os.environ:
         git = github.Github(os.environ["GITHUB_TOKEN"])

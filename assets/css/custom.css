@@ -1,0 +1,242 @@
+/*
+ * FEniCS additions to the Hextra theme.
+ *
+ * Hextra concatenates this file after its own stylesheet, so plain CSS here
+ * overrides the theme. Dark mode is selected by a `dark` class on <html>.
+ *
+ * Brand colour: #2E93CD (blue), link blue #0F79D0.
+ */
+
+:root {
+  --fenics-blue: #2e93cd;
+  --fenics-link: #0f79d0;
+}
+
+/* ---------------------------------------------------------------- header */
+
+.fenics-header {
+  padding: 100px 0;
+  background-color: #f5f5f5;
+}
+
+.dark .fenics-header {
+  background-color: #000;
+}
+
+.fenics-header-inner {
+  box-sizing: border-box;
+  width: 500px;
+  max-width: 100%;
+  min-height: 340px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.fenics-header-inner--short {
+  min-height: 260px;
+}
+
+.dark .fenics-header-inner {
+  background-color: rgba(17, 17, 17, 0.88);
+}
+
+.fenics-header-title {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #000;
+  text-shadow: #aaa 0 0 10px;
+}
+
+.fenics-header-subtitle {
+  margin: 20px 0 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  color: #000;
+  text-shadow: #aaa 0 0 10px;
+}
+
+.dark .fenics-header-title,
+.dark .fenics-header-subtitle {
+  color: #fff;
+  text-shadow: #000 0 0 10px;
+}
+
+.fenics-header-logo {
+  height: 200px;
+  width: auto;
+  margin: 0 0 16px;
+}
+
+@media (max-width: 640px) {
+  .fenics-header {
+    padding: 40px 0;
+  }
+
+  .fenics-header-inner {
+    width: 100%;
+    min-height: 240px;
+  }
+
+  .fenics-header-inner--short {
+    min-height: 200px;
+  }
+
+  .fenics-header-title {
+    font-size: 2rem;
+  }
+
+  .fenics-header-logo {
+    height: 120px;
+  }
+}
+
+/* ----------------------------------------------------------- big buttons */
+
+.fenics-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 32px;
+  margin: 32px 0;
+}
+
+.fenics-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px 40px;
+  font-weight: 700;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: color 0.3s;
+}
+
+.fenics-button:hover {
+  color: var(--fenics-link) !important;
+}
+
+.fenics-button svg {
+  width: 80px;
+  height: 80px;
+}
+
+/* --------------------------------------------------------------- content */
+
+/* A cited publication. */
+.fenics-paper {
+  margin: 0 10px 20px;
+  padding: 0 30px;
+  border-left: var(--fenics-blue) 5px solid;
+  border-right: var(--fenics-blue) 5px solid;
+}
+
+.fenics-paper:target {
+  padding: 0 10px;
+  border-left-width: 25px;
+  border-right-width: 25px;
+}
+
+/* A pull quote. */
+.fenics-quote {
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--fenics-blue);
+}
+
+/* Name, role and links of a person. */
+.fenics-person-name {
+  margin-top: 80px !important;
+  text-align: center;
+}
+
+.fenics-person-detail {
+  padding: 5px 40px 0;
+  font-weight: 700;
+}
+
+.fenics-person-detail a {
+  text-decoration: none;
+}
+
+.fenics-person-detail svg {
+  display: inline-block;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
+/* Image placement helpers, used by the "image" shortcode. The classes go on
+   the image itself, so that a linked image is placed in the same way as an
+   unlinked one. */
+.fenics-image {
+  display: block;
+  height: auto;
+}
+
+.fenics-image--center {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fenics-image--left,
+.fenics-image--right {
+  max-width: 300px;
+}
+
+.fenics-image--left {
+  float: left;
+  margin: 0 30px 10px 0;
+}
+
+.fenics-image--right {
+  float: right;
+  margin: 0 0 10px 30px;
+}
+
+@media (max-width: 640px) {
+  .fenics-image--center {
+    max-width: 100%;
+  }
+
+  .fenics-image--left,
+  .fenics-image--right {
+    float: none;
+    margin: 0 auto 10px;
+  }
+}
+
+/* Keep long equations scrollable rather than overflowing the page. */
+.content .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Embedded videos and forms. */
+.content iframe {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+/* ---------------------------------------------------------------- footer */
+
+.fenics-footer {
+  padding: 24px 0;
+  font-size: 0.75rem;
+  text-align: center;
+}

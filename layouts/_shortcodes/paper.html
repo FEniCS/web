@@ -1,0 +1,51 @@
+{{- /*
+  A cited publication.
+
+  @param {string} id            Anchor for the entry, matching its key in
+                                static/assets/citations.bib.
+  @param {string} author        Author list.
+  @param {string} title         Title of the work.
+  @param {string} journal       Journal name.
+  @param {string} volume        Journal volume.
+  @param {string} number        Journal issue.
+  @param {string} submitted     Journal the work has been submitted to.
+  @param {string} toappear      Journal the work will appear in.
+  @param {string} book          Book title, for a chapter in a book.
+  @param {string} bookeditor    Editors of the book.
+  @param {string} bookchapter   Chapter number.
+  @param {string} bookvolume    Volume within a book series.
+  @param {string} bookseries    Name of the book series.
+  @param {string} bookpublisher Publisher.
+  @param {string} year          Year of publication.
+  @param {string} pagestart     First page.
+  @param {string} pageend       Last page.
+  @param {string} pdf           Link to a PDF.
+  @param {string} arxiv         arXiv identifier.
+  @param {string} doi           DOI.
+
+  @example {{< paper id="BasixJoss" title="Basix" author="M. W. Scroggs"
+                     journal="Journal of Open Source Software" year="2022"
+                     doi="10.21105/joss.03982" >}}
+*/ -}}
+
+<div class="fenics-paper"{{ with .Get "id" }} id="{{ . }}"{{ end }}>
+  {{- .Get "author" }}. {{ .Get "title" }},
+  {{- with .Get "book" }}
+    in:
+    {{- with $.Get "bookeditor" }} {{ . }} (eds){{ end }}
+    {{ . }}
+    {{- with $.Get "bookchapter" }} (chapter {{ . }}){{ end }}
+    {{- with $.Get "bookvolume" }}, volume {{ . }} of <em>{{ $.Get "bookseries" }}</em>{{ end }}
+    {{- with $.Get "bookpublisher" }}, {{ . }}{{ end }}
+  {{- else }}
+    {{- with .Get "bookpublisher" }}, {{ . }}{{ end }}
+  {{- end }}
+  {{- with .Get "journal" }} <em>{{ . }}</em> {{ $.Get "volume" }}{{ with $.Get "number" }}({{ . }}){{ end }}{{ end }}
+  {{- with .Get "submitted" }} submitted to <em>{{ . }}</em>{{ end }}
+  {{- with .Get "toappear" }} to appear in <em>{{ . }}</em>{{ end }}
+  ({{ .Get "year" }})
+  {{- with .Get "pagestart" }} {{ . }}{{ with $.Get "pageend" }}&ndash;{{ . }}{{ end }}{{ end }}.
+  {{- with .Get "pdf" }} [<a href="{{ . }}" target="_blank" rel="noopener">pdf</a>]{{ end }}
+  {{- with .Get "arxiv" }} [<a href="https://arxiv.org/abs/{{ . }}" target="_blank" rel="noopener">ar&Chi;iv</a>]{{ end }}
+  {{- with .Get "doi" }} [<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">doi.org/{{ . }}</a>]{{ end }}
+</div>

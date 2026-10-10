@@ -1,72 +1,90 @@
 """Test links."""
 
-import pytest
 import os
-import yaml
 import re
+
+import pytest
+import yaml
+
+root_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")
+content_dir = os.path.join(root_dir, "content")
+static_dir = os.path.join(root_dir, "static")
 
 
 def load_page_list(dir):
-    """Load a list of md files."""
+    """Load a list of the markdown files that make up the website."""
     files = []
-    for f in os.listdir(dir):
-        if f[0] not in [".", "_"]:
-            if os.path.isdir(f):
-                files += load_page_list(os.path.join(dir, f))
-            if f.endswith(".md") and f != "README.md":
-                files.append((dir, f))
+    for f in sorted(os.listdir(dir)):
+        path = os.path.join(dir, f)
+        if os.path.isdir(path):
+            files += load_page_list(path)
+        elif f.endswith(".md"):
+            files.append((dir, f))
     return files
 
 
-root_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")
-pagelist = load_page_list(root_dir)
+def front_matter(content):
+    """Return the front matter of a page as a dictionary."""
+    match = re.match(r"^---\n(.*?)\n---\n", content, re.S)
+    assert match is not None
+    return yaml.load(match.group(1), Loader=yaml.FullLoader)
 
-permalinks = [""]
-for dir, p in pagelist:
-    with open(os.path.join(dir, p)) as f:
-        content = f.read()
-    if "---\n" in content:
-        data = content.split("---\n")[1]
-        if "permalink:" in data:
-            permalinks.append(
-                data.split("permalink:")[1].split("\n")[0].strip()[1:-1])
+
+def page_url(dir, file):
+    """Return the URL that a page is published at."""
+    with open(os.path.join(dir, file)) as f:
+        data = front_matter(f.read())
+    if "url" in data:
+        return data["url"]
+    # Only the home page is allowed to fall back to its position on disk.
+    assert (dir, file) == (content_dir, "_index.md")
+    return "/"
+
+
+pagelist = load_page_list(content_dir)
+urls = [page_url(dir, file) for dir, file in pagelist]
 
 
 @pytest.mark.parametrize("page", [
-    "code-of-conduct",
-    "fenics17",
-    "fenics18",
-    "fenics19",
-    "fenics-2021",
-    "fenics-2022",
-    "google-summer-of-code-2017",
-    "google-summer-of-code-2018",
-    "people-of-fenics",
-    "gsoc"
+    "/",
+    "/code-of-conduct/",
+    "/fenics17/",
+    "/fenics18/",
+    "/fenics19/",
+    "/fenics-2021/",
+    "/fenics-2022/",
+    "/google-summer-of-code-2017/",
+    "/google-summer-of-code-2018/",
+    "/people-of-fenics/",
+    "/gsoc/",
 ])
-def test_permalinks(page):
-    """Test that permalink exists."""
-    assert page in permalinks
+def test_urls(page):
+    """Test that a URL that the website has always had still exists."""
+    assert page in urls
 
 
 @pytest.mark.parametrize("dir, file", pagelist)
-def test_permalink_is_set(dir, file):
-    """Check that page has a permalink defined."""
-    if (dir != root_dir or file != "index.md") and file != "404.md":
-        with open(os.path.join(dir, file)) as f:
-            page = f.read()
-        assert "---\n" in page
-        assert "permalink:" in page.split("---\n")[1]
-        p = page.split("permalink:")[1].split("\n")[0].strip()
-        assert p[0] == "/" and p[-1] == "/"
+def test_url_is_set(dir, file):
+    """Check that a page sets the URL it is published at."""
+    url = page_url(dir, file)
+    assert url.startswith("/") and url.endswith("/")
+
+
+@pytest.mark.parametrize("dir, file", pagelist)
+def test_no_duplicate_urls(dir, file):
+    """Check that no two pages are published at the same URL."""
+    assert urls.count(page_url(dir, file)) == 1
 
 
 @pytest.mark.parametrize("dir, file", pagelist)
 def test_links(dir, file):
-    """Test that links on a page point to pages that exists."""
+    """Test that links on a page point to pages that exist."""
     with open(os.path.join(dir, file)) as f:
         page = f.read()
+    # Links in commented-out draft content are not checked.
+    page = re.sub(r"<!--.*?-->", "", page, flags=re.S)
     links = re.findall(r"\[[^\]]+\]\(([^\)\n]+)\)", page)
+    links += re.findall(r'(?:href|src|link)\s*=\s*"([^"]+)"', page)
 
     external_links = [
         i for i in links
@@ -76,46 +94,30 @@ def test_links(dir, file):
         if "fenicsproject.org" in i and "docs.fenicsproject.org" not in i:
             assert "/pub/" in i or "/olddocs/" in i
 
-    links = [i for i in links if not i.startswith("http:")]
-    links = [i for i in links if not i.startswith("https:")]
-    links = [i for i in links if not i.startswith("mailto:")]
+    links = [i for i in links if not re.match(r"(https?|mailto|data):", i)]
+    links = [i for i in links if not i.startswith("//")]
+    links = [i.split("#")[0] for i in links]
+    links = [i for i in links if i != ""]
 
-    assets = [i[1:] for i in links if i.startswith("/assets/")]
-    links = [i for i in links if not i.startswith("/assets/")]
-
-    # Check that links within the website point to pages that exist
     for i in links:
         print(f"Checking for {i}")
-        if i[0] == "/":
-            assert i[1:] in permalinks
-        elif i.startswith("#"):
-            assert f"{{{i}}}" in page
-        else:
-            assert i.endswith(".md")
-            assert os.path.isfile(os.path.join(dir, i))
-
-    # Check that assets exist
-    for i in assets:
-        f = os.path.join(root_dir, i)
-        assert os.path.isfile(f)
+        # Links within the website are absolute.
+        assert i.startswith("/"), f"{i} is not an absolute link"
+        if i in urls:
+            continue
+        # Otherwise it must be a file in static/.
+        assert os.path.isfile(os.path.join(static_dir, i[1:])), \
+            f"{i} is neither a page nor a file in static/"
 
 
 def test_header_links():
-    """Test that links in header point to pages that exist."""
-    with open(os.path.join(root_dir, "_data/navbar.yml")) as f:
-        nav = yaml.load(f, Loader=yaml.FullLoader)
+    """Test that links in the navigation bar point to pages that exist."""
+    with open(os.path.join(root_dir, "hugo.yaml")) as f:
+        config = yaml.load(f, Loader=yaml.FullLoader)
 
-    for i in nav:
-        if i["page"] == "/citing":
+    for i in config["menu"]["main"]:
+        if "pageRef" not in i:
             continue
-        page = i["page"]
+        page = i["pageRef"]
         print(f"Checking {page}")
-        if page.startswith("http:"):
-            continue
-        if page.startswith("https:"):
-            continue
-        if page.startswith("mailto:"):
-            continue
-
-        assert page[0] == "/"
-        assert page[1:] in permalinks
+        assert page in urls

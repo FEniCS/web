@@ -60,16 +60,15 @@ def generate_bib(paper):
 
 
 if __name__ == "__main__":
-    input_file = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)), "../citing/index.md")
-    output_file = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)), "../assets/citations.bib")
+    root_dir = os.path.dirname(os.path.realpath(__file__))
+    input_file = os.path.join(root_dir, "../content/citing/_index.md")
+    output_file = os.path.join(root_dir, "../static/assets/citations.bib")
 
     with open(input_file) as f:
         content = f.read()
     bibs = []
-    for paper in content.split("{% include _paper.html")[1:]:
-        paper = parse_paper(paper.split("%}")[0])
+    for paper in content.split("{{< paper")[1:]:
+        paper = parse_paper(paper.split(">}}")[0])
         bibs.append(generate_bib(paper))
 
     with open(output_file, "w") as f:

@@ -1,0 +1,59 @@
+{{- /*
+  The page header: a full-width band showing a background image, the page
+  title and (optionally) a subtitle.
+
+  Front matter:
+    image       Background image, e.g. /assets/img/headers/oriel.jpg.
+                Defaults to params.defaultHeaderImage in hugo.yaml.
+    imageFit    How the background image is sized:
+                  cover  -- fill the band, cropping as needed (photographs)
+                  auto   -- scale to the height of the band (logos, maps)
+                  tile   -- repeat at its natural size (the default image)
+    subtitle    Shown below the title. HTML is allowed. The tokens
+                {fenicsversion} and {fenicsxversion} are replaced by the
+                version numbers set in hugo.yaml.
+    headerLogo  Set to true to show the FEniCS logo above the title.
+    hideHeader  Set to true to leave the header off altogether.
+*/ -}}
+
+{{- if not .Params.hideHeader -}}
+
+  {{- /* The 404 page has no content file, so name it here. */ -}}
+  {{- $title := .Title -}}
+  {{- $fallbackSubtitle := "" -}}
+  {{- if eq .Kind "404" -}}
+    {{- $title = "Could not find page" -}}
+    {{- $fallbackSubtitle = "(404 error)" -}}
+  {{- end -}}
+
+  {{- $image := .Params.image | default site.Params.defaultHeaderImage -}}
+  {{- $fit := .Params.imageFit | default (cond (eq $image site.Params.defaultHeaderImage) "tile" "auto") -}}
+
+  {{- $style := printf "background-image:url(%s)" ($image | relURL) -}}
+  {{- if eq $fit "cover" -}}
+    {{- $style = printf "%s;background-size:cover;background-position:center" $style -}}
+  {{- else if eq $fit "tile" -}}
+    {{- $style = printf "%s;background-repeat:repeat" $style -}}
+  {{- else -}}
+    {{- $style = printf "%s;background-size:auto 600px;background-position:center" $style -}}
+  {{- end -}}
+
+  {{- $subtitle := .Params.subtitle | default $fallbackSubtitle -}}
+  {{- with $subtitle -}}
+    {{- $subtitle = replace . "{fenicsxversion}" site.Params.fenicsxversion -}}
+    {{- $subtitle = replace $subtitle "{fenicsversion}" site.Params.fenicsversion -}}
+  {{- end -}}
+
+  <div class="fenics-header" style="{{ $style | safeCSS }}">
+    <div class="fenics-header-inner{{ if not $subtitle }} fenics-header-inner--short{{ end }}">
+      {{- if .Params.headerLogo }}
+        <img class="fenics-header-logo" src="{{ "/assets/logo/fenics_logo.png" | relURL }}" alt="FEniCS logo" width="232" height="320" />
+      {{- end }}
+      <h1 class="fenics-header-title">{{ $title }}</h1>
+      {{- with $subtitle }}
+        <p class="fenics-header-subtitle">{{ . | safeHTML }}</p>
+      {{- end }}
+    </div>
+  </div>
+
+{{- end -}}
