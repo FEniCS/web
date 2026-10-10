@@ -126,6 +126,10 @@ as PDFs can be put in this folder.
 Files in the `assets` folder are processed by Hugo before being included. This
 is where the website's stylesheet (`assets/css/custom.css`) lives.
 
+The website is set in [Inter](https://github.com/rsms/inter), which is served
+from `static/assets/fonts` rather than from a font service, so that opening a
+page makes no third-party request. See the README in that folder.
+
 ### Navigation bar
 
 The links included in the navigation bar are defined under `menu.main` in
