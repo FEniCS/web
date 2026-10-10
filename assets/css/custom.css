@@ -344,7 +344,39 @@
 /* ---------------------------------------------------------------- footer */
 
 .fenics-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
   padding: 24px 0;
   font-size: 0.75rem;
-  text-align: center;
+}
+
+.fenics-footer-social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+}
+
+.fenics-footer-social a {
+  display: inline-flex;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.fenics-footer-social a:hover {
+  color: var(--fenics-link);
+}
+
+@media (max-width: 640px) {
+  .fenics-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fenics-footer-social {
+    margin-left: 0;
+  }
 }
