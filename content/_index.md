@@ -19,11 +19,6 @@ ranging from laptops to high-performance computers.
   {{< button icon="github" label="Source code" href="https://github.com/FEniCS" >}}
 {{< /buttons >}}
 
-{{< buttons >}}
-  {{< button icon="linkedin" label="LinkedIn" href="https://www.linkedin.com/company/fenics-project" >}}
-  {{< button icon="slack" label="Slack" href="https://join.slack.com/t/fenicsproject/shared_invite/zt-2wa76d0xw-ecfxcPj25K8pc7q7~1AK8g" >}}
-{{< /buttons >}}
-
 FEniCS is a [NumFOCUS](https://www.numfocus.org/) fiscally supported
 project. If you like FEniCS and want to support our mission to produce
 the best possible platform for open-source computing, consider making [a
