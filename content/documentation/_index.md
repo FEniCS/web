@@ -5,7 +5,7 @@ description: Demos, tutorials, API documentation and release notes for FEniCSx, 
 ---
 ## Getting started
 
-If you're new to FEniCS, we suggest starting with the [DOLFINx Python demos](https://docs.fenicsproject.org/dolfinx/v{{< param dolfinxversion >}}/python/demos.html),
+If you're new to FEniCS, we suggest starting with the [DOLFINx Python demos](https://docs.fenicsproject.org/dolfinx/v{{< param dolfinxversion >}}/python/demos.html)
 or [the FEniCSx tutorial](https://jorgensd.github.io/dolfinx-tutorial/).
 
 If you have questions about how to use FEniCS, you can find links to how to do this on the [community page](/community/).
@@ -14,8 +14,7 @@ If you have questions about how to use FEniCS, you can find links to how to do t
 
 Full documentation of the components of FEniCSx is available at
 [https://docs.fenicsproject.org/](https://docs.fenicsproject.org/).
-
-[The FEniCSx tutorial](https://jorgensd.github.io/dolfinx-tutorial/)
+The [FEniCSx tutorial](https://jorgensd.github.io/dolfinx-tutorial/)
 provides a range of tutorial programs as Jupyter notebooks.
 
 ### Release notes
@@ -23,17 +22,6 @@ provides a range of tutorial programs as Jupyter notebooks.
 - [Release notes: v0.11.0](https://docs.fenicsproject.org/dolfinx/v0.11.0.post0/python/release_notes.html#v0-11-0)
 - [Release notes: v0.10.0](https://docs.fenicsproject.org/dolfinx/v0.10.0.post5/python/release_notes.html)
 - [Release notes: v0.9.0](/blog/v0.9.0/)
-
-## FEniCSx vs legacy FEniCS
-
-FEniCSx is the latest iteration of FEniCS, and boasts a number of
-major improvements over the legacy library.
-We recommend that new users use the latest release of FEniCSx.
-The FEniCSx [development roadmap](/roadmap/) summarises planned
-features.
-
-Documentation for the legacy version of FEniCS is available at
-[https://fenicsproject.org/olddocs/](https://fenicsproject.org/olddocs/).
 
 ## The FEniCS Book
 

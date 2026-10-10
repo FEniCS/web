@@ -16,7 +16,6 @@ computers.
 
 {{< buttons >}}
   {{< button icon="download" label="Download" href="/download/" >}}
-  {{< button icon="academic-cap" label="Tutorial" href="https://jorgensd.github.io/dolfinx-tutorial/" >}}
   {{< button icon="book-open" label="Documentation" href="/documentation/" >}}
   {{< button icon="github" label="Source code" href="https://github.com/FEniCS" >}}
 {{< /buttons >}}
