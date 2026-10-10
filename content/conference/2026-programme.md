@@ -4,7 +4,7 @@ image: /assets/img/fenics2026/universityofchicagoparis.jpg
 imageFit: cover
 url: /fenics-2026/programme/
 ---
-# FEniCS 2026 - Conference programme v3 (18/06/2026)
+## FEniCS 2026 - Conference programme v3 (18/06/2026)
 
 ### Wednesday - 17 June
 

@@ -57,7 +57,7 @@ UFL) as {{< param fenicsxversion >}} in {{< param fenicsxversiondate >}}. The
 legacy FEniCS Project (DOLFIN, FFC, FIAT, UFL), is still available with
 release number {{< param fenicsversion >}}.
 
-# Future of previous FEniCS packages
+## Future of previous FEniCS packages
 
 We know that a number of users and developers are wondering about the
 future of the FEniCS packages.

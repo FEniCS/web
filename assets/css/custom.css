@@ -14,122 +14,191 @@
 
 /* ---------------------------------------------------------------- header */
 
+/* The page header lays the title over a photograph or over the FEniCS
+   pattern. A dark scrim sits between the two so that the text stays legible
+   whatever the image behind it, and so that the header looks the same in
+   light and dark mode. */
+
 .fenics-header {
-  padding: 100px 0;
-  background-color: #f5f5f5;
-}
-
-.dark .fenics-header {
-  background-color: #000;
-}
-
-.fenics-header-inner {
-  box-sizing: border-box;
-  width: 500px;
-  max-width: 100%;
-  min-height: 340px;
-  margin: 0 auto;
-  padding: 24px;
+  position: relative;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  min-height: 330px;
+  padding: 56px 24px;
+  background-color: #1b1b1b;
 }
 
-.fenics-header-inner--short {
+.fenics-header--short {
   min-height: 260px;
 }
 
-.dark .fenics-header-inner {
-  background-color: rgba(17, 17, 17, 0.88);
+.fenics-header--tall {
+  min-height: 420px;
+}
+
+.fenics-header::before {
+  content: "";
+  position: absolute;
+  /* Bleed past the edges so that a blurred image has nothing to fade into. */
+  inset: -40px;
+  background-image: var(--fenics-header-image);
+  background-size: var(--fenics-header-size, auto);
+  background-repeat: var(--fenics-header-repeat, no-repeat);
+  background-position: center;
+}
+
+/* On the front page the logo is set against a field of the same artwork, so
+   blur the background to let the logo read. */
+.fenics-header--tall::before {
+  filter: blur(14px);
+  transform: scale(1.06);
+}
+
+.fenics-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.4) 45%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.fenics-header--tall::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.62) 0%,
+    rgba(0, 0, 0, 0.52) 45%,
+    rgba(0, 0, 0, 0.72) 100%
+  );
+}
+
+.fenics-header-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 44rem;
 }
 
 .fenics-header-title {
   margin: 0;
-  font-size: 2.75rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 800;
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   text-align: center;
-  color: #000;
-  text-shadow: #aaa 0 0 10px;
+  text-wrap: balance;
+  color: #fff;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
 }
 
 .fenics-header-subtitle {
-  margin: 20px 0 0;
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.3;
+  margin: 18px 0 0;
+  font-size: 1.1875rem;
+  font-weight: 600;
+  line-height: 1.45;
   text-align: center;
-  color: #000;
-  text-shadow: #aaa 0 0 10px;
-}
-
-.dark .fenics-header-title,
-.dark .fenics-header-subtitle {
-  color: #fff;
-  text-shadow: #000 0 0 10px;
+  text-wrap: balance;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.55);
 }
 
 .fenics-header-logo {
-  height: 200px;
+  height: 170px;
   width: auto;
-  margin: 0 0 16px;
+  margin: 0 0 20px;
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.35))
+    drop-shadow(0 6px 20px rgba(0, 0, 0, 0.55));
 }
 
 @media (max-width: 640px) {
-  .fenics-header {
-    padding: 40px 0;
-  }
-
-  .fenics-header-inner {
-    width: 100%;
-    min-height: 240px;
-  }
-
-  .fenics-header-inner--short {
-    min-height: 200px;
+  .fenics-header,
+  .fenics-header--short,
+  .fenics-header--tall {
+    min-height: 0;
+    padding: 44px 20px;
   }
 
   .fenics-header-title {
     font-size: 2rem;
   }
 
-  .fenics-header-logo {
-    height: 120px;
+  .fenics-header-subtitle {
+    font-size: 1.0625rem;
   }
+
+  .fenics-header-logo {
+    height: 110px;
+  }
+}
+
+/* ------------------------------------------------------------ text width */
+
+/* Hextra's content column is wide enough for code and tables. Cap the
+   measure so that paragraphs stay comfortable to read on pages that have no
+   table of contents beside them. */
+.content {
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ----------------------------------------------------------- big buttons */
 
 .fenics-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px 32px;
-  margin: 32px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
 }
 
 .fenics-button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  padding: 32px 40px;
-  font-weight: 700;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.75rem 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-align: center;
   text-decoration: none !important;
   color: inherit !important;
-  transition: color 0.3s;
+  background-color: rgb(0 0 0 / 0.015);
+  transition:
+    border-color 0.2s,
+    background-color 0.2s,
+    transform 0.2s;
 }
 
 .fenics-button:hover {
-  color: var(--fenics-link) !important;
+  border-color: var(--fenics-blue);
+  background-color: rgb(46 147 205 / 0.06);
+  transform: translateY(-2px);
 }
 
 .fenics-button svg {
-  width: 80px;
-  height: 80px;
+  width: 2.25rem;
+  height: 2.25rem;
+  color: var(--fenics-blue);
+}
+
+.dark .fenics-button {
+  border-color: rgb(255 255 255 / 0.12);
+  background-color: rgb(255 255 255 / 0.03);
+}
+
+.dark .fenics-button:hover {
+  border-color: var(--fenics-blue);
+  background-color: rgb(46 147 205 / 0.1);
 }
 
 /* --------------------------------------------------------------- content */
@@ -165,8 +234,9 @@
 }
 
 .fenics-person-detail {
-  padding: 5px 40px 0;
-  font-weight: 700;
+  padding: 5px 0 0;
+  text-align: center;
+  font-weight: 600;
 }
 
 .fenics-person-detail a {
@@ -188,7 +258,7 @@
 }
 
 .fenics-image--center {
-  max-width: 70%;
+  max-width: min(70%, 30rem);
   margin-left: auto;
   margin-right: auto;
 }

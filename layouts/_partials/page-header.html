@@ -29,13 +29,15 @@
   {{- $image := .Params.image | default site.Params.defaultHeaderImage -}}
   {{- $fit := .Params.imageFit | default (cond (eq $image site.Params.defaultHeaderImage) "tile" "auto") -}}
 
-  {{- $style := printf "background-image:url(%s)" ($image | relURL) -}}
+  {{- /* The image is drawn by a pseudo-element, so that the front page can
+         soften it without softening the title on top of it. */ -}}
+  {{- $style := printf "--fenics-header-image:url(%s)" ($image | relURL) -}}
   {{- if eq $fit "cover" -}}
-    {{- $style = printf "%s;background-size:cover;background-position:center" $style -}}
+    {{- $style = printf "%s;--fenics-header-size:cover" $style -}}
   {{- else if eq $fit "tile" -}}
-    {{- $style = printf "%s;background-repeat:repeat" $style -}}
+    {{- $style = printf "%s;--fenics-header-repeat:repeat" $style -}}
   {{- else -}}
-    {{- $style = printf "%s;background-size:auto 600px;background-position:center" $style -}}
+    {{- $style = printf "%s;--fenics-header-size:auto 600px" $style -}}
   {{- end -}}
 
   {{- $subtitle := .Params.subtitle | default $fallbackSubtitle -}}
@@ -44,8 +46,8 @@
     {{- $subtitle = replace $subtitle "{fenicsversion}" site.Params.fenicsversion -}}
   {{- end -}}
 
-  <div class="fenics-header" style="{{ $style | safeCSS }}">
-    <div class="fenics-header-inner{{ if not $subtitle }} fenics-header-inner--short{{ end }}">
+  <div class="fenics-header{{ if .Params.headerLogo }} fenics-header--tall{{ else if not $subtitle }} fenics-header--short{{ end }}" style="{{ $style | safeCSS }}">
+    <div class="fenics-header-inner">
       {{- if .Params.headerLogo }}
         <img class="fenics-header-logo" src="{{ "/assets/logo/fenics_logo.png" | relURL }}" alt="FEniCS logo" width="232" height="320" />
       {{- end }}
