@@ -4,7 +4,6 @@ headerLogo: true
 toc: false
 description: FEniCS is an open-source computing platform for solving partial differential equations with the finite element method, from laptops to high-performance computers.
 ---
-## The FEniCS computing platform
 
 FEniCS is a popular open-source computing platform for solving partial
 differential equations (PDEs) with the finite element method (FEM).
