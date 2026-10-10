@@ -32,6 +32,14 @@ params:
   images:
     - /assets/img/share-card.jpg
 
+  # A dismissible strip above the navigation bar, for news that belongs on
+  # every page. Change `key` whenever the message changes, so that it is
+  # shown again to anyone who closed the previous one. Delete the whole
+  # block to take the banner down.
+  banner:
+    key: fenics-2027-travel-awards
+    message: "**FEniCS 2027** is at BAM in Berlin, 30 June&ndash;2 July. [Travel award applications](/fenics-2027/#travel-awards) close 10 January 2027."
+
   navbar:
     displayTitle: true
     displayLogo: true
