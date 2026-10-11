@@ -17,12 +17,12 @@ jobs:
     name: Build website
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         name: Install Go (needed to fetch the Hextra theme module)
         with:
-          go-version: "1.23"
+          go-version: "1.27"
 
       - run: |
           wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
@@ -32,7 +32,7 @@ jobs:
       - run: hugo --minify --printPathWarnings --panicOnWarning
         name: Build website
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         name: Upload the built website
         with:
           name: website
