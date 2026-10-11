@@ -224,15 +224,15 @@ and commit the changes to those two files.
 
 ## Tests
 
-The tests in `_test` check that every page sets a `url`, that no two pages
+The tests in `tests` check that every page sets a `url`, that no two pages
 share one, that links point at pages and files that exist, and that the version
 numbers in `hugo.yaml` match the latest DOLFINx release. They are run by the
 [test workflow](https://github.com/FEniCS/web/blob/main/.github/workflows/run-tests.yml),
 and can be run locally with:
 
 ```bash
-python3 -m pip install pytest -r _test/requirements.txt
-python3 -m pytest _test/
+python3 -m pip install pytest -r tests/requirements.txt
+python3 -m pytest tests/
 ```
 
 If you add a page, the link test will fail until the page sets a `url`. Links

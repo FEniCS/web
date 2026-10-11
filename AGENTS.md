@@ -19,8 +19,8 @@ Hugo (the *extended* edition) and Go are required; `hugo version` must report
 
 ```bash
 hugo --minify --printPathWarnings --panicOnWarning   # what CI runs; must be silent
-python3 -m pytest _test/test_links.py _test/test_citations.py   # offline, fast
-python3 -m flake8 _test/ _tools/
+python3 -m pytest tests/test_links.py tests/test_citations.py   # offline, fast
+python3 -m flake8 tests/ tools/
 ```
 
 `hugo server` serves <http://localhost:1313>. Prefer `--renderToMemory`: a
@@ -58,7 +58,7 @@ What this repository owns, and all that a change should touch:
 | `layouts/` | this site's own partials and shortcodes |
 | `data/` | lookup tables used by templates |
 | `hugo.yaml` | site configuration |
-| `_test/`, `_tools/`, `.github/` | tests, scripts, CI |
+| `tests/`, `tools/`, `.github/` | tests, scripts, CI |
 | `go.mod`, `go.sum` | the pinned theme version; change with `hugo mod get` |
 | `README.md`, `AGENTS.md` | documentation |
 
@@ -100,13 +100,13 @@ a list before the maths extension sees it, and the equation renders as
 bullets with the backslashes stripped. Put operators at the end of the
 previous line.
 
-**`_tools/make_bibtex.py` will damage `static/assets/citations.bib`.** The
+**`tools/make_bibtex.py` will damage `static/assets/citations.bib`.** The
 committed file is hand-curated — fuller author names, a legacy section — and
 the tool regenerates a reduced version from `content/citing/_index.md`. Do
-not run it casually. `_test/test_citations.py` only compares citation *keys*,
+not run it casually. `tests/test_citations.py` only compares citation *keys*,
 so it will not notice.
 
-**The full test suite is slow and flaky locally.** `_test/test_version_numbers.py`
+**The full test suite is slow and flaky locally.** `tests/test_version_numbers.py`
 queries the GitHub API, which rate-limits unauthenticated callers; it will
 hang once you have made a few calls. Run the two offline test files instead,
 and let CI run the rest with a token.
@@ -128,4 +128,4 @@ The Hugo version is pinned once, in `.github/actions/setup-hugo/action.yml`.
 
 `.github/workflows/run-tests.yml` is currently **disabled by GitHub** for
 inactivity, so the Python tests do not run in CI until someone re-enables it.
-It also still runs in a DOLFINx container that nothing under `_test/` needs.
+It also still runs in a DOLFINx container that nothing under `tests/` needs.

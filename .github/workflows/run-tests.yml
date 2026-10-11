@@ -20,11 +20,11 @@ jobs:
       - uses: actions/checkout@v7
       - run: pip3 install pytest flake8
         name: Install pytest and flake8
-      - run: pip3 install -r _test/requirements.txt
+      - run: pip3 install -r tests/requirements.txt
         name: Install test dependencies
-      - run: flake8 _test/
+      - run: flake8 tests/
         name: Run flake8 on tests
-      - run: flake8 _tools/
+      - run: flake8 tools/
         name: Run flake8 on tools
-      - run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} python3 -m pytest _test/ --has-fenicsx 1
+      - run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} python3 -m pytest tests/ --has-fenicsx 1
         name: Run tests
