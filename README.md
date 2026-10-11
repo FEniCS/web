@@ -150,8 +150,8 @@ be set in [`hugo.yaml`](https://github.com/FEniCS/web/blob/main/hugo.yaml). If
 you want to display the latest version on the website, you can write
 `{{< param fenicsversion >}}` or `{{< param fenicsxversion >}}` so that the
 values are automatically updated. (If you don't want a version number to
-update, do not use these and write the version number.) In a page's `subtitle`,
-write `{fenicsversion}` or `{fenicsxversion}` instead.
+update, do not use these and write the version number.) This works in a
+page's `subtitle` as well as in its body.
 
 ## Building the website
 

@@ -9,53 +9,44 @@
                   cover  -- fill the band, cropping as needed (photographs)
                   auto   -- scale to the height of the band (logos, maps)
                   tile   -- repeat at its natural size (the default image)
-    subtitle    Shown below the title. HTML is allowed. The tokens
-                {fenicsversion} and {fenicsxversion} are replaced by the
-                version numbers set in hugo.yaml.
+    subtitle    Shown below the title. Markdown and shortcodes are rendered,
+                so {{< param fenicsxversion >}} works here as it does in a
+                page body.
     headerLogo  Set to true to show the FEniCS logo above the title.
-    hideHeader  Set to true to leave the header off altogether.
 */ -}}
 
-{{- if not .Params.hideHeader -}}
-
-  {{- /* The 404 page has no content file, so name it here. */ -}}
-  {{- $title := .Title -}}
-  {{- $fallbackSubtitle := "" -}}
-  {{- if eq .Kind "404" -}}
-    {{- $title = "Could not find page" -}}
-    {{- $fallbackSubtitle = "(404 error)" -}}
-  {{- end -}}
-
-  {{- $image := .Params.image | default site.Params.defaultHeaderImage -}}
-  {{- $fit := .Params.imageFit | default (cond (eq $image site.Params.defaultHeaderImage) "tile" "auto") -}}
-
-  {{- /* The image is drawn by a pseudo-element, so that the front page can
-         soften it without softening the title on top of it. */ -}}
-  {{- $style := printf "--fenics-header-image:url(%s)" ($image | relURL) -}}
-  {{- if eq $fit "cover" -}}
-    {{- $style = printf "%s;--fenics-header-size:cover" $style -}}
-  {{- else if eq $fit "tile" -}}
-    {{- $style = printf "%s;--fenics-header-repeat:repeat" $style -}}
-  {{- else -}}
-    {{- $style = printf "%s;--fenics-header-size:auto 600px" $style -}}
-  {{- end -}}
-
-  {{- $subtitle := .Params.subtitle | default $fallbackSubtitle -}}
-  {{- with $subtitle -}}
-    {{- $subtitle = replace . "{fenicsxversion}" site.Params.fenicsxversion -}}
-    {{- $subtitle = replace $subtitle "{fenicsversion}" site.Params.fenicsversion -}}
-  {{- end -}}
-
-  <div class="fenics-header{{ if .Params.headerLogo }} fenics-header--tall{{ else if not $subtitle }} fenics-header--short{{ end }}" style="{{ $style | safeCSS }}">
-    <div class="fenics-header-inner">
-      {{- if .Params.headerLogo }}
-        <img class="fenics-header-logo" src="{{ "/assets/logo/fenics_logo.png" | relURL }}" alt="FEniCS logo" width="232" height="320" />
-      {{- end }}
-      <h1 class="fenics-header-title">{{ $title }}</h1>
-      {{- with $subtitle }}
-        <p class="fenics-header-subtitle">{{ . | safeHTML }}</p>
-      {{- end }}
-    </div>
-  </div>
-
+{{- /* The 404 page has no content file, so name it here. */ -}}
+{{- $title := .Title -}}
+{{- $subtitle := .Params.subtitle -}}
+{{- if eq .Kind "404" -}}
+  {{- $title = "Could not find page" -}}
+  {{- $subtitle = "(404 error)" -}}
 {{- end -}}
+
+{{- $image := .Params.image | default site.Params.defaultHeaderImage -}}
+{{- $fit := .Params.imageFit | default (cond (eq $image site.Params.defaultHeaderImage) "tile" "auto") -}}
+
+{{- /* The image is drawn by a pseudo-element, so that the front page can
+       soften it without softening the title on top of it. */ -}}
+{{- $style := printf "--fenics-header-image:url(%s)" ($image | relURL) -}}
+{{- if eq $fit "cover" -}}
+  {{- $style = printf "%s;--fenics-header-size:cover" $style -}}
+{{- else if eq $fit "tile" -}}
+  {{- $style = printf "%s;--fenics-header-repeat:repeat" $style -}}
+{{- else -}}
+  {{- $style = printf "%s;--fenics-header-size:auto 600px" $style -}}
+{{- end -}}
+
+{{- with $subtitle }}{{ $subtitle = $.RenderString . }}{{ end -}}
+
+<div class="fenics-header{{ if .Params.headerLogo }} fenics-header--tall{{ else if not $subtitle }} fenics-header--short{{ end }}" style="{{ $style | safeCSS }}">
+  <div class="fenics-header-inner">
+    {{- if .Params.headerLogo }}
+      <img class="fenics-header-logo" src="{{ "/assets/logo/fenics_logo.png" | relURL }}" alt="FEniCS logo" width="232" height="320" />
+    {{- end }}
+    <h1 class="fenics-header-title">{{ $title }}</h1>
+    {{- with $subtitle }}
+      <p class="fenics-header-subtitle">{{ . }}</p>
+    {{- end }}
+  </div>
+</div>

@@ -40,40 +40,26 @@
   <div class="fenics-person-detail">{{ . }}{{ with $.Get "institution" }}, {{ . }}{{ end }}</div>
 {{- end }}
 
-{{- with .Get "website" }}
+{{- /* Where the person can be found. "label" says how the value is shown:
+       as a bare address, as itself, or with an @ in front. */ -}}
+{{- $links := slice
+  (dict "param" "website"  "icon" "globe-alt" "prefix" ""                          "label" "address")
+  (dict "param" "github"   "icon" "github"    "prefix" "https://github.com/"       "label" "plain")
+  (dict "param" "twitter"  "icon" "twitter"   "prefix" "https://twitter.com/"      "label" "at")
+  (dict "param" "linkedin" "icon" "linkedin"  "prefix" "https://linkedin.com/in/"  "label" "at")
+-}}
+{{- range $link := $links }}
+  {{- with $.Get $link.param }}
+    {{- $text := . -}}
+    {{- if eq $link.label "address" }}{{ $text = replaceRE `^https?://` "" . }}
+    {{- else if eq $link.label "at" }}{{ $text = printf "@%s" . }}{{ end }}
   <div class="fenics-person-detail">
-    <a href="{{ . }}" target="_blank" rel="noopener">
-      {{- partial "utils/icon.html" (dict "name" "globe-alt" "attributes" `height="1em" aria-hidden="true"`) -}}
-      {{ . | replaceRE `^https?://` "" }}
+    <a href="{{ printf "%s%s" $link.prefix . }}" target="_blank" rel="noopener">
+      {{- partial "utils/icon.html" (dict "name" $link.icon "attributes" `height="1em" aria-hidden="true"`) -}}
+      {{ $text }}
     </a>
   </div>
-{{- end }}
-
-{{- with .Get "github" }}
-  <div class="fenics-person-detail">
-    <a href="https://github.com/{{ . }}" target="_blank" rel="noopener">
-      {{- partial "utils/icon.html" (dict "name" "github" "attributes" `height="1em" aria-hidden="true"`) -}}
-      {{ . }}
-    </a>
-  </div>
-{{- end }}
-
-{{- with .Get "twitter" }}
-  <div class="fenics-person-detail">
-    <a href="https://twitter.com/{{ . }}" target="_blank" rel="noopener">
-      {{- partial "utils/icon.html" (dict "name" "twitter" "attributes" `height="1em" aria-hidden="true"`) -}}
-      @{{ . }}
-    </a>
-  </div>
-{{- end }}
-
-{{- with .Get "linkedin" }}
-  <div class="fenics-person-detail">
-    <a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener">
-      {{- partial "utils/icon.html" (dict "name" "linkedin" "attributes" `height="1em" aria-hidden="true"`) -}}
-      @{{ . }}
-    </a>
-  </div>
+  {{- end }}
 {{- end }}
 
 {{- with .Get "img" }}

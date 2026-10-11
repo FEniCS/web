@@ -1,5 +1,6 @@
 """Test links."""
 
+import collections
 import os
 import re
 
@@ -42,7 +43,8 @@ def page_url(dir, file):
 
 
 pagelist = load_page_list(content_dir)
-urls = [page_url(dir, file) for dir, file in pagelist]
+url_of = {(dir, file): page_url(dir, file) for dir, file in pagelist}
+urls = list(url_of.values())
 
 
 @pytest.mark.parametrize("page", [
@@ -66,14 +68,14 @@ def test_urls(page):
 @pytest.mark.parametrize("dir, file", pagelist)
 def test_url_is_set(dir, file):
     """Check that a page sets the URL it is published at."""
-    url = page_url(dir, file)
+    url = url_of[dir, file]
     assert url.startswith("/") and url.endswith("/")
 
 
-@pytest.mark.parametrize("dir, file", pagelist)
-def test_no_duplicate_urls(dir, file):
+def test_no_duplicate_urls():
     """Check that no two pages are published at the same URL."""
-    assert urls.count(page_url(dir, file)) == 1
+    repeated = [u for u, n in collections.Counter(urls).items() if n > 1]
+    assert repeated == []
 
 
 @pytest.mark.parametrize("dir, file", pagelist)

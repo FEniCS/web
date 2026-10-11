@@ -1,16 +1,14 @@
 name: Build website
 
 on:
+  # Pushes to main are built by the deploy workflow, so they are skipped here.
   push:
-    branches:
-      - "**"
+    branches-ignore:
+      - main
   pull_request:
     branches:
       - main
   workflow_dispatch:
-
-env:
-  HUGO_VERSION: 0.167.0
 
 jobs:
   build:
@@ -19,14 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - uses: actions/setup-go@v7
-        name: Install Go (needed to fetch the Hextra theme module)
-        with:
-          go-version: "1.27"
-
-      - run: |
-          wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
-          sudo dpkg -i hugo.deb
+      - uses: ./.github/actions/setup-hugo
         name: Install Hugo
 
       - run: hugo --minify --printPathWarnings --panicOnWarning
@@ -37,3 +28,4 @@ jobs:
         with:
           name: website
           path: public/
+          retention-days: 7

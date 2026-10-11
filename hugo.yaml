@@ -6,8 +6,6 @@ baseURL: https://fenicsproject.org/
 title: FEniCS Project
 locale: en-GB
 
-enableGitInfo: false
-enableInlineShortcodes: true
 enableRobotsTXT: true
 
 module:
@@ -41,15 +39,12 @@ params:
     message: "**FEniCS 2027** is at BAM in Berlin, 30 June&ndash;2 July. [Travel award applications](/fenics-2027/#travel-awards) close 10 January 2027."
 
   navbar:
-    displayTitle: true
-    displayLogo: true
     logo:
       path: assets/img/fenics-logo-small.png
       width: 33
       height: 45
 
   footer:
-    enable: true
     displayCopyright: false
     displayPoweredBy: false
 
@@ -58,18 +53,6 @@ params:
 
   theme:
     default: light
-    displayToggle: true
-
-  math:
-    engine: katex
-
-  editURL:
-    enable: false
-
-  highlight:
-    copy:
-      enable: true
-      display: hover
 
 menu:
   main:
@@ -130,5 +113,4 @@ disableKinds:
 
 outputs:
   home: [html]
-  page: [html]
   section: [html]

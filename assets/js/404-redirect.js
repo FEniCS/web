@@ -15,11 +15,9 @@
   for (var i = 0; i < prefixes.length; i++) {
     var prefix = prefixes[i][0];
     var target = prefixes[i][1];
-    if (url === prefix.slice(0, -1)) {
-      window.location.assign(target);
-      return;
-    }
-    if (url.indexOf(prefix) === 0) {
+    // The bare prefix ("pub") redirects to the root of the target, which is
+    // what substring gives for it anyway.
+    if (url === prefix.slice(0, -1) || url.indexOf(prefix) === 0) {
       window.location.assign(target + url.substring(prefix.length));
       return;
     }
