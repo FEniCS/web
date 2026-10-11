@@ -1,0 +1,19 @@
+{{- /*
+  A large icon link. Use inside a "buttons" shortcode.
+
+  @param {string} icon  Name of a Hextra icon, e.g. github. Required.
+  @param {string} label Text shown below the icon. Required.
+  @param {string} href  Where the link goes. Required.
+
+  @example {{< button icon="github" label="Source code" href="https://github.com/FEniCS" >}}
+*/ -}}
+{{- $href := .Get "href" -}}
+{{- $label := .Get "label" -}}
+{{- if not (and $href $label) -}}
+  {{- errorf "button: %q needs both 'href' and 'label'" .Position -}}
+{{- end -}}
+{{- $external := or (hasPrefix $href "http://") (hasPrefix $href "https://") -}}
+<a class="fenics-button" href="{{ $href | relURL }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>
+  {{- partial "utils/icon.html" (dict "name" (.Get "icon") "attributes" `aria-hidden="true"`) -}}
+  <span>{{ $label }}</span>
+</a>

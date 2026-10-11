@@ -1,0 +1,46 @@
+name: Deploy website
+
+# Publishes the site to GitHub Pages. For this to work, the "Source" under
+# Settings -> Pages must be set to "GitHub Actions" rather than "Deploy from
+# a branch".
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment, letting a run in progress finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy website
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: ./.github/actions/setup-hugo
+        name: Install Hugo
+
+      - run: hugo --minify
+        name: Build website
+        env:
+          HUGO_ENVIRONMENT: production
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./public
+
+      - uses: actions/deploy-pages@v5
+        id: deployment

@@ -1,0 +1,113 @@
+# FEniCS Project website -- Hugo + Hextra configuration.
+#
+# See README.md for how to add and edit pages.
+
+baseURL: https://fenicsproject.org/
+title: FEniCS Project
+locale: en-GB
+
+enableRobotsTXT: true
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+# The latest released versions of FEniCSx and legacy FEniCS. Write
+# {{< param fenicsxversion >}} in a page to insert the value here, so that
+# it is updated automatically. (If you do not want a version number to be
+# updated, write it out rather than using these.)
+params:
+  fenicsversion: 2019.1.0
+  fenicsversiondate: April 2019
+  fenicsxversion: "0.11"
+  dolfinxversion: 0.11.0.post0 # used in the URL of the Python demos
+  fenicsxversiondate: June 2026
+
+  description: Open-source finite element library
+
+  # Shown when a link to the website is shared. A page can override this by
+  # setting its own `images` in the front matter.
+  images:
+    - /assets/img/share-card.jpg
+
+  # A dismissible strip above the navigation bar, for news that belongs on
+  # every page. Change `key` whenever the message changes, so that it is
+  # shown again to anyone who closed the previous one. Delete the whole
+  # block to take the banner down.
+  banner:
+    key: fenics-2027-travel-awards
+    message: "**FEniCS 2027** is at BAM in Berlin, 30 June&ndash;2 July. [Travel award applications](/fenics-2027/#travel-awards) close 10 January 2027."
+
+  navbar:
+    logo:
+      path: assets/img/fenics-logo-small.png
+      width: 33
+      height: 45
+
+  footer:
+    displayCopyright: false
+    displayPoweredBy: false
+
+  # The default background image used by page headers that do not set one.
+  defaultHeaderImage: /assets/img/headers/fenics_fire.png
+
+  theme:
+    default: light
+
+menu:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 1
+    - name: FEniCS 2027
+      pageRef: /fenics-2027/
+      weight: 2
+    - name: Download
+      pageRef: /download/
+      weight: 3
+    - name: Documentation
+      pageRef: /documentation/
+      weight: 4
+    - name: Community
+      pageRef: /community/
+      weight: 5
+    - name: Citing
+      pageRef: /citing/
+      weight: 6
+    - name: Search
+      weight: 7
+      params:
+        type: search
+    - name: GitHub
+      weight: 8
+      url: https://github.com/FEniCS
+      params:
+        icon: github
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          # Inline maths uses \( ... \) only. "$" is deliberately not an
+          # inline delimiter, so that dollar amounts such as $500 are left
+          # alone.
+          inline:
+            - ["\\(", "\\)"]
+          block:
+            - ["$$", "$$"]
+            - ["\\[", "\\]"]
+  highlight:
+    noClasses: false
+
+# The site has no tags or categories.
+disableKinds:
+  - taxonomy
+  - term
+
+outputs:
+  home: [html]
+  section: [html]

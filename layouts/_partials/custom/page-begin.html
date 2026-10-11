@@ -1,0 +1,6 @@
+{{- /*
+  Rendered by Hextra at the top of every page, above the title. Shows the
+  banner, which carries the page title and subtitle as well as the image.
+  Hextra's own <h1>, just below, is hidden by custom.css.
+*/ -}}
+{{- partial "page-banner.html" (dict "page" . "title" .Title "subtitle" .Params.subtitle) -}}

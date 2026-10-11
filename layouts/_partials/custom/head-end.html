@@ -1,0 +1,4 @@
+{{- /* Fetch the font alongside the stylesheet rather than after it, so that
+       text is not first painted in the fallback face. Fonts are always
+       requested in CORS mode, so crossorigin is needed even same-origin. */ -}}
+<link rel="preload" href="{{ "/assets/fonts/inter-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin />

@@ -1,0 +1,65 @@
+{{- /*
+  A cited publication.
+
+  @param {string} id            Anchor for the entry, matching its key in
+                                static/assets/citations.bib.
+  @param {string} author        Author list.
+  @param {string} title         Title of the work.
+  @param {string} journal       Journal name.
+  @param {string} volume        Journal volume.
+  @param {string} number        Journal issue.
+  @param {string} submitted     Journal the work has been submitted to.
+  @param {string} toappear      Journal the work will appear in.
+  @param {string} book          Book title, for a chapter in a book.
+  @param {string} bookeditor    Editors of the book.
+  @param {string} bookchapter   Chapter number.
+  @param {string} bookvolume    Volume within a book series.
+  @param {string} bookseries    Name of the book series.
+  @param {string} bookpublisher Publisher.
+  @param {string} year          Year of publication.
+  @param {string} pagestart     First page.
+  @param {string} pageend       Last page.
+  @param {string} pdf           Link to a PDF.
+  @param {string} arxiv         arXiv identifier.
+  @param {string} doi           DOI.
+
+  @example {{< paper id="BasixJoss" title="Basix" author="M. W. Scroggs"
+                     journal="Journal of Open Source Software" year="2022"
+                     doi="10.21105/joss.03982" >}}
+*/ -}}
+
+<div class="fenics-paper"{{ with .Get "id" }} id="{{ . }}"{{ end }}>
+  <p class="fenics-paper-title">{{ .Get "title" }}</p>
+  <p class="fenics-paper-authors">{{ .Get "author" }}</p>
+  <p class="fenics-paper-venue">
+    {{- with .Get "book" -}}
+      In:
+      {{- with $.Get "bookeditor" }} {{ . }} (eds){{ end }}
+      <em>{{ . }}</em>
+      {{- with $.Get "bookchapter" }}, chapter {{ . }}{{ end }}
+      {{- with $.Get "bookvolume" }}, volume {{ . }} of <em>{{ $.Get "bookseries" }}</em>{{ end }}
+      {{- with $.Get "bookpublisher" }}, {{ . }}{{ end }}
+    {{- else -}}
+      {{- with .Get "bookpublisher" }}{{ . }}{{ end }}
+      {{- with .Get "journal" }}<em>{{ . }}</em>
+        {{- with $.Get "volume" }} {{ . }}{{ end }}
+        {{- with $.Get "number" }}({{ . }}){{ end }}
+      {{- end }}
+      {{- with .Get "submitted" }}Submitted to <em>{{ . }}</em>{{ end }}
+      {{- with .Get "toappear" }}To appear in <em>{{ . }}</em>{{ end }}
+    {{- end }}
+    {{- with .Get "pagestart" }}, {{ . }}{{ with $.Get "pageend" }}&ndash;{{ . }}{{ end }}{{ end }}
+    {{- with .Get "year" }} ({{ . }}){{ end }}
+  </p>
+  {{- $links := slice -}}
+  {{- with .Get "doi" }}{{ $links = $links | append (dict "label" "DOI" "url" (printf "https://doi.org/%s" .)) }}{{ end -}}
+  {{- with .Get "arxiv" }}{{ $links = $links | append (dict "label" "arXiv" "url" (printf "https://arxiv.org/abs/%s" .)) }}{{ end -}}
+  {{- with .Get "pdf" }}{{ $links = $links | append (dict "label" "PDF" "url" .) }}{{ end -}}
+  {{- with $links }}
+    <p class="fenics-paper-links">
+      {{- range . }}
+        <a class="fenics-paper-link" href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}</a>
+      {{- end }}
+    </p>
+  {{- end }}
+</div>

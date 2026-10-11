@@ -1,7 +1,12 @@
-.*.swp
-*.pyc
+# Hugo build output and caches
+/public/
+/resources/
+/.hugo_build.lock
+/_vendor/
 
-# Ignore local build
-Gemfile.lock
-_site/
-.bundle/
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+.DS_Store

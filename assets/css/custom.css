@@ -1,0 +1,434 @@
+/*
+ * FEniCS additions to the Hextra theme.
+ *
+ * Hextra concatenates this file after its own stylesheet, so plain CSS here
+ * overrides the theme. Dark mode is selected by a `dark` class on <html>.
+ *
+ * Brand colour: #2E93CD (blue), link blue #0F79D0.
+ */
+
+:root {
+  --fenics-blue: #2e93cd;
+  --fenics-link: #0f79d0;
+}
+
+/* ----------------------------------------------------------------- fonts */
+
+/* Inter, self-hosted so that no third-party request is made when a page is
+   opened. The variable font covers every weight the website uses. The Latin
+   Extended file is only fetched by browsers that need it, so most visitors
+   download the 48KB Latin file alone. Licence and provenance are in
+   static/assets/fonts/. */
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/fonts/inter-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  /* Hextra derives its default font family from this variable. The system
+     fonts stay as fallbacks for the moment before Inter loads. */
+  --hx-font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* ---------------------------------------------------------------- banner */
+
+/* The banner at the top of a page, carrying the page title. Hextra renders
+   the body itself, so this sits inside the content column rather than
+   spanning the window. */
+
+.fenics-banner {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin: 0 0 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #1b1b1b;
+}
+
+.fenics-banner--tall {
+  height: 320px;
+}
+
+.fenics-banner::before {
+  content: "";
+  position: absolute;
+  /* Bleed past the edges so that a blurred image has nothing to fade into. */
+  inset: -40px;
+  background-image: var(--fenics-banner-image);
+  background-size: var(--fenics-banner-size, auto);
+  background-repeat: var(--fenics-banner-repeat, no-repeat);
+  background-position: center;
+}
+
+/* The title is set over the artwork, so darken it enough that white text
+   reads against even the brightest of the header images. */
+.fenics-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 0.5);
+}
+
+/* On the front page the logo is set against a field of the same artwork, so
+   blur the background to let the logo read. */
+.fenics-banner--tall::before {
+  filter: blur(14px);
+  transform: scale(1.06);
+}
+
+.fenics-banner-logo {
+  height: 170px;
+  width: auto;
+  margin: 0 0 0.25rem;
+  filter: drop-shadow(0 0 12px rgb(255 255 255 / 0.35))
+    drop-shadow(0 6px 20px rgb(0 0 0 / 0.55));
+}
+
+/* ----------------------------------------------------------- banner text */
+
+/* The page title and subtitle, set over the banner by page-banner.html. */
+
+.fenics-banner-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+  padding: 1rem;
+  text-align: center;
+  text-wrap: balance;
+  color: #fff;
+  text-shadow: 0 2px 10px rgb(0 0 0 / 0.65);
+}
+
+.fenics-banner-title {
+  margin: 0;
+  font-size: clamp(1.75rem, 1.1rem + 2.1vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: inherit;
+}
+
+.fenics-banner-subtitle {
+  margin: 0.6rem 0 0;
+  font-size: clamp(0.95rem, 0.82rem + 0.45vw, 1.2rem);
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgb(255 255 255 / 0.92);
+}
+
+/* Hextra prints the title again just below the banner, between a <br> and a
+   4rem spacer. Hide all three: the banner above carries the title now. The
+   selectors are tied to the banner so that nothing in the page body, which
+   Hextra wraps in .content, is caught. */
+.fenics-banner ~ h1,
+.fenics-banner ~ br,
+.fenics-banner ~ [class~="hx:mb-16"] {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .fenics-banner {
+    height: 170px;
+  }
+
+  .fenics-banner--tall {
+    height: 250px;
+  }
+
+  .fenics-banner-logo {
+    height: 110px;
+  }
+}
+
+/* ------------------------------------------------------------ text width */
+
+/* Hextra's content column is wide enough for code and tables. Cap the
+   measure so that paragraphs stay comfortable to read on pages that have no
+   table of contents beside them. */
+.content {
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----------------------------------------------------------- big buttons */
+
+.fenics-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.fenics-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.75rem 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  background-color: rgb(0 0 0 / 0.015);
+  transition:
+    border-color 0.2s,
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+.fenics-button:hover {
+  border-color: var(--fenics-blue);
+  background-color: rgb(46 147 205 / 0.06);
+  transform: translateY(-2px);
+}
+
+.fenics-button svg {
+  width: 2.25rem;
+  height: 2.25rem;
+  color: var(--fenics-blue);
+}
+
+.dark .fenics-button {
+  border-color: rgb(255 255 255 / 0.12);
+  background-color: rgb(255 255 255 / 0.03);
+}
+
+.dark .fenics-button:hover {
+  border-color: var(--fenics-blue);
+  background-color: rgb(46 147 205 / 0.1);
+}
+
+/* --------------------------------------------------------------- content */
+
+/* A cited publication. */
+.fenics-paper {
+  margin: 0 0 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgb(0 0 0 / 0.08);
+  border-left: 3px solid var(--fenics-blue);
+  border-radius: 0.375rem;
+  background-color: rgb(0 0 0 / 0.015);
+}
+
+.dark .fenics-paper {
+  border-color: rgb(255 255 255 / 0.1);
+  border-left-color: var(--fenics-blue);
+  background-color: rgb(255 255 255 / 0.03);
+}
+
+/* The entry someone has just followed a link to. */
+.fenics-paper:target {
+  border-left-width: 6px;
+  background-color: rgb(46 147 205 / 0.08);
+}
+
+.content .fenics-paper p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.fenics-paper-title {
+  font-weight: 600;
+}
+
+.content .fenics-paper-authors {
+  margin-top: 0.25rem;
+  font-size: 0.9375rem;
+  color: rgb(0 0 0 / 0.7);
+}
+
+.content .fenics-paper-venue {
+  margin-top: 0.125rem;
+  font-size: 0.9375rem;
+  color: rgb(0 0 0 / 0.55);
+}
+
+.dark .fenics-paper-authors {
+  color: rgb(255 255 255 / 0.72);
+}
+
+.dark .fenics-paper-venue {
+  color: rgb(255 255 255 / 0.55);
+}
+
+.content .fenics-paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.content a.fenics-paper-link {
+  padding: 0.125rem 0.5rem;
+  border: 1px solid rgb(46 147 205 / 0.4);
+  border-radius: 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--fenics-link);
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+.content a.fenics-paper-link:hover {
+  border-color: var(--fenics-blue);
+  background-color: rgb(46 147 205 / 0.1);
+}
+
+/* A pull quote. */
+.fenics-quote {
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--fenics-blue);
+}
+
+/* Name, role and links of a person. */
+.fenics-person-name {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.fenics-person-detail {
+  padding: 5px 0 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.fenics-person-detail a {
+  text-decoration: none;
+}
+
+.fenics-person-detail svg {
+  display: inline-block;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
+/* Image placement helpers, used by the "image" shortcode. The classes go on
+   the image itself, so that a linked image is placed in the same way as an
+   unlinked one. */
+.fenics-image {
+  display: block;
+  height: auto;
+}
+
+.fenics-image--center {
+  max-width: min(70%, 30rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fenics-image--left,
+.fenics-image--right {
+  max-width: 300px;
+}
+
+.fenics-image--left {
+  float: left;
+  margin: 0 30px 10px 0;
+}
+
+.fenics-image--right {
+  float: right;
+  margin: 0 0 10px 30px;
+}
+
+@media (max-width: 640px) {
+  .fenics-image--center {
+    max-width: 100%;
+  }
+
+  .fenics-image--left,
+  .fenics-image--right {
+    float: none;
+    margin: 0 auto 10px;
+  }
+}
+
+/* Keep long equations scrollable rather than overflowing the page. */
+.content .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Embedded videos and forms. */
+.content iframe {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+/* ---------------------------------------------------------------- footer */
+
+.fenics-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 24px 0;
+  font-size: 0.75rem;
+}
+
+.fenics-footer-social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+}
+
+.fenics-footer-social a {
+  display: inline-flex;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.fenics-footer-social a:hover {
+  color: var(--fenics-link);
+}
+
+@media (max-width: 640px) {
+  .fenics-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fenics-footer-social {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,38 @@
+{{- /*
+  An image placed to the centre, left or right of the page, optionally
+  linking somewhere. Used for sponsor logos, maps and photographs.
+
+  @param {string} src   The image. Required.
+  @param {string} alt   Alt text. Required.
+  @param {string} link  Where clicking the image goes.
+  @param {string} align Placement: center (default) | left | right.
+  @param {string} width CSS width of the image, e.g. 40%.
+  @param {string} style Extra CSS for the image, e.g. padding.
+
+  @example {{< image src="/assets/img/numfocus.png" alt="NumFOCUS"
+                     link="https://www.numfocus.org/" width="50%" >}}
+*/ -}}
+{{- $src := .Get "src" | default (.Get 0) -}}
+{{- if not $src -}}
+  {{- errorf "image: %q is missing the required 'src' parameter" .Position -}}
+{{- end -}}
+
+{{- $align := .Get "align" | default "center" -}}
+{{- if not (in (slice "center" "left" "right") $align) -}}
+  {{- errorf "image: %q has unknown align %q; use center, left or right" .Position $align -}}
+{{- end -}}
+
+{{- $style := "" -}}
+{{- with .Get "width" }}{{ $style = printf "width:%s;" . }}{{ end -}}
+{{- with .Get "style" }}{{ $style = printf "%s%s" $style . }}{{ end -}}
+
+{{- $img := printf `<img class="fenics-image fenics-image--%s" src="%s" alt="%s"%s loading="lazy" />`
+      $align ($src | relURL) (.Get "alt" | transform.HTMLEscape)
+      (cond (ne $style "") (printf ` style="%s"` $style) "") -}}
+
+{{- with .Get "link" -}}
+  {{- $external := or (hasPrefix . "http://") (hasPrefix . "https://") -}}
+  <a href="{{ . | relURL }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>{{ $img | safeHTML }}</a>
+{{- else -}}
+  {{ $img | safeHTML }}
+{{- end -}}
