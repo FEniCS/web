@@ -10,9 +10,8 @@ differential equations (PDEs) with the finite element method (FEM).
 FEniCS enables users to quickly translate scientific models into
 efficient finite element code. With the high-level Python and C++
 interfaces to FEniCS, it is easy to get started, but FEniCS offers also
-powerful capabilities for more experienced programmers. FEniCS runs on a
-multitude of platforms ranging from laptops to high-performance
-computers.
+powerful capabilities for advanced users. FEniCS runs on a multitude of
+platforms, ranging from laptops to leadership-class supercomputers.
 
 {{< buttons >}}
   {{< button icon="download" label="Download" href="/download/" >}}
@@ -62,7 +61,7 @@ spheres held in a channel.
 
 {{< image src="/assets/img/stokesexample.png" alt="Streamlines of Stokes flow past three spheres held in a rectangular channel" >}}
 
-## Running in parallel
+<!-- ## Running in parallel
 
 {{< image src="/assets/img/tc_vm.png" alt="Von Mises stresses in a turbocharger, computed with FEniCS" align="right" >}}
 Every component of FEniCS is designed for parallel computing. Running a
@@ -74,9 +73,9 @@ The figure shows von Mises stresses from a nonlinear thermomechanical
 simulation of a turbocharger, a system of more than
 \(3.3 \times 10^{9}\) degrees of freedom. The solver was developed on a
 desktop at small scale and then run on a supercomputer across more than
-24,000 processes.
+24,000 processes. -->
 
-## Support FEniCS
+<!-- ## Support FEniCS -->
 
 FEniCS is a [NumFOCUS](https://www.numfocus.org/) fiscally supported
 project. If you like FEniCS and want to support our mission to produce
