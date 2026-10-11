@@ -29,23 +29,37 @@
 */ -}}
 
 <div class="fenics-paper"{{ with .Get "id" }} id="{{ . }}"{{ end }}>
-  {{- .Get "author" }}. {{ .Get "title" }},
-  {{- with .Get "book" }}
-    in:
-    {{- with $.Get "bookeditor" }} {{ . }} (eds){{ end }}
-    {{ . }}
-    {{- with $.Get "bookchapter" }} (chapter {{ . }}){{ end }}
-    {{- with $.Get "bookvolume" }}, volume {{ . }} of <em>{{ $.Get "bookseries" }}</em>{{ end }}
-    {{- with $.Get "bookpublisher" }}, {{ . }}{{ end }}
-  {{- else }}
-    {{- with .Get "bookpublisher" }}, {{ . }}{{ end }}
+  <p class="fenics-paper-title">{{ .Get "title" }}</p>
+  <p class="fenics-paper-authors">{{ .Get "author" }}</p>
+  <p class="fenics-paper-venue">
+    {{- with .Get "book" -}}
+      In:
+      {{- with $.Get "bookeditor" }} {{ . }} (eds){{ end }}
+      <em>{{ . }}</em>
+      {{- with $.Get "bookchapter" }}, chapter {{ . }}{{ end }}
+      {{- with $.Get "bookvolume" }}, volume {{ . }} of <em>{{ $.Get "bookseries" }}</em>{{ end }}
+      {{- with $.Get "bookpublisher" }}, {{ . }}{{ end }}
+    {{- else -}}
+      {{- with .Get "bookpublisher" }}{{ . }}{{ end }}
+      {{- with .Get "journal" }}<em>{{ . }}</em>
+        {{- with $.Get "volume" }} {{ . }}{{ end }}
+        {{- with $.Get "number" }}({{ . }}){{ end }}
+      {{- end }}
+      {{- with .Get "submitted" }}Submitted to <em>{{ . }}</em>{{ end }}
+      {{- with .Get "toappear" }}To appear in <em>{{ . }}</em>{{ end }}
+    {{- end }}
+    {{- with .Get "pagestart" }}, {{ . }}{{ with $.Get "pageend" }}&ndash;{{ . }}{{ end }}{{ end }}
+    {{- with .Get "year" }} ({{ . }}){{ end }}
+  </p>
+  {{- $links := slice -}}
+  {{- with .Get "doi" }}{{ $links = $links | append (dict "label" "DOI" "url" (printf "https://doi.org/%s" .)) }}{{ end -}}
+  {{- with .Get "arxiv" }}{{ $links = $links | append (dict "label" "arXiv" "url" (printf "https://arxiv.org/abs/%s" .)) }}{{ end -}}
+  {{- with .Get "pdf" }}{{ $links = $links | append (dict "label" "PDF" "url" .) }}{{ end -}}
+  {{- with $links }}
+    <p class="fenics-paper-links">
+      {{- range . }}
+        <a class="fenics-paper-link" href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}</a>
+      {{- end }}
+    </p>
   {{- end }}
-  {{- with .Get "journal" }} <em>{{ . }}</em> {{ $.Get "volume" }}{{ with $.Get "number" }}({{ . }}){{ end }}{{ end }}
-  {{- with .Get "submitted" }} submitted to <em>{{ . }}</em>{{ end }}
-  {{- with .Get "toappear" }} to appear in <em>{{ . }}</em>{{ end }}
-  ({{ .Get "year" }})
-  {{- with .Get "pagestart" }} {{ . }}{{ with $.Get "pageend" }}&ndash;{{ . }}{{ end }}{{ end }}.
-  {{- with .Get "pdf" }} [<a href="{{ . }}" target="_blank" rel="noopener">pdf</a>]{{ end }}
-  {{- with .Get "arxiv" }} [<a href="https://arxiv.org/abs/{{ . }}" target="_blank" rel="noopener">ar&Chi;iv</a>]{{ end }}
-  {{- with .Get "doi" }} [<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">doi.org/{{ . }}</a>]{{ end }}
 </div>

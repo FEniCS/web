@@ -204,16 +204,78 @@
 
 /* A cited publication. */
 .fenics-paper {
-  margin: 0 10px 20px;
-  padding: 0 30px;
-  border-left: var(--fenics-blue) 5px solid;
-  border-right: var(--fenics-blue) 5px solid;
+  margin: 0 0 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgb(0 0 0 / 0.08);
+  border-left: 3px solid var(--fenics-blue);
+  border-radius: 0.375rem;
+  background-color: rgb(0 0 0 / 0.015);
 }
 
+.dark .fenics-paper {
+  border-color: rgb(255 255 255 / 0.1);
+  border-left-color: var(--fenics-blue);
+  background-color: rgb(255 255 255 / 0.03);
+}
+
+/* The entry someone has just followed a link to. */
 .fenics-paper:target {
-  padding: 0 10px;
-  border-left-width: 25px;
-  border-right-width: 25px;
+  border-left-width: 6px;
+  background-color: rgb(46 147 205 / 0.08);
+}
+
+.content .fenics-paper p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.fenics-paper-title {
+  font-weight: 600;
+}
+
+.content .fenics-paper-authors {
+  margin-top: 0.25rem;
+  font-size: 0.9375rem;
+  color: rgb(0 0 0 / 0.7);
+}
+
+.content .fenics-paper-venue {
+  margin-top: 0.125rem;
+  font-size: 0.9375rem;
+  color: rgb(0 0 0 / 0.55);
+}
+
+.dark .fenics-paper-authors {
+  color: rgb(255 255 255 / 0.72);
+}
+
+.dark .fenics-paper-venue {
+  color: rgb(255 255 255 / 0.55);
+}
+
+.content .fenics-paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.content a.fenics-paper-link {
+  padding: 0.125rem 0.5rem;
+  border: 1px solid rgb(46 147 205 / 0.4);
+  border-radius: 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--fenics-link);
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+.content a.fenics-paper-link:hover {
+  border-color: var(--fenics-blue);
+  background-color: rgb(46 147 205 / 0.1);
 }
 
 /* A pull quote. */
