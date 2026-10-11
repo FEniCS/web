@@ -5,6 +5,9 @@ static site using the [Hextra](https://imfing.github.io/hextra/) theme. It is
 mostly prose. Changes here are read by the public, so accuracy of the content
 matters more than cleverness of the templates.
 
+Change only this site's own content, templates and configuration. Hugo and
+Hextra are dependencies and are never modified — see the first rule below.
+
 Read `README.md` first — it is written for human contributors and explains
 page settings, shortcodes and how to build. This file covers what that one
 does not: the things that will otherwise cost you an hour.
@@ -31,10 +34,36 @@ else will differ.
 
 ## Rules
 
-**Never edit the theme.** Hextra is a Go module pinned in `go.mod`. To read
-it, `hugo mod vendor`, inspect `_vendor/github.com/imfing/hextra/`, then
-`rm -rf _vendor` — it must never be committed. `hugo mod verify` checks the
-cached copy is untouched.
+**Change only this website's own code. Never change Hugo or Hextra.** Both
+are dependencies, not part of this repository:
+
+- **Hugo** is the site generator, installed as a binary. Nothing here patches
+  it or works around it by editing anything it owns. If Hugo behaves
+  unexpectedly, change the site's configuration or templates, or raise the
+  version pinned in `.github/actions/setup-hugo/action.yml`.
+- **Hextra** is the theme, a Go module pinned in `go.mod` and `go.sum`. It is
+  never edited, copied into the repository, or vendored into a commit. To
+  read it, run `hugo mod vendor`, inspect
+  `_vendor/github.com/imfing/hextra/`, then `rm -rf _vendor`. To move to a
+  newer version, `hugo mod get -u github.com/imfing/hextra` and commit the
+  two module files — never a modified copy of the theme itself.
+
+What this repository owns, and all that a change should touch:
+
+| | |
+| :- | :- |
+| `content/` | the pages, in Markdown — most changes are here |
+| `static/` | files served as they are: images, fonts, PDFs |
+| `assets/` | the stylesheet and scripts Hugo processes |
+| `layouts/` | this site's own partials and shortcodes |
+| `data/` | lookup tables used by templates |
+| `hugo.yaml` | site configuration |
+| `_test/`, `_tools/`, `.github/` | tests, scripts, CI |
+| `go.mod`, `go.sum` | the pinned theme version; change with `hugo mod get` |
+| `README.md`, `AGENTS.md` | documentation |
+
+`hugo mod verify` exits 0 while the cached theme still matches `go.sum`; if
+it ever fails, something has edited the theme and must be undone.
 
 **Do not override theme templates.** There are no copies of Hextra's layouts
 here any more and it should stay that way: a copy silently stops tracking the
