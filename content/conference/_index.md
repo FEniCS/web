@@ -2,6 +2,8 @@
 title: FEniCS
 subtitle: Conferences
 url: /conference/
+# Use the same layout as an ordinary page, rather than Hextra's docs list.
+layout: single
 description: The FEniCS conference is held in a different location each year. Links to every conference from 2005 onwards.
 ---
 The FEniCS conference is held in a different location each year. It is an

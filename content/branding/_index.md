@@ -1,6 +1,8 @@
 ---
 title: FEniCS Branding
 url: /branding/
+# Use the same layout as an ordinary page, rather than Hextra's docs list.
+layout: single
 description: The FEniCS logo in vector and raster formats, its licence, and how the components of FEniCS should be capitalised.
 ---
 ## Components of FEniCSx and legacy FEniCS

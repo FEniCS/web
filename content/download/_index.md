@@ -1,6 +1,8 @@
 ---
 title: Download
 url: /download/
+# Use the same layout as an ordinary page, rather than Hextra's docs list.
+layout: single
 aliases:
   # The legacy FEniCS install instructions used to live here.
   - /download/archive/

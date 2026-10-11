@@ -50,129 +50,90 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-/* ---------------------------------------------------------------- header */
+/* ---------------------------------------------------------------- banner */
 
-/* The page header lays the title over a photograph or over the FEniCS
-   pattern. A dark scrim sits between the two so that the text stays legible
-   whatever the image behind it, and so that the header looks the same in
-   light and dark mode. */
+/* The banner image at the top of a page. Hextra renders the title and body
+   itself, so this sits inside the content column rather than spanning the
+   window, and carries no text of its own except the logo on the front page. */
 
-.fenics-header {
+.fenics-banner {
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 330px;
-  padding: 56px 24px;
+  height: 200px;
+  margin: 0 0 1.5rem;
+  border-radius: 0.5rem;
   background-color: #1b1b1b;
 }
 
-.fenics-header--short {
-  min-height: 260px;
+.fenics-banner--tall {
+  height: 300px;
 }
 
-.fenics-header--tall {
-  min-height: 420px;
-}
-
-.fenics-header::before {
+.fenics-banner::before {
   content: "";
   position: absolute;
   /* Bleed past the edges so that a blurred image has nothing to fade into. */
   inset: -40px;
-  background-image: var(--fenics-header-image);
-  background-size: var(--fenics-header-size, auto);
-  background-repeat: var(--fenics-header-repeat, no-repeat);
+  background-image: var(--fenics-banner-image);
+  background-size: var(--fenics-banner-size, auto);
+  background-repeat: var(--fenics-banner-repeat, no-repeat);
   background-position: center;
 }
 
 /* On the front page the logo is set against a field of the same artwork, so
    blur the background to let the logo read. */
-.fenics-header--tall::before {
+.fenics-banner--tall::before {
   filter: blur(14px);
   transform: scale(1.06);
 }
 
-.fenics-header::after {
+.fenics-banner--tall::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.55) 0%,
-    rgba(0, 0, 0, 0.4) 45%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
+  background: rgb(0 0 0 / 0.45);
 }
 
-.fenics-header--tall::after {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.62) 0%,
-    rgba(0, 0, 0, 0.52) 45%,
-    rgba(0, 0, 0, 0.72) 100%
-  );
-}
-
-.fenics-header-inner {
+.fenics-banner-logo {
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 44rem;
-}
-
-.fenics-header-title {
+  height: 200px;
+  width: auto;
   margin: 0;
-  font-size: 3rem;
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.025em;
-  text-align: center;
-  text-wrap: balance;
-  color: #fff;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 0 12px rgb(255 255 255 / 0.35))
+    drop-shadow(0 6px 20px rgb(0 0 0 / 0.55));
 }
 
-.fenics-header-subtitle {
-  margin: 18px 0 0;
-  font-size: 1.1875rem;
-  font-weight: 600;
+/* The subtitle, set under the page title by custom/content-begin.html. */
+.fenics-subtitle {
+  /* Pull up through the 4rem spacer Hextra puts after the title. */
+  margin: -3.25rem 0 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
   line-height: 1.45;
   text-align: center;
   text-wrap: balance;
-  color: rgba(255, 255, 255, 0.95);
-  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.55);
+  color: rgb(0 0 0 / 0.6);
 }
 
-.fenics-header-logo {
-  height: 170px;
-  width: auto;
-  margin: 0 0 20px;
-  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.35))
-    drop-shadow(0 6px 20px rgba(0, 0, 0, 0.55));
+.dark .fenics-subtitle {
+  color: rgb(255 255 255 / 0.65);
 }
 
 @media (max-width: 640px) {
-  .fenics-header,
-  .fenics-header--short,
-  .fenics-header--tall {
-    min-height: 0;
-    padding: 44px 20px;
+  .fenics-banner {
+    height: 150px;
   }
 
-  .fenics-header-title {
-    font-size: 2rem;
+  .fenics-banner--tall {
+    height: 220px;
   }
 
-  .fenics-header-subtitle {
-    font-size: 1.0625rem;
-  }
-
-  .fenics-header-logo {
-    height: 110px;
+  .fenics-banner-logo {
+    height: 130px;
   }
 }
 

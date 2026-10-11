@@ -1,6 +1,8 @@
 ---
 title: Community
 url: /community/
+# Use the same layout as an ordinary page, rather than Hextra's docs list.
+layout: single
 description: Where to ask questions about FEniCS, report bugs, contribute to its development, and how the project is governed.
 ---
 ## Asking questions

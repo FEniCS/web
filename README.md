@@ -68,12 +68,12 @@ The `title` is displayed at the top of the page, with the `subtitle` (optional)
 below it. The `subtitle` may contain HTML, so `<br>` can be used to break it
 over several lines.
 
-The `image` will be used as the background of the header; if no image is given,
-a default image will be used. `imageFit` controls how that image is sized:
+The `image` is shown as a banner above the title; if no image is given, a
+default one is used. `imageFit` controls how it is sized:
 
-- `cover` fills the header and crops the image: use this for photographs;
+- `cover` fills the banner and crops the image: use this for photographs;
 - `auto` (the default when an `image` is given) scales the image to the height
-  of the header: use this for logos and maps;
+  of the banner: use this for logos and maps;
 - `tile` repeats the image at its own size.
 
 `url` sets the address of the page: for example, if set to `/fenics/`, the page
@@ -82,9 +82,12 @@ a `url`, except the front page (`content/_index.md`). If a page is moved to a
 new address, list the old one under `aliases` so that the old address redirects
 to the new one.
 
-Two further settings are occasionally useful: `headerLogo: true` puts the
-FEniCS logo above the title (used on the front page), and `hideHeader: true`
-leaves the header off altogether.
+One further setting is occasionally useful: `headerLogo: true` puts the FEniCS
+logo over the banner, as the front page does.
+
+A page that introduces a folder (an `_index.md`) also needs `layout: single`,
+so that it is laid out like any other page rather than as one of Hextra's
+documentation index pages.
 
 Links from one page to another are written as the full address of the target
 page, for example `[the download page](/download/)`.

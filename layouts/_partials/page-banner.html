@@ -1,0 +1,36 @@
+{{- /*
+  The banner image at the top of a page.
+
+  Hextra renders the title and the page body itself, so this is only the
+  image: custom/page-begin.html puts it above the title, and
+  custom/content-begin.html puts the subtitle below.
+
+  Front matter:
+    image       Banner image, e.g. /assets/img/headers/oriel.jpg.
+                Defaults to params.defaultHeaderImage in hugo.yaml.
+    imageFit    How the image is sized:
+                  cover  -- fill the banner, cropping as needed (photographs)
+                  auto   -- scale to the height of the banner (logos, maps)
+                  tile   -- repeat at its natural size (the default image)
+    headerLogo  Set to true to show the FEniCS logo over the banner.
+*/ -}}
+
+{{- $image := .Params.image | default site.Params.defaultHeaderImage -}}
+{{- $fit := .Params.imageFit | default (cond (eq $image site.Params.defaultHeaderImage) "tile" "auto") -}}
+
+{{- /* The image is drawn by a pseudo-element, so that the front page can
+       soften it without softening the logo on top of it. */ -}}
+{{- $style := printf "--fenics-banner-image:url(%s)" ($image | relURL) -}}
+{{- if eq $fit "cover" -}}
+  {{- $style = printf "%s;--fenics-banner-size:cover" $style -}}
+{{- else if eq $fit "tile" -}}
+  {{- $style = printf "%s;--fenics-banner-repeat:repeat" $style -}}
+{{- else -}}
+  {{- $style = printf "%s;--fenics-banner-size:auto 400px" $style -}}
+{{- end -}}
+
+<div class="fenics-banner{{ if .Params.headerLogo }} fenics-banner--tall{{ end }}" style="{{ $style | safeCSS }}">
+  {{- if .Params.headerLogo }}
+    <img class="fenics-banner-logo" src="{{ "/assets/logo/fenics_logo.png" | relURL }}" alt="FEniCS logo" width="232" height="320" />
+  {{- end }}
+</div>

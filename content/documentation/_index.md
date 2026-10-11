@@ -1,6 +1,8 @@
 ---
 title: Documentation
 url: /documentation/
+# Use the same layout as an ordinary page, rather than Hextra's docs list.
+layout: single
 description: Demos, tutorials, API documentation and release notes for FEniCSx, plus the FEniCS book.
 ---
 ## Getting started

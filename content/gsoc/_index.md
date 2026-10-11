@@ -1,6 +1,8 @@
 ---
 title: Google Summer of Code
 url: /gsoc/
+# Use the same layout as an ordinary page, rather than Hextra's docs list.
+layout: single
 description: Projects the FEniCS Project has run through Google Summer of Code.
 ---
 The FEniCS Project has participated in the [Google Summer of Code](https://summerofcode.withgoogle.com) (GSoC) through our fiscal sponsorship agreement with [NumFOCUS](https://numfocus.org/).
