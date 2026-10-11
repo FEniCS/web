@@ -12,22 +12,22 @@ can ask a question on the [FEniCS Discourse
 site](https://fenicsproject.discourse.group/). To make it more likely
 that you get a useful reply to your question, you should:
 
-- make sure that your post title and description make clear what you are
-  trying to do,
-- post a minimal code that reproduces any errors you are encountering,
-- post in full any error messages you are seeing.
-- include details of which FEniCS version you are using, and how you
+- Make sure that your post title and description make clear what you are
+  trying to do
+- Post a minimal code that reproduces any errors you are encountering
+- Post in full any error messages you are seeing
+- Include details of which FEniCS version you are using, and how you
   installed it (Docker, conda, pip, etc).
 
-More advice on how to post a good question is
+Further advice on how to post a good question is
 [here](https://fenicsproject.discourse.group/t/read-before-posting-how-do-i-get-my-question-answered/21/4).
 
 ## Slack Channel
 
 Discussions about FEniCS and its development take place on the [FEniCS
 Slack channels](https://fenicsproject.slack.com/). You can join the
-Slack community by
-[entering your email address at this link](https://join.slack.com/t/fenicsproject/shared_invite/zt-2wa76d0xw-ecfxcPj25K8pc7q7~1AK8g).
+Slack community by [entering your email address at this
+link](https://join.slack.com/t/fenicsproject/shared_invite/zt-2wa76d0xw-ecfxcPj25K8pc7q7~1AK8g).
 
 ## Reporting bugs
 
@@ -47,17 +47,17 @@ with other developers on the [FEniCSx Slack
 channels](https://fenicsproject.slack.com/): in particular, you should
 join the **#fenicsx** and **#development** channels.
 
-## People of FEniCS
-
-[Here](/people-of-fenics/) we introduce some the users of FEniCS who
-have found it useful.
-
 ## The FEniCS Conference
 
 The [FEniCS Conference](/conference/) is held annually and
 is a great way to network with other users, keep up with new
 developments from core developers, hear new applications and results,
 and discuss ways of improving your projects.
+
+## People of FEniCS
+
+[Here](/people-of-fenics/) we introduce some the users of FEniCS who
+have found it useful.
 
 ## Google Summer of Code
 
@@ -67,9 +67,9 @@ projects relating to the development of FEniCS. See [GSoC overview](/gsoc/) for 
 ## Code of Conduct
 
 We strive to make the FEniCS Project an open and respectful community.
-Our [Code of Conduct](/code-of-conduct/) sets out the expected
-standards of behaviour for the FEniCS community. It applies to all
-FEniCS activities including online forums and FEniCS workshops.
+Our [Code of Conduct](/code-of-conduct/) sets out the expected standards
+of behaviour for the FEniCS community. It applies to all FEniCS
+activities including online forums and FEniCS workshops.
 
 ## Governance
 

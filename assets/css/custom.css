@@ -52,9 +52,9 @@
 
 /* ---------------------------------------------------------------- banner */
 
-/* The banner image at the top of a page. Hextra renders the title and body
-   itself, so this sits inside the content column rather than spanning the
-   window, and carries no text of its own except the logo on the front page. */
+/* The banner at the top of a page, carrying the page title. Hextra renders
+   the body itself, so this sits inside the content column rather than
+   spanning the window. */
 
 .fenics-banner {
   position: relative;
@@ -69,7 +69,7 @@
 }
 
 .fenics-banner--tall {
-  height: 300px;
+  height: 320px;
 }
 
 .fenics-banner::before {
@@ -83,6 +83,15 @@
   background-position: center;
 }
 
+/* The title is set over the artwork, so darken it enough that white text
+   reads against even the brightest of the header images. */
+.fenics-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 0.5);
+}
+
 /* On the front page the logo is set against a field of the same artwork, so
    blur the background to let the logo read. */
 .fenics-banner--tall::before {
@@ -90,50 +99,70 @@
   transform: scale(1.06);
 }
 
-.fenics-banner--tall::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgb(0 0 0 / 0.45);
-}
-
 .fenics-banner-logo {
-  position: relative;
-  z-index: 1;
-  height: 200px;
+  height: 170px;
   width: auto;
-  margin: 0;
+  margin: 0 0 0.25rem;
   filter: drop-shadow(0 0 12px rgb(255 255 255 / 0.35))
     drop-shadow(0 6px 20px rgb(0 0 0 / 0.55));
 }
 
-/* The subtitle, set under the page title by custom/content-begin.html. */
-.fenics-subtitle {
-  /* Pull up through the 4rem spacer Hextra puts after the title. */
-  margin: -3.25rem 0 2.5rem;
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 1.45;
+/* ----------------------------------------------------------- banner text */
+
+/* The page title and subtitle, set over the banner by page-banner.html. */
+
+.fenics-banner-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+  padding: 1rem;
   text-align: center;
   text-wrap: balance;
-  color: rgb(0 0 0 / 0.6);
+  color: #fff;
+  text-shadow: 0 2px 10px rgb(0 0 0 / 0.65);
 }
 
-.dark .fenics-subtitle {
-  color: rgb(255 255 255 / 0.65);
+.fenics-banner-title {
+  margin: 0;
+  font-size: clamp(1.75rem, 1.1rem + 2.1vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: inherit;
+}
+
+.fenics-banner-subtitle {
+  margin: 0.6rem 0 0;
+  font-size: clamp(0.95rem, 0.82rem + 0.45vw, 1.2rem);
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgb(255 255 255 / 0.92);
+}
+
+/* Hextra prints the title again just below the banner, between a <br> and a
+   4rem spacer. Hide all three: the banner above carries the title now. The
+   selectors are tied to the banner so that nothing in the page body, which
+   Hextra wraps in .content, is caught. */
+.fenics-banner ~ h1,
+.fenics-banner ~ br,
+.fenics-banner ~ [class~="hx:mb-16"] {
+  display: none;
 }
 
 @media (max-width: 640px) {
   .fenics-banner {
-    height: 150px;
+    height: 170px;
   }
 
   .fenics-banner--tall {
-    height: 220px;
+    height: 250px;
   }
 
   .fenics-banner-logo {
-    height: 130px;
+    height: 110px;
   }
 }
 

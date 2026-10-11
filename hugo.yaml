@@ -74,15 +74,12 @@ menu:
     - name: Citing
       pageRef: /citing/
       weight: 6
-    - name: Donate
-      url: https://numfocus.org/donate-to-fenics
-      weight: 7
     - name: Search
-      weight: 8
+      weight: 7
       params:
         type: search
     - name: GitHub
-      weight: 9
+      weight: 8
       url: https://github.com/FEniCS
       params:
         icon: github

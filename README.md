@@ -64,12 +64,13 @@ url: /fenics-2027/
 ---
 ```
 
-The `title` is displayed at the top of the page, with the `subtitle` (optional)
-below it. The `subtitle` may contain HTML, so `<br>` can be used to break it
-over several lines.
+The `title` is set over the banner at the top of the page, with the `subtitle`
+(optional) below it. The `subtitle` may contain HTML, so `<br>` can be used to
+break it over several lines.
 
-The `image` is shown as a banner above the title; if no image is given, a
-default one is used. `imageFit` controls how it is sized:
+The `image` is the banner the title is set over; if no image is given, a
+default one is used. The banner is darkened so that the title reads over it.
+`imageFit` controls how the image is sized:
 
 - `cover` fills the banner and crops the image: use this for photographs;
 - `auto` (the default when an `image` is given) scales the image to the height
@@ -83,7 +84,7 @@ new address, list the old one under `aliases` so that the old address redirects
 to the new one.
 
 One further setting is occasionally useful: `headerLogo: true` puts the FEniCS
-logo over the banner, as the front page does.
+logo on the banner above the title, as the front page does.
 
 A page that introduces a folder (an `_index.md`) also needs `layout: single`,
 so that it is laid out like any other page rather than as one of Hextra's

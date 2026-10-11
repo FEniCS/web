@@ -79,7 +79,8 @@ desktop at small scale and then run on a supercomputer across more than
 
 FEniCS is a [NumFOCUS](https://www.numfocus.org/) fiscally supported
 project. If you like FEniCS and want to support our mission to produce
-the best possible platform for open-source computing, consider making [a
-donation](https://numfocus.org/donate-to-fenics) to our project.
+the best possible platform for open-source finite element computing,
+consider making [a donation](https://numfocus.org/donate-to-fenics) to
+support FEniCS.
 
 {{< image src="/assets/img/numfocus.png" alt="NumFOCUS" link="https://www.numfocus.org/" width="260px" >}}

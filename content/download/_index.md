@@ -46,23 +46,17 @@ DOLFINx docs](https://github.com/FEniCS/dolfinx#installation).
 
 On Debian/Ubuntu, complex number support with PETSc is provided via the
 `python3-dolfinx-complex` package:
-
 ```shell
 sudo apt install python3-dolfinx-complex
 ```
 
-The Debian/Ubuntu standard installation uses the real number build. To
-access other builds, set the environment variable `PETSC_DIR` to point
-at the required PETSc version located under `/usr/lib/petscdir`.
-Likewise SLEPc support can be managed via `SLEPC_DIR` (see
-`/usr/lib/slepcdir`).
-
-To access complex number support in DOLFINx on Debian/Ubuntu, run
-scripts with:
+The Debian/Ubuntu standard installation uses the real number build of
+PETSc and SLEPc. To access other builds, set the environment variable
+`PETSC_DIR` to point at the required PETSc, and likewise for SLEPc using
+`SLEPC_DIR`:
 ```shell
 PETSC_DIR=/usr/lib/petscdir/petsc-complex python3 demo_dolfinx.py
 ```
-or, with SLEPc:
 ```shell
 PETSC_DIR=/usr/lib/petscdir/petsc-complex SLEPC_DIR=/usr/lib/slepcdir/slepc-complex python3 demo_dolfinx.py
 ```
